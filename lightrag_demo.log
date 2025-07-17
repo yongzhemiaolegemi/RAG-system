@@ -1,0 +1,377 @@
+2025-07-17 16:36:47,128 - lightrag - INFO - Created new empty graph
+2025-07-17 16:36:47,188 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-07-17 16:36:47,188 - lightrag - INFO - Process 29364 KV load full_docs with 0 records
+2025-07-17 16:36:47,188 - lightrag - INFO - Process 29364 KV load text_chunks with 0 records
+2025-07-17 16:36:47,188 - lightrag - INFO - Process 29364 KV load llm_response_cache with 0 records
+2025-07-17 16:36:47,188 - lightrag - INFO - Process 29364 doc status load doc_status with 0 records
+2025-07-17 16:36:47,188 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-07-17 16:36:47,188 - lightrag - INFO - Storage Initialization completed!
+2025-07-17 16:36:54,611 - lightrag - INFO - Storage Finalization completed!
+2025-07-17 16:37:49,936 - lightrag - INFO - Created new empty graph
+2025-07-17 16:37:49,943 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-07-17 16:37:49,945 - lightrag - INFO - Process 41072 KV load full_docs with 0 records
+2025-07-17 16:37:49,945 - lightrag - INFO - Process 41072 KV load text_chunks with 0 records
+2025-07-17 16:37:49,946 - lightrag - INFO - Process 41072 KV load llm_response_cache with 0 records
+2025-07-17 16:37:49,946 - lightrag - INFO - Process 41072 doc status load doc_status with 0 records
+2025-07-17 16:37:49,946 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-07-17 16:37:49,946 - lightrag - INFO - Storage Initialization completed!
+2025-07-17 16:38:03,570 - lightrag - INFO - Storage Finalization completed!
+2025-07-17 16:39:14,766 - lightrag - INFO - Created new empty graph
+2025-07-17 16:39:14,773 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-07-17 16:39:14,773 - lightrag - INFO - Process 42516 KV load full_docs with 0 records
+2025-07-17 16:39:14,774 - lightrag - INFO - Process 42516 KV load text_chunks with 0 records
+2025-07-17 16:39:14,774 - lightrag - INFO - Process 42516 KV load llm_response_cache with 0 records
+2025-07-17 16:39:14,774 - lightrag - INFO - Process 42516 doc status load doc_status with 0 records
+2025-07-17 16:39:14,774 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-07-17 16:39:14,775 - lightrag - INFO - Storage Initialization completed!
+2025-07-17 16:39:19,881 - lightrag - INFO - Storage Finalization completed!
+2025-07-17 16:39:55,367 - lightrag - INFO - Created new empty graph
+2025-07-17 16:39:55,376 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-07-17 16:39:55,377 - lightrag - INFO - Process 28876 KV load full_docs with 0 records
+2025-07-17 16:39:55,377 - lightrag - INFO - Process 28876 KV load text_chunks with 0 records
+2025-07-17 16:39:55,377 - lightrag - INFO - Process 28876 KV load llm_response_cache with 0 records
+2025-07-17 16:39:55,378 - lightrag - INFO - Process 28876 doc status load doc_status with 0 records
+2025-07-17 16:39:55,378 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-07-17 16:39:55,378 - lightrag - INFO - Storage Initialization completed!
+2025-07-17 16:39:57,535 - lightrag - INFO - Stored 1 new unique documents
+2025-07-17 16:39:57,543 - lightrag - INFO - Processing 1 document(s)
+2025-07-17 16:39:57,543 - lightrag - INFO - Extracting stage 1/1: unknown_source
+2025-07-17 16:39:57,543 - lightrag - INFO - Processing d-id: doc-addb4618e1697da0445ec72a648e1f92
+2025-07-17 16:40:04,010 - lightrag - INFO - limit_async: 4 new workers initialized
+2025-07-17 16:40:10,389 - lightrag - INFO -  == LLM cache == saving: default:extract:3e429cf8a94ff53501e74fbac2e8af0b
+2025-07-17 16:40:10,881 - lightrag - INFO -  == LLM cache == saving: default:extract:7f1fa9b2c3f3dafbb7c3d28ba94a1170
+2025-07-17 16:40:11,017 - lightrag - INFO -  == LLM cache == saving: default:extract:a34b2d1c7fc4ed2403c0d56b9d4c637b
+2025-07-17 16:40:25,744 - lightrag - INFO -  == LLM cache == saving: default:extract:b89bdc09d141ca9e8c86f6e297f39ce2
+2025-07-17 16:40:25,746 - lightrag - INFO - Chunk 1 of 42 extracted 9 Ent + 9 Rel
+2025-07-17 16:40:26,386 - lightrag - INFO -  == LLM cache == saving: default:extract:11eeb1c39d0e93feffd77066a4c6ea2d
+2025-07-17 16:40:26,387 - lightrag - INFO - Chunk 2 of 42 extracted 12 Ent + 11 Rel
+2025-07-17 16:40:30,083 - lightrag - INFO -  == LLM cache == saving: default:extract:0e4add8063e72dc6fd75a30c60023cde
+2025-07-17 16:40:30,182 - lightrag - INFO -  == LLM cache == saving: default:extract:a4d35be7435a4a7b2bf735e95e4120d7
+2025-07-17 16:40:30,182 - lightrag - INFO - Chunk 3 of 42 extracted 9 Ent + 8 Rel
+2025-07-17 16:40:31,199 - lightrag - INFO -  == LLM cache == saving: default:extract:6708c4757ea594bcb277756e462383af
+2025-07-17 16:40:32,567 - lightrag - INFO -  == LLM cache == saving: default:extract:c267a2374706ca2b6728aaf467ccdcfd
+2025-07-17 16:40:36,827 - lightrag - INFO -  == LLM cache == saving: default:extract:d4e7fa8d281588b33c10ec3610672987
+2025-07-17 16:40:40,294 - lightrag - INFO -  == LLM cache == saving: default:extract:e011f60df48f217a964695907f02e870
+2025-07-17 16:40:40,296 - lightrag - INFO - Chunk 4 of 42 extracted 11 Ent + 12 Rel
+2025-07-17 16:40:45,085 - lightrag - INFO -  == LLM cache == saving: default:extract:692343213a3d36d6d3ab657572a749cd
+2025-07-17 16:40:45,086 - lightrag - INFO - Chunk 5 of 42 extracted 14 Ent + 10 Rel
+2025-07-17 16:40:45,193 - lightrag - INFO -  == LLM cache == saving: default:extract:1aa836c867306c337acaa488cbe2fcfc
+2025-07-17 16:40:45,524 - lightrag - INFO -  == LLM cache == saving: default:extract:5673e6383b3e8e75118d8bd064068606
+2025-07-17 16:40:45,526 - lightrag - INFO - Chunk 6 of 42 extracted 21 Ent + 19 Rel
+2025-07-17 16:40:45,976 - lightrag - INFO -  == LLM cache == saving: default:extract:278089a88099634633fcefcddc5a6b8c
+2025-07-17 16:40:45,977 - lightrag - INFO - Chunk 7 of 42 extracted 7 Ent + 7 Rel
+2025-07-17 16:40:53,067 - lightrag - INFO -  == LLM cache == saving: default:extract:9e041764a5a826013169e59abb9496aa
+2025-07-17 16:40:53,068 - lightrag - INFO - Chunk 8 of 42 extracted 7 Ent + 6 Rel
+2025-07-17 16:40:55,722 - lightrag - INFO -  == LLM cache == saving: default:extract:04046e784c01c6affd3d2e990767ba4d
+2025-07-17 16:40:55,785 - lightrag - INFO -  == LLM cache == saving: default:extract:7a950b99326231eb402963e32b3152d6
+2025-07-17 16:40:55,819 - lightrag - INFO -  == LLM cache == saving: default:extract:75f14962be635a9f9faace2b510a67a7
+2025-07-17 16:41:01,085 - lightrag - INFO -  == LLM cache == saving: default:extract:552feaa3c47c77968fda909e7fe7d2c3
+2025-07-17 16:41:03,827 - lightrag - INFO -  == LLM cache == saving: default:extract:d55f253b032a40b3d236042f3e5b4249
+2025-07-17 16:41:03,828 - lightrag - INFO - Chunk 9 of 42 extracted 11 Ent + 12 Rel
+2025-07-17 16:41:06,209 - lightrag - INFO -  == LLM cache == saving: default:extract:fcf56e5ac2135a61b2e2107a71046762
+2025-07-17 16:41:06,209 - lightrag - INFO - Chunk 10 of 42 extracted 11 Ent + 11 Rel
+2025-07-17 16:41:07,469 - lightrag - INFO -  == LLM cache == saving: default:extract:91c095ebfd6c3de5adde1f30be18b7a8
+2025-07-17 16:41:07,470 - lightrag - INFO - Chunk 11 of 42 extracted 13 Ent + 10 Rel
+2025-07-17 16:41:08,296 - lightrag - INFO -  == LLM cache == saving: default:extract:c64a0f615b1484dc1f6b915b65785af3
+2025-07-17 16:41:08,298 - lightrag - INFO - Chunk 12 of 42 extracted 13 Ent + 10 Rel
+2025-07-17 16:41:12,113 - lightrag - INFO -  == LLM cache == saving: default:extract:9f896e33f9b06c5148e5a55f49a05afc
+2025-07-17 16:41:16,253 - lightrag - INFO -  == LLM cache == saving: default:extract:533bde2124cb5a86bb86573d305ef305
+2025-07-17 16:41:18,560 - lightrag - INFO -  == LLM cache == saving: default:extract:a49652525f74a5246b344160cf70f8a0
+2025-07-17 16:41:19,964 - lightrag - INFO -  == LLM cache == saving: default:extract:8d5e0e89759fa9a80e019aea92acae36
+2025-07-17 16:41:21,937 - lightrag - INFO -  == LLM cache == saving: default:extract:6abe37521cbf9f4a2c538e87d4e58457
+2025-07-17 16:41:21,938 - lightrag - INFO - Chunk 13 of 42 extracted 16 Ent + 14 Rel
+2025-07-17 16:41:26,738 - lightrag - INFO -  == LLM cache == saving: default:extract:cd21297da87c310631571ec077e06763
+2025-07-17 16:41:26,738 - lightrag - INFO - Chunk 14 of 42 extracted 17 Ent + 16 Rel
+2025-07-17 16:41:30,345 - lightrag - INFO -  == LLM cache == saving: default:extract:67912d5c10605299ca01ce36721e7162
+2025-07-17 16:41:33,876 - lightrag - INFO -  == LLM cache == saving: default:extract:2e539292c70033ebe8781af52b75872e
+2025-07-17 16:41:33,877 - lightrag - INFO - Chunk 15 of 42 extracted 9 Ent + 8 Rel
+2025-07-17 16:41:34,630 - lightrag - INFO -  == LLM cache == saving: default:extract:f2a713bb9b1c59ef997daeb7a6cb236c
+2025-07-17 16:41:35,199 - lightrag - INFO -  == LLM cache == saving: default:extract:bce0407414d327449965803b302a36fb
+2025-07-17 16:41:35,201 - lightrag - INFO - Chunk 16 of 42 extracted 14 Ent + 13 Rel
+2025-07-17 16:41:37,607 - lightrag - INFO -  == LLM cache == saving: default:extract:aa507503400bfa24bebb945e86df50c1
+2025-07-17 16:41:37,608 - lightrag - INFO - Chunk 17 of 42 extracted 9 Ent + 9 Rel
+2025-07-17 16:41:40,613 - lightrag - INFO -  == LLM cache == saving: default:extract:408204d077e5c92a7475da334ac9f5cf
+2025-07-17 16:41:40,699 - lightrag - INFO -  == LLM cache == saving: default:extract:04f367429e631015ddda0d01519c8135
+2025-07-17 16:41:41,124 - lightrag - INFO -  == LLM cache == saving: default:extract:be4a187282d4cfeb69dc6ec489c78bc3
+2025-07-17 16:41:41,124 - lightrag - INFO - Chunk 18 of 42 extracted 11 Ent + 8 Rel
+2025-07-17 16:41:47,967 - lightrag - INFO -  == LLM cache == saving: default:extract:1db38b8dfae0830fdafa1ea48d239c0a
+2025-07-17 16:41:48,950 - lightrag - INFO -  == LLM cache == saving: default:extract:9f0afcdae8ce32d31a07a09c5e5a0c4d
+2025-07-17 16:41:48,951 - lightrag - INFO - Chunk 19 of 42 extracted 17 Ent + 14 Rel
+2025-07-17 16:41:51,158 - lightrag - INFO -  == LLM cache == saving: default:extract:074bd690e5713b416ff314da328abcee
+2025-07-17 16:41:53,795 - lightrag - INFO -  == LLM cache == saving: default:extract:9588e85486d27361c2b9cf6bfaf2ae71
+2025-07-17 16:41:53,797 - lightrag - INFO - Chunk 20 of 42 extracted 12 Ent + 10 Rel
+2025-07-17 16:41:56,395 - lightrag - INFO -  == LLM cache == saving: default:extract:3bded9b77f22e81530a37ba5f4165f47
+2025-07-17 16:41:56,579 - lightrag - INFO -  == LLM cache == saving: default:extract:50d1431425f0d515f6e7648b19ba3413
+2025-07-17 16:41:56,580 - lightrag - INFO - Chunk 21 of 42 extracted 9 Ent + 10 Rel
+2025-07-17 16:41:59,622 - lightrag - INFO -  == LLM cache == saving: default:extract:5f0b54961d5a79ad259b759fe51d5bdd
+2025-07-17 16:41:59,622 - lightrag - INFO - Chunk 22 of 42 extracted 13 Ent + 13 Rel
+2025-07-17 16:42:00,496 - lightrag - INFO -  == LLM cache == saving: default:extract:b9bc159bca717a3de9402cac5bd71da9
+2025-07-17 16:42:02,311 - lightrag - INFO -  == LLM cache == saving: default:extract:b0a44f11261f84a879e221d87b016000
+2025-07-17 16:42:03,615 - lightrag - INFO -  == LLM cache == saving: default:extract:9717997acd6ed1de4e53db5f8a1bd19d
+2025-07-17 16:42:03,615 - lightrag - INFO - Chunk 23 of 42 extracted 13 Ent + 11 Rel
+2025-07-17 16:42:05,988 - lightrag - INFO -  == LLM cache == saving: default:extract:544af37a57b6d6c467aa37348262d38b
+2025-07-17 16:42:10,243 - lightrag - INFO -  == LLM cache == saving: default:extract:e3ca79ecaf752771bef2bde995564965
+2025-07-17 16:42:10,244 - lightrag - INFO - Chunk 24 of 42 extracted 14 Ent + 13 Rel
+2025-07-17 16:42:10,439 - lightrag - INFO -  == LLM cache == saving: default:extract:17fa7cdef4f5f820834c43fe0bb9b0e3
+2025-07-17 16:42:10,439 - lightrag - INFO - Chunk 25 of 42 extracted 14 Ent + 13 Rel
+2025-07-17 16:42:10,695 - lightrag - INFO -  == LLM cache == saving: default:extract:aa87450e5d8b1fdeb354ef04f9dd863d
+2025-07-17 16:42:13,282 - lightrag - INFO -  == LLM cache == saving: default:extract:ac8af27907c48596e30a2c1936b22d2b
+2025-07-17 16:42:13,283 - lightrag - INFO - Chunk 26 of 42 extracted 12 Ent + 13 Rel
+2025-07-17 16:42:15,158 - lightrag - INFO -  == LLM cache == saving: default:extract:b39618799a7db3c01e5a33e97b6884af
+2025-07-17 16:42:15,159 - lightrag - INFO - Chunk 27 of 42 extracted 9 Ent + 11 Rel
+2025-07-17 16:42:15,658 - lightrag - INFO -  == LLM cache == saving: default:extract:f19ee4ef37fd7fb4e2d3a355bd5388b0
+2025-07-17 16:42:16,950 - lightrag - INFO -  == LLM cache == saving: default:extract:27b565fab3756c0255a1ef9f7736dadd
+2025-07-17 16:42:21,559 - lightrag - INFO -  == LLM cache == saving: default:extract:ca234af2685006b4b2a23dcff4d511d6
+2025-07-17 16:42:22,142 - lightrag - INFO -  == LLM cache == saving: default:extract:49749926ee944e874f76bc4d8c2e8a9d
+2025-07-17 16:42:22,143 - lightrag - INFO - Chunk 28 of 42 extracted 11 Ent + 10 Rel
+2025-07-17 16:42:22,958 - lightrag - INFO -  == LLM cache == saving: default:extract:967d4474b7dd2d42b543a5124b2154c4
+2025-07-17 16:42:29,080 - lightrag - INFO -  == LLM cache == saving: default:extract:967b50f0ea7cd37b2b19283c3b109f09
+2025-07-17 16:42:29,291 - lightrag - INFO -  == LLM cache == saving: default:extract:ff8cc63e7a0ea0abd2b6417d0a01ad43
+2025-07-17 16:42:29,292 - lightrag - INFO - Chunk 29 of 42 extracted 15 Ent + 14 Rel
+2025-07-17 16:42:30,041 - lightrag - INFO -  == LLM cache == saving: default:extract:0edeb13bc4497107371e25a859c99b7a
+2025-07-17 16:42:30,042 - lightrag - INFO - Chunk 30 of 42 extracted 7 Ent + 8 Rel
+2025-07-17 16:42:30,161 - lightrag - INFO -  == LLM cache == saving: default:extract:cc32ab480009e81344ae98f3388eb75f
+2025-07-17 16:42:30,162 - lightrag - INFO - Chunk 31 of 42 extracted 16 Ent + 13 Rel
+2025-07-17 16:42:35,582 - lightrag - INFO -  == LLM cache == saving: default:extract:11f3081a93aa2ead29f82ffe2df4234d
+2025-07-17 16:42:35,791 - lightrag - INFO -  == LLM cache == saving: default:extract:a0d431e3baa56f893557140392b066b3
+2025-07-17 16:42:36,321 - lightrag - INFO -  == LLM cache == saving: default:extract:f4023f328909e33f1e7596a30bfdcb93
+2025-07-17 16:42:38,291 - lightrag - INFO -  == LLM cache == saving: default:extract:4799ecf9aa617ceba148e991a86c4dc3
+2025-07-17 16:42:38,292 - lightrag - INFO - Chunk 32 of 42 extracted 10 Ent + 14 Rel
+2025-07-17 16:42:42,194 - lightrag - INFO -  == LLM cache == saving: default:extract:1115743e3f7307c5e599ef022caf98db
+2025-07-17 16:42:42,194 - lightrag - INFO - Chunk 33 of 42 extracted 12 Ent + 11 Rel
+2025-07-17 16:42:42,792 - lightrag - INFO -  == LLM cache == saving: default:extract:1109039c293cd0f74016626a4a39b3af
+2025-07-17 16:42:42,793 - lightrag - INFO - Chunk 34 of 42 extracted 11 Ent + 12 Rel
+2025-07-17 16:42:43,199 - lightrag - INFO -  == LLM cache == saving: default:extract:7f7dab86239e2034cac2feed1ec4d939
+2025-07-17 16:42:45,818 - lightrag - INFO -  == LLM cache == saving: default:extract:c41c97ba2f0ec17dcb4e9df4e659d4aa
+2025-07-17 16:42:45,820 - lightrag - INFO - Chunk 35 of 42 extracted 10 Ent + 9 Rel
+2025-07-17 16:42:48,002 - lightrag - INFO -  == LLM cache == saving: default:extract:c25e44f75a1444b8b18474628363a94b
+2025-07-17 16:42:48,930 - lightrag - INFO -  == LLM cache == saving: default:extract:c49e7d41710b4334029a76e5a61bdf6b
+2025-07-17 16:42:49,476 - lightrag - INFO -  == LLM cache == saving: default:extract:3e408b836fa5494a4acc1a3df0e9d3bf
+2025-07-17 16:42:51,241 - lightrag - INFO -  == LLM cache == saving: default:extract:5333886d7b0161219c042451a3f8182b
+2025-07-17 16:42:51,241 - lightrag - INFO - Chunk 36 of 42 extracted 10 Ent + 9 Rel
+2025-07-17 16:42:54,956 - lightrag - INFO -  == LLM cache == saving: default:extract:b011ba1a88e73d240f732619af8189df
+2025-07-17 16:42:54,957 - lightrag - INFO - Chunk 37 of 42 extracted 11 Ent + 11 Rel
+2025-07-17 16:42:55,454 - lightrag - INFO -  == LLM cache == saving: default:extract:9eb6638bde897f25b2b18ece11d3f42e
+2025-07-17 16:42:55,824 - lightrag - INFO -  == LLM cache == saving: default:extract:32d7b8501c6fa97489f8d7da0dc5dfde
+2025-07-17 16:42:55,825 - lightrag - INFO - Chunk 38 of 42 extracted 9 Ent + 8 Rel
+2025-07-17 16:42:56,659 - lightrag - INFO -  == LLM cache == saving: default:extract:fbf39b22b84349e0e35564345bea3524
+2025-07-17 16:42:56,660 - lightrag - INFO - Chunk 39 of 42 extracted 8 Ent + 7 Rel
+2025-07-17 16:42:59,900 - lightrag - INFO -  == LLM cache == saving: default:extract:09cd354ca93740b8e831806af91e6dc1
+2025-07-17 16:43:01,569 - lightrag - INFO -  == LLM cache == saving: default:extract:b8a362dea13e2d20fa7d5e9216642c13
+2025-07-17 16:43:01,571 - lightrag - INFO - Chunk 40 of 42 extracted 10 Ent + 9 Rel
+2025-07-17 16:43:01,770 - lightrag - INFO -  == LLM cache == saving: default:extract:e244eda01897d4fcccbc193f0ba1fd00
+2025-07-17 16:43:06,074 - lightrag - INFO -  == LLM cache == saving: default:extract:e4863e971e28c1983f52b7253d3f5831
+2025-07-17 16:43:06,075 - lightrag - INFO - Chunk 41 of 42 extracted 11 Ent + 8 Rel
+2025-07-17 16:43:10,612 - lightrag - INFO -  == LLM cache == saving: default:extract:706588d53194a260573201a4a4a6c604
+2025-07-17 16:43:10,612 - lightrag - INFO - Chunk 42 of 42 extracted 14 Ent + 13 Rel
+2025-07-17 16:43:10,623 - lightrag - INFO - Merging stage 1/1: unknown_source
+2025-07-17 16:43:10,623 - lightrag - INFO - Processing: 327 entities and 375 relations (async: 8)
+2025-07-17 16:43:10,661 - lightrag - INFO - LLM merge N: Project Gutenberg | 5+0
+2025-07-17 16:43:10,663 - lightrag - INFO - Merge N: Ebenezer Scrooge | 3+0
+2025-07-17 16:43:10,663 - lightrag - INFO - LLM merge N: Bob Cratchit | 11+0
+2025-07-17 16:43:12,372 - lightrag - INFO - Merge N: Ghost of Christmas Past | 2+0
+2025-07-17 16:43:12,398 - lightrag - INFO - Merge N: Ghost of Christmas Present | 2+0
+2025-07-17 16:43:12,469 - lightrag - INFO - Merge N: Ghost of Christmas Yet to Come | 3+0
+2025-07-17 16:43:12,889 - lightrag - INFO - LLM merge N: Jacob Marley | 8+0
+2025-07-17 16:43:13,134 - lightrag - INFO - Merge N: Christmas Eve | 3+0
+2025-07-17 16:43:13,296 - lightrag - INFO -  == LLM cache == saving: default:extract:e6a04b4d19df878aa3e2d41ac53f4ad6
+2025-07-17 16:43:13,865 - lightrag - INFO - LLM merge N: Mrs. Fezziwig | 4+0
+2025-07-17 16:43:14,156 - lightrag - INFO -  == LLM cache == saving: default:extract:ddc8642e705ff5041341b65aeea0f3dc
+2025-07-17 16:43:14,280 - lightrag - INFO - LLM merge N: Mrs. Cratchit | 7+0
+2025-07-17 16:43:14,385 - lightrag - INFO - Merge N: Belinda Cratchit | 3+0
+2025-07-17 16:43:14,427 - lightrag - INFO - Merge N: Martha Cratchit | 3+0
+2025-07-17 16:43:14,588 - lightrag - INFO - Merge N: Dick Wilkins | 3+0
+2025-07-17 16:43:15,587 - lightrag - INFO - LLM merge N: Christmas Day | 5+0
+2025-07-17 16:43:15,760 - lightrag - INFO -  == LLM cache == saving: default:extract:bf4d25f6e9e2d531eb0064b0ae0f0126
+2025-07-17 16:43:15,788 - lightrag - INFO - LLM merge N: Fezziwig | 4+0
+2025-07-17 16:43:15,845 - lightrag - INFO - LLM merge N: Scrooge | 32+0
+2025-07-17 16:43:15,930 - lightrag - INFO -  == LLM cache == saving: default:extract:e6219897d446ef0261672dfce272206e
+2025-07-17 16:43:15,974 - lightrag - INFO - Merge N: Marley | 2+0
+2025-07-17 16:43:16,333 - lightrag - INFO - LLM merge N: Christmas | 17+0
+2025-07-17 16:43:16,446 - lightrag - INFO -  == LLM cache == saving: default:extract:ea4b1cd5e9b2dc57e69a508306d4a538
+2025-07-17 16:43:17,130 - lightrag - INFO - LLM merge N: Fred | 4+0
+2025-07-17 16:43:17,621 - lightrag - INFO - Merge N: Joe | 2+0
+2025-07-17 16:43:17,866 - lightrag - INFO -  == LLM cache == saving: default:extract:1cdd65cc3be4460fb973b58bbccd92f7
+2025-07-17 16:43:18,665 - lightrag - INFO - Merge N: Bed-Curtains | 2+0
+2025-07-17 16:43:19,247 - lightrag - INFO -  == LLM cache == saving: default:extract:2dc3033d25997c16df90aee4baa22b07
+2025-07-17 16:43:19,486 - lightrag - INFO -  == LLM cache == saving: default:extract:977381d7523ccedb8986eb90ac5b324a
+2025-07-17 16:43:19,886 - lightrag - INFO - LLM merge N: Scrooge's Nephew | 4+0
+2025-07-17 16:43:20,035 - lightrag - INFO -  == LLM cache == saving: default:extract:e55890dd11f6d336104cf0ad7e17eeea
+2025-07-17 16:43:20,117 - lightrag - INFO -  == LLM cache == saving: default:extract:ae9444816b814f2fee0b5989f723d7f0
+2025-07-17 16:43:20,738 - lightrag - INFO - Merge N: Fog | 2+0
+2025-07-17 16:43:22,735 - lightrag - INFO - Merge N: Christmas-time | 3+0
+2025-07-17 16:43:24,186 - lightrag - INFO -  == LLM cache == saving: default:extract:2d533696797d25f20996a2cbe1143b43
+2025-07-17 16:43:25,958 - lightrag - INFO - Merge N: Camden Town | 2+0
+2025-07-17 16:43:26,365 - lightrag - INFO - Merge N: London | 3+0
+2025-07-17 16:43:27,328 - lightrag - INFO - Merge N: Marley's Ghost | 2+0
+2025-07-17 16:43:28,516 - lightrag - INFO - LLM merge N: The Ghost | 5+0
+2025-07-17 16:43:29,441 - lightrag - INFO - LLM merge N: Ghost | 5+0
+2025-07-17 16:43:30,816 - lightrag - INFO -  == LLM cache == saving: default:extract:188aff2c30093c862406dfda750fcf31
+2025-07-17 16:43:31,701 - lightrag - INFO - Merge N: The Spirit | 3+0
+2025-07-17 16:43:33,494 - lightrag - INFO -  == LLM cache == saving: default:extract:a2b6e3ecb375721d5fc70f7694782830
+2025-07-17 16:43:36,006 - lightrag - INFO - Merge N: Holly | 3+0
+2025-07-17 16:43:36,911 - lightrag - INFO - Merge N: Merry Christmas | 2+0
+2025-07-17 16:43:40,966 - lightrag - INFO - Merge N: The City | 2+0
+2025-07-17 16:43:41,627 - lightrag - INFO - Merge N: The Ghost of Christmas Past | 3+0
+2025-07-17 16:43:45,404 - lightrag - INFO - Merge N: Wealth | 2+0
+2025-07-17 16:43:46,929 - lightrag - INFO - Merge N: Spirit | 3+0
+2025-07-17 16:43:48,115 - lightrag - INFO - Merge N: Mistletoe | 2+0
+2025-07-17 16:43:52,134 - lightrag - INFO - LLM merge N: Peter Cratchit | 5+0
+2025-07-17 16:43:53,407 - lightrag - INFO - Merge N: Christmas Dinner | 2+0
+2025-07-17 16:43:53,453 - lightrag - INFO - Merge N: Cratchit Family | 3+0
+2025-07-17 16:43:54,162 - lightrag - INFO - LLM merge N: Tiny Tim | 9+0
+2025-07-17 16:43:54,453 - lightrag - INFO -  == LLM cache == saving: default:extract:90192df5e4440bcc23329ef309e1aa71
+2025-07-17 16:43:55,955 - lightrag - INFO - Merge N: The Cratchit Family | 2+0
+2025-07-17 16:43:59,894 - lightrag - INFO - Merge N: Scrooge's Niece | 2+0
+2025-07-17 16:44:00,017 - lightrag - INFO - Merge N: Topper | 2+0
+2025-07-17 16:44:01,049 - lightrag - INFO -  == LLM cache == saving: default:extract:4297e218dc494523c9f630b1badada63
+2025-07-17 16:44:01,873 - lightrag - INFO - Merge N: The Ghost of Christmas Present | 2+0
+2025-07-17 16:44:04,400 - lightrag - INFO - Merge N: Ignorance | 2+0
+2025-07-17 16:44:04,739 - lightrag - INFO - Merge N: Want | 2+0
+2025-07-17 16:44:05,089 - lightrag - INFO - Merge N: City | 2+0
+2025-07-17 16:44:11,451 - lightrag - INFO - Merge N: Death | 2+0
+2025-07-17 16:44:18,716 - lightrag - INFO - LLM merge N: Project Gutenberg Literary Archive Foundation | 4+0
+2025-07-17 16:44:19,413 - lightrag - INFO - Merge N: U.S. Copyright Law | 2+0
+2025-07-17 16:44:19,484 - lightrag - INFO - Merge N: eBook | 2+0
+2025-07-17 16:44:21,048 - lightrag - INFO -  == LLM cache == saving: default:extract:3e5e2684eb1b18cfb1ff645b2d520a3f
+2025-07-17 16:44:22,070 - lightrag - INFO - Merge N: Salt Lake City | 2+0
+2025-07-17 16:44:22,257 - lightrag - INFO - Merge N: Mississippi | 2+0
+2025-07-17 16:44:23,235 - lightrag - INFO - Merge N: Project Gutenberg™ | 2+0
+2025-07-17 16:44:29,739 - lightrag - INFO - LLM merge E: Bob Cratchit - Mrs. Cratchit | 6+0
+2025-07-17 16:44:30,170 - lightrag - INFO - Merge E: Dick Wilkins - Ebenezer Scrooge | 2+0
+2025-07-17 16:44:30,213 - lightrag - INFO - Merge E: Ebenezer Scrooge - Jacob Marley | 2+0
+2025-07-17 16:44:31,282 - lightrag - INFO - Merge E: Fezziwig - Mrs. Fezziwig | 2+0
+2025-07-17 16:44:31,558 - lightrag - INFO - Merge E: Marley - Scrooge | 2+0
+2025-07-17 16:44:31,595 - lightrag - INFO - LLM merge E: Christmas - Scrooge | 10+0
+2025-07-17 16:44:32,016 - lightrag - INFO -  == LLM cache == saving: default:extract:504426ca258f031dd328f276d0103736
+2025-07-17 16:44:32,584 - lightrag - INFO - LLM merge E: Fred - Scrooge | 4+0
+2025-07-17 16:44:32,862 - lightrag - INFO - Merge E: Joe - Scrooge | 2+0
+2025-07-17 16:44:34,351 - lightrag - INFO - LLM merge E: Scrooge - Scrooge's Nephew | 5+0
+2025-07-17 16:44:34,568 - lightrag - INFO - Merge E: Christmas - Scrooge's Nephew | 3+0
+2025-07-17 16:44:34,568 - lightrag - INFO -  == LLM cache == saving: default:extract:8eb21dd20151f0732f5055fe4fe77840
+2025-07-17 16:44:35,140 - lightrag - INFO -  == LLM cache == saving: default:extract:070e1a54e91511fbf9a1bdb28a97e03c
+2025-07-17 16:44:35,820 - lightrag - INFO - Merge E: Fog - Scrooge | 2+0
+2025-07-17 16:44:36,562 - lightrag - INFO -  == LLM cache == saving: default:extract:9f24ff0a443e4c7a657a31acbc63406b
+2025-07-17 16:44:40,516 - lightrag - INFO - LLM merge E: Bob Cratchit - Scrooge | 5+0
+2025-07-17 16:44:42,656 - lightrag - INFO - Merge E: Marley's Ghost - Scrooge | 3+0
+2025-07-17 16:44:43,597 - lightrag - INFO -  == LLM cache == saving: default:extract:40966cbd7debde2e3e869bab2dc81e7b
+2025-07-17 16:44:44,020 - lightrag - INFO - LLM merge E: Jacob Marley - Scrooge | 6+0
+2025-07-17 16:44:44,793 - lightrag - INFO - LLM merge E: Scrooge - The Ghost | 5+0
+2025-07-17 16:44:46,003 - lightrag - INFO - LLM merge E: Ghost - Scrooge | 5+0
+2025-07-17 16:44:47,285 - lightrag - INFO -  == LLM cache == saving: default:extract:4290c7ade6a95873632731e4b9882f7b
+2025-07-17 16:44:47,944 - lightrag - INFO -  == LLM cache == saving: default:extract:37b8ae2d87c80ccafecfe944214bf4ba
+2025-07-17 16:44:51,813 - lightrag - INFO -  == LLM cache == saving: default:extract:c73010cf251cf543aaee2ca8825b9ba0
+2025-07-17 16:44:55,160 - lightrag - INFO - Merge E: Ghost of Christmas Past - Scrooge | 3+0
+2025-07-17 16:44:55,664 - lightrag - INFO - Merge E: Merry Christmas - Scrooge | 2+0
+2025-07-17 16:45:00,216 - lightrag - INFO - Merge E: Fezziwig - Scrooge | 2+0
+2025-07-17 16:45:01,411 - lightrag - INFO - Merge E: Dick Wilkins - Scrooge | 2+0
+2025-07-17 16:45:05,738 - lightrag - INFO - Merge E: Scrooge - The Ghost of Christmas Past | 2+0
+2025-07-17 16:45:06,604 - lightrag - INFO - Merge E: Scrooge - Wealth | 2+0
+2025-07-17 16:45:07,971 - lightrag - INFO - Merge E: Belle - Scrooge | 2+0
+2025-07-17 16:45:14,896 - lightrag - INFO - Merge E: Bob Cratchit - Peter Cratchit | 3+0
+2025-07-17 16:45:17,226 - lightrag - INFO - Merge E: Bob Cratchit - Martha Cratchit | 2+0
+2025-07-17 16:45:17,782 - lightrag - INFO - LLM merge E: Bob Cratchit - Tiny Tim | 9+0
+2025-07-17 16:45:19,977 - lightrag - INFO - Merge E: Scrooge - Tiny Tim | 2+0
+2025-07-17 16:45:21,125 - lightrag - INFO - Merge E: Christmas Day - Scrooge | 2+0
+2025-07-17 16:45:21,144 - lightrag - INFO -  == LLM cache == saving: default:extract:30cdd955de1179d1cc7c66d3e8f5039c
+2025-07-17 16:45:23,240 - lightrag - INFO - Merge E: Scrooge - Spirit | 2+0
+2025-07-17 16:45:26,027 - lightrag - INFO - Merge E: Scrooge - Scrooge's Niece | 2+0
+2025-07-17 16:45:26,308 - lightrag - INFO - Merge E: Scrooge's Niece - Topper | 2+0
+2025-07-17 16:45:27,262 - lightrag - INFO - Merge E: Scrooge's Nephew - Scrooge's Niece | 2+0
+2025-07-17 16:45:29,323 - lightrag - INFO - Merge E: Scrooge - The Ghost of Christmas Present | 2+0
+2025-07-17 16:45:33,973 - lightrag - INFO - Merge E: City - Scrooge | 2+0
+2025-07-17 16:45:43,573 - lightrag - INFO - Merge E: Bob Cratchit - The Two Young Cratchits | 2+0
+2025-07-17 16:45:49,062 - lightrag - INFO - Merge E: Project Gutenberg - Project Gutenberg Literary Archive Foundation | 3+0
+2025-07-17 16:45:50,231 - lightrag - INFO - Merge E: Project Gutenberg - eBook | 2+0
+2025-07-17 16:45:52,262 - lightrag - INFO - Merge E: Project Gutenberg Literary Archive Foundation - Salt Lake City | 2+0
+2025-07-17 16:45:52,891 - lightrag - INFO - Merge E: Mississippi - Project Gutenberg Literary Archive Foundation | 2+0
+2025-07-17 16:46:02,852 - lightrag - INFO - Writing graph with 331 nodes, 375 edges
+2025-07-17 16:46:02,902 - lightrag - INFO - In memory DB persist to disk
+2025-07-17 16:46:02,902 - lightrag - INFO - Completed processing file 1/1: unknown_source
+2025-07-17 16:46:02,902 - lightrag - INFO - Document processing pipeline completed
+2025-07-17 16:46:06,085 - lightrag - INFO -  == LLM cache == saving: local:keywords:0388df99d8a0ee20bab842855c491125
+2025-07-17 16:46:06,086 - lightrag - INFO - Process 28876 building query context...
+2025-07-17 16:46:06,087 - lightrag - INFO - Query nodes: Hello, top_k: 40, cosine: 0.2
+2025-07-17 16:46:07,496 - lightrag - INFO - Local query: 4 entites, 13 relations
+2025-07-17 16:46:07,496 - lightrag - INFO - Initial context: 4 entities, 13 relations, 0 chunks
+2025-07-17 16:46:07,498 - lightrag - INFO - Getting text chunks based on truncated entities and relations...
+2025-07-17 16:46:07,500 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-07-17 16:46:07,503 - lightrag - INFO - Final context: 4 entities, 13 relations, 4 chunks
+2025-07-17 16:46:09,715 - lightrag - INFO -  == LLM cache == saving: local:query:0388df99d8a0ee20bab842855c491125
+2025-07-17 16:46:11,434 - lightrag - INFO -  == LLM cache == saving: global:keywords:3aa8d42ec49cd039a66a0877be87e936
+2025-07-17 16:46:11,435 - lightrag - INFO - Process 28876 building query context...
+2025-07-17 16:46:11,435 - lightrag - INFO - Query edges: Client communication, Greetings, top_k: 40, cosine: 0.2
+2025-07-17 16:46:13,171 - lightrag - INFO - Global query: 50 entites, 40 relations
+2025-07-17 16:46:13,171 - lightrag - INFO - Initial context: 50 entities, 40 relations, 0 chunks
+2025-07-17 16:46:13,176 - lightrag - INFO - Getting text chunks based on truncated entities and relations...
+2025-07-17 16:46:13,185 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-07-17 16:46:13,191 - lightrag - INFO - Final context: 50 entities, 40 relations, 10 chunks
+2025-07-17 16:46:18,207 - lightrag - INFO -  == LLM cache == saving: global:query:3aa8d42ec49cd039a66a0877be87e936
+2025-07-17 16:46:20,024 - lightrag - INFO -  == LLM cache == saving: hybrid:keywords:38b28fc868c605784250ad5e56da777d
+2025-07-17 16:46:20,024 - lightrag - INFO - Process 28876 building query context...
+2025-07-17 16:46:20,024 - lightrag - INFO - Query nodes: Hello, top_k: 40, cosine: 0.2
+2025-07-17 16:46:21,976 - lightrag - INFO - Local query: 4 entites, 13 relations
+2025-07-17 16:46:21,976 - lightrag - INFO - Query edges: Client communication, Greeting, top_k: 40, cosine: 0.2
+2025-07-17 16:46:23,495 - lightrag - INFO - Global query: 49 entites, 40 relations
+2025-07-17 16:46:23,495 - lightrag - INFO - Initial context: 50 entities, 50 relations, 0 chunks
+2025-07-17 16:46:23,503 - lightrag - INFO - Getting text chunks based on truncated entities and relations...
+2025-07-17 16:46:23,510 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-07-17 16:46:23,513 - lightrag - INFO - Final context: 50 entities, 50 relations, 10 chunks
+2025-07-17 16:46:26,616 - lightrag - INFO -  == LLM cache == saving: hybrid:query:38b28fc868c605784250ad5e56da777d
+2025-07-17 16:46:26,623 - lightrag - INFO - Storage Finalization completed!
+2025-07-17 17:09:23,123 - lightrag - INFO - Loaded graph from ./dickens_5\graph_chunk_entity_relation.graphml with 331 nodes, 375 edges
+2025-07-17 17:09:23,173 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-07-17 17:09:23,177 - lightrag - INFO - Process 9008 KV load full_docs with 1 records
+2025-07-17 17:09:23,186 - lightrag - INFO - Process 9008 KV load text_chunks with 42 records
+2025-07-17 17:09:23,196 - lightrag - INFO - Process 9008 KV load llm_response_cache with 115 records
+2025-07-17 17:09:23,208 - lightrag - INFO - Process 9008 doc status load doc_status with 1 records
+2025-07-17 17:09:23,208 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-07-17 17:09:23,208 - lightrag - INFO - Storage Initialization completed!
+2025-07-17 17:09:26,183 - lightrag - INFO - No new unique documents were found.
+2025-07-17 17:09:26,183 - lightrag - INFO - No documents to process
+2025-07-17 17:09:28,106 - lightrag - INFO - Naive query: 10 chunks (chunk_top_k: 10)
+2025-07-17 17:09:28,106 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-07-17 17:09:28,113 - lightrag - INFO - Final context: 10 chunks
+2025-07-17 17:09:28,123 - lightrag - INFO - limit_async: 4 new workers initialized
+2025-07-17 17:09:38,417 - lightrag - INFO -  == LLM cache == saving: naive:query:587c6ff10f09ea133e38d50e2ab6a691
+2025-07-17 17:09:40,248 - lightrag - INFO -  == LLM cache == saving: local:keywords:a396072ea5ac691965f7020a37d5e855
+2025-07-17 17:09:40,248 - lightrag - INFO - Process 9008 building query context...
+2025-07-17 17:09:40,249 - lightrag - INFO - Query nodes: 迈克尔, 费兹威利, Jacob Marley, 侄子Fred, 外面的世界, top_k: 40, cosine: 0.2
+2025-07-17 17:09:41,804 - lightrag - INFO - Local query: 40 entites, 212 relations
+2025-07-17 17:09:41,808 - lightrag - INFO - Initial context: 40 entities, 212 relations, 0 chunks
+2025-07-17 17:09:41,814 - lightrag - INFO - Getting text chunks based on truncated entities and relations...
+2025-07-17 17:09:41,825 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-07-17 17:09:41,834 - lightrag - INFO - Final context: 40 entities, 109 relations, 10 chunks
+2025-07-17 17:09:51,687 - lightrag - INFO -  == LLM cache == saving: local:query:a396072ea5ac691965f7020a37d5e855
+2025-07-17 17:09:53,308 - lightrag - INFO -  == LLM cache == saving: global:keywords:19775410aec01cce53e51618d26f1c1a
+2025-07-17 17:09:53,309 - lightrag - INFO - Process 9008 building query context...
+2025-07-17 17:09:53,309 - lightrag - INFO - Query edges: 人物关系, Scrooge, 角色分析, top_k: 40, cosine: 0.2
+2025-07-17 17:09:54,574 - lightrag - INFO - Global query: 40 entites, 40 relations
+2025-07-17 17:09:54,574 - lightrag - INFO - Initial context: 40 entities, 40 relations, 0 chunks
+2025-07-17 17:09:54,582 - lightrag - INFO - Getting text chunks based on truncated entities and relations...
+2025-07-17 17:09:54,594 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-07-17 17:09:54,598 - lightrag - INFO - Final context: 40 entities, 40 relations, 10 chunks
+2025-07-17 17:10:01,959 - lightrag - INFO -  == LLM cache == saving: global:query:19775410aec01cce53e51618d26f1c1a
+2025-07-17 17:10:03,928 - lightrag - INFO -  == LLM cache == saving: hybrid:keywords:f101cc66d23dce9fb137f17c7d77d304
+2025-07-17 17:10:03,928 - lightrag - INFO - Process 9008 building query context...
+2025-07-17 17:10:03,928 - lightrag - INFO - Query nodes: 家庭, 朋友, 商业伙伴, 小蒂姆, 亨利, 伦理变化, top_k: 40, cosine: 0.2
+2025-07-17 17:10:06,374 - lightrag - INFO - Local query: 40 entites, 80 relations
+2025-07-17 17:10:06,376 - lightrag - INFO - Query edges: 人物关系, Scrooge, 文学角色, top_k: 40, cosine: 0.2
+2025-07-17 17:10:07,794 - lightrag - INFO - Global query: 41 entites, 40 relations
+2025-07-17 17:10:07,795 - lightrag - INFO - Initial context: 75 entities, 113 relations, 0 chunks
+2025-07-17 17:10:07,804 - lightrag - INFO - Getting text chunks based on truncated entities and relations...
+2025-07-17 17:10:07,823 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-07-17 17:10:07,825 - lightrag - INFO - Final context: 75 entities, 110 relations, 10 chunks
+2025-07-17 17:10:16,953 - lightrag - INFO -  == LLM cache == saving: hybrid:query:f101cc66d23dce9fb137f17c7d77d304
+2025-07-17 17:10:16,964 - lightrag - INFO - Storage Finalization completed!
+2025-07-17 17:19:02,767 - lightrag - INFO - Loaded graph from ./dickens_5\graph_chunk_entity_relation.graphml with 331 nodes, 375 edges
+2025-07-17 17:19:02,807 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-07-17 17:19:02,809 - lightrag - INFO - Process 1000 KV load full_docs with 1 records
+2025-07-17 17:19:02,809 - lightrag - INFO - Process 1000 KV load text_chunks with 42 records
+2025-07-17 17:19:02,825 - lightrag - INFO - Process 1000 KV load llm_response_cache with 122 records
+2025-07-17 17:19:02,826 - lightrag - INFO - Process 1000 doc status load doc_status with 1 records
+2025-07-17 17:19:02,826 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-07-17 17:19:02,827 - lightrag - INFO - Storage Initialization completed!
+2025-07-17 17:19:05,376 - lightrag - INFO - No new unique documents were found.
+2025-07-17 17:19:05,376 - lightrag - INFO - No documents to process
+2025-07-17 17:19:05,380 - lightrag - INFO - Storage Finalization completed!
