@@ -158,7 +158,7 @@ async def main(input_str):
 
         # Test embedding function
         test_text = ["This is a test string for embedding."]
-        embedding = await rag.embedding_func(test_text,base_url='https://api.deerapi.com/v1',api_key='sk-peQNtK5H5kSIiOhqesyOjrydkiCdF64HvaweVi53Z3JPnEsl')
+        embedding = await rag.embedding_func(test_text)
         embedding_dim = embedding.shape[1]
         print("\n=======================")
         print("Test embedding function")
