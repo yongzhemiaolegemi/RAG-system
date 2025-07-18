@@ -1,0 +1,5 @@
+Django==5.2.4
+asgiref==3.9.1
+sqlparse==0.5.3
+openai
+requests

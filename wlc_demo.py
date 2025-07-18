@@ -8,15 +8,16 @@ from lightrag.kg.shared_storage import initialize_pipeline_status
 from lightrag.utils import logger, set_verbose_debug
 from functools import wraps
 import time
+from config import lightrag_working_dir, lightrag_knowledge_base_file, lightrag_llm_url, lightrag_llm_key
 
 
-
-WORKING_DIR = "./dickens"
+WORKING_DIR = lightrag_working_dir
+KNOWLEDGE_BASE_FILE = lightrag_knowledge_base_file
 
 
 # grok-3
-os.environ["OPENAI_API_KEY"] = '<your-openai-api-key>'
-os.environ["OPENAI_API_BASE"]='https://api.deerapi.com/v1'
+os.environ["OPENAI_API_KEY"] = lightrag_llm_key
+os.environ["OPENAI_API_BASE"] = lightrag_llm_url
  
 
 def timeit_decorator(func):
@@ -166,7 +167,7 @@ async def main(input_str):
         print(f"Test dict: {test_text}")
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
-        with open("book.txt", "r", encoding="utf-8") as f:
+        with open(KNOWLEDGE_BASE_FILE, "r", encoding="utf-8") as f:
             await rag.ainsert(f.read())
         result_list = []
         for m in ['naive', 'local', 'global', 'hybrid']: 

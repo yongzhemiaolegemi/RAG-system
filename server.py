@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from wlc_demo import run_demo
-
+from config import lightrag_service_port
 app = Flask(__name__)
 
 @app.route('/receive_string', methods=['POST'])
@@ -31,4 +31,4 @@ def receive_string():
     return jsonify({"message": f"Received string: {received_string}", "mode": request_mode, "result": final_result})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=lightrag_service_port, debug=True)
