@@ -15,25 +15,36 @@ from config import django_llm_url, django_llm_key, django_model, django_vllm_url
 VLLM_URL = django_vllm_url  # VLLM的URL
 
 def post_to_openai_api(messages, model, stream, collect_stream=False, tools=None):
-    client = OpenAI(
-        api_key=django_llm_key,
-        base_url=django_llm_url
+    try:
+        client = OpenAI(
+            api_key=django_llm_key,
+            base_url=django_llm_url
         )
-    
-    # 构建API调用参数
-    api_params = {
-        "model": model,
-        "messages": messages,
-        "extra_body": {"enable_thinking": True},
-        "stream": stream,
-    }
-    
-    # 如果提供了工具，添加到API调用中
-    if tools:
-        api_params["tools"] = tools
-        api_params["tool_choice"] = "auto"
-    
-    completion = client.chat.completions.create(**api_params)
+        
+        # 构建API调用参数
+        api_params = {
+            "model": model,
+            "messages": messages,
+            "extra_body": {"enable_thinking": True},
+            "stream": stream,
+        }
+        
+        # 如果提供了工具，添加到API调用中
+        if tools:
+            api_params["tools"] = tools
+            api_params["tool_choice"] = "auto"
+        
+        print(f"调用API: {django_llm_url}")
+        print(f"模型: {model}")
+        print(f"消息数量: {len(messages)}")
+        
+        completion = client.chat.completions.create(**api_params)
+        
+    except Exception as api_error:
+        print(f"API调用错误详情: {str(api_error)}")
+        print(f"API URL: {django_llm_url}")
+        print(f"API Key: {django_llm_key[:20]}...")
+        raise api_error
     
     if stream:
         if collect_stream:
@@ -115,9 +126,16 @@ def post_to_openai_api(messages, model, stream, collect_stream=False, tools=None
         return completion.model_dump()
 
 def handle_tool_calls(messages, model, stream, collect_stream, max_iterations=5):
-    """处理工具调用的多轮对话"""
+    """处理工具调用的多轮对话，返回完整的对话历史和最终响应"""
     current_messages = messages.copy()
     iteration = 0
+    all_messages = []  # 用于收集所有的对话消息，包括工具调用
+    
+    # 对于工具调用，我们总是需要完整的响应来解析工具调用，所以：
+    # 1. 如果原本就是collect_stream=True，保持不变
+    # 2. 如果原本是stream=True但collect_stream=False，我们需要强制收集来处理工具调用
+    force_collect = stream and not collect_stream  # 是否需要强制收集
+    actual_collect_stream = collect_stream or force_collect
     
     while iteration < max_iterations:
         # 调用API
@@ -125,13 +143,9 @@ def handle_tool_calls(messages, model, stream, collect_stream, max_iterations=5)
             messages=current_messages,
             model=model,
             stream=stream,
-            collect_stream=collect_stream or not stream,  # 工具调用时需要完整响应
+            collect_stream=actual_collect_stream,
             tools=AVAILABLE_TOOLS
         )
-        
-        # 如果是流式且未收集，直接返回
-        if stream and not collect_stream:
-            return response
         
         # 检查是否有工具调用
         if (response.get("choices") and 
@@ -141,6 +155,7 @@ def handle_tool_calls(messages, model, stream, collect_stream, max_iterations=5)
             # 添加助手的工具调用消息
             assistant_message = response["choices"][0]["message"]
             current_messages.append(assistant_message)
+            all_messages.append(assistant_message)
             
             # 执行工具调用
             tool_calls = assistant_message["tool_calls"]
@@ -161,14 +176,24 @@ def handle_tool_calls(messages, model, stream, collect_stream, max_iterations=5)
                     result
                 )
                 current_messages.append(tool_message)
+                all_messages.append(tool_message)
             
             iteration += 1
         else:
             # 没有工具调用，返回最终响应
-            return response
+            # 如果有工具调用历史，需要将最终的assistant消息也添加到历史中
+            if all_messages:
+                final_assistant_message = response["choices"][0]["message"]
+                all_messages.append(final_assistant_message)
+                # 创建包含完整对话历史的响应
+                enhanced_response = response.copy()
+                enhanced_response["conversation_messages"] = all_messages
+                return enhanced_response, current_messages, force_collect
+            else:
+                return response, current_messages, False
     
     # 达到最大迭代次数
-    return {
+    error_response = {
         "choices": [{
             "index": 0,
             "message": {
@@ -176,8 +201,10 @@ def handle_tool_calls(messages, model, stream, collect_stream, max_iterations=5)
                 "content": "抱歉，工具调用达到最大迭代次数限制。"
             },
             "finish_reason": "stop"
-        }]
+        }],
+        "conversation_messages": all_messages
     }
+    return error_response, current_messages, force_collect
 
 @csrf_exempt
 def vllm_proxy(request):
@@ -207,7 +234,7 @@ def vllm_proxy(request):
     try:
         if enable_tools:
             # 使用工具调用处理
-            response_data = handle_tool_calls(
+            response_data, final_messages, was_force_collected = handle_tool_calls(
                 messages=messages,
                 model=model,
                 stream=stream,
@@ -221,8 +248,15 @@ def vllm_proxy(request):
                 stream=stream,
                 collect_stream=collect_stream
             )
+            final_messages = messages
+            was_force_collected = False
         
-        if stream and not collect_stream:
+        # 决定返回格式的逻辑：
+        # 1. 如果原始请求是stream=True且collect_stream=False，且没有被强制收集，返回流式
+        # 2. 其他情况（包括collect_stream=True的情况）都返回完整响应
+        should_return_stream = stream and not collect_stream and not was_force_collected
+        
+        if should_return_stream:
             # 真正的流式响应
             response = StreamingHttpResponse(response_data, content_type='text/event-stream')
             response['Cache-Control'] = 'no-cache'
@@ -230,7 +264,27 @@ def vllm_proxy(request):
             return response
         else:
             # 非流式响应或收集后的完整响应
+            # 为了客户端的多轮对话需求，我们可以选择性地返回对话历史
+            if data.get('include_conversation_history', False):
+                response_data['final_messages'] = final_messages
             return JsonResponse(response_data)
             
     except Exception as e:
-        return JsonResponse({'error': str(e)}, status=500)
+        print(f"Django视图错误: {str(e)}")
+        print(f"错误类型: {type(e).__name__}")
+        import traceback
+        print(f"错误堆栈: {traceback.format_exc()}")
+        
+        # 返回更详细的错误信息
+        error_info = {
+            'error': str(e),
+            'error_type': type(e).__name__,
+            'config': {
+                'api_url': django_llm_url,
+                'model': data.get('model', 'qwq-plus-latest'),
+                'stream': data.get('stream', False),
+                'collect_stream': data.get('collect_stream', False),
+                'enable_tools': data.get('enable_tools', True)
+            }
+        }
+        return JsonResponse(error_info, status=500)
