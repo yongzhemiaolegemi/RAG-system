@@ -48,11 +48,11 @@ cd ..
 bash start_django_backend.sh
 ```
 
-### Run a demo
+### Run a command-line program
 
 ```bash
-python post_to_django.py
+python multiturn_client.py
 ```
 
 > **WARNING**  
-> Before running **post_to_django.py**, please make sure you have modified **config.py** and that both the **LightRAG server CLI** and the **Django server** are already running.
+> Before running **multiturn_client.py**, please make sure you have modified **config.py** and that both the **LightRAG server CLI** and the **Django server** are already running.
