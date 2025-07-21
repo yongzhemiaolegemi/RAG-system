@@ -1,7 +1,7 @@
 import requests
-
+from config import lightrag_service_port
 # 目标 URL（因为服务器运行在同一台设备，用 localhost）
-url = "http://localhost:5000/receive_string"
+url = f"http://localhost:{lightrag_service_port}/receive_string"
 
 # 要发送的字符串
 message = "描述一下Scrooge的人物关系"
