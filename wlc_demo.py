@@ -126,7 +126,7 @@ async def initialize_rag():
 
 
 @timeit_decorator
-async def main(input_str):
+async def main(input_str,mode='hybrid'):
     # Check if OPENAI_API_KEY environment variable exists
     if not os.getenv("OPENAI_API_KEY"):
         print(
@@ -170,14 +170,14 @@ async def main(input_str):
         with open(KNOWLEDGE_BASE_FILE, "r", encoding="utf-8") as f:
             await rag.ainsert(f.read())
         result_list = []
-        for m in ['naive', 'local', 'global', 'hybrid']: 
-            print("Query mode: ", m) 
+        
+        print("Query mode: ", mode)  # for m in ['naive', 'local', 'global', 'hybrid']: 
 
-            str = await rag.aquery(
-                input_str, param=QueryParam(mode=m)
-            )
-            result_list.append(str)
-            print(str)
+        str = await rag.aquery(
+            input_str, param=QueryParam(mode=mode)
+        )
+        result_list.append(str)
+        print(str)
         return result_list
             
     except Exception as e:
@@ -187,11 +187,11 @@ async def main(input_str):
             await rag.finalize_storages()
 
 
-def run_demo(str):
+def run_demo(str,mode='hybrid'):
     # Configure logging before running the main function
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main(str))
+    res = asyncio.run(main(str,mode))
     print("\nDone!")
     return res
 
