@@ -1,36 +1,24 @@
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 import json
 import datetime
 import requests
 from typing import Dict, Any, List, Callable
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from config import lightrag_service_url
+import config
+from config import project_dir,lightrag_knowledge_base_file,lightrag_service_url
 import functools
-
-# 定义日志装饰器：打印函数名和输入参数
-def log_function_call(func: Callable) -> Callable:
-    @functools.wraps(func)  # 保留原函数的元数据
-    def wrapper(*args: Any, **kwargs: Any) -> Any:
-        # 打印函数名
-        print(f"******** 调用函数: {func.__name__} ********")
-        
-        # 打印参数
-        if args:
-            print(f"位置参数: {args}")
-        if kwargs:
-            print(f"关键字参数: {kwargs}")
-        
-        # 调用原函数并返回结果
-        return func(*args, **kwargs)
-    return wrapper
+import subprocess
+import sys
+import tempfile
 
 
-# ================================ 如果要添加新工具，需要修改从这里开始往上的代码。 ================================
+
+
+# ================================ 如果要添加新工具，需要修改从这里开始往下的代码。 ================================
 # 修改流程为：
 # 1. 在 AVAILABLE_TOOLS 中添加新工具的定义
-# 2. 在 TOOL_FUNCTIONS 中添加新工具的映射 (这个改为了动态映射，不需要手动添加了)
-# 3. 在 开头 def 你的工具函数体
+# 2. 在 开头 def 你的工具函数体
 
 def get_current_time() -> str:
     """获取当前时间"""
@@ -57,7 +45,7 @@ def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = lightr
 
 
 def calculator(code: str) -> str:
-    """计算数学运算的值。例如：3*5"""
+    """计算数学运算的结果。例如：3*5"""
     try:
         # 限制只允许数学运算相关的安全操作
         allowed_names = {
@@ -72,16 +60,50 @@ def calculator(code: str) -> str:
         # 使用eval计算表达式，限制可用函数以提高安全性
         result = eval(code, {"__builtins__": None}, allowed_names)
         return str(result)
-    except SyntaxError:
-        return f"语法错误：无法解析表达式 '{code}'"
-    except NameError as e:
-        return f"名称错误：{str(e)}"
-    except TypeError as e:
-        return f"类型错误：{str(e)}"
-    except ZeroDivisionError:
-        return "错误：除数不能为零"
     except Exception as e:
         return f"计算错误：{str(e)}" 
+
+
+def get_knowledge_base_path() -> str:
+    """获取知识库文本文件存放的路径"""
+    full_path = os.path.join(project_dir, lightrag_knowledge_base_file)
+    return full_path
+
+
+def execute_code(code: str) -> str:
+    """
+    用python解释器执行Python代码并返回结果
+    
+    Args:
+        code: 要执行的Python代码字符串
+        
+    Returns:
+        执行结果或错误信息
+    """
+    try:
+        # 使用临时文件保存代码
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.py', delete=False) as f:
+            f.write(code)
+            temp_file_name = f.name
+        
+        # 调用Python解释器执行代码
+        result = subprocess.run(
+            [sys.executable, temp_file_name],
+            capture_output=True,
+            text=True,
+            timeout=10  # 设置超时时间，防止无限循环等情况
+        )
+        
+        # 检查执行是否成功
+        if result.returncode == 0:
+            return f"执行成功:\n{result.stdout}"
+        else:
+            return f"执行错误:\n{result.stderr}"
+            
+    except Exception as e:
+        return f"调用Python解释器时发生错误: {str(e)}"
+
+
 
 # 工具定义
 AVAILABLE_TOOLS = [
@@ -124,11 +146,25 @@ AVAILABLE_TOOLS = [
             }
         }
     },
-        {
+    {
         "type": "function",
         "function": {
             "name": "calculator",
-            "description": "用python解释器计算数学运算的值。例如：3*5",
+            "description": "用python解释器计算数学运算的结果。例如：3*5",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "code": {"type": "string", "description": "要执行的Python代码字符串"},
+                },
+                "required": ["code"]
+            }
+        }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "execute_code",
+            "description": "用python解释器执行Python代码并返回结果",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -137,8 +173,51 @@ AVAILABLE_TOOLS = [
                 "required": ["code"]
             }
         }
-    }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "get_knowledge_base_path",
+            "description": "获取知识库文本文件存放的路径",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
 ]
+
+# ================================ 如果要添加新工具，需要修改从这里开始往上的代码。 ================================
+
+
+# 定义日志装饰器：打印函数名和输入参数
+def log_function_call(func: Callable) -> Callable:
+    @functools.wraps(func)  # 保留原函数的元数据
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        # 打印函数名
+        print(f"******** 调用函数: {func.__name__} ********")
+        
+        # 处理参数的函数：过长则截断
+        def truncate_if_long(text: str, max_len: int = 500) -> str:
+            if len(text) > max_len:
+                return text[:max_len] + "..."
+            return text
+        
+        # 打印位置参数
+        if args:
+            args_str = str(args)
+            print(f"位置参数: {truncate_if_long(args_str)}")
+        
+        # 打印关键字参数
+        if kwargs:
+            kwargs_str = str(kwargs)
+            print(f"关键字参数: {truncate_if_long(kwargs_str)}")
+        
+        
+        # 调用原函数并返回结果
+        return func(*args, **kwargs)
+    return wrapper
 
 # # 工具执行映射
 # TOOL_FUNCTIONS: Dict[str, Callable] = {
@@ -159,11 +238,6 @@ for tool in AVAILABLE_TOOLS:
     else:
         raise ValueError(f"工具函数 '{func_name}' 未定义，请检查实现")
 
-
-
-
-
-# ================================ 如果要添加新工具，需要修改从这里开始往上的代码。 ================================
 
 def execute_tool(tool_name: str, arguments: Dict[str, Any]) -> str:
     """执行指定的工具"""
