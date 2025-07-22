@@ -199,5 +199,5 @@ if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
     res = asyncio.run(main("描述一下Scrooge的人物关系"))
-    print("\nDone!")
+    print("\nDone! ")
 
