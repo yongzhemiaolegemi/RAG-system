@@ -6,11 +6,30 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from config import lightrag_service_url
+import functools
+
+# 定义日志装饰器：打印函数名和输入参数
+def log_function_call(func: Callable) -> Callable:
+    @functools.wraps(func)  # 保留原函数的元数据
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        # 打印函数名
+        print(f"******** 调用函数: {func.__name__} ********")
+        
+        # 打印参数
+        if args:
+            print(f"位置参数: {args}")
+        if kwargs:
+            print(f"关键字参数: {kwargs}")
+        
+        # 调用原函数并返回结果
+        return func(*args, **kwargs)
+    return wrapper
+
 
 # ================================ 如果要添加新工具，需要修改从这里开始往上的代码。 ================================
 # 修改流程为：
 # 1. 在 AVAILABLE_TOOLS 中添加新工具的定义
-# 2. 在 TOOL_FUNCTIONS 中添加新工具的映射
+# 2. 在 TOOL_FUNCTIONS 中添加新工具的映射 (这个改为了动态映射，不需要手动添加了)
 # 3. 在 开头 def 你的工具函数体
 
 def get_current_time() -> str:
@@ -35,6 +54,34 @@ def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = lightr
     }
     response = requests.post(url, json=data)
     return response.json()["result"]
+
+
+def calculator(code: str) -> str:
+    """计算数学运算的值。例如：3*5"""
+    try:
+        # 限制只允许数学运算相关的安全操作
+        allowed_names = {
+            'abs': abs,
+            'pow': pow,
+            'max': max,
+            'min': min,
+            'round': round,
+            'sum': sum
+        }
+
+        # 使用eval计算表达式，限制可用函数以提高安全性
+        result = eval(code, {"__builtins__": None}, allowed_names)
+        return str(result)
+    except SyntaxError:
+        return f"语法错误：无法解析表达式 '{code}'"
+    except NameError as e:
+        return f"名称错误：{str(e)}"
+    except TypeError as e:
+        return f"类型错误：{str(e)}"
+    except ZeroDivisionError:
+        return "错误：除数不能为零"
+    except Exception as e:
+        return f"计算错误：{str(e)}" 
 
 # 工具定义
 AVAILABLE_TOOLS = [
@@ -76,15 +123,41 @@ AVAILABLE_TOOLS = [
                 "required": ["query"]
             }
         }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "calculator",
+            "description": "用python解释器计算数学运算的值。例如：3*5",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "code": {"type": "string", "description": "数学表达式，例如：3*5"},
+                },
+                "required": ["code"]
+            }
+        }
     }
 ]
 
-# 工具执行映射
-TOOL_FUNCTIONS: Dict[str, Callable] = {
-    "get_current_time": get_current_time,
-    "get_server_location": get_server_location,
-    "send_query_to_RAG_server": send_query_to_RAG_server,
-}
+# # 工具执行映射
+# TOOL_FUNCTIONS: Dict[str, Callable] = {
+#     "get_current_time": get_current_time,
+#     "get_server_location": get_server_location,
+#     "send_query_to_RAG_server": send_query_to_RAG_server,
+# }
+
+# 从AVAILABLE_TOOLS动态构建工具函数映射，并应用装饰器
+TOOL_FUNCTIONS: Dict[str, Callable] = {}
+for tool in AVAILABLE_TOOLS:
+    func_name = tool["function"]["name"]
+    if func_name in globals():
+        # 获取原始函数并应用日志装饰器
+        original_func = globals()[func_name]
+        decorated_func = log_function_call(original_func)
+        TOOL_FUNCTIONS[func_name] = decorated_func
+    else:
+        raise ValueError(f"工具函数 '{func_name}' 未定义，请检查实现")
 
 
 
