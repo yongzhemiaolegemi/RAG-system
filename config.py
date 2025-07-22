@@ -14,7 +14,7 @@ lightrag_knowledge_base_file = "book.txt"
 # Web scraping configuration
 
 webscrap_enable_save= True  # whether to save the scraped content
-webscrap_base_dir = 'webcontent'
+webscrap_base_dir = 'ooo'
 
 
 # Django configuration

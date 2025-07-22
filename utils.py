@@ -17,9 +17,8 @@ def load_config():
 
 def config():
     """获取全局单例 config"""
-    global _cfg
-    if _cfg is None:
-        load_config()
+
+    load_config()
     return _cfg
 
 def set_config(key: str, value):
