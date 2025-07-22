@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 project_dir = os.getcwd()
 
 # LightRAG configuration
@@ -8,7 +9,9 @@ lightrag_llm_key = ""
 # The model selection for LightRAG is hardcoded in the code as gpt-4o-mini, may be changed later.
 lightrag_service_port = 5001
 lightrag_service_url = f"http://127.0.0.1:{lightrag_service_port}/receive_string"
-lightrag_working_dir = "dickens"
+
+load_dotenv(os.path.join(os.path.dirname(__file__), 'LightRAG', '.env'))
+lightrag_working_dir = os.getenv('WORKING_DIR') # 这一项的值请在 ./LightRAG/.env 文件的WORKING_DIR中设置
 lightrag_knowledge_base_file = "book.txt"
 
 # Web scraping configuration

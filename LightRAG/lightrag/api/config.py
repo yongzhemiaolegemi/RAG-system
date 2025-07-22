@@ -6,6 +6,9 @@ import os
 import argparse
 import logging
 from dotenv import load_dotenv
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))) # /RAG-system/LightRAG
+from config import project_dir
 from lightrag.utils import get_env_value
 
 from lightrag.constants import (
@@ -24,7 +27,8 @@ from lightrag.constants import (
 # use the .env that is inside the current folder
 # allows to use different .env file for each lightrag instance
 # the OS environment variables take precedence over the .env file
-load_dotenv(dotenv_path=".env", override=False)
+
+load_dotenv(dotenv_path=os.path.join(project_dir, ".env"), override=False)
 
 
 class OllamaServerInfos:
@@ -90,7 +94,7 @@ def parse_args() -> argparse.Namespace:
     # Directory configuration
     parser.add_argument(
         "--working-dir",
-        default=get_env_value("WORKING_DIR", "./rag_storage"),
+        default=get_env_value("WORKING_DIR", "./rag_storage111"),
         help="Working directory for RAG storage (default: from env or ./rag_storage)",
     )
     parser.add_argument(
