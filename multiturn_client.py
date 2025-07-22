@@ -5,10 +5,10 @@ import requests
 import json
 import sys
 from typing import List, Dict
-from config import django_service_url, django_model
+from utils import config, set_config
 
 class MultiTurnChatClient:
-    def __init__(self, base_url: str = django_service_url):
+    def __init__(self, base_url: str = config().django_service_url):
         self.base_url = base_url
         self.conversation_history: List[Dict[str, str]] = []
         self.session = requests.Session()
@@ -26,7 +26,7 @@ class MultiTurnChatClient:
         # 使用stream=True和collect_stream=True以兼容只支持流式输出的模型
         request_data = {
             "messages": self.conversation_history,
-            "model": django_model,
+            "model": config().django_model,
             "stream": True,
             "collect_stream": True,
             "enable_tools": enable_tools
@@ -121,7 +121,7 @@ def main():
         print("⚠️  警告: 无法连接到服务器，请确认Django服务是否启动")
     
     print("\n欢迎使用多轮对话系统!")
-    print("输入 '/help' 查看帮助，输入 '/exit' 退出程序")
+    print("输入 '/help' 查看帮助，输入 '/exit' 退出程序, 输入/set <config_key> <value> 设置配置项, 输入/config 查看当前配置")
     print("-" * 50)
     
     while True:
@@ -141,6 +141,22 @@ def main():
                 continue
             elif user_input.lower() == '/history':
                 client.show_history()
+                continue
+            elif user_input.lower().startswith('/set '):
+                parts = user_input.split(maxsplit=2)
+                if len(parts) == 3:
+                    key, value = parts[1], parts[2]
+                    set_config(key, value)
+                    print(f"✅ 配置项 '{key}' 已设置为 '{value}'")
+                else:
+                    print("❌ 错误: 请使用 '/set <config_key> <value>' 格式设置配置项")
+                continue
+            elif user_input.lower() == '/config':
+                current_config = config()
+                print("\n=== 当前配置 ===")
+                for key, value in current_config.__dict__.items():
+                    print(f"{key}: {value}")
+                print("===      ===\n")
                 continue
             elif user_input == '':
                 print("请输入您的问题，或输入 '/help' 查看帮助。")

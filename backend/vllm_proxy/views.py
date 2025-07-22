@@ -10,15 +10,15 @@ from .tools import AVAILABLE_TOOLS, execute_tool, format_tool_call_message, form
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from config import django_llm_url, django_llm_key, django_model, django_vllm_url
 
-VLLM_URL = django_vllm_url  # VLLM的URL
+from utils import config
+
 
 def post_to_openai_api(messages, model, stream, collect_stream=False, tools=None):
     try:
         client = OpenAI(
-            api_key=django_llm_key,
-            base_url=django_llm_url
+            api_key=config().django_llm_key,
+            base_url=config().django_llm_url
         )
         
         # 构建API调用参数
@@ -33,8 +33,8 @@ def post_to_openai_api(messages, model, stream, collect_stream=False, tools=None
         if tools:
             api_params["tools"] = tools
             api_params["tool_choice"] = "auto"
-        
-        print(f"调用API: {django_llm_url}")
+
+        print(f"调用API: {config().django_llm_url}")
         print(f"模型: {model}")
         print(f"消息数量: {len(messages)}")
         
@@ -42,8 +42,8 @@ def post_to_openai_api(messages, model, stream, collect_stream=False, tools=None
         
     except Exception as api_error:
         print(f"API调用错误详情: {str(api_error)}")
-        print(f"API URL: {django_llm_url}")
-        print(f"API Key: {django_llm_key[:20]}...")
+        print(f"API URL: {config().django_llm_url}")
+        print(f"API Key: {config().django_llm_key[:20]}...")
         raise api_error
     
     if stream:
@@ -280,7 +280,7 @@ def vllm_proxy(request):
             'error': str(e),
             'error_type': type(e).__name__,
             'config': {
-                'api_url': django_llm_url,
+                'api_url': config().django_llm_url,
                 'model': data.get('model', 'qwq-plus-latest'),
                 'stream': data.get('stream', False),
                 'collect_stream': data.get('collect_stream', False),

@@ -8,16 +8,13 @@ from lightrag.kg.shared_storage import initialize_pipeline_status
 from lightrag.utils import logger, set_verbose_debug
 from functools import wraps
 import time
-from config import lightrag_working_dir, lightrag_knowledge_base_file, lightrag_llm_url, lightrag_llm_key
+from utils import config
 
-
-WORKING_DIR = lightrag_working_dir
-KNOWLEDGE_BASE_FILE = lightrag_knowledge_base_file
 
 
 # grok-3
-os.environ["OPENAI_API_KEY"] = lightrag_llm_key
-os.environ["OPENAI_API_BASE"] = lightrag_llm_url
+os.environ["OPENAI_API_KEY"] = config().lightrag_llm_key
+os.environ["OPENAI_API_BASE"] = config().lightrag_llm_url
  
 
 def timeit_decorator(func):
@@ -108,11 +105,13 @@ def configure_logging():
     set_verbose_debug(os.getenv("VERBOSE_DEBUG", "false").lower() == "true")
 
 
-if not os.path.exists(WORKING_DIR):
-    os.mkdir(WORKING_DIR)
+
 
 
 async def initialize_rag():
+    WORKING_DIR = config().lightrag_working_dir
+    if not os.path.exists(WORKING_DIR):
+        os.makedirs(WORKING_DIR)
     rag = LightRAG(
         working_dir=WORKING_DIR,
         embedding_func=openai_embed,
@@ -127,6 +126,8 @@ async def initialize_rag():
 
 @timeit_decorator
 async def main(input_str,mode='hybrid'):
+    WORKING_DIR = config().lightrag_working_dir
+    KNOWLEDGE_BASE_FILE = config().lightrag_knowledge_base_file
     # Check if OPENAI_API_KEY environment variable exists
     if not os.getenv("OPENAI_API_KEY"):
         print(

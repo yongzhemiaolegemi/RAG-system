@@ -5,14 +5,15 @@ import json
 import datetime
 import requests
 from typing import Dict, Any, List, Callable
-import config
-from config import project_dir,lightrag_knowledge_base_file,lightrag_service_url, webscrap_base_dir, webscrap_enable_save
+
+
 from scrap import get_webpage_text
 import functools
 import subprocess
 import sys
 import tempfile
 
+from utils import config
 
 
 
@@ -25,12 +26,13 @@ def get_url_content(url: str) -> str:
     """获取指定URL的网页内容"""
     print(f"获取URL内容: {url}")
     content =  get_webpage_text(url)
-    if webscrap_enable_save:
+    if config().webscrap_enable_save:
         # create base dir
-        if not os.path.exists(webscrap_base_dir):
-            os.makedirs(webscrap_base_dir)
+        print(f"网页抓取保存目录: {config().webscrap_base_dir}")
+        if not os.path.exists(config().webscrap_base_dir):
+            os.makedirs(config().webscrap_base_dir)
         # save content to file
-        file_path = os.path.join(webscrap_base_dir, url.replace("http://", "").replace("https://", "").replace("/", "_") + ".txt")
+        file_path = os.path.join(config().webscrap_base_dir, url.replace("http://", "").replace("https://", "").replace("/", "_") + ".txt")
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(content)
     return content
@@ -44,7 +46,7 @@ def get_server_location() -> str:
     """获取当前服务器的地理位置"""
     return "中国上海"
 
-def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = lightrag_service_url) -> str:
+def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config().lightrag_service_url) -> str:
     """向RAG服务器发送查询"""
     # POST to url
     # {
@@ -81,7 +83,7 @@ def calculator(code: str) -> str:
 
 def get_knowledge_base_path() -> str:
     """获取知识库文本文件存放的路径"""
-    full_path = os.path.join(project_dir, lightrag_knowledge_base_file)
+    full_path = os.path.join(config().project_dir, config().lightrag_knowledge_base_file)
     return full_path
 
 
