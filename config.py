@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 project_dir = os.getcwd()
 
 # LightRAG configuration
@@ -10,8 +9,7 @@ lightrag_llm_key = ""
 lightrag_service_port = 5001
 lightrag_service_url = f"http://127.0.0.1:{lightrag_service_port}/receive_string"
 
-load_dotenv(os.path.join(os.path.dirname(__file__), 'LightRAG', '.env'))
-lightrag_working_dir = os.getenv('WORKING_DIR') # 这一项的值请在 ./LightRAG/.env 文件的WORKING_DIR中设置
+lightrag_working_dir = 'dickens' # 这一项的值要和 LightRAG/.env 中的 WORKING_DIR 一致！
 lightrag_knowledge_base_file = "book.txt"
 
 # Web scraping configuration
