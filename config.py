@@ -1,3 +1,5 @@
+import os
+project_dir = os.getcwd()
 lightrag_llm_url = "https://api.chatanywhere.tech/v1"
 lightrag_llm_key = ""
 # The model selection for LightRAG is hardcoded in the code as gpt-4o-mini, may be changed later.
