@@ -6,7 +6,8 @@ import datetime
 import requests
 from typing import Dict, Any, List, Callable
 import config
-from config import project_dir,lightrag_knowledge_base_file,lightrag_service_url
+from config import project_dir,lightrag_knowledge_base_file,lightrag_service_url, webscrap_base_dir, webscrap_enable_save
+from scrap import get_webpage_text
 import functools
 import subprocess
 import sys
@@ -19,6 +20,20 @@ import tempfile
 # 修改流程为：
 # 1. 在 AVAILABLE_TOOLS 中添加新工具的定义
 # 2. 在 开头 def 你的工具函数体
+
+def get_url_content(url: str) -> str:
+    """获取指定URL的网页内容"""
+    print(f"获取URL内容: {url}")
+    content =  get_webpage_text(url)
+    if webscrap_enable_save:
+        # create base dir
+        if not os.path.exists(webscrap_base_dir):
+            os.makedirs(webscrap_base_dir)
+        # save content to file
+        file_path = os.path.join(webscrap_base_dir, url.replace("http://", "").replace("https://", "").replace("/", "_") + ".txt")
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(content)
+    return content
 
 def get_current_time() -> str:
     """获取当前时间"""
@@ -107,6 +122,20 @@ def execute_code(code: str) -> str:
 
 # 工具定义
 AVAILABLE_TOOLS = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_url_content",
+            "description": "获取指定URL的网页内容",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "url": {"type": "string", "description": "要获取内容的URL"}
+                },
+                "required": ["url"]
+            }
+        }
+    },
     {
         "type": "function",
         "function": {
