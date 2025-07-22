@@ -125,7 +125,7 @@ def post_to_openai_api(messages, model, stream, collect_stream=False, tools=None
         # 非流式响应，直接返回字典
         return completion.model_dump()
 
-def handle_tool_calls(messages, model, stream, collect_stream, max_iterations=5):
+def handle_tool_calls(messages, model, stream, collect_stream, max_iterations=10):
     """处理工具调用的多轮对话，返回完整的对话历史和最终响应"""
     current_messages = messages.copy()
     iteration = 0
