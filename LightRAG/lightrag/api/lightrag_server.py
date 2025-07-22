@@ -686,8 +686,8 @@ def main():
         return
 
     # Check .env file
-    if not check_env_file():
-        sys.exit(1)
+    # if not check_env_file():
+    #     sys.exit(1)
 
     # Check and install dependencies
     check_and_install_dependencies()
