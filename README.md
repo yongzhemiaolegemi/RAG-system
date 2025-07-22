@@ -30,6 +30,17 @@ python server.py
 python get.py
 ```
 
+### Start a LightRAG GUI demo
+
+首先确保已经跑过上面的**Start a demo**部分，这样确保在工作目录（对demo来说，就是`dickens/`）下已经有保存好的rag文件。然后执行：
+
+```bash
+lightrag-server 
+```
+然后打开启动好的url地址（一般是`http://0.0.0.0:9621`），即可在“知识图谱”中看到可视化的知识图谱。
+
+（“检索”功能貌似还有点问题）。
+
 ## Quick Start (Django)
 
 ### Installation
