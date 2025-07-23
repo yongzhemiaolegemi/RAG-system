@@ -5,7 +5,14 @@ from lightrag import  QueryParam
 from wlc_demo import initialize_rag, run_demo
 app = Flask(__name__)
 
-rag = asyncio.run(initialize_rag())
+# Get an event loop
+try:
+    loop = asyncio.get_running_loop()
+except RuntimeError:  # 'RuntimeError: There is no current event loop...'
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
+rag = loop.run_until_complete(initialize_rag())
 
 
 @app.route('/receive_string', methods=['POST'])
@@ -24,7 +31,7 @@ def receive_string():
     print(f"Received mode: {request_mode}")
     print(f"Received message: {received_string}")
 
-    final_result = asyncio.run(rag.aquery(
+    final_result = loop.run_until_complete(rag.aquery(
         received_string, param=QueryParam(mode=request_mode)
     ))
     print(f"Final result: {final_result}")

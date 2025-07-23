@@ -199,6 +199,6 @@ def run_demo(str,mode='hybrid'):
 if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main("请讲讲 Scrooge 的人物关系"))
+    res = asyncio.run(main("描述一下非洲生物安全态势"))
     print("\nDone! ")
 
