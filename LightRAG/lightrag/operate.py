@@ -1,6 +1,9 @@
 from __future__ import annotations
 from functools import partial
 
+from datetime import datetime
+from config import project_dir,lightrag_working_dir
+import json
 import asyncio
 import json
 import re
@@ -52,6 +55,49 @@ from dotenv import load_dotenv
 # the OS environment variables take precedence over the .env file
 load_dotenv(dotenv_path=".env", override=False)
 
+
+def create_query_log( query, entities_str, relations_str, text_units_str):
+    try:
+        # 拼接路径 
+        working_dir = os.path.join(project_dir, lightrag_working_dir,'query_logs')
+        
+        # 确保目录存在
+        os.makedirs(working_dir, exist_ok=True)
+        
+        # 获取当前时间并格式化
+        current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # 创建文件名
+        filename = f"{current_time}.json"
+        file_path = os.path.join(working_dir, filename)
+        
+        # 解析各JSON字符串为Python对象
+        try:
+            entities = json.loads(entities_str)
+            relations = json.loads(relations_str)
+            text_units = json.loads(text_units_str)
+        except json.JSONDecodeError as e:
+            print(f"JSON字符串解析错误: {e}")
+            return False
+        
+        # 构建要写入的内容
+        content = {
+            "query": query,
+            "entities": entities,
+            "relations": relations,
+            "text_units": text_units,
+        }
+        
+        # 写入文件
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(content, f, ensure_ascii=False, indent=4)
+        
+        print(f"日志文件已创建: {file_path}")
+        return True
+        
+    except Exception as e:
+        print(f"创建日志文件时出错: {e}")
+        return False
 
 def chunking_by_token_size(
     tokenizer: Tokenizer,
@@ -2110,19 +2156,19 @@ async def _build_query_context(
         relations_str = json.dumps(relations_context, ensure_ascii=False)
 
         # Calculate base context tokens (entities + relations + template)
-        kg_context_template = """-----Entities(KG)-----
+        kg_context_template = """-----Entities (E)-----
 
 ```json
 {entities_str}
 ```
 
------Relationships(KG)-----
+-----Relationships (R)-----
 
 ```json
 {relations_str}
 ```
 
------Document Chunks(DC)-----
+-----Document Chunks (DC)-----
 
 ```json
 []
@@ -2225,25 +2271,33 @@ async def _build_query_context(
     relations_str = json.dumps(relations_context, ensure_ascii=False)
     text_units_str = json.dumps(text_units_context, ensure_ascii=False)
 
-    result = f"""-----Entities(KG)-----
+
+    create_query_log(query, entities_str, relations_str, text_units_str)
+
+
+
+    result = f"""-----Entities (E)-----
 
 ```json
 {entities_str}
 ```
 
------Relationships(KG)-----
+-----Relationships (R)-----
 
 ```json
 {relations_str}
 ```
 
------Document Chunks(DC)-----
+-----Document Chunks (DC)-----
 
 ```json
 {text_units_str}
 ```
 
 """
+    print('============= Query context =====================')
+    print(f" {result}")
+    print('=================================================')
     return result
 
 
