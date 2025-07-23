@@ -127,7 +127,7 @@ async def initialize_rag():
 @timeit_decorator
 async def main(input_str,mode='hybrid'):
     WORKING_DIR = config().lightrag_working_dir
-    KNOWLEDGE_BASE_FILE = config().lightrag_knowledge_base_file
+    KNOWLEDGE_BASE_FILES = config().lightrag_knowledge_base_files
     # Check if OPENAI_API_KEY environment variable exists
     if not os.getenv("OPENAI_API_KEY"):
         print(
@@ -168,8 +168,16 @@ async def main(input_str,mode='hybrid'):
         print(f"Test dict: {test_text}")
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
-        with open(KNOWLEDGE_BASE_FILE, "r", encoding="utf-8") as f:
-            await rag.ainsert(f.read())
+        # Insert knowledge base files
+        for title, file_path in KNOWLEDGE_BASE_FILES.items():
+            if not os.path.exists(file_path):
+                print(f"Knowledge base file '{file_path}' does not exist.")
+                continue
+            
+            print(f"Inserting knowledge base file: {file_path}")
+            with open(file_path, "r", encoding="utf-8") as f:
+                await rag.ainsert(f.read(),file_paths=title)
+
         result_list = []
         
         print("Query mode: ", mode)  # for m in ['naive', 'local', 'global', 'hybrid']: 
@@ -199,6 +207,6 @@ def run_demo(str,mode='hybrid'):
 if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main("描述一下非洲生物安全态势"))
+    res = asyncio.run(main("briefly describe the relationships among the main characters"))
     print("\nDone! ")
 
