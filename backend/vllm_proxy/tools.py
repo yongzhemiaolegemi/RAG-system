@@ -83,7 +83,7 @@ def calculator(code: str) -> str:
 
 def get_knowledge_base_path() -> str:
     """获取知识库文本文件存放的路径"""
-    full_path = os.path.join(config().project_dir, config().lightrag_knowledge_base_file)
+    full_path = os.path.join(config().project_dir, config().lightrag_knowledge_base_files)
     return full_path
 
 
