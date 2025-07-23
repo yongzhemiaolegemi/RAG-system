@@ -3,7 +3,7 @@ import asyncio
 import logging
 import logging.config
 from lightrag import LightRAG, QueryParam
-from lightrag.llm.openai import gpt_4o_mini_complete, openai_embed
+from lightrag.llm.openai import openai_complete, openai_embed
 from lightrag.kg.shared_storage import initialize_pipeline_status
 from lightrag.utils import logger, set_verbose_debug
 from functools import wraps
@@ -15,7 +15,6 @@ from utils import config
 # grok-3
 os.environ["OPENAI_API_KEY"] = config().lightrag_llm_key
 os.environ["OPENAI_API_BASE"] = config().lightrag_llm_url
- 
 
 def timeit_decorator(func):
     """用于测量函数执行时间的装饰器"""
@@ -115,7 +114,8 @@ async def initialize_rag():
     rag = LightRAG(
         working_dir=WORKING_DIR,
         embedding_func=openai_embed,
-        llm_model_func=gpt_4o_mini_complete,
+        llm_model_func=openai_complete,
+        llm_model_name=config().lightrag_llm_model,
     )
 
     await rag.initialize_storages()
@@ -199,6 +199,6 @@ def run_demo(str,mode='hybrid'):
 if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main("描述一下Scrooge的人物关系"))
+    res = asyncio.run(main("请讲讲 Scrooge 的人物关系"))
     print("\nDone! ")
 

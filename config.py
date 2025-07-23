@@ -2,7 +2,7 @@ import os
 project_dir = os.getcwd()
 
 # LightRAG configuration
-
+lightrag_llm_model = 'gpt-4.1-mini'
 lightrag_llm_url = 'https://api.deerapi.com/v1'
 lightrag_llm_key = ""
 # The model selection for LightRAG is hardcoded in the code as gpt-4o-mini, may be changed later.
