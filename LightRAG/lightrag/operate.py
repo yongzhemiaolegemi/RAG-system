@@ -299,10 +299,14 @@ async def _handle_single_relationship_extraction(
 
     edge_source_id = chunk_key
     weight = (
-        float(record_attributes[-1].strip('"').strip("'"))
-        if is_float_regex(record_attributes[-1].strip('"').strip("'"))
+        float(record_attributes[-2].strip('"').strip("'"))
+        if is_float_regex(record_attributes[-2].strip('"').strip("'"))
         else 1.0
     )
+    reference = clean_str(record_attributes[-1])
+    reference = normalize_extracted_info(reference)
+    # print(f"Extracted relationship: {source} -> {target}, weight: {weight}, description: {edge_description}, keywords: {edge_keywords}, source_id: {edge_source_id}, file_path: {file_path}, reference: {reference}")
+
     return dict(
         src_id=source,
         tgt_id=target,
@@ -311,6 +315,7 @@ async def _handle_single_relationship_extraction(
         keywords=edge_keywords,
         source_id=edge_source_id,
         file_path=file_path,
+        reference=reference,
     )
 
 
@@ -1057,6 +1062,7 @@ async def _merge_edges_then_upsert(
     already_description = []
     already_keywords = []
     already_file_paths = []
+    already_reference = []
 
     if await knowledge_graph_inst.has_edge(src_id, tgt_id):
         already_edge = await knowledge_graph_inst.get_edge(src_id, tgt_id)
@@ -1084,6 +1090,8 @@ async def _merge_edges_then_upsert(
             # Get description with empty string default if missing or None
             if already_edge.get("description") is not None:
                 already_description.append(already_edge["description"])
+            if already_edge.get("reference") is not None:
+                already_reference.append(already_edge["reference"])
 
             # Get keywords with empty string default if missing or None
             if already_edge.get("keywords") is not None:
@@ -1100,6 +1108,14 @@ async def _merge_edges_then_upsert(
             set(
                 [dp["description"] for dp in edges_data if dp.get("description")]
                 + already_description
+            )
+        )
+    )
+    reference = '\n'.join(
+        sorted(
+            set(
+                [dp["reference"] for dp in edges_data if dp.get("reference")]
+                + already_reference
             )
         )
     )
@@ -1186,6 +1202,7 @@ async def _merge_edges_then_upsert(
         edge_data=dict(
             weight=weight,
             description=description,
+            reference=reference,
             keywords=keywords,
             source_id=source_id,
             file_path=file_path,
@@ -1197,6 +1214,7 @@ async def _merge_edges_then_upsert(
         src_id=src_id,
         tgt_id=tgt_id,
         description=description,
+        reference=reference,
         keywords=keywords,
         source_id=source_id,
         file_path=file_path,
@@ -1328,6 +1346,7 @@ async def merge_nodes_and_edges(
                             "tgt_id": edge_data["tgt_id"],
                             "keywords": edge_data["keywords"],
                             "content": f"{edge_data['src_id']}\t{edge_data['tgt_id']}\n{edge_data['keywords']}\n{edge_data['description']}",
+                            "reference": edge_data.get("reference", ""),
                             "source_id": edge_data["source_id"],
                             "file_path": edge_data.get("file_path", "unknown_source"),
                             "weight": edge_data.get("weight", 1.0),
@@ -2393,6 +2412,7 @@ async def _get_node_data(
                 "entity1": e["src_tgt"][0],
                 "entity2": e["src_tgt"][1],
                 "description": e["description"],
+                "reference":e["reference"],
                 "created_at": created_at,
                 "file_path": file_path,
             }
@@ -2647,6 +2667,7 @@ async def _get_edge_data(
                 "entity1": e["src_id"],
                 "entity2": e["tgt_id"],
                 "description": e["description"],
+                "reference": e.get("reference", "UNKNOWN"),
                 "created_at": created_at,
                 "file_path": file_path,
             }

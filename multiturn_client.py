@@ -38,7 +38,7 @@ class MultiTurnChatClient:
                 self.base_url,
                 json=request_data,
                 headers={"Content-Type": "application/json"},
-                timeout=120  # 2分钟超时
+                timeout=1200  # 2分钟超时
             )
             
             if response.status_code == 200:
