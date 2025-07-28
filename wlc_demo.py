@@ -127,7 +127,7 @@ async def initialize_rag():
 @timeit_decorator
 async def main(input_str,mode='hybrid'):
     WORKING_DIR = config().lightrag_working_dir
-    KNOWLEDGE_BASE_FILES = config().lightrag_knowledge_base_files
+    KNOWLEDGE_BASE_DIR = config().lightrag_knowledge_base_dir
     # Check if OPENAI_API_KEY environment variable exists
     if not os.getenv("OPENAI_API_KEY"):
         print(
@@ -169,14 +169,13 @@ async def main(input_str,mode='hybrid'):
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
         # Insert knowledge base files
-        for title, file_path in KNOWLEDGE_BASE_FILES.items():
-            if not os.path.exists(file_path):
-                print(f"Knowledge base file '{file_path}' does not exist.")
-                continue
-            
-            print(f"Inserting knowledge base file: {file_path}")
-            with open(file_path, "r", encoding="utf-8") as f:
-                await rag.ainsert(f.read(),file_paths=title)
+        for filename in os.listdir(KNOWLEDGE_BASE_DIR):
+            if filename.endswith(".txt"):
+                file_path = os.path.join(KNOWLEDGE_BASE_DIR, filename)
+                title = os.path.splitext(filename)[0]
+                print(f"Inserting knowledge base file: {file_path}")
+                with open(file_path, "r", encoding="utf-8") as f:
+                    await rag.ainsert(f.read(), file_paths=title)
 
         result_list = []
         
