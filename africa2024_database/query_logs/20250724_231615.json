@@ -1,0 +1,1379 @@
+{
+    "query": "在推动非洲疫苗研发与生产本土化的过程中，我国应如何发挥技术创新优势、加大资金投入并提供有针对性的政策支持，以促进非洲疫苗能力提升，实现合作共赢并保障供应链安全？",
+    "entities": [
+        {
+            "id": "1",
+            "entity": "Pharmaceutical Manufacturing Capacity",
+            "type": "category",
+            "description": "A strategic area supported by France to build and enhance Africa’s ability to locally produce vaccines, diagnostics, and therapeutics.",
+            "created_at": "2025-07-24 21:21:12",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "2",
+            "entity": "Partners Supporting Local Manufacturing Agenda",
+            "type": "organization",
+            "description": "International and regional organizations partnering with Africa CDC and member states by providing support and responses to advance Africa’s local vaccine manufacturing efforts.",
+            "created_at": "2025-07-24 21:38:06",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "3",
+            "entity": "Local Manufacturing of Vaccines, Diagnostics, and Therapeutics",
+            "type": "category",
+            "description": "This category involves initiatives to increase local production capacity of critical health products such as vaccines, diagnostics, and therapeutics in Africa, to reduce dependency on external sources and improve response capabilities.",
+            "created_at": "2025-07-24 21:12:53",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "4",
+            "entity": "Local Manufacturing of Vaccines, Therapeutics, and Diagnostics",
+            "type": "category",
+            "description": "A focus area in African health system strengthening to produce medical supplies locally to improve access and self-sufficiency, supported by Africa CDC partnerships.",
+            "created_at": "2025-07-24 22:19:03",
+            "file_path": "merge"
+        },
+        {
+            "id": "5",
+            "entity": "Vaccine Research, Development and Manufacturing",
+            "type": "category",
+            "description": "A focus area of the partnership between Africa CDC and CEPI aiming to boost regional vaccine research, development, and sustainable manufacturing leadership in Africa.",
+            "created_at": "2025-07-24 21:15:50",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "6",
+            "entity": "Partners supporting local manufacturing agenda",
+            "type": "organization",
+            "description": "A group of international and regional organizations and stakeholders supporting Africa’s initiative to promote local vaccine manufacturing and improve health product access.",
+            "created_at": "2025-07-24 21:37:57",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "7",
+            "entity": "High-quality diagnostics, vaccines, and antimicrobials",
+            "type": "category",
+            "description": "Essential medical resources recommended to increase availability in African high-risk countries for managing key antimicrobial resistant pathogens.",
+            "created_at": "2025-07-24 22:21:26",
+            "file_path": "merge"
+        },
+        {
+            "id": "8",
+            "entity": "Investment Funding",
+            "type": "category",
+            "description": "Financial resources, such as the US$500 million committed by Gavi, allocated to support health systems strengthening and disease prevention efforts.",
+            "created_at": "2025-07-24 22:25:06",
+            "file_path": "merge"
+        },
+        {
+            "id": "9",
+            "entity": "Supply Chain Optimization",
+            "type": "category",
+            "description": "Efforts included in the Africa CDC and CEPI partnership to build a resilient vaccine supply chain within Africa.",
+            "created_at": "2025-07-24 21:15:50",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "10",
+            "entity": "European Expertise in Health Product Manufacturing and Regulation",
+            "type": "category",
+            "description": "European Union's technical capabilities and regulatory frameworks in health product manufacturing, used as a model in the partnership.",
+            "created_at": "2025-07-24 21:59:33",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "11",
+            "entity": "Innovation and Local Manufacturing",
+            "type": "category",
+            "description": "Focus area of the Joint Action Plan to boost development and production of health products within Africa to ensure sustainability and responsiveness.",
+            "created_at": "2025-07-24 22:03:17",
+            "file_path": "joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan"
+        },
+        {
+            "id": "12",
+            "entity": "Private Sector",
+            "type": "category",
+            "description": "Actors from the private sector engaged in health product manufacturing, pharmaceutical production, entrepreneurship, and innovation, targeted for involvement in Africa’s health manufacturing ecosystem.<SEP>The private sector includes various private companies and stakeholders collaborating with governments and organizations to support health and pathogen genomics initiatives in Africa.<SEP>Private companies and businesses that participate in funding, manufacturing, and partnerships in global health and vaccine initiatives.",
+            "created_at": "2025-07-24 22:24:23",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "13",
+            "entity": "Vaccine Manufacturing Partnership",
+            "type": "event",
+            "description": "An initiative by Africa CDC to develop local vaccine manufacturing capabilities in Africa aiming to meet 60% of the continent’s vaccine needs by 2040, advancing health autonomy and security.",
+            "created_at": "2025-07-24 21:25:17",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "14",
+            "entity": "US$1.8 Billion Investment",
+            "type": "category",
+            "description": "A financial commitment by Gavi to invest $1.8 billion to support vaccine manufacturing, immunization coverage improvements, and pandemic preparedness in Africa.",
+            "created_at": "2025-07-24 23:00:47",
+            "file_path": "who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "15",
+            "entity": "Team Europe Initiatives",
+            "type": "category",
+            "description": "Team Europe Initiatives refer to collaborative efforts by European Union member states, including significant contributions from France, aimed at strengthening pharmaceutical manufacturing and enhancing regional health projects in Africa. These initiatives involve joint EU investments and coordinated actions designed to improve health security, digital health, and public health institutions across the continent. Aligned with the priorities of the Africa CDC, Team Europe Initiatives focus on building pharmaceutical manufacturing capacity and supporting health systems in Africa. Additionally, these collaborative programs operate under the EU Global Gateway strategy, further reinforcing the commitment to advancing digital health and overall health infrastructure in African countries.",
+            "created_at": "2025-07-24 22:18:52",
+            "file_path": "merge;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "16",
+            "entity": "Sustainable Manufacturing for Routine Vaccinations",
+            "type": "category",
+            "description": "An initiative supported by Africa CDC and CEPI to establish sustainable vaccine manufacturing at African facilities for routine and emergency vaccination needs.<SEP>An objective of Africa CDC and CEPI partnership ensuring vaccine manufacturing plants can continuously produce vaccines for routine immunization and be mobilized in outbreaks.",
+            "created_at": "2025-07-24 22:18:00",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;merge"
+        },
+        {
+            "id": "17",
+            "entity": "Procurement and Supply Chain Systems Strengthening",
+            "type": "category",
+            "description": "Focused initiative to enhance and optimize the procurement processes and supply chain management for essential medical commodities, vaccines, and equipment to ensure timely access and adequate healthcare delivery.",
+            "created_at": "2025-07-24 22:19:14",
+            "file_path": "merge"
+        },
+        {
+            "id": "18",
+            "entity": "Emergency Vaccine Responses",
+            "type": "category",
+            "description": "Contingency vaccine manufacturing and deployment capability fostered by the Africa CDC and CEPI partnership to respond rapidly to outbreaks.",
+            "created_at": "2025-07-24 21:15:56",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "19",
+            "entity": "Skills Development",
+            "type": "category",
+            "description": "Initiatives focusing on higher education, vocational training, managerial skills, and capacity building to support sustainable health manufacturing ecosystems.",
+            "created_at": "2025-07-24 21:19:02",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "20",
+            "entity": "US$500 Million Investment",
+            "type": "category",
+            "description": "Gavi’s designated funding of $500 million toward ensuring availability of financial resources for future pandemic preparedness in Africa.",
+            "created_at": "2025-07-24 23:00:47",
+            "file_path": "who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "21",
+            "entity": "Capacity Building",
+            "type": "category",
+            "description": "Efforts by Africa CDC and CEPI to strengthen infrastructure, expertise, and capabilities in African regions for vaccine development and epidemic preparedness.<SEP>Training, learning exchanges, and benchmarking visits are capacity building activities that improve skills, knowledge, and operational standards in mpox response.\"|>\"capacity building, expertise enhancement",
+            "created_at": "2025-07-24 22:18:02",
+            "file_path": "merge;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "22",
+            "entity": "partner funding",
+            "type": "category",
+            "description": "Financial commitments and resources provided by external partners and development agencies to support health workforce investments in Africa.",
+            "created_at": "2025-07-24 21:40:32",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "23",
+            "entity": "Partnership for Vaccine Manufacturing",
+            "type": "event",
+            "description": "An initiative under Africa CDC aiming to locally manufacture 60% of Africa's vaccine needs by 2040 to support robust and self-reliant health systems on the continent.",
+            "created_at": "2025-07-24 22:19:12",
+            "file_path": "merge"
+        },
+        {
+            "id": "24",
+            "entity": "Innovation and digitalisation",
+            "type": "category",
+            "description": "Efforts to leverage innovation and digital technologies to improve accessibility to medicines and health services.",
+            "created_at": "2025-07-24 22:18:24",
+            "file_path": "merge"
+        },
+        {
+            "id": "25",
+            "entity": "Vaccine Sovereignty",
+            "type": "category",
+            "description": "The goal to increase Africa’s self-sufficiency in vaccine production, reducing reliance on external supplies.",
+            "created_at": "2025-07-24 21:15:50",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "26",
+            "entity": "Strategic Partnerships",
+            "type": "category",
+            "description": "Strategic Partnerships are collaborative agreements between organizations such as Africa CDC and APHF to strengthen health systems, enhance manufacturing, and coordinate outbreak responses.<SEP>Strategic partnerships involve collaborations between African countries, global organizations, procurement agencies, and manufacturers to support local manufacturing advancement.",
+            "created_at": "2025-07-24 22:17:24",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;merge"
+        },
+        {
+            "id": "27",
+            "entity": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "type": "organization",
+            "description": "CEPI is an innovative partnership launched in 2017 among public, private, philanthropic and civil organizations, aiming to accelerate development and equitable access to vaccines and biologic countermeasures against epidemic and pandemic threats worldwide.",
+            "created_at": "2025-07-24 21:15:37",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "28",
+            "entity": "Research and Development",
+            "type": "category",
+            "description": "Research and Development (R&D) involves scientific investigation and innovation critical to developing new vaccines, medicines, and diagnostics to be locally manufactured in Africa.<SEP>Research and Development encompasses activities involved in creating new vaccines, medicines, and diagnostics as part of the sustainable manufacturing ecosystem promoted in Africa.",
+            "created_at": "2025-07-24 22:17:22",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;merge"
+        },
+        {
+            "id": "29",
+            "entity": "Regional Centres for Regulatory Excellence (RCOREs)",
+            "type": "organization",
+            "description": "RCOREs are regional institutions aimed at building regulatory expertise and competencies in Africa to align with international standards for vaccine production and market oversight.<SEP>Regional Centres for Regulatory Excellence are specialized institutions in Africa that provide training and competency development for regulatory experts, supporting harmonized and high-quality regulatory oversight for vaccines and medical products.",
+            "created_at": "2025-07-24 22:17:15",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;merge"
+        },
+        {
+            "id": "30",
+            "entity": "Country Plans",
+            "type": "category",
+            "description": "Innovative national strategies developed with WHO support to improve immunization coverage and recover from missed vaccinations in children.",
+            "created_at": "2025-07-24 22:25:08",
+            "file_path": "merge"
+        },
+        {
+            "id": "31",
+            "entity": "Mpox Vaccination and Treatment Access",
+            "type": "category",
+            "description": "Efforts to ensure equitable availability and deployment of mpox vaccines, therapeutics, and care protocols to affected populations.",
+            "created_at": "2025-07-24 21:49:51",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "32",
+            "entity": "Vaccines",
+            "type": "category",
+            "description": "Vaccines are biological preparations that provide immunity against diseases and are a core product targeted for local manufacturing advancement in Africa.",
+            "created_at": "2025-07-24 21:10:56",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "33",
+            "entity": "Commercial-Scale Production Facilities in Africa",
+            "type": "category",
+            "description": "Nine commercial-scale vaccine production facilities across Africa prepared for technology transfers, aiming to produce vaccines for the continent’s market.",
+            "created_at": "2025-07-24 21:38:00",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "34",
+            "entity": "Team Europe Initiative on Manufacturing and Access to Vaccines, Medicines and Health Technologies (TEI MAV+)",
+            "type": "event",
+            "description": "A collaborative initiative between European Union partners and African nations aimed at strengthening local pharmaceutical manufacturing, improving access to quality health products in Africa, aligned with UN Sustainable Development Goals.",
+            "created_at": "2025-07-24 22:18:04",
+            "file_path": "merge"
+        },
+        {
+            "id": "35",
+            "entity": "Access to COVID-19 Tools Accelerator",
+            "type": "category",
+            "description": "An initiative launched to accelerate equitable access to COVID-19 diagnostics, therapeutics, and vaccines globally.<SEP>An initiative supported by France to facilitate equitable access to COVID-19 vaccines and tools in Africa, contributing to vaccination efforts on the continent.",
+            "created_at": "2025-07-24 22:18:12",
+            "file_path": "merge;africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "36",
+            "entity": "Local Manufacturing Ecosystem",
+            "type": "category",
+            "description": "The local manufacturing ecosystem in Africa involves interconnected components such as vaccine development, research and development, intellectual property, technology transfer, regulatory systems, financing, and procurement to build sustainable local health product production.",
+            "created_at": "2025-07-24 21:11:00",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "37",
+            "entity": "Research and development (R&D)",
+            "type": "category",
+            "description": "Focused efforts to develop new or improved health products including vaccines, diagnostics, and therapeutics through scientific research.",
+            "created_at": "2025-07-24 22:18:24",
+            "file_path": "merge"
+        },
+        {
+            "id": "38",
+            "entity": "£103.5 million UK Allocation for Vaccine and Health Product Development",
+            "type": "category",
+            "description": "A funding initiative by the UK government dedicating up to £103.5 million to develop affordable vaccines and health products and combat infectious disease spread, especially during pandemics.",
+            "created_at": "2025-07-24 21:33:22",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "39",
+            "entity": "Vaccine Suppliers Landscape Analysis",
+            "type": "event",
+            "description": "The Vaccine Supplier’s Landscape Analysis is a document produced by Africa CDC in partnership with CHAI and PATH that assesses the current vaccine production facilities and capability readiness in Africa.<SEP>The Vaccine Supplier’s Landscape Analysis is a study produced by Africa CDC with Clinton Health Access Initiative and PATH to assess vaccine production capacity and challenges in Africa.",
+            "created_at": "2025-07-24 22:20:34",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines;merge"
+        },
+        {
+            "id": "40",
+            "entity": "Partnerships for African Vaccine Manufacturing (PAVM)",
+            "type": "category",
+            "description": "PAVM is an Africa CDC-led initiative aiming to increase vaccine manufacturing capabilities within Africa, targeting to produce 60% of vaccines needed by the continent by 2040 to enhance vaccine sovereignty and reduce dependence.",
+            "created_at": "2025-07-24 21:15:37",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "41",
+            "entity": "Africa CDC",
+            "type": "organization",
+            "description": "Africa CDC is the Africa Centres for Disease Control and Prevention, a continental public health institute supporting disease control and prevention initiatives across African countries.<SEP>Africa Centres for Disease Control and Prevention (Africa CDC) is a continental public health agency leading efforts for local vaccine manufacturing, health security, diagnostics, and outbreak response in Africa.<SEP>The Africa Centres for Disease Control and Prevention (Africa CDC) is the African Union’s continental autonomous public health agency and a specialized technical institution responsible for leading and coordinating public health initiatives across Africa. Established to support African Union member states, Africa CDC focuses on strengthening health systems, improving disease surveillance, and enhancing emergency preparedness and response to infectious disease threats, outbreaks, pandemics, and other health emergencies. It plays a pivotal role in outbreak detection, epidemic preparedness, disease prevention and control, and the strengthening of laboratory and clinical systems.\n\nAfrica CDC is dedicated to building robust and resilient health systems, accelerating universal health coverage, and safeguarding Africa’s health security. The agency advances molecular diagnostics, genomic surveillance, and the local manufacturing of vaccines, medicines, and diagnostics to increase Africa's capacity to manage public health challenges and promote health sovereignty. It also addresses specialized public health concerns such as antimicrobial resistance and supports research initiatives like the proposed Mpox Research Consortium.\n\nAdditionally, Africa CDC has been responsible for declaring Mpox a public health emergency of continental security and leads epidemic responses in Africa. Working closely with global organizations including the World Health Organization (WHO) and Gavi, Africa CDC enhances emergency preparedness and response planning, promotes health innovation, and strengthens the capability of public health institutions across the continent.\n\nThrough these comprehensive efforts, Africa CDC stands as Africa’s leading public health institution, dedicated to supporting member states in preventing, detecting, controlling, and responding effectively and swiftly to disease threats and health emergencies while promoting sustainable health security and improved health outcomes throughout Africa.",
+            "created_at": "2025-07-24 23:00:41",
+            "file_path": "partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan;africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa;the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge;enhancing-vaccine-storage-efficiencies-in-africa;addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;african-researchers-propose-mpox-research-group;who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "42",
+            "entity": "Gavi",
+            "type": "organization",
+            "description": "Gavi is a public-private global health partnership focused on vaccine access, investing US$11.9 billion from 2000 to 2022 to enhance vaccine availability in Africa, and recently approved a 2026-2030 strategy emphasizing accelerating vaccine coverage, new vaccine introductions, health system equity, global health security, and regional vaccine manufacturing.<SEP>Gavi, also known as the Vaccine Alliance, is an international public-private global health partnership dedicated to increasing access to immunization in poor countries. Its efforts focus on expanding vaccine coverage, introducing new vaccines, strengthening health systems, supporting global health security, and promoting regional vaccine manufacturing. Since its inception in 2000, Gavi has invested approximately US$11.9 billion in vaccines across Africa alone, efforts that have averted an estimated 11.1 million future deaths. The organization collaborates closely with governments and various partners, including AVMA participants, to save lives and protect health. Additionally, Gavi has committed US$500 million to ensure funding availability for future pandemics and applies lessons learned from the COVID-19 pandemic to develop concrete public health interventions, further advancing its mission to improve global health outcomes.<SEP>Gavi, the Vaccine Alliance, is a global public-private partnership committed to increasing access to immunization in poor countries, with recent commitments to invest significantly in African vaccine manufacturing, immunization, and pandemic preparedness.",
+            "created_at": "2025-07-24 23:00:35",
+            "file_path": "press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris;merge;african-health-leaders-begin-work-roadmap-reshape-global-health-financing-continent;who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "43",
+            "entity": "AVMA",
+            "type": "event",
+            "description": "AVMA is an upcoming significant event to be held on African soil that will gather African leaders, Gavi, donors, partners, African Civil Society Organizations, and communities to reflect on and promote Africa’s self-reliance in manufacturing vaccines, therapeutics, and diagnostics.",
+            "created_at": "2025-07-24 22:24:28",
+            "file_path": "merge"
+        },
+        {
+            "id": "44",
+            "entity": "Local Manufacturing",
+            "type": "category",
+            "description": "Local manufacturing focuses on producing medical supplies and vaccines within Africa, aiming to reduce dependence on imports and achieve sustainable health commodity production.<SEP>Local manufacturing involves producing vaccines, medicines, and medical supplies within Africa to reduce dependence on imports and improve healthcare self-reliance.",
+            "created_at": "2025-07-24 22:19:11",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;merge"
+        },
+        {
+            "id": "45",
+            "entity": "CEPI",
+            "type": "organization",
+            "description": "CEPI (Coalition for Epidemic Preparedness Innovations) is a global partnership organization focused on accelerating the development of vaccines to prevent and contain infectious disease outbreaks.<SEP>The Coalition for Epidemic Preparedness Innovations (CEPI) is a global partnership that finances and coordinates the development of vaccines against emerging infectious diseases.<SEP>The Coalition for Epidemic Preparedness Innovations (CEPI) is a global partnership launched in 2017 that accelerates vaccine development and biologic countermeasures against epidemic and pandemic diseases and enables equitable access to vaccines, supporting over 50 vaccine candidates and rapid response platforms for emerging diseases.",
+            "created_at": "2025-07-24 22:17:45",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;merge;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "46",
+            "entity": "Manufacturers in Africa",
+            "type": "organization",
+            "description": "Entities involved in producing medical commodities and vaccines locally within Africa as part of Africa CDC's efforts toward achieving health commodity self-sufficiency.",
+            "created_at": "2025-07-24 22:19:18",
+            "file_path": "merge"
+        },
+        {
+            "id": "47",
+            "entity": "PATH",
+            "type": "organization",
+            "description": "PATH is a global health non-profit formerly known as the Program for Appropriate Technology in Health, partnering on vaccine manufacturing and health technology in Africa.<SEP>PATH, formerly the Program for Appropriate Technology in Health, is an international nonprofit organization collaborating with Africa CDC to analyze and support vaccine manufacturing capabilities in Africa.",
+            "created_at": "2025-07-24 22:20:28",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines;merge"
+        },
+        {
+            "id": "48",
+            "entity": "Vaccine Safety Protocols",
+            "type": "category",
+            "description": "Collaborative efforts between Africa CDC and CEPI to enhance vaccine safety standards and protocols in African health institutions.<SEP>Protocols to ensure vaccine safety during development, manufacture, and deployment being enhanced by Africa CDC and CEPI collaboration.",
+            "created_at": "2025-07-24 22:18:00",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;merge"
+        },
+        {
+            "id": "49",
+            "entity": "Clinton Health Access Initiative",
+            "type": "organization",
+            "description": "The Clinton Health Access Initiative is a global health organization partnering on vaccine supplier landscape analysis to support Africa CDC’s health initiatives.<SEP>The Clinton Health Access Initiative is a global health organization partnering with Africa CDC to produce analyses on vaccine supplier landscapes and support vaccine manufacturing in Africa.",
+            "created_at": "2025-07-24 22:20:28",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines;merge"
+        },
+        {
+            "id": "50",
+            "entity": "Biosecurity",
+            "type": "category",
+            "description": "Measures and investments coordinated by Africa CDC and CEPI to ensure pathogen containment and safety in vaccine research and manufacturing environments across Africa.<SEP>One of the critical operational areas for Africa CDC and CEPI collaboration to ensure safe handling of pathogens and biological threats.",
+            "created_at": "2025-07-24 22:18:00",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;merge"
+        },
+        {
+            "id": "51",
+            "entity": "Partnership for African Vaccine Manufacturing",
+            "type": "category",
+            "description": "The Partnership for African Vaccine Manufacturing (PAVM) is an Africa CDC initiative aiming for the continent to produce 60% of its vaccine needs by 2040 through enhanced research, development, manufacturing, and supply chain optimization.",
+            "created_at": "2025-07-24 22:17:34",
+            "file_path": "merge"
+        },
+        {
+            "id": "52",
+            "entity": "PAVM (Partnerships for African Vaccine Manufacturing)",
+            "type": "category",
+            "description": "An Africa CDC-driven initiative aimed at building local vaccine manufacturing capacities across African countries to improve health security and vaccine accessibility.",
+            "created_at": "2025-07-24 22:18:19",
+            "file_path": "merge"
+        },
+        {
+            "id": "53",
+            "entity": "Partnership for African Vaccine Manufacturing (PAVM)",
+            "type": "category",
+            "description": "The Partnership for African Vaccine Manufacturing (PAVM) is an Africa CDC initiative aiming to produce 60% of Africa’s vaccine needs on the continent by 2040 through expanded research, development, manufacturing, and supply chain improvements.",
+            "created_at": "2025-07-24 22:17:28",
+            "file_path": "merge"
+        },
+        {
+            "id": "54",
+            "entity": "Africa Centres for Disease Control and Prevention",
+            "type": "organization",
+            "description": "A specialized African Union health agency working to strengthen emergency preparedness, response capacities, and health systems on the continent, collaborating closely with WHO on the regional hubs.<SEP>Africa Centres for Disease Control and Prevention (Africa CDC) is a specialized public health agency of the African Union, mandated to coordinate responses to epidemics, mobilize African leaders and governments, and address significant public health threats across Africa.<SEP>The Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union dedicated to improving health emergency preparedness and response, strengthening health systems, and supporting member states across Africa. As a specialized technical institution, Africa CDC focuses on enhancing the capacity to detect, prevent, and respond to disease threats and outbreaks by improving disease surveillance, decentralizing diagnostics, and bolstering emergency response capabilities. The agency leads key health initiatives including vaccine manufacturing and pandemic response, employing data-driven interventions to prevent and control diseases. Through building partnerships and capacity, Africa CDC aims to enable rapid and effective responses to health challenges, ultimately safeguarding public health and strengthening health systems throughout the African continent.",
+            "created_at": "2025-07-24 22:50:51",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security;african-health-ministers-commit-to-purchasing-locally-made-vaccines;merge;africa-cdc-who-welcome-uks-support-to-address-health-challenges;enhancing-vaccine-storage-efficiencies-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "55",
+            "entity": "African Health Ministers",
+            "type": "person",
+            "description": "African Health Ministers are government officials responsible for health policies and decisions across African countries, committed to supporting and purchasing locally manufactured vaccines to build a sustainable vaccine industry in Africa.<SEP>African Health Ministers are government representatives committed to supporting and ensuring the purchase of locally-made vaccines to build sustainable health industries in Africa.",
+            "created_at": "2025-07-24 22:20:28",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines;merge"
+        },
+        {
+            "id": "56",
+            "entity": "High-Level meeting on Local Manufacturing",
+            "type": "event",
+            "description": "The High-Level meeting themed 'Ministerial Consultations on Local Manufacturing' was hosted by Africa CDC during the 77th World Health Assembly to discuss strategies and challenges for vaccine manufacturing in Africa.",
+            "created_at": "2025-07-24 21:37:50",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "57",
+            "entity": "Continental Ambition to Manufacture 60% of Vaccines by 2040",
+            "type": "category",
+            "description": "The goal set by Africa CDC and partners to achieve the production of 60% of vaccines needed by Africa by the year 2040 to enhance vaccine independence.",
+            "created_at": "2025-07-24 21:38:06",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "58",
+            "entity": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "type": "organization",
+            "description": "The Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency and technical institution established under the African Union (AU). It plays a leading role in coordinating responses to epidemics and major health threats across Africa, including declaring public health emergencies such as the Mpox outbreak. Africa CDC is focused on strengthening the continent’s public health institutions, capacities, and health systems by supporting African countries in controlling infectious diseases and managing health emergencies. Its core functions include disease prevention and control, improving disease surveillance, emergency preparedness and response, and promoting local vaccine manufacturing. Through these efforts, Africa CDC enhances health security and fosters partnerships to effectively detect and respond to disease threats throughout the continent.",
+            "created_at": "2025-07-24 22:19:28",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge;africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "59",
+            "entity": "African Vaccine Manufacturing Accelerator",
+            "type": "event",
+            "description": "African Vaccine Manufacturing Accelerator (AVMA) is a high-level initiative launched on 20 June 2024 to provide financial incentives aimed at scaling up and sustaining vaccine manufacturing capacity in Africa.",
+            "created_at": "2025-07-24 22:52:41",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent"
+        },
+        {
+            "id": "60",
+            "entity": "COVID-19 Pandemic",
+            "type": "event",
+            "description": "The COVID-19 Pandemic is a global infectious disease outbreak caused by the coronavirus that began in 2019 and was declared a public health emergency by the World Health Organization (WHO). This global health crisis exposed significant vulnerabilities and weaknesses in healthcare systems and medical supply chains worldwide, with particular emphasis on the challenges faced in Africa. The pandemic underscored the critical need for stronger primary healthcare systems, improved molecular diagnostic and genomic surveillance capabilities, enhanced local manufacturing, and increased regulatory capacities within the region.\n\nIn response to these challenges, the COVID-19 Pandemic acted as a catalyst for intensified collaboration among key health organizations, including the Africa Centres for Disease Control and Prevention (Africa CDC), UNICEF, the Africa Public Health Foundation (APHF), Gavi, and the WHO Africa Regional Office. These partnerships focused on epidemic preparedness, vaccine development, and strengthening disease prevention measures. Initiatives such as COVAX and the Saving Lives and Livelihoods program were launched to improve vaccine access and bolster health system resilience across Africa.\n\nMoreover, the pandemic highlighted the urgent need for regional diversification of vaccine manufacturing, revealing significant vulnerabilities in Africa’s vaccine supply. This recognition prompted WHO Africa to develop decentralized emergency response systems and establish regional health emergency hubs aimed at better coordinating response efforts and strengthening health infrastructure.\n\nOverall, the COVID-19 Pandemic severely impacted Africa and globally, emphasizing the importance of vaccination, pandemic preparedness, and international cooperation. It significantly influenced strategies, investments, and collaborative efforts to build more resilient health systems and improve pandemic preparedness both in Africa and worldwide.",
+            "created_at": "2025-07-24 23:00:46",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises;africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic;merge"
+        },
+        {
+            "id": "61",
+            "entity": "Local Manufacturing in Africa",
+            "type": "event",
+            "description": "Local Manufacturing in Africa is a strategic public health initiative aiming to increase vaccine, medicine, and diagnostic manufacturing capacity within Africa to 60% by 2040, involving sustainable ecosystems based on research, technology transfer, regulatory harmonization, and financing.<SEP>Local Manufacturing in Africa refers to the ongoing and future efforts and initiatives to increase vaccine, medicine, and diagnostics production on the African continent, aiming at 60% local manufacture by 2040.",
+            "created_at": "2025-07-24 22:17:12",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;merge"
+        },
+        {
+            "id": "62",
+            "entity": "Team Europe",
+            "type": "organization",
+            "description": "Team Europe is a coalition supporting the launch of the African Vaccine Manufacturing Accelerator and broader African health initiatives.<SEP>Team Europe represents a coalition or partnership supporting the AVMA initiative alongside other international partners.",
+            "created_at": "2025-07-24 22:52:41",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;merge"
+        },
+        {
+            "id": "63",
+            "entity": "Intellectual Property (IP) and Technology Transfer",
+            "type": "category",
+            "description": "Intellectual Property and Technology Transfer refer to the sharing of knowledge, patents, and technologies that underpin local vaccine development and manufacturing capacity building in Africa.",
+            "created_at": "2025-07-24 22:17:23",
+            "file_path": "merge"
+        },
+        {
+            "id": "64",
+            "entity": "Local Vaccine Manufacturing",
+            "type": "category",
+            "description": "Local Vaccine Manufacturing refers to the development and production of vaccines within the African continent to reduce dependency on external suppliers and build sustainable health industries.",
+            "created_at": "2025-07-24 22:20:35",
+            "file_path": "merge"
+        },
+        {
+            "id": "65",
+            "entity": "Challenges to Local Vaccine Manufacturing",
+            "type": "category",
+            "description": "Key challenges identified include limited demand, fragmented markets, economies of scale issues, and the difficulty of convincing Africans to purchase locally made vaccines.",
+            "created_at": "2025-07-24 21:38:00",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "66",
+            "entity": "Strategic Partnership Agreement",
+            "type": "event",
+            "description": "The Strategic Partnership Agreement signed between Africa CDC and Africa Public Health Foundation formalizes collaboration to strengthen health systems in Africa, focusing on public health institutions, workforce, local manufacturing, and stakeholder partnerships.",
+            "created_at": "2025-07-24 21:12:41",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "67",
+            "entity": "Manufacturers Producing Eight Vaccines by 2030",
+            "type": "category",
+            "description": "Three African vaccine manufacturers that are set to produce eight different vaccines locally by the year 2030 to meet African market demand.",
+            "created_at": "2025-07-24 21:38:00",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        }
+    ],
+    "relations": [
+        {
+            "id": "1",
+            "entity1": "Africa CDC",
+            "entity2": "Gavi",
+            "description": "Africa CDC recognizes Gavi as a pivotal partner for health security in Africa and supports the replenishment events and strategies that enhance vaccine access and local manufacturing.<SEP>Africa CDC recognizes Gavi as a pivotal partner providing significant vaccine funding and support for health security across Africa and collaborates closely for the 2024 replenishment event and other initiatives.",
+            "created_at": "2025-07-24 22:49:17",
+            "file_path": "press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris;merge"
+        },
+        {
+            "id": "2",
+            "entity1": "Africa CDC",
+            "entity2": "Team Europe Initiatives",
+            "description": "Team Europe Initiatives support Africa CDC’s objectives such as pharmaceutical manufacturing capacity strengthening.",
+            "created_at": "2025-07-24 22:26:36",
+            "file_path": "merge"
+        },
+        {
+            "id": "3",
+            "entity1": "AVMA",
+            "entity2": "Africa CDC",
+            "description": "Africa CDC supports and champions the African Vaccine Manufacturing Accelerator initiative, which is designed to enhance Africa’s health sovereignty through local manufacturing.",
+            "created_at": "2025-07-24 22:49:17",
+            "file_path": "press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris"
+        },
+        {
+            "id": "4",
+            "entity1": "Africa CDC",
+            "entity2": "Local Manufacturing",
+            "description": "Africa CDC actively promotes and advocates for building local manufacturing capacity to produce vaccines and health supplies to decrease Africa's dependency on imports.",
+            "created_at": "2025-07-24 22:27:09",
+            "file_path": "merge"
+        },
+        {
+            "id": "5",
+            "entity1": "Africa CDC",
+            "entity2": "CEPI",
+            "description": "Africa CDC collaborates with CEPI to coordinate funding and implement innovations accelerating vaccine manufacturing and research capacity in Africa.\"|>\"partnership, vaccine development",
+            "created_at": "2025-07-24 22:25:45",
+            "file_path": "merge"
+        },
+        {
+            "id": "6",
+            "entity1": "Africa CDC",
+            "entity2": "Sustainable Manufacturing for Routine Vaccinations",
+            "description": "Africa CDC supports sustainable vaccine manufacturing initiatives to enable routine and emergency vaccination in Africa.\"|>\"manufacturing support, health infrastructure",
+            "created_at": "2025-07-24 22:26:01",
+            "file_path": "merge"
+        },
+        {
+            "id": "7",
+            "entity1": "Africa CDC",
+            "entity2": "Manufacturers in Africa",
+            "description": "Africa CDC actively promotes and supports African manufacturers in producing vaccines and medical commodities locally to achieve supply independence.",
+            "created_at": "2025-07-24 22:27:12",
+            "file_path": "merge"
+        },
+        {
+            "id": "8",
+            "entity1": "Africa CDC",
+            "entity2": "Vaccine Suppliers Landscape Analysis",
+            "description": "Africa CDC produced the vaccine supplier’s landscape analysis with partners to assess the readiness and challenges of vaccine manufacturing in Africa.",
+            "created_at": "2025-07-24 22:28:51",
+            "file_path": "merge"
+        },
+        {
+            "id": "9",
+            "entity1": "Africa CDC",
+            "entity2": "PATH",
+            "description": "Africa CDC has a partnership with PATH to support local vaccine manufacturing and health technology development.",
+            "created_at": "2025-07-24 22:28:46",
+            "file_path": "merge"
+        },
+        {
+            "id": "10",
+            "entity1": "Africa CDC",
+            "entity2": "Vaccine Safety Protocols",
+            "description": "Africa CDC collaborates with partners to enhance vaccine safety protocols to ensure safe vaccine administration and production.\"|>\"health safety, protocol development",
+            "created_at": "2025-07-24 22:26:01",
+            "file_path": "merge"
+        },
+        {
+            "id": "11",
+            "entity1": "Africa CDC",
+            "entity2": "Clinton Health Access Initiative",
+            "description": "Africa CDC partnered with the Clinton Health Access Initiative for vaccine supplier landscape analysis.",
+            "created_at": "2025-07-24 22:28:46",
+            "file_path": "merge"
+        },
+        {
+            "id": "12",
+            "entity1": "Africa CDC",
+            "entity2": "Biosecurity",
+            "description": "Africa CDC invests in biosecurity measures to ensure safe pathogen handling within vaccine research and manufacturing.\"|>\"safety measures, pathogen control",
+            "created_at": "2025-07-24 22:26:03",
+            "file_path": "merge"
+        },
+        {
+            "id": "13",
+            "entity1": "Africa CDC",
+            "entity2": "Partnership for Vaccine Manufacturing",
+            "description": "This partnership initiative is led by Africa CDC aiming to manufacture 60% of Africa’s vaccine needs by 2040.",
+            "created_at": "2025-07-24 22:27:10",
+            "file_path": "merge"
+        },
+        {
+            "id": "14",
+            "entity1": "Africa CDC",
+            "entity2": "Partnership for African Vaccine Manufacturing",
+            "description": "Africa CDC leads the PAVM initiative aimed at achieving 60% vaccine self-sufficiency in Africa by 2040 through enhanced manufacturing and supply chain strengthening.",
+            "created_at": "2025-07-24 22:25:34",
+            "file_path": "merge"
+        },
+        {
+            "id": "15",
+            "entity1": "Africa CDC",
+            "entity2": "PAVM (Partnerships for African Vaccine Manufacturing)",
+            "description": "Africa CDC leads the PAVM initiative, aimed at increasing vaccine manufacturing capabilities across Africa.",
+            "created_at": "2025-07-24 22:26:22",
+            "file_path": "merge"
+        },
+        {
+            "id": "16",
+            "entity1": "Africa CDC",
+            "entity2": "Partnership for African Vaccine Manufacturing (PAVM)",
+            "description": "Africa CDC leads the PAVM initiative to boost vaccine production capacity in Africa to achieve 60% continental vaccine self-sufficiency by 2040.",
+            "created_at": "2025-07-24 22:25:29",
+            "file_path": "merge"
+        },
+        {
+            "id": "17",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "African Health Ministers",
+            "description": "African Health Ministers collaborate with Africa CDC to commit to purchasing locally made vaccines and build a sustainable vaccine manufacturing industry in Africa.",
+            "created_at": "2025-07-24 21:38:08",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "18",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Local Manufacturing",
+            "description": "Africa CDC is actively promoting local manufacturing of vaccines and medical supplies to reduce import dependence and enhance health security.",
+            "created_at": "2025-07-24 21:25:41",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "19",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Vaccine Suppliers Landscape Analysis",
+            "description": "Africa CDC is the lead organization behind the vaccine supplier landscape analysis critical to understanding vaccine manufacturing capabilities.",
+            "created_at": "2025-07-24 21:38:17",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "20",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "PATH",
+            "description": "Africa CDC collaborated with PATH to produce findings supporting vaccine manufacturing initiatives.",
+            "created_at": "2025-07-24 21:38:09",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "21",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "High-Level meeting on Local Manufacturing",
+            "description": "Africa CDC organized the High-Level meeting to engage stakeholders and discuss challenges and strategies in local vaccine manufacturing.",
+            "created_at": "2025-07-24 21:38:08",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "22",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Clinton Health Access Initiative",
+            "description": "Africa CDC partnered with the Clinton Health Access Initiative to conduct vaccine supplier landscape analysis.",
+            "created_at": "2025-07-24 21:38:09",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "23",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Vaccine Manufacturing Partnership",
+            "description": "Africa CDC's Vaccine Manufacturing Partnership initiative aims to locally produce 60% of Africa's vaccine requirements by 2040.",
+            "created_at": "2025-07-24 21:25:47",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "24",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Continental Ambition to Manufacture 60% of Vaccines by 2040",
+            "description": "Africa CDC is driving the effort to produce 60% of vaccines needed by Africa by 2040 through local manufacturing initiatives.",
+            "created_at": "2025-07-24 21:38:21",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "25",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Partners supporting local manufacturing agenda",
+            "description": "Partners expressed their support to Africa CDC’s agenda for local vaccine manufacturing through collaborative interventions.",
+            "created_at": "2025-07-24 21:38:15",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "26",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Partners Supporting Local Manufacturing Agenda",
+            "description": "Partners work alongside Africa CDC providing support, resources, and responses aligned with the local manufacturing agenda.",
+            "created_at": "2025-07-24 21:38:21",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "27",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Team Europe Initiatives",
+            "description": "Team Europe Initiatives align with Africa CDC priorities and receive significant French support, particularly for pharmaceutical manufacturing.",
+            "created_at": "2025-07-24 21:21:30",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "28",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Sustainable Manufacturing for Routine Vaccinations",
+            "description": "Africa CDC aims to establish resilient vaccine manufacturing that can serve routine immunization needs and rapidly pivot in an outbreak.",
+            "created_at": "2025-07-24 21:16:26",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "29",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Vaccine Research, Development and Manufacturing",
+            "description": "Africa CDC focuses on strengthening regional research, development, and sustainable manufacturing leadership as part of its partnership with CEPI.",
+            "created_at": "2025-07-24 21:16:24",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "30",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Vaccine Sovereignty",
+            "description": "Africa CDC's efforts, supported by CEPI, aim to increase Africa’s vaccine sovereignty and reduce dependency on external suppliers.",
+            "created_at": "2025-07-24 21:16:27",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "31",
+            "entity1": "African Vaccine Manufacturing Accelerator",
+            "entity2": "COVID-19 Pandemic",
+            "description": "AVMA was launched in response to the COVID-19 pandemic’s demonstration of the need for local vaccine manufacturing capacity in Africa.\"| \"response initiative, pandemic lessons",
+            "created_at": "2025-07-24 22:53:02",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent"
+        },
+        {
+            "id": "32",
+            "entity1": "Local Manufacturing in Africa",
+            "entity2": "Research and Development",
+            "description": "Research and Development is a foundational pillar for the sustainable vaccine development and manufacturing ecosystem promoted under the local manufacturing initiative.",
+            "created_at": "2025-07-24 22:25:21",
+            "file_path": "merge"
+        },
+        {
+            "id": "33",
+            "entity1": "Local Manufacturing in Africa",
+            "entity2": "Strategic Partnerships",
+            "description": "Strategic partnerships between organizations like Africa CDC and APHF are critical enablers of the local manufacturing agenda.",
+            "created_at": "2025-07-24 22:25:23",
+            "file_path": "merge"
+        },
+        {
+            "id": "34",
+            "entity1": "African Vaccine Manufacturing Accelerator",
+            "entity2": "Team Europe",
+            "description": "Team Europe supports the AVMA initiative alongside African and global partners to strengthen vaccine manufacturing and health security in Africa.",
+            "created_at": "2025-07-24 22:53:06",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent"
+        },
+        {
+            "id": "35",
+            "entity1": "Intellectual Property (IP) and Technology Transfer",
+            "entity2": "Local Manufacturing in Africa",
+            "description": "Intellectual Property and Technology Transfer facilitate access to technologies and know-how necessary for local vaccine development and manufacturing.",
+            "created_at": "2025-07-24 22:25:23",
+            "file_path": "merge"
+        },
+        {
+            "id": "36",
+            "entity1": "African Health Ministers",
+            "entity2": "Local Vaccine Manufacturing",
+            "description": "African Health Ministers committed to supporting the purchase of vaccines manufactured locally in Africa, fostering sustainable vaccine production.",
+            "created_at": "2025-07-24 22:28:51",
+            "file_path": "merge"
+        },
+        {
+            "id": "37",
+            "entity1": "African Health Ministers",
+            "entity2": "Challenges to Local Vaccine Manufacturing",
+            "description": "Ministers addressed challenges such as limited demand, fragmented markets, and poor economies of scale that hamper local vaccine manufacturing growth.",
+            "created_at": "2025-07-24 21:38:19",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "38",
+            "entity1": "Local Manufacturing of Vaccines, Diagnostics, and Therapeutics",
+            "entity2": "Strategic Partnership Agreement",
+            "description": "The Agreement includes a focus on expanding Africa’s local manufacturing capacity for vaccines, diagnostics, and therapeutics.",
+            "created_at": "2025-07-24 21:13:10",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "39",
+            "entity1": "Local Manufacturing",
+            "entity2": "Manufacturers in Africa",
+            "description": "African manufacturers are key actors in local manufacturing efforts supported by Africa CDC to improve vaccine and medical supply availability.",
+            "created_at": "2025-07-24 22:27:25",
+            "file_path": "merge"
+        },
+        {
+            "id": "40",
+            "entity1": "Commercial-Scale Production Facilities in Africa",
+            "entity2": "Manufacturers Producing Eight Vaccines by 2030",
+            "description": "Nine facilities and three manufacturers are linked as the infrastructure and actors prepared to produce eight vaccines locally by 2030.",
+            "created_at": "2025-07-24 21:38:18",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "41",
+            "entity1": "Africa CDC",
+            "entity2": "Regional Centres for Regulatory Excellence (RCOREs)",
+            "description": "Africa CDC fosters competency building in regulatory expertise across Africa through programs run by RCOREs.",
+            "created_at": "2025-07-24 21:11:13",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "42",
+            "entity1": "Africa CDC",
+            "entity2": "High-quality diagnostics, vaccines, and antimicrobials",
+            "description": "Africa CDC advocates for improving access to essential diagnostics, vaccines, and antimicrobial treatments to combat priority pathogens in Africa.",
+            "created_at": "2025-07-24 22:29:40",
+            "file_path": "merge"
+        },
+        {
+            "id": "43",
+            "entity1": "Africa CDC",
+            "entity2": "Capacity Building",
+            "description": "Africa CDC is committed to capacity building for research, manufacturing, and emergency response capabilities across Africa.\"|>\"infrastructure development, skills enhancement",
+            "created_at": "2025-07-24 22:26:05",
+            "file_path": "merge"
+        },
+        {
+            "id": "44",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "description": "Africa CDC and CEPI have established a partnership formalized by a Memorandum of Understanding to strengthen epidemic and pandemic prevention, preparedness, and response in Africa, focusing on vaccine research, development, manufacturing, and clinical trials.",
+            "created_at": "2025-07-24 21:16:14",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "45",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Emergency Vaccine Responses",
+            "description": "Africa CDC and CEPI collaborate to ensure that vaccine manufacturing can be rapidly mobilized in emergencies to deliver timely outbreak responses.",
+            "created_at": "2025-07-24 21:16:33",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "46",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Partnerships for African Vaccine Manufacturing (PAVM)",
+            "description": "Africa CDC leads the PAVM initiative aimed at increasing vaccine manufacturing capacity in Africa, a key focus of its partnership with CEPI.",
+            "created_at": "2025-07-24 21:16:20",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "47",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Supply Chain Optimization",
+            "description": "Africa CDC is working with CEPI to optimize supply chains to support resilient vaccine delivery and response systems.",
+            "created_at": "2025-07-24 21:16:27",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "48",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "High-quality diagnostics, vaccines, and antimicrobials",
+            "description": "Addressing AMR effectively requires increased availability of quality diagnostics, vaccines, and antimicrobials, especially in high-risk African countries.",
+            "created_at": "2025-07-24 22:29:39",
+            "file_path": "merge"
+        },
+        {
+            "id": "49",
+            "entity1": "Country Plans",
+            "entity2": "WHO Regional Office for Africa",
+            "description": "WHO Africa supports countries in developing innovative plans to increase immunization coverage.",
+            "created_at": "2025-07-24 22:34:54",
+            "file_path": "merge"
+        },
+        {
+            "id": "50",
+            "entity1": "Africa",
+            "entity2": "Local Manufacturing Ecosystem",
+            "description": "The entire initiative to advance local manufacturing is geographically focused on the African continent.",
+            "created_at": "2025-07-24 21:11:24",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "51",
+            "entity1": "Gavi",
+            "entity2": "Investment Funding",
+            "description": "Gavi provides investment funding amounting to US$500 million to ensure resource availability for future pandemic response and immunization programs.",
+            "created_at": "2025-07-24 22:34:54",
+            "file_path": "merge"
+        },
+        {
+            "id": "52",
+            "entity1": "Gavi",
+            "entity2": "US$1.8 Billion Investment",
+            "description": "Gavi’s financial commitment of US$1.8 billion focuses on vaccine manufacturing, catching up missed children, and pandemic preparedness.",
+            "created_at": "2025-07-24 23:01:01",
+            "file_path": "who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "53",
+            "entity1": "Gavi",
+            "entity2": "US$500 Million Investment",
+            "description": "Gavi allocates US$500 million specifically towards future pandemic preparedness funding for Africa.",
+            "created_at": "2025-07-24 23:01:03",
+            "file_path": "who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "54",
+            "entity1": "France",
+            "entity2": "Team Europe Initiatives",
+            "description": "France is a major contributor to Team Europe Initiatives aligned with Africa CDC priorities.",
+            "created_at": "2025-07-24 22:26:35",
+            "file_path": "merge"
+        },
+        {
+            "id": "55",
+            "entity1": "United Kingdom Government",
+            "entity2": "£103.5 million UK Allocation for Vaccine and Health Product Development",
+            "description": "The UK Government allocated up to £103.5 million towards developing affordable vaccines and health products to address infectious diseases globally.",
+            "created_at": "2025-07-24 21:33:40",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "56",
+            "entity1": "High-level Conference",
+            "entity2": "Team Europe Initiatives",
+            "description": "The conference launched major Team Europe Initiatives aimed at health security, digital health, and public health institutes in Africa.",
+            "created_at": "2025-07-24 22:00:19",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "57",
+            "entity1": "Private Sector",
+            "entity2": "Team Europe Initiative on Manufacturing and Access to Vaccines, Medicines, and Health Technologies (TEI MAV+)",
+            "description": "The initiative engages the private sector to boost sustainable manufacturing, innovation, and local production capabilities in Africa.",
+            "created_at": "2025-07-24 21:19:23",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "58",
+            "entity1": "77th World Health Assembly",
+            "entity2": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "description": "CEPI participated in the 77th World Health Assembly event where the MoU with Africa CDC was signed.",
+            "created_at": "2025-07-24 21:16:17",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "59",
+            "entity1": "Access to COVID-19 Tools Accelerator",
+            "entity2": "France",
+            "description": "France played a leading role in launching this initiative to improve equitable access to COVID-19 vaccines in Africa.",
+            "created_at": "2025-07-24 21:21:30",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "60",
+            "entity1": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "entity2": "Research Preparedness Program",
+            "description": "CEPI directs the Research Preparedness Program to build regional capacity in Africa for conducting Phase 3 vaccine trials.",
+            "created_at": "2025-07-24 21:16:20",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "61",
+            "entity1": "2024 Gavi Replenishment Event",
+            "entity2": "Private Sector",
+            "description": "Private sector entities are engaged in the replenishment event as supporters and implementers of vaccine manufacturing initiatives.",
+            "created_at": "2025-07-24 22:33:55",
+            "file_path": "merge"
+        },
+        {
+            "id": "62",
+            "entity1": "African Manufacturers",
+            "entity2": "Regional Centres for Regulatory Excellence (RCOREs)",
+            "description": "Regional Centres for Regulatory Excellence develop the expertise of African regulatory professionals necessary to oversee manufacturing quality and product lifecycle.",
+            "created_at": "2025-07-24 22:25:17",
+            "file_path": "merge"
+        },
+        {
+            "id": "63",
+            "entity1": "African Leaders",
+            "entity2": "Local Manufacturing Ecosystem",
+            "description": "African Leaders’ pledge to locally manufacture 60% of vaccines, medicines, and diagnostics by 2040 supports the development of a sustainable local manufacturing ecosystem.",
+            "created_at": "2025-07-24 21:11:13",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "64",
+            "entity1": "Africa CDC Institute for Pathogen Genomics",
+            "entity2": "Private Sector",
+            "description": "The institute collaborates with private sector stakeholders to enhance resources, technology, and capacity for genomic surveillance and diagnostics.",
+            "created_at": "2025-07-24 21:31:45",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "65",
+            "entity1": "Gavi Alliance",
+            "entity2": "Private Sector",
+            "description": "The private sector participates in funding and implementing Gavi’s health and vaccine-related activities.",
+            "created_at": "2025-07-24 22:33:52",
+            "file_path": "merge"
+        },
+        {
+            "id": "66",
+            "entity1": "African Union Commissioner Minata Samate Cessouma",
+            "entity2": "Team Europe Initiatives",
+            "description": "The Commissioner supports the contribution of Team Europe Initiatives in strengthening Africa’s health sector.",
+            "created_at": "2025-07-24 22:31:41",
+            "file_path": "merge"
+        },
+        {
+            "id": "67",
+            "entity1": "Procurement and Supply Chain Systems Strengthening",
+            "entity2": "Supply Chain Management",
+            "description": "Procurement and supply chain strengthening efforts aim to optimize medical supply flows and availability.",
+            "created_at": "2025-07-24 22:27:23",
+            "file_path": "merge"
+        },
+        {
+            "id": "68",
+            "entity1": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "entity2": "Sustainable Manufacturing for Routine Vaccinations",
+            "description": "CEPI supports sustainable vaccine manufacturing capabilities to meet ongoing routine vaccination demand and emergency response.",
+            "created_at": "2025-07-24 21:16:27",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "69",
+            "entity1": "Local Manufacturing Ecosystem",
+            "entity2": "Research and Development",
+            "description": "Research and development is a foundational component of the local manufacturing ecosystem essential for vaccine and health product innovation and production.",
+            "created_at": "2025-07-24 21:11:19",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "70",
+            "entity1": "Local Manufacturing of Vaccines, Therapeutics, and Diagnostics",
+            "entity2": "Saving Lives and Livelihoods Initiative",
+            "description": "Focus on enhancing local production capabilities for vaccines and diagnostics to improve health system resilience.",
+            "created_at": "2025-07-24 22:26:55",
+            "file_path": "merge"
+        },
+        {
+            "id": "71",
+            "entity1": "African Society for Laboratory Medicine",
+            "entity2": "High-quality diagnostics, vaccines, and antimicrobials",
+            "description": "ASLM supports strengthening laboratory systems to enable the effective use and surveillance of diagnostics, vaccines, and antimicrobials.",
+            "created_at": "2025-07-24 22:29:40",
+            "file_path": "merge"
+        },
+        {
+            "id": "72",
+            "entity1": "Innovation and Local Manufacturing",
+            "entity2": "Joint Action Plan",
+            "description": "The Joint Action Plan promotes innovation and local manufacturing to enhance availability and sustainability of health products in Africa.",
+            "created_at": "2025-07-24 22:03:36",
+            "file_path": "joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan"
+        },
+        {
+            "id": "73",
+            "entity1": "CEPI-funded Phase 2 trial for a Lassa fever vaccine",
+            "entity2": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "description": "CEPI funds and supports the ongoing Phase 2 trial for a Lassa fever vaccine candidate in Africa.",
+            "created_at": "2025-07-24 21:16:20",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "74",
+            "entity1": "Memorandum of Understanding (MoU)",
+            "entity2": "Pharmaceutical Manufacturing Capacity",
+            "description": "The MoU promotes local manufacturing of vaccines, diagnostics, and therapeutics to strengthen Africa's health systems.",
+            "created_at": "2025-07-24 21:21:30",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "75",
+            "entity1": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "entity2": "Vaccine Research, Development and Manufacturing",
+            "description": "CEPI supports innovation investments to accelerate vaccine research, development, and manufacturing scale in Africa.",
+            "created_at": "2025-07-24 21:16:24",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "76",
+            "entity1": "European Commissioner for International Partnerships",
+            "entity2": "Team Europe Initiatives",
+            "description": "Jutta Urpilainen emphasized launching Team Europe Initiatives to strengthen health security and digital health in Africa.",
+            "created_at": "2025-07-24 22:00:19",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "77",
+            "entity1": "Procurement and Supply Chain Systems Strengthening",
+            "entity2": "The Africa CDC and UNICEF Partnership Framework Agreement",
+            "description": "Procurement and supply chain systems strengthening is a key component of the partnership to ensure access to medical commodities.",
+            "created_at": "2025-07-24 22:27:15",
+            "file_path": "merge"
+        },
+        {
+            "id": "78",
+            "entity1": "Local Manufacturing Ecosystem",
+            "entity2": "Strategic Partnerships",
+            "description": "Strategic partnerships among African and global stakeholders are crucial to establishing and sustaining the local manufacturing ecosystem.",
+            "created_at": "2025-07-24 21:11:24",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "79",
+            "entity1": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "entity2": "Richard Hatchett",
+            "description": "Richard Hatchett serves as CEO of CEPI, guiding its efforts to support vaccine development and outbreak preparedness in Africa.",
+            "created_at": "2025-07-24 21:16:17",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "80",
+            "entity1": "Clinical Trials Infrastructure",
+            "entity2": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "description": "CEPI contributes expertise and funding to enhance Africa’s clinical trial infrastructure for vaccine R&D.",
+            "created_at": "2025-07-24 21:16:27",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "81",
+            "entity1": "Access to COVID-19 Tools Accelerator",
+            "entity2": "Government of France",
+            "description": "France played a leading role in launching this global initiative aimed at equitable access to COVID-19 tools.",
+            "created_at": "2025-07-24 22:26:16",
+            "file_path": "merge"
+        },
+        {
+            "id": "82",
+            "entity1": "Local Manufacturing Ecosystem",
+            "entity2": "Technology Transfer",
+            "description": "Technology transfer is a critical process within the local manufacturing ecosystem enabling African manufacturers to produce vaccines and medicines effectively.",
+            "created_at": "2025-07-24 21:11:23",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "83",
+            "entity1": "Skills Development",
+            "entity2": "Team Europe Initiative on Manufacturing and Access to Vaccines, Medicines, and Health Technologies (TEI MAV+)",
+            "description": "The initiative promotes skills development through higher education and vocational training to build sustainable health manufacturing ecosystems.",
+            "created_at": "2025-07-24 21:19:23",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "84",
+            "entity1": "EU Global Gateway Strategy",
+            "entity2": "Team Europe Initiatives",
+            "description": "Team Europe Initiatives are part of the EU Global Gateway strategy to invest in health infrastructure and cooperation in Africa.",
+            "created_at": "2025-07-24 22:31:38",
+            "file_path": "merge"
+        },
+        {
+            "id": "85",
+            "entity1": "Innovative and Sustainable Financing",
+            "entity2": "Local Manufacturing Ecosystem",
+            "description": "Innovative and sustainable financing mechanisms are essential to support the development and sustainability of local manufacturing in Africa.",
+            "created_at": "2025-07-24 21:11:24",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "86",
+            "entity1": "Global Procurement Agencies",
+            "entity2": "Local Manufacturing Ecosystem",
+            "description": "Global procurement agencies' commitment to purchasing vaccines produced in Africa is key to the economics and viability of the local manufacturing ecosystem.",
+            "created_at": "2025-07-24 21:11:24",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "87",
+            "entity1": "European Commissioner Jutta URPILAINEN",
+            "entity2": "Team Europe Initiatives",
+            "description": "The Commissioner is involved in launching and promoting Team Europe Initiatives aimed at reinforcing health security and systems in Africa.",
+            "created_at": "2025-07-24 22:31:35",
+            "file_path": "merge"
+        },
+        {
+            "id": "88",
+            "entity1": "Intellectual Property (IP)",
+            "entity2": "Local Manufacturing Ecosystem",
+            "description": "Intellectual property rights underpin the local manufacturing ecosystem by enabling technology transfer and protecting innovations.",
+            "created_at": "2025-07-24 21:11:22",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "89",
+            "entity1": "health investment",
+            "entity2": "partner funding",
+            "description": "Partner funding complements domestic resources to bolster health workforce investments.",
+            "created_at": "2025-07-24 21:40:47",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "90",
+            "entity1": "Mpox Vaccination and Treatment Access",
+            "entity2": "Mpox epidemic",
+            "description": "\"Efforts to ensure equitable access to vaccines and treatments are crucial to controlling the spread of mpox.",
+            "created_at": "2025-07-24 21:50:54",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "91",
+            "entity1": "Implementing Partners",
+            "entity2": "Private Sector",
+            "description": "Implementing partners and the private sector collaborate alongside governments and organizations to carry out pathogen genomics and outbreak response activities.",
+            "created_at": "2025-07-24 21:31:47",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "92",
+            "entity1": "Local Manufacturing",
+            "entity2": "Procurement and Supply Chain Systems Strengthening",
+            "description": "Local manufacturing supports procurement and supply chain goals by providing locally produced health commodities.",
+            "created_at": "2025-07-24 22:27:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "93",
+            "entity1": "Maturity Level 3 (ML3) Status",
+            "entity2": "Regional Centres for Regulatory Excellence (RCOREs)",
+            "description": "Achievement of Maturity Level 3 status by several African countries is supported by competency development through RCOREs.<SEP>RCOREs contribute to regulatory capacity that helps countries achieve and maintain Maturity Level 3 status.",
+            "created_at": "2025-07-24 22:25:17",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;merge"
+        },
+        {
+            "id": "94",
+            "entity1": "Pathogen Genomic Surveillance Strategy",
+            "entity2": "Research and Development",
+            "description": "The Pathogen Genomic Surveillance Strategy is linked to research and development efforts in disease tracking and outbreak prevention.",
+            "created_at": "2025-07-24 22:34:17",
+            "file_path": "merge"
+        },
+        {
+            "id": "95",
+            "entity1": "Five African Countries with Maturity Level 3 (ML3) Status",
+            "entity2": "Regional Centres for Regulatory Excellence (RCOREs)",
+            "description": "RCOREs provide competency programs that have contributed to five African countries attaining Maturity Level 3 status in regulatory oversight.",
+            "created_at": "2025-07-24 21:11:19",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "96",
+            "entity1": "Capacity Building",
+            "entity2": "Training, Learning Exchanges, and Benchmarking Visits",
+            "description": "Training, learning exchanges, and benchmarking visits are capacity building activities that improve skills, knowledge, and operational standards in mpox response.\"|>\"capacity building, expertise enhancement",
+            "created_at": "2025-07-24 21:51:03",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "97",
+            "entity1": "Sustainable Development Goal 3.8",
+            "entity2": "Team Europe Initiative on Manufacturing and Access to Vaccines, Medicines and Health Technologies (TEI MAV+)",
+            "description": "The TEI MAV+ initiative aligns with SDG 3.8 to improve universal health coverage and access to quality health products.\"|>\"goal alignment, health equity",
+            "created_at": "2025-07-24 22:26:05",
+            "file_path": "merge"
+        },
+        {
+            "id": "98",
+            "entity1": "Research and development (R&D)",
+            "entity2": "Technology transfer",
+            "description": "R&D efforts promote technology transfer focusing on collaboration between African and European health organizations.",
+            "created_at": "2025-07-24 22:26:22",
+            "file_path": "merge"
+        }
+    ],
+    "text_units": [
+        {
+            "id": 1,
+            "content": "Africa CDC and France sign Memorandum Of Understanding to Strengthen Public Health Systems in Africa – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and France sign Memorandum Of Understanding to Strengthen Public Health Systems in Africa\n11 September 2023, Addis Ababa\n– The Africa Centres for Disease Control and Prevention (Africa CDC) and the government of France signed a memorandum of understanding (MoU) today to strengthen their cooperation in public health. The MoU was signed by H.E Dr. Jean Kaseya, Director-General of Africa CDC, and Rémi Maréchaux, Ambassador of France to Ethiopia, at a ceremony held at the Africa CDC Secretariat Offices in Addis Ababa.\nThe MoU aims to strengthen Africa CDC’s efforts to build more robust public health systems and improve health security across the continent. Key areas of collaboration under the MoU include strengthening Africa CDC’s capacity; supporting the development of national public health institutes; enhancing disease surveillance and emergency response capacities; promoting local manufacturing of vaccines, diagnostics and therapeutics; supporting workforce training; and fostering research partnerships between French and African institutions.\n“The signing of this MoU solidifies our shared vision in nurturing a coordinated global response to global public health challenges. This action-oriented framework aims to advance the New Public Health order, enhance health workforce development, and strengthen public health systems for the benefit of all African citizens,” said H.E Dr. Jean Kaseya at the signing ceremony.\nThis MoU builds on France’s longstanding support for public health in Africa. France played a leading role in launching the Access to COVID-19 Tools Accelerator and has donated 10 million vaccine doses to the AVAT mechanism and 48 million doses to 40 African states, mainly through the COVAX initiative aimed at equitable access to COVID-19 vaccines. The French Development Agency provided a €50 million line of credit to Afreximbank for the AVAT payment facility, enabling vaccine purchases by Uganda, Burundi, DRC and Egypt. The AFD has committed over €500 million to health programs in Africa through its ” Santé en Commun ” (Health in Common) initiative. France also provides technical expertise to Africa CDC in infection, prevention and control (IPC) and Water, Sanitation and Hygiene (WASH).\nFrance is a major contributor to Team Europe Initiatives that align with Africa CDC’s priorities, like strengthening pharmaceutical manufacturing capacity on the continent with over €70 million mobilized so far. France also supports regional health projects in West and Central Africa that reinforce Africa CDC’s diagnostics, surveillance, and regulation objectives.\nThe signing of this MoU signals France and Africa CDC’s continued commitment to mutually tackling major public health challenges in the  interest of public health, safety, and security of all African citizens,”\nFor media inquiries, please contact:\nMikaele THOMAS\nPress department at the French Embassy Tél : 01 11 40 00 25 Mél : Mikaele.thomas@diplomatie.gouv.fr\nPO Box 1464, Addis-Ababa Yeka   Kebele : 01102, Addis Abeba\nDorothy Njagi\n| Senior Communication Officer- Policy, Health Diplomacy & Communication | Africa Centres for Disease Control and Prevention| African Union| email: email:\nnjagid@africa-union.org\n| Website: www.africacdc.org| Addis Ababa| Ethiopia|\nFacebook\n|\nTwitter\nAbout Africa CDC\n: Africa CDC is an autonomous health agency of the African Union which supports Member States in their efforts to strengthen health systems and improve surveillance, emergency response, prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nAbout the African Union:\nThe African Union is a continental body that leads Africa’s development and integration in close collaboration with the 55 Member States, the Regional Economic Communities and African citizens. The AU’s vision is to accelerate progress towards an integrated, prosperous, and inclusive Africa, at peace with itself, playing a dynamic role in the continental and global arena, effectively driven by an accountable, efficient, and responsive Commission. Learn more at: http://www.au.int/en\n11 September 2023\nTheme\nNew Public Health Order\n,\nRespectful Partnership\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nPartnership\n,\nRespectfulPartnership\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": 2,
+            "content": "African Health Ministers Commit to Purchasing Locally-Made Vaccines – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nStories\nAfrican Health Ministers Commit to Purchasing Locally-Made Vaccines\nAfrican health ministers have offered to ensure commitment and support to buy vaccines manufactured in Africa to build a sustainable industry capable of producing vaccines at scale.\nThe Africa Centres for Disease Control and Prevention (Africa CDC) hosted a High-Level meeting themed ”Ministerial Consultations on Local Manufacturing” on the sidelines of the 77\nth\nWorld Health Assembly.\nDuring the ministerial meeting, over 40 ministers of health, representatives from regional economic communities and partners were briefed on the\nfindings\nof the vaccine supplier’s landscape analysis Africa CDC produced in partnership with Clinton Health Access Initiative and PATH, formerly the Program for Appropriate Technology in Health.\nThe ministers offered insights on the continent’s readiness and the challenges that manufacturers currently face, such as getting Africans to buy vaccines manufactured on the continent, which is central to making the business case.\nCurrently, nine commercial-scale production facilities on the continent are prepared for technology transfers, and three manufacturers are set to produce eight vaccines for the African market by 2030. These eight products require purchasers to remain commercially viable beyond their country’s domestic demand.\n“Across the spectrum of requirements for the near-to-market products, predictable demand is the central challenge faced by manufacturers,” the meeting heard.\nAfrica is confronted with limited demand for homegrown vaccine offers, fragmented markets, and poor economies of scale that limit the business case for local manufacturers to invest in vaccine manufacturing facilities and other health product technologies.\nThe ministers suggested fast-track regulatory harmonization to push the wide distribution of medicines and to assure quality. There is a need to strengthen national regulatory authorities and domesticate the\nAU model law at the national level\n.\nThe AU Summit in 2024 decided the establishment of the African Pooled Procurement Mechanism (APPM) as a solution. APPM aims to improve access to quality and affordable health products and promote the localization of manufacturing led by the Africa CDC.\nDuring the briefing, the AU Member states pledged to support the continental ambition, avoid competition amongst member states, and strengthen the regional mechanism to ensure the continent can manufacture the vaccines and other health products it needs. It was reiterated that the African Medicines Agency (AMA) requires member states’ collective support to obtain affordable quality medicines.\nThe meeting allowed partners to share their responses in support of the local manufacturing agenda on the continent. The Africa CDC will pursue critical interventions in vaccine manufacturing to be on course to achieve the ambition of manufacturing 60% of vaccines needed by 2040. Read more:\nPartnerships for African Vaccine Manufacturing\n31 May 2024\nTheme\nAfrican Vaccine Manufacturing\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": 3,
+            "content": "Africa CDC and Africa Public Health Foundation Forge Strategic Partnership to Strengthen Health Systems – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and Africa Public Health Foundation Forge Strategic Partnership to Strengthen Health Systems\nNairobi, Kenya. July 25, 2024\n– The Africa Centres for Disease Control and Prevention (Africa CDC) and Africa Public Health Foundation (APHF) have signed an agreement to support strengthening health systems in Africa Union Member States.\nAPHF was established to enable investments in public health activities that support Africa CDC’s goals and objectives across the continent. It’s main operational vectors include resource mobilisation, grants management, advocacy for improved policies, private sector engagement and contributing to the analysis of public health data.\nH.E. Dr. Jean Kaseya, Director General of Africa CDC, remarked, “Africa CDC’s strategic plan 2023-2027 is ambitious, aiming to achieve significant outcomes for the continent. The Africa Public Health Foundation is pivotal in facilitating resource mobilisation for Africa CDC, enhancing public health systems across African Union Member States, and supporting the implementation of The New Public Health Order.”\nAPHF supports the Africa CDC New Public Health Order in its mission to build a healthier and more prosperous Africa.\nDr. Bernard Haufiku, APHF Governing Council Chair and Founder, states, “I am excited about this special day as we have been looking forward to this momentous occasion on which we sign the Agreement between APHF and Africa CDC. Our strategic partnership has benefited the continent through resource mobilisation to respond to the COVID-19 pandemic, the Ebola, Marburg, and Cholera outbreaks, and related interventions. I am grateful to Africa CDC for the support over the years since we started working in 2020 and the great work we have done together.”\nThe Agreement outlines the collaboration modalities between the two institutions, with the priority areas articulated in the Africa CDC strategy as a reference. These include strengthening public health institutions and the workforce, expanding local manufacturing of vaccines, diagnostics, and therapeutics, and building partnerships with critical stakeholders within the broader health ecosystem.\nThis Agreement consolidates the joint work that has yielded several achievements, taking it to the next level now that we have moved from the emergency response to address the challenges the continent still faces holistically and from a longer term- perspective.\nAfrica CDC and APHF Forge Strategic Partnership to Strengthen Health Systems\nDownload\n*** END ***\nNote to the Editors\nAbout the Africa CDC\nThe Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union that supports member states in efforts to strengthen health systems and improve surveillance, emergency response, and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nAbout the Africa Public Health Foundation\nThe Africa Public Health Foundation exists to forge partnerships and mobilise resources and investments for critical African public health initiatives in support of the Africa CDC and African Union’s New Public Health Order.For more information and to sign up for APHF’s newsletter, please visit\nhttp://www.aphf.africa\n.\nMedia Contacts\nFor Africa CDC\nMargaret Edwin\nDirector of Communication and Public Information\nEdwinM@africacdc.org\nFor Africa Public Health Foundation\nEunice Chege\nCommunications Lead\nechege@aphf.africa\n25 July 2024\nTheme\nEmergency Response and Preparedness\n,\nSurveillance and Disease Intelligence\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nHealth Systems\n,\nStrategic Partnership\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": 4,
+            "content": "not only showed strength in programmatic results but also improved the institutional capacity for greater sustainability and institutional resilience.\n“Our Saving Lives and Livelihoods initiative with the Mastercard Foundation has shown the power of respectful and action-oriented partnerships rooted in collaboration, coordination and systems strengthening. The experience and learnings from Phase I will enable us to move with greater speed and scale to deliver with accelerated impact to our member states” said\nDr. Jean Kaseya, Director General of the Africa CDC\n.\nIn its second phase, the partnership will expand its scope and scale, focusing on completing the vaccination of healthcare workers and vulnerable groups, building a robust workforce of community health workers, ensuring pandemic preparedness by bolstering national public health institutions, laboratory capacities, data access and quality, local manufacturing of vaccines, therapeutics and diagnostics, and continuing strengthening of Africa CDC.\n“While the global pandemic may be declared over, the need to continue investing in our health systems, build our workforce and prepare for future pandemics remains urgent. This partnership will ensure that we have strong health institutions and systems. We aim to enable thousands of young people to build their careers in healthcare and contribute to improving lives in Africa,” said\nReeta Roy, President, and CEO of the Mastercard Foundation.\nThe Saving Lives and Livelihoods initiative stands out as a testament to the power of African-led health solutions. As it progresses to its next phase, partnerships will continue to play a crucial role in shaping a New Public Health Order for Africa. Africa CDC and the Mastercard Foundation remain committed to improving the health and well-being of all Africans.\n-ENDS-\nAbout the Africa Centres for Disease Control and Prevention (Africa CDC)\nAfrica CDC is a continental autonomous health agency of the African Union established to support public health initiatives of Member States and strengthen the capacity of their public health institutions to detect, prevent, control, and respond quickly and effectively to disease threats. For more information, please visit:\nhttps://africacdc.org\nAbout the Mastercard Foundation\nThe Mastercard Foundation is a registered Canadian charity and one of the largest foundations in the world. It works with visionary organisations to advance education and financial inclusion, enabling young people in Africa and Indigenous youth in Canada to access dignified and fulfilling work. Established in 2006 through the generosity of Mastercard when it became a public company, the Foundation is an independent organisation separate from the company, with offices in Toronto, Kigali, Accra, Nairobi, Kampala, Lagos, Dakar, and Addis Ababa. Its policies, operations, and program decisions are determined by the Foundation’s Board of Directors and leadership. For more information on the Foundation, please visit\nwww.mastercardfdn.org\n.\nMedia contacts:\nAfrica Centres for Disease Control and Prevention\nMs. Ndahafa Nakwafila\nAg. Head Communication and Public Information\nNakwafilaN@africa-union.org|\nCommunications@africacdc.org\n|\nFacebook\n|\nTwitter\nMastercard Foundation\nWariko Kabuga-Waita\nSenior Director, Corporate Communications\nwwaita@mastercardfdn.org\n28 November 2023\nTheme\nSaving Lives and Livelihoods\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk\nAfrica CDC and UNICEF Expand Partnership to Strengthen Health Systems and Immunization of Children in Africa – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and UNICEF Expand Partnership to Strengthen Health Systems and Immunization of Children in Africa\nAddis Ababa | NewYork, 29 February 2024 –\nToday, the Africa Centres for Disease Control and Prevention (Africa CDC) and UNICEF announced an extended partnership dedicated to strengthening primary healthcare, supply chain management, pooled procurement and local manufacturing, and emergency response. The collaboration builds on the 2022-2024 Partnership Framework Agreement between Africa CDC and UNICEF, which aims to achieve the goals outlined in the African Union Agenda 2063: The Africa We Want. The partnership is expected to have a significant impact on public health in Africa by strengthening procurement and supply chain systems, with a particular focus on immunisation for children across the continent.\nH.E Dr Jean Kaseya, Director General of Africa CDC, and Ted Chaiban, UNICEF Deputy Executive Director for Humanitarian Action and Supply Operations, signed the expanded partnership agreement in Addis Ababa.\nThe COVID-19 pandemic exposed the fragility of many healthcare systems and highlighted deficiencies and challenges in medical supply chains. While countries with strong primary healthcare systems were better able to cope, the disruption caused by the pandemic left others facing shortages of vital medical commodities. Over the next four years, Africa CDC and UNICEF will work together to establish robust institutional backing for supply chain management and enhance pooled procurement mechanisms to fortify Africa’s healthcare infrastructure, ensuring timely and adequate access to essential medical supplies for its population.\nH.E Jean Kaseya expressed his pride in the partnership with UNICEF, stating that their shared commitments will enhance primary healthcare and strengthen Africa’s health security. ‘‘The partnership will optimise supply chain management",
+            "file_path": "merge"
+        },
+        {
+            "id": 5,
+            "content": "Africa CDC and CEPI deepen partnership to fortify African preparedness against disease outbreaks – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and CEPI deepen partnership to fortify African preparedness against disease outbreaks\nMay 28, 2024; Geneva, Switzerland:\nThe Africa Centres for Disease Control and Prevention (Africa CDC) and the Coalition for Epidemic Preparedness Innovations (CEPI) signed a Memorandum of Understanding (MoU) on the sidelines of the 77th World Health Assembly to expand their partnership to strengthen epidemic and pandemic prevention, preparedness and response in Africa.\nUnited by a shared mission, the organizations will collaborate to boost regional vaccine research, development, and sustainable manufacturing leadership and capabilities in Africa, fostering a faster and more equitable response to emerging infectious diseases.\n“The New Public Health Order calls to action to build resilient health systems capable of managing recurrent, high-impact infectious disease and outbreaks; an action-oriented partnership such as this is at the core,” said\nDr. Jean Kaseya, Africa CDC’s Director General\n. “This collaboration with CEPI in research, clinical trials, and local manufacturing of medical countermeasures will elevate Africa’s readiness against outbreaks, epidemics, and pandemics, thus consolidating the continent’s preparedness far beyond where we were prior to the COVID-19 pandemic.”\n“African leadership and capabilities will be key for ensuring the continent can respond to increasingly frequent infectious disease outbreaks,” said\nRichard Hatchett, CEPI’s Chief Executive Officer.\n“The preparatory work to manage these outbreaks—from greater vaccine manufacturing capacity to clinical trial readiness—must be undertaken now. CEPI stands ready to support Africa CDC in the realisation of these goals and to further strengthen Africa’s preparedness and resilience against future outbreaks.”\nIn line with the African Union’s (A.U.) ambition to produce 60% of the continent’s vaccine needs in Africa by 2040 under the Africa CDC’s Partnerships for African Vaccine Manufacturing (PAVM);  the expanded partnership will ultimately focus its efforts on enhancing research and development, building a workforce as well as supply chain optimization to support resilient health systems This ambition will increase vaccine sovereignty and reduce external reliance, helping prevent a recurrence of the vaccine inequity seen during the COVID-19 response in Africa.\nTo boost vaccine accessibility and efficiency and meet this goal, there is a need to invest in vaccine R&D and manufacturing innovations, amongst others, and build a resilient regional supply chain. To that end, Africa CDC and CEPI will coordinate to fund innovations accelerating speed, scale, or accessibility for initial implementation with African manufacturers. This investment will support sustainable manufacturing for routine vaccinations in Africa, and—in the event of an outbreak—these facilities can be mobilized to produce response vaccines promptly.\nIn alignment with Africa CDC, the partnership also aims to bolster Africa’s research ecosystem and clinical trial infrastructure, including targeted capacity strengthening through CEPI’s\nResearch Preparedness Program\n—which, directed by regional experts, aims to build capacity for conducting high-quality Phase 3 efficacy trials.\nBuilding on existing clinical trial capability in some African countries is vital as vaccine candidates against endemic diseases, such as\nLassa fever\n, progress into late-stage development. Phase 3 trials provide essential data required for vaccine approval and must take place in regions where the disease is prevalent. A\nCEPI-funded Phase 2 trial for a Lassa fever vaccine\ncandidate is already underway; it is crucial that if this candidate, or another, is successful, there is regional capability to further its path toward licensure. Once established, this capability can benefit other regional actors advancing to late-stage research.\nThe organizations will also collaborate to enhance vaccine safety protocols, biosecurity, pathogen surveillance, investment in capacity building, and other areas that help ensure overall African readiness for emergency vaccine responses.\nAfrica CDC and CEPI are committed to this cooperation, which will strengthen collaboration and deliver tangible results to deliver Africa’s long-term health security ambitions.\n—END\n—\nNotes to Editors\nAbout CEPI\nCEPI was launched in 2017 as an innovative partnership between public, private, philanthropic and civil organisations. Its mission is to accelerate the development of vaccines and other biologic countermeasures against epidemic and pandemic disease threats and enable equitable access to them. CEPI has supported the development of more than 50 vaccine candidates or platform technologies against multiple known high-risk pathogens and is also advancing the development of rapid response platforms for vaccines against a future Disease X. Central to CEPI’s pandemic-beating five-year plan for 2022-2026 is the ‘100 Days Mission’ to compress the time taken to develop safe, effective, globally accessible vaccines against new threats to just 100 days.\nAbout Africa CDC\nAbout Africa CDC: The Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union that supports member states in their efforts to strengthen health systems and improve surveillance, emergency response, and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nMedia contacts\nCEPI\nE: press@cepi.net | P: +44 7387 055214\nAfrica CDC\nMargaret Edwin,\nDirector of Communication & Public Information Division: Africa CDC | Tel: +251 986 632 878 | Email:\nEdwinM@africacdc.org\n28 May 2024\nTheme\nEmergency Response and Preparedness\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nCEPI\n,\nOutbreak Reponse\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": 6,
+            "content": ".\nDr Tajudeen said addressing AMR in Africa requires engaging all levels of society in a comprehensive and multi-sectoral approach. “Unless we work together, overcoming antimicrobial resistance will be a difficult and long-drawn process that will cost lives,” he said.\nCurrently, millions in Africa lack access to essential antibiotics, with a study by Africa CDC and the African Society for Laboratory Medicine revealing that only 1.3% of microbiology labs in 14 member states can test for key AMR pathogens.\nThe head of the African Society for Laboratory Medicine, Mr. Nqobile Ndlovu, reaffirmed the organization’s commitment to strengthening African laboratory capacities to combat antimicrobial resistance. “Our goal is to ensure the continued efficacy of treatments and promote data-driven solutions to safeguard public health across the continent,” he said.\nDr Tajudeen underscored the importance of prioritizing infection prevention, strengthening health and food systems, developing human resources, ensuring sustainable access to diagnostics and therapeutics, and investing in laboratory infrastructure for effective surveillance and data generation.\nThe report recommends an increase in the availability of high-quality diagnostics, vaccines, and antimicrobials for high-priority pathogens in high-risk African countries.\nFor more information\n:\nMedia inquiries:\nMargaret Edwin,\nDirector of Communication & Public Information Division: Africa CDC | Tel: +251 986 632 878 | Email:\nEdwinM@africacdc.org\nAbout Africa CDC\nThe Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union that supports member states in their efforts to strengthen health systems and improve surveillance, emergency response, and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nPatricia Mweene Lumba,\nSenior Knowledge Management Officer, Tel:+254 740060064 |Email:\npatricia.lumba@au-ibar.org\nAbout AU IBAR\nThe African Union-Interafrican Bureau for Animal Resources (AU-IBAR) is a technical office under the African Union’s Department of Agriculture, Rural Development, Blue Economy, and Sustainable Environment (DARBE). Our mission is to support AU member states in harnessing the potential of livestock, fisheries, aquaculture, and wildlife for human well-being and economic growth. We promote the sustainable development and use of these resources to enhance nutrition, food security, and overall prosperity across the African continent. Learn more at:\nwww.au-ibar.org\nNelly Rwenji\n, Senior Brand and Communications Manager, ASLM | Tel: +251 11 557 1022 (ETH) |\n+27 10 880 8592 (SA) | Mobile: +254 726 228 717 | Email:\nnrwenji@aslm.org\nAbout ASLM\nThe African Society for Laboratory Medicine (ASLM) is a pan-African professional body working to advocate for the critical role and needs of laboratory medicine and networks throughout Africa. ASLM aims to strengthen healthcare systems through collaborative efforts with governments, local and international organizations, implementing partners, and the private sector. Learn more at\nwww.aslm.org\n15 August 2024\nTheme\nAntimicrobial Resistance\n,\nSurveillance and Disease Intelligence\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nAMR\n,\nLandmark Report\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk\nCommuniqué: United in the Fight Against Mpox in Africa - High-Level Emergency Regional Meeting – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nCommuniqué: United in the Fight Against Mpox in Africa – High-Level Emergency Regional Meeting\nWe, the Ministers of Health of Angola, Benin, Burundi, Cameroon, Central African Republic, Congo, Democratic Republic of Congo, Gabon, Ghana, Liberia, Nigeria, Uganda and partners, meeting in Kinshasa, Democratic Republic of Congo on 13 April 2024;\nNOTING WITH CONCERN the prolonged and ongoing epidemic of mpox in several Central and West African countries and the potential risk of transmission to neighbouring countries and beyond;\nSERIOUSLY CONCERNED about the changing transmission dynamics, high mortality rate and transmissibility of the monkeypox virus, as well as the morbidity, mortality and social and economic impacts;\nAWARE of the limitations on access to and acquisition of medical countermeasures, including diagnostics, treatments, vaccines and other tools for early detection, verification, care, treatment and prevention;\nRECOGNIZING the common threat posed by the mpox outbreak to the health and economic security of the populations of the Central and West African regions and the urgent need to address this common threat by all member states of the African Union;\nACKNOWLEDGING the existing frameworks, protocols, strategies and agreements for cross-border solidarity, collaboration and coordination on infectious disease issues, including:\n• The Constitutive Act of the African Union (2000);\n• The Protocol Relating to the Establishment of the Peace and Security Council of the African Union (2002",
+            "file_path": "merge"
+        },
+        {
+            "id": 7,
+            "content": "Gavi for a deepened outcome.\nThe WHO Regional Office for Africa also welcomes the decision by  Gavi to translate lessons learned from the COVID-19 pandemic into concrete public health interventions, with a US$ 500 million investment to ensure the availability of funds for a future pandemic.\nThe lessons learned from decades of fighting and preventing diseases, including most recently,  COVID-19 have led to the vision and strategies, articulated in WHO Africa Regional Office’s Ending Disease in Africa: vision, strategies and Special Initiatives, 2023-2030, which will drive the work moving forward, including the vital acceleration of immunization uptake across the region.\nAnchored on this new strategy, WHO has supported countries in Africa in the development of innovative country plans to catch up with children who missed routine immunization.\nThis new strategy aligns with Gavi’s focus on protecting the next generation — particularly zero-dose children — through strengthening regional and country capacities on immunization and other diagnostics and therapeutics.\n“For us as WHO, serving about a billion people in 47 African countries, we welcome the opportunity to strengthen our ongoing collaboration with Gavi, Africa CDC and other partners to translate this latest commitment into action towards ending diseases in Africa,” Dr Moeti said.\nFor more information on the fight against diseases in Africa, see related links.\nEnding diseases in Africa\nStatus of Immunization in Africa\nThe roll-out of COVID-19 vaccines in Africa\nCountry Profiles on Immunization Coverage in the African Region\nClick image to enlarge\nFor Additional Information or to Request Interviews, Please contact:\nSayibu Ibrahim Suhuyini\nCommunications Officer\nWHO Ghana Country Office\nEmail:\nsayibui\n[at]\nwho.int\n(sayibui[at]who[dot]int)\nTel: +233 25 795 7942\nNyandoh Paho TADFOR\nCommunication Officer\nRegional Office for Africa\nEmail:\nnyandoht\n[at]\nwho.int\n(nyandoht[at]who[dot]int)",
+            "file_path": "merge"
+        },
+        {
+            "id": 8,
+            "content": "High-level event kicks off expansion of strategic EU-AU partnership, pledging joint commitments to strengthen Global Health and African Health Sovereignty – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nHigh-level event kicks off expansion of strategic EU-AU partnership, pledging joint commitments to strengthen Global Health and African Health Sovereignty\nBrussels, March 19, 2024 –\nThe African Union Commission (AUC) and the European Union hosted a High-level Conference marking the expansion of the strategic EU-AU health partnership. The AU delegation was led by the AUC, the Africa Centres for Disease Control and Prevention (Africa CDC), and the African Union Development Agency (AUDA-NEPAD). The EU delegation was led by the Belgian Presidency of the European Council and the European Commission.\nBuilding on the health commitments of the 6th EU-AU Summit and outcomes of the Addis Ababa AU-EU High-level dialogue, the AU and EU expanded collaboration in priority areas of common interest in the New Public Health Order and the EU Global Health Strategy, such as strengthening pandemic prevention, preparedness and response, One Health, AMR, digital health, climate and health. This collaboration is a positive example of the AU-EU partnership to support global health in multilateral fora. Enhancing equitable access to safe, qualitive, effective and affordable health services and products and national sovereignty will be key to reach SDG-targets such as achieving Universal Health Coverage. Therefore, it is crucial to support social protection systems which incorporate social health protection, aiming at gradually granting universal health coverage as well as at providing income security in case of sickness. The AU and EU further stressed the importance of the health sector in the creation of jobs and growth. They also expressed their commitment to conclude negotiations on a pandemic agreement and International Health Regulations by the May 2024 World Health Assembly.\nMost African countries are struggling to ensure sustainable and equitable access to the health products needed to meet the continent’s priority health needs. At the same time, the EU has expertise in health as well as manufacturing and access, including regulation of health products and has set out clear targets in supporting human development in its international partnerships.\nWith this High-level conference, the EU engages in continued technical collaboration on health in Africa and investments in strengthening Africa’s health security architecture. The EU’s Global Gateway strategy will be key to deliver on these commitments, notably through Team Europe Initiatives, increasing the resilience of European and African health systems in response to the rapidly shifting health burden, social protection, the impact of climate change and emerging health threats while considering innovative science, sharing of technical expertise and knowledge (as well as multi-stakeholder commitments).\nThe Belgian Presidency and the European Commission will follow up on the high-level conference in the European Council and in the governing bodies of the EU’s international cooperation instruments, aligned with shared interests and ambitions of European and African partners.\nAfrican Union Commissioner for Health, Humanitarian Affairs and Social Development,\nH.E. Amb. Minata Samate Cessouma\n“\nThe establishment of the African Medicines Agency (AMA) marks a crucial step forward in safeguarding health security on the continent by ensuring the availability and the accessibility of quality pharmaceutical products. This availability and accessibility facilitate prevention strategies and rapid responses to health emergencies, strengthening regulatory capacities and promoting regional cooperation and harmonisation of standards. By harmonising regulatory processes and promoting access to effectual medical products, the AMA can significantly enhance public health outcomes and promote sustainable development in Africa, as envisioned in the Africa Health Strategy (2016-2030) and the African Union Agenda 2063. AMA is also envisioned to bolster research and development efforts within the continent, fostering innovation and self-reliance in addressing health challenges specific to the continent. Looking to the future, the African Union Commission is enthusiastic about knowledge-sharing between the European Union and Africa to leverage the experience of establishing the European Mediines Agency to chart guidance and regulatory pathways for the development and approval of new manufacturing technologies and processes.\nBelgian Minister of Development Cooperation and Major Cities,\nH.E. Caroline GENNEZ\n“\nThe EU and Africa express a shared vision of health as the precondition for social development. African countries have extensive experience in the containment of epidemics; European countries have some of the best and most accessible healthcare in the world. Global health is an area in which the EU offers added value as a partner to Africa based on its expertise and experience. Europe bolsters its international partnerships by focusing on its unique selling proposition. Our cooperation on this front will improve health outcomes for countless of people, in Africa and Europe. Our focus will be on building affordable, available and high-quality healthcare systems.\n”\nEuropean Commissioner for International Partnerships,\nH.E. Jutta URPILAINEN\n“\nLearning the lessons from the COVID-19 pandemic, the AU and the EU are committed to advance health systems and strengthen health capacities globally. This joint commitment was well reflected in the Global Gateway investment package, which we presented at the AU-EU Summit of 2022. We are proud of the results achieved in increasing local manufacturing of medicines and vaccines in Africa, for Africa. Today we launch three major Team Europe Initiatives on health security, digital health and public health institutes, and strengthen cooperation between our institutions. This is another step forward to better confront evolving health challenges and to enhance the resilience of our communities.\n”\nEuropean Commissioner for Health and Food Safety,\nH.E. Stella KYRIAKIDES\n“\nAn ever-closer partnership between the African Union and the European Union is indispensable for public health. We want to work more closely with our African partners on pandemic prevention, preparedness and response, One Health and anti-microbial resistance, as well as the health effects of climate change. These are core objectives for our EU Global Health Strategy and the foundations of our cooperation with the African continent. We are now at a critical stage of the negotiations on the",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": 9,
+            "content": "Joint Statement on the Africa CDC and United States New Joint Action Plan – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nStatement\nJoint Statement on the Africa CDC and United States New Joint Action Plan\nOn November 28, on the sidelines of the Third International Conference on Public Health in Africa in Lusaka, Zambia, the frica Centres for Disease Control and Prevention (Africa CDC) and the U.S. government announced a Joint Action Plan to advance a shared vision to strengthen public health systems and deliver improved health outcomes in Africa.\nThe Joint Action Plan outlines key activities between the Africa CDC and U.S. government to achieve the objectives identified in the Memorandum of Cooperation to Promote Public Health Partnership, signed by African Union Commission Chairperson Moussa Faki and Secretary of State Antony Blinken in March 2022.\nThe Joint Action Plan represents a significant step toward stronger and deeper Africa CDC -U.S. collaboration, building on both Africa CDC and U.S. health investments and partnerships across Africa. It will facilitate institutional strengthening, expert exchanges, and knowledge-sharing in support of the African Union’s Agenda 2063 and the Africa CDC Strategic Plan 2023-2027. Additionally, it will promote integrated health systems, strengthen public health emergency response capacity, enhance clinical and laboratory systems, and expand innovation and local manufacturing of health products.\nThe Africa CDC and U.S. government intend to convene regular meetings of technical experts in Addis Ababa and Washington to operationalize, review, and update this Plan to support shared public health needs and global health security requirements.\n28 November 2023\nTheme\nEmergency Response and Preparedness\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan"
+        },
+        {
+            "id": 10,
+            "content": "collaborative efforts with governments, local and international organizations, implementing partners, and the private sector. Learn more at\nwww.aslm.org\n24 April 2024\nTheme\nAfrica CDC Institute for Pathogen Genomics\n,\nAfrica Pathogen Genomics Initiative\n,\nLaboratory Systems and Networks\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nAfrica PGI\n,\nPathogen Genomic\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        }
+    ]
+}

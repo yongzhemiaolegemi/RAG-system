@@ -1,0 +1,1150 @@
+{
+    "query": "非洲抗微生物药物耐药性（AMR）问题的根源是什么？该问题如何影响非洲的经济发展、公共卫生体系和社会稳定？其对非洲区域及全球生物安全可能产生的深远影响有哪些？",
+    "entities": [
+        {
+            "id": "1",
+            "entity": "Africa",
+            "type": "geo",
+            "description": "Africa is a continent experiencing frequent health emergencies, which are aggravated by climate change and conflict, making health security and emergency preparedness critical challenges. It faces the highest mortality rate from antimicrobial resistance (AMR) and bears a significant burden of infectious diseases such as HIV, malaria, and tuberculosis. Millions of people in Africa lack access to essential antibiotics, and the continent has limited laboratory capacity to detect AMR pathogens, further complicating healthcare responses. \n\nTo address these pressing health issues, multiple public health initiatives and partnerships operate across Africa. The Joint External Assessment Program (JEAP) initiative specifically targets Africa to enhance health emergency preparedness and response systems against frequent disease outbreaks and humanitarian crises. Similarly, initiatives like the Saving Lives and Livelihoods program work throughout the continent to strengthen public health systems and improve pandemic preparedness. \n\nOrganizations such as the Africa Centers for Disease Control and Prevention (Africa CDC) and the African Union (AU) lead coordinated responses to combat AMR and infectious diseases, while collaborations with UNICEF focus on improving healthcare infrastructure, immunization coverage, supply chain management, and boosting local manufacturing of health commodities. These efforts also include improving regulatory frameworks and market access to enhance Africa’s capacity to manage health challenges effectively.\n\nOverall, Africa is actively seeking to enhance its self-reliance in health security through innovation, partnerships, and a shared vision for a safer and healthier future. The continent remains the primary geographic focus for these extensive health initiatives and collaborative efforts aimed at overcoming its significant health security challenges.<SEP>Africa is the continent affected by the Mpox outbreaks, hosting 15 African Union member states with reported cases in 2024 and the focus area for Africa CDC's emergency response.",
+            "created_at": "2025-07-24 22:38:23",
+            "file_path": "forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa;mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security;merge;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "2",
+            "entity": "Health Emergencies in Africa",
+            "type": "category",
+            "description": "Health Emergencies in Africa refers to the frequent disease outbreaks and crises occurring in the African region, with over 130 outbreaks reported by November 2023.<SEP>This refers to recurring public health crises such as disease outbreaks, often increasing due to climate change and conflict, requiring coordinated responses.",
+            "created_at": "2025-07-24 22:23:56",
+            "file_path": "merge"
+        },
+        {
+            "id": "3",
+            "entity": "COVID-19 Pandemic",
+            "type": "event",
+            "description": "The COVID-19 Pandemic is a global infectious disease outbreak caused by the coronavirus that began in 2019 and was declared a public health emergency by the World Health Organization (WHO). This global health crisis exposed significant vulnerabilities and weaknesses in healthcare systems and medical supply chains worldwide, with particular emphasis on the challenges faced in Africa. The pandemic underscored the critical need for stronger primary healthcare systems, improved molecular diagnostic and genomic surveillance capabilities, enhanced local manufacturing, and increased regulatory capacities within the region.\n\nIn response to these challenges, the COVID-19 Pandemic acted as a catalyst for intensified collaboration among key health organizations, including the Africa Centres for Disease Control and Prevention (Africa CDC), UNICEF, the Africa Public Health Foundation (APHF), Gavi, and the WHO Africa Regional Office. These partnerships focused on epidemic preparedness, vaccine development, and strengthening disease prevention measures. Initiatives such as COVAX and the Saving Lives and Livelihoods program were launched to improve vaccine access and bolster health system resilience across Africa.\n\nMoreover, the pandemic highlighted the urgent need for regional diversification of vaccine manufacturing, revealing significant vulnerabilities in Africa’s vaccine supply. This recognition prompted WHO Africa to develop decentralized emergency response systems and establish regional health emergency hubs aimed at better coordinating response efforts and strengthening health infrastructure.\n\nOverall, the COVID-19 Pandemic severely impacted Africa and globally, emphasizing the importance of vaccination, pandemic preparedness, and international cooperation. It significantly influenced strategies, investments, and collaborative efforts to build more resilient health systems and improve pandemic preparedness both in Africa and worldwide.",
+            "created_at": "2025-07-24 23:00:46",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises;africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic;merge"
+        },
+        {
+            "id": "4",
+            "entity": "Disease Outbreaks",
+            "type": "category",
+            "description": "Regularly occurring health events in Africa, with an average of 100 outbreaks annually, that threaten public health and require effective surveillance and rapid response.",
+            "created_at": "2025-07-24 22:23:58",
+            "file_path": "merge"
+        },
+        {
+            "id": "5",
+            "entity": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "type": "organization",
+            "description": "The Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency and technical institution established under the African Union (AU). It plays a leading role in coordinating responses to epidemics and major health threats across Africa, including declaring public health emergencies such as the Mpox outbreak. Africa CDC is focused on strengthening the continent’s public health institutions, capacities, and health systems by supporting African countries in controlling infectious diseases and managing health emergencies. Its core functions include disease prevention and control, improving disease surveillance, emergency preparedness and response, and promoting local vaccine manufacturing. Through these efforts, Africa CDC enhances health security and fosters partnerships to effectively detect and respond to disease threats throughout the continent.",
+            "created_at": "2025-07-24 22:19:28",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge;africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "6",
+            "entity": "Antibiotic Access",
+            "type": "category",
+            "description": "The availability and access to essential antibiotics across Africa, currently limited according to Africa CDC and African Society for Laboratory Medicine studies.",
+            "created_at": "2025-07-24 22:21:14",
+            "file_path": "merge"
+        },
+        {
+            "id": "7",
+            "entity": "Northern Africa",
+            "type": "geo",
+            "description": "A geographic region of Africa included in the scope of JEAP's efforts to improve health security.<SEP>Northern Africa is a geographic region located in the northern part of the African continent, encompassing several countries with diverse cultures and geography. It plays a significant role in continental public health efforts and is actively engaged in a wide range of health initiatives led by the Africa Centers for Disease Control and Prevention (Africa CDC) and its allied partners. These initiatives include pathogen genomics, antimicrobial resistance surveillance, disease control, and the strengthening of laboratory networks. Northern Africa serves as a focal area for health manufacturing initiatives, public health surveillance, outbreak response, and the enhancement of clinical trial capacities. The region is also key to the mpox emergency response strategy in Africa and participates in various health partnership programs that contribute to comprehensive continental health strategies. Overall, Northern Africa is a vital participant in Africa CDC’s efforts to improve health outcomes and strengthen healthcare systems across the continent.",
+            "created_at": "2025-07-24 22:45:06",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;merge;africa-cdc-who-welcome-uks-support-to-address-health-challenges;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;enhancing-vaccine-storage-efficiencies-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "8",
+            "entity": "Cholera outbreaks",
+            "type": "event",
+            "description": "Cholera outbreaks in Africa are recurring public health challenges for which Africa CDC and APHF have mobilized resources and coordinated interventions.",
+            "created_at": "2025-07-24 21:12:48",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "9",
+            "entity": "COVID-19 Pandemic in Africa",
+            "type": "event",
+            "description": "The ongoing public health situation and its transition phase in Africa which AHRO addresses through research and policy initiatives.",
+            "created_at": "2025-07-24 21:28:19",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "10",
+            "entity": "Public Health Systems",
+            "type": "category",
+            "description": "Public health systems in Africa are the focus of the Saving Lives and Livelihoods initiative aiming for strengthening through workforce development, institutional capacity, and improved service delivery.",
+            "created_at": "2025-07-24 21:23:19",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "11",
+            "entity": "High-quality diagnostics, vaccines, and antimicrobials",
+            "type": "category",
+            "description": "Essential medical resources recommended to increase availability in African high-risk countries for managing key antimicrobial resistant pathogens.",
+            "created_at": "2025-07-24 22:21:26",
+            "file_path": "merge"
+        },
+        {
+            "id": "12",
+            "entity": "New Public Health Order",
+            "type": "category",
+            "description": "A framework aiming to coordinate global and continental health responses with a focus on local manufacturing and health sovereignty in Africa.<SEP>A strategic framework aimed at strengthening public health systems and responses in Africa in collaboration with international partners.<SEP>The New Public Health Order is a comprehensive framework and initiative primarily focused on Africa, designed to transform and strengthen public health strategies across the continent. Developed by Africa CDC and supported within the EU-AU partnership, it aims to enhance pandemic prevention, preparedness, and response through a multifaceted approach that includes One Health principles, tackling antimicrobial resistance (AMR), advancing digital health, and addressing the impacts of climate change on health. Central to the New Public Health Order is the emphasis on building resilient health systems capable of managing recurrent, high-impact infectious diseases and outbreaks. It advocates for stronger partnerships, increased self-sufficiency, improved health security, and the transformation of health governance, workforce capacity, and systems continent-wide, ultimately redefining public health approaches in Africa to ensure sustainable and effective disease control and prevention.",
+            "created_at": "2025-07-24 22:18:27",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa;merge;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "13",
+            "entity": "New Public Health Order for Africa",
+            "type": "category",
+            "description": "A vision to reshape Africa's public health systems through stronger partnerships, institutional capacity building, and emphasis on sustainability and health security.",
+            "created_at": "2025-07-24 22:18:52",
+            "file_path": "merge"
+        },
+        {
+            "id": "14",
+            "entity": "Africa Health Strategy (2016-2030)",
+            "type": "category",
+            "description": "A strategic framework guiding the continent's health development goals, including AMA’s role in enhancing health outcomes and sustainable development.<SEP>A strategic plan by the African Union aiming to improve health outcomes and sustainable development across Africa by 2030.",
+            "created_at": "2025-07-24 22:22:47",
+            "file_path": "merge;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "15",
+            "entity": "Africa CDC",
+            "type": "organization",
+            "description": "Africa CDC is the Africa Centres for Disease Control and Prevention, a continental public health institute supporting disease control and prevention initiatives across African countries.<SEP>Africa Centres for Disease Control and Prevention (Africa CDC) is a continental public health agency leading efforts for local vaccine manufacturing, health security, diagnostics, and outbreak response in Africa.<SEP>The Africa Centres for Disease Control and Prevention (Africa CDC) is the African Union’s continental autonomous public health agency and a specialized technical institution responsible for leading and coordinating public health initiatives across Africa. Established to support African Union member states, Africa CDC focuses on strengthening health systems, improving disease surveillance, and enhancing emergency preparedness and response to infectious disease threats, outbreaks, pandemics, and other health emergencies. It plays a pivotal role in outbreak detection, epidemic preparedness, disease prevention and control, and the strengthening of laboratory and clinical systems.\n\nAfrica CDC is dedicated to building robust and resilient health systems, accelerating universal health coverage, and safeguarding Africa’s health security. The agency advances molecular diagnostics, genomic surveillance, and the local manufacturing of vaccines, medicines, and diagnostics to increase Africa's capacity to manage public health challenges and promote health sovereignty. It also addresses specialized public health concerns such as antimicrobial resistance and supports research initiatives like the proposed Mpox Research Consortium.\n\nAdditionally, Africa CDC has been responsible for declaring Mpox a public health emergency of continental security and leads epidemic responses in Africa. Working closely with global organizations including the World Health Organization (WHO) and Gavi, Africa CDC enhances emergency preparedness and response planning, promotes health innovation, and strengthens the capability of public health institutions across the continent.\n\nThrough these comprehensive efforts, Africa CDC stands as Africa’s leading public health institution, dedicated to supporting member states in preventing, detecting, controlling, and responding effectively and swiftly to disease threats and health emergencies while promoting sustainable health security and improved health outcomes throughout Africa.",
+            "created_at": "2025-07-24 23:00:41",
+            "file_path": "partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan;africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa;the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge;enhancing-vaccine-storage-efficiencies-in-africa;addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;african-researchers-propose-mpox-research-group;who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "16",
+            "entity": "Africa CDC (Africa Centres for Disease Control and Prevention)",
+            "type": "organization",
+            "description": "The continental public health agency of the African Union focusing on disease prevention, epidemic preparedness, health security, and promotion of local vaccine manufacturing.",
+            "created_at": "2025-07-24 22:22:59",
+            "file_path": "merge"
+        },
+        {
+            "id": "17",
+            "entity": "Southern Africa",
+            "type": "geo",
+            "description": "A geographic region in Africa benefiting from the JEAP partnership's health emergency preparedness and response initiatives.<SEP>Southern Africa is a geographic region located in the southernmost part of the African continent, comprising the countries situated in this area. It plays a crucial role in continent-wide healthcare and disease control efforts, being actively involved in pathogen genomic surveillance, outbreak response, and disease prevention initiatives. The region is a core focus of the Africa Centers for Disease Control and Prevention (Africa CDC) programs, including health emergency preparedness, health system strengthening, and epidemic preparedness. Southern Africa participates extensively in the Africa CDC-driven Pathogen Genomics Initiative (PGI) 2.0, regional health security, vaccine manufacturing initiatives, and diagnostic decentralization strategies. It also benefits from multiple public health partnerships aimed at enhancing both regional and continental health security, such as the African Union-European Union (AU-EU) partnership. Additionally, Southern Africa is engaged in public health emergency management and plays an active role in surveillance and containment efforts for diseases including mpox, as well as antimicrobial resistance intelligence and monitoring. Overall, Southern Africa is a vital region involved in a broad spectrum of Africa CDC-led health strengthening and disease control initiatives.",
+            "created_at": "2025-07-24 22:45:06",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;merge;africa-cdc-who-welcome-uks-support-to-address-health-challenges;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;enhancing-vaccine-storage-efficiencies-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "18",
+            "entity": "Health Security on the African Continent",
+            "type": "category",
+            "description": "The overarching goal of coordinated efforts by Africa CDC, WHO, and partners to strengthen detection, preparedness, and response to health emergencies across Africa.",
+            "created_at": "2025-07-24 22:23:58",
+            "file_path": "merge"
+        },
+        {
+            "id": "19",
+            "entity": "Africa Centres for Disease Control and Prevention",
+            "type": "organization",
+            "description": "A specialized African Union health agency working to strengthen emergency preparedness, response capacities, and health systems on the continent, collaborating closely with WHO on the regional hubs.<SEP>Africa Centres for Disease Control and Prevention (Africa CDC) is a specialized public health agency of the African Union, mandated to coordinate responses to epidemics, mobilize African leaders and governments, and address significant public health threats across Africa.<SEP>The Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union dedicated to improving health emergency preparedness and response, strengthening health systems, and supporting member states across Africa. As a specialized technical institution, Africa CDC focuses on enhancing the capacity to detect, prevent, and respond to disease threats and outbreaks by improving disease surveillance, decentralizing diagnostics, and bolstering emergency response capabilities. The agency leads key health initiatives including vaccine manufacturing and pandemic response, employing data-driven interventions to prevent and control diseases. Through building partnerships and capacity, Africa CDC aims to enable rapid and effective responses to health challenges, ultimately safeguarding public health and strengthening health systems throughout the African continent.",
+            "created_at": "2025-07-24 22:50:51",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security;african-health-ministers-commit-to-purchasing-locally-made-vaccines;merge;africa-cdc-who-welcome-uks-support-to-address-health-challenges;enhancing-vaccine-storage-efficiencies-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "20",
+            "entity": "Timely Access to Medical Supplies",
+            "type": "category",
+            "description": "Availability and distribution efficiency of essential health commodities to populations in need across Africa, facilitated through strengthened supply chains.",
+            "created_at": "2025-07-24 22:19:21",
+            "file_path": "merge"
+        },
+        {
+            "id": "21",
+            "entity": "Antimicrobial Resistance (AMR)",
+            "type": "category",
+            "description": "Antimicrobial Resistance (AMR) refers to the ability of microorganisms, including bacteria, viruses, fungi, and parasites, to develop resistance to antimicrobial drugs such as antibiotics. This resistance leads to treatment failures, the spread of diseases, and increased mortality. AMR represents a critical global health threat that is particularly significant in regions like Africa, where limited access to diagnostics and treatments exacerbates the public health risks. Addressing AMR is a key focus within international health collaborations, including the EU-AU health partnership, highlighting the urgent need to combat this growing challenge posed by resistant pathogens.",
+            "created_at": "2025-07-24 22:21:05",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "22",
+            "entity": "Economic and Social Impact",
+            "type": "category",
+            "description": "Socio-economic consequences of Mpox outbreaks on African nations, including healthcare costs and disruption.",
+            "created_at": "2025-07-24 22:23:35",
+            "file_path": "merge"
+        },
+        {
+            "id": "23",
+            "entity": "Africa Public Health Foundation (APHF)",
+            "type": "organization",
+            "description": "The Africa Public Health Foundation (APHF) is a health-focused organization dedicated to supporting public health initiatives across Africa. It forges partnerships and mobilizes resources to enhance critical public health efforts, working closely with the Africa CDC and other partners. APHF's key activities include strengthening laboratory and genomic surveillance systems, supporting outbreak response and pandemic preparedness, managing grants, advocating for improved health policies, engaging the private sector, and analyzing public health data for African Union Member States. Through these comprehensive efforts, APHF plays a vital role in advancing public health infrastructure and capacity throughout the continent.",
+            "created_at": "2025-07-24 22:17:24",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;merge"
+        },
+        {
+            "id": "24",
+            "entity": "Eastern Africa",
+            "type": "geo",
+            "description": "A geographic region of Africa targeted for enhanced health emergency response under the JEAP framework.<SEP>Eastern Africa is a geographic region located in the eastern part of the African continent, comprising multiple countries. It plays a significant role in both continental and global health initiatives, actively participating in pathogen genomics, molecular diagnostics, genomic surveillance, and antimicrobial resistance (AMR) monitoring projects aimed at enhancing health security and emergency response capacities. The region is a key focus area for the Africa Centers for Disease Control and Prevention (Africa CDC), which supports Eastern Africa in local manufacturing, health emergency preparedness, and various public health strengthening activities, including vaccine development efforts in collaboration with organizations such as the Coalition for Epidemic Preparedness Innovations (CEPI). Eastern Africa is involved in coordinated healthcare and emergency preparedness efforts, including surveillance and disease intelligence initiatives targeting infectious diseases like mpox and visceral leishmaniasis, the latter with the region bearing a significant burden of disease by hosting 73% of global visceral leishmaniasis cases in 2022. Furthermore, Eastern Africa actively participates in broader continental health strategies through cooperation between the African Union (AU) and the European Union (EU), benefiting from support by both African and international agencies. These comprehensive health initiatives underscore Eastern Africa’s importance in regional and global health collaboration, disease monitoring, emergency response, and public health strengthening.<SEP>Eastern Africa is a geographic sub-region of the African continent heavily affected by visceral leishmaniasis, accounting for 73% of global VL cases in 2022.",
+            "created_at": "2025-07-24 22:45:05",
+            "file_path": "new-framework-launched-eliminate-visceral-leishmaniasis-eastern-africa;africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;merge;africa-cdc-who-welcome-uks-support-to-address-health-challenges;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;enhancing-vaccine-storage-efficiencies-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "25",
+            "entity": "Disease Outbreaks in Africa",
+            "type": "category",
+            "description": "On average, 100 disease outbreaks occur annually in Africa, highlighting the critical need for strengthened surveillance and response.",
+            "created_at": "2025-07-24 22:45:00",
+            "file_path": "partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "26",
+            "entity": "Low Public Awareness",
+            "type": "category",
+            "description": "Insufficient public knowledge about mpox transmission and prevention contributes to the disease’s continued spread in Africa.<SEP>Low public awareness about Mpox transmission and prevention is a critical challenge impeding effective public health response.",
+            "created_at": "2025-07-24 22:38:35",
+            "file_path": "mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security;merge"
+        },
+        {
+            "id": "27",
+            "entity": "Impact on Health Systems",
+            "type": "category",
+            "description": "Mpox outbreaks stress African health systems through increased patient loads, resource needs, and challenge to existing care capacity.",
+            "created_at": "2025-07-24 22:23:35",
+            "file_path": "merge"
+        },
+        {
+            "id": "28",
+            "entity": "Public Health Emergency",
+            "type": "event",
+            "description": "Over 100 health emergencies occur annually in the WHO African Region, impacting economies and health systems.",
+            "created_at": "2025-07-24 21:56:07",
+            "file_path": "forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health"
+        },
+        {
+            "id": "29",
+            "entity": "Africa Public Health Foundation",
+            "type": "organization",
+            "description": "The Africa Public Health Foundation (APHF) is an organization established to mobilize resources, manage grants, advocate for improved health policies, engage the private sector, and contribute to the analysis of public health data in Africa, supporting the goals and strategic plan of Africa CDC and the African Union's New Public Health Order.<SEP>The Africa Public Health Foundation (APHF) is an organization established to support Africa CDC's goals by facilitating resource mobilization, grants management, policy advocacy, private sector engagement, and analysis of public health data to strengthen health systems across African Union Member States.<SEP>The Africa Public Health Foundation (APHF) is an organization that forges partnerships and mobilizes resources and investments for critical African public health initiatives, supporting the Africa CDC and the African Union's New Public Health Order.",
+            "created_at": "2025-07-24 22:17:03",
+            "file_path": "merge;africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "30",
+            "entity": "Public Health Emergency Preparedness and Response",
+            "type": "category",
+            "description": "A core programmatic area under the Africa CDC and UNICEF partnership focused on strengthening health systems' capability to prepare for and respond effectively to public health emergencies such as disease outbreaks.",
+            "created_at": "2025-07-24 22:19:12",
+            "file_path": "merge"
+        },
+        {
+            "id": "31",
+            "entity": "Disease Surveillance and Emergency Response",
+            "type": "category",
+            "description": "Core public health functions targeted for enhancement through the MoU between Africa CDC and France to improve health security in Africa.",
+            "created_at": "2025-07-24 21:21:15",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "32",
+            "entity": "African Union Member States",
+            "type": "geo",
+            "description": "The African Union Member States are the countries that form the African Union, collectively participating in regional public health initiatives to strengthen health systems and local manufacturing across the continent. These member countries work closely with the Africa Centres for Disease Control and Prevention (Africa CDC) and partners such as the African Public Health Foundation (APHF) to improve public health institutions, procurement processes, and immunisation efforts. Notably, some member states, including Botswana, Cameroon, Sierra Leone, Uganda, and Zambia, have received cold chain equipment to support these health initiatives, reflecting the collective efforts to enhance healthcare infrastructure and delivery throughout Africa.",
+            "created_at": "2025-07-24 22:17:19",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;merge;africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "33",
+            "entity": "Central Africa",
+            "type": "geo",
+            "description": "A geographic region of Africa covered under the JEAP partnership and emergency preparedness initiatives.<SEP>Central Africa is a geographic region located in the central part of the African continent, comprising several countries. It is a critical area for public health and disease control initiatives, serving as a key focus for the Africa Centers for Disease Control and Prevention (Africa CDC) and its partners. The region is actively involved in a broad range of health efforts, including pathogen genomics initiatives, genomic surveillance, outbreak detection, and emergency response and preparedness activities coordinated by Africa CDC. Central Africa is also targeted by specific disease surveillance programs, such as those addressing antimicrobial resistance and mpox outbreaks, with corresponding prevention and control measures implemented in the region. Furthermore, the region participates in health initiatives related to medical supplies and cold chain equipment to support these efforts. Central Africa benefits from international collaboration, including support from France, aimed at strengthening Africa CDC’s public health objectives. Overall, Central Africa plays a vital role in continental health programs, disease surveillance, and regional partnerships focused on improving health outcomes and managing infectious disease threats across Africa.",
+            "created_at": "2025-07-24 22:45:03",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;merge;africa-cdc-who-welcome-uks-support-to-address-health-challenges;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;enhancing-vaccine-storage-efficiencies-in-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "34",
+            "entity": "Africa Centre for Disease Control and Prevention",
+            "type": "organization",
+            "description": "The Africa Centre for Disease Control and Prevention (Africa CDC) is a continental institution focused on disease control, prevention, and health workforce development in Africa.<SEP>The Africa Centre for Disease Control and Prevention (Africa CDC) is a continental public health institute focused on disease control and health security in Africa, actively supporting health workforce investments.",
+            "created_at": "2025-07-24 22:20:40",
+            "file_path": "merge;african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "35",
+            "entity": "Health Challenges in Africa Programme II",
+            "type": "category",
+            "description": "A program funded by the UK government aiming to address deadly diseases, epidemics, drug-resistant infections, and climate-related health issues in Africa through partnerships with African countries and organizations.",
+            "created_at": "2025-07-24 21:33:06",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "36",
+            "entity": "Africa CDC New Public Health Order",
+            "type": "category",
+            "description": "A framework initiated by Africa CDC focusing on strengthening health systems and emergency preparedness on the African continent.",
+            "created_at": "2025-07-24 22:45:03",
+            "file_path": "partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "37",
+            "entity": "Managerial skills and country leadership",
+            "type": "category",
+            "description": "Capacity-building objectives focusing on enhancing management and leadership capabilities within African health systems.",
+            "created_at": "2025-07-24 22:18:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "38",
+            "entity": "African health workforce challenges",
+            "type": "category",
+            "description": "Challenges faced by African health systems including workforce shortages, rising unemployment among health workers, excessive out-migration, and low quality of training.",
+            "created_at": "2025-07-24 22:20:55",
+            "file_path": "merge"
+        },
+        {
+            "id": "39",
+            "entity": "AFRICA CDC",
+            "type": "organization",
+            "description": "Africa Centres for Disease Control and Prevention (Africa CDC) is a specialized technical institution of the African Union tasked with supporting member states and regional economic communities in strengthening their disease surveillance, prevention, and control capacities across the continent.",
+            "created_at": "2025-07-24 21:45:36",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "40",
+            "entity": "Public Health Institutions",
+            "type": "category",
+            "description": "National and regional institutions responsible for managing public health, targeted for capacity strengthening and pandemic preparedness by Africa CDC and partners.<SEP>Public Health Institutions are organizations and facilities involved in disease prevention, health promotion, research, and policy implementation; they are a focus of strengthening efforts by Africa CDC and APHF.",
+            "created_at": "2025-07-24 22:19:02",
+            "file_path": "merge;africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "41",
+            "entity": "AU-IBAR",
+            "type": "UNKNOWN",
+            "description": "AU-IBAR operates under the African Union’s Department of Agriculture and supports efforts to address AMR.",
+            "created_at": "2025-07-24 21:45:43",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "42",
+            "entity": "African Union Landmark Report",
+            "type": "event",
+            "description": "A significant report launched at Africa CDC headquarters highlighting that antimicrobial resistance causes higher mortality in Africa compared to HIV-AIDS, tuberculosis, and malaria.<SEP>The African Union Landmark Report is a comprehensive report launched by Africa CDC detailing the severe threat of antimicrobial resistance in Africa.",
+            "created_at": "2025-07-24 22:20:59",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge"
+        },
+        {
+            "id": "43",
+            "entity": "Antimicrobial Resistance",
+            "type": "category",
+            "description": "Antimicrobial Resistance (AMR) refers to the growing ability of microbes to resist antimicrobial treatments, posing a significant public health threat.",
+            "created_at": "2025-07-24 21:45:27",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "44",
+            "entity": "Dr Huyam Salih",
+            "type": "person",
+            "description": "Dr Huyam Salih is the director of the African Union-Inter African Bureau for Animal Resources (AU-IBAR), advocating for multisectoral action against antimicrobial resistance.<SEP>Dr Huyam Salih is the director of the African Union-Inter African Bureau for Animal Resources (AU-IBAR), emphasizing the threat AMR poses to health, agrifood systems, food security, and economies in Africa.",
+            "created_at": "2025-07-24 22:21:01",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge"
+        },
+        {
+            "id": "45",
+            "entity": "Surveillance and Data Systems",
+            "type": "category",
+            "description": "Critical health and veterinary infrastructure required to monitor antimicrobial resistance prevalence and guide interventions in Africa.",
+            "created_at": "2025-07-24 21:45:24",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "46",
+            "entity": "Microbiology Labs Capacity",
+            "type": "category",
+            "description": "The capacity of microbiology laboratories in Africa to test for key antimicrobial resistant pathogens, currently limited to about 1.3% in 14 member states.",
+            "created_at": "2025-07-24 22:21:16",
+            "file_path": "merge"
+        },
+        {
+            "id": "47",
+            "entity": "Health Security",
+            "type": "category",
+            "description": "Health Security is a comprehensive concept focused on protecting populations from a wide range of health threats, including epidemics, pandemics, outbreaks, drug-resistant infections, and other emergencies. It encompasses efforts, policies, and activities aimed at preventing, detecting, and responding to these health emergencies through the development and strengthening of resilient and prepared health systems. Health Security is recognized as a priority area that involves significant measures and investments to enhance pandemic preparedness, outbreak response, and overall health system resilience. Particular emphasis is placed on improving the capacity of regions such as Africa to prevent, detect, and respond effectively to public health threats, supported through collaborations and partnerships between organizations such as the Africa CDC, UNICEF, the African Union (AU), and the European Union (EU). These joint efforts are part of broader global initiatives and frameworks, including the Emergency Preparedness Response Technical Advisory Group (EPR-TAG), that aim to safeguard populations against health emergencies worldwide.",
+            "created_at": "2025-07-24 22:19:28",
+            "file_path": "forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health;africa-cdc-who-welcome-uks-support-to-address-health-challenges;merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "48",
+            "entity": "United Kingdom Government",
+            "type": "organization",
+            "description": "The UK government has committed significant funding and support to combat health challenges in Africa, including investments targeting deadly diseases, vaccine development, and pandemic preparedness.<SEP>The United Kingdom government, as a sovereign state administration, has made significant commitments in global health through funding and partnerships to tackle epidemics, drug-resistant infections, and climate-related health challenges.",
+            "created_at": "2025-07-24 22:19:59",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges;merge"
+        },
+        {
+            "id": "49",
+            "entity": "Misuse and Overuse of Antimicrobials",
+            "type": "category",
+            "description": "Human behaviors accelerating antimicrobial resistance through incorrect or excessive use of antimicrobial drugs in health, agriculture, and food systems.",
+            "created_at": "2025-07-24 21:45:21",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "50",
+            "entity": "Drug-Resistant Infections",
+            "type": "category",
+            "description": "Infections caused by pathogens that are resistant to antimicrobial drugs, leading to increased mortality, disability, and spread of disease.",
+            "created_at": "2025-07-24 21:45:21",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        }
+    ],
+    "relations": [
+        {
+            "id": "1",
+            "entity1": "Africa",
+            "entity2": "Antimicrobial Resistance (AMR)",
+            "description": "AMR represents a critical health challenge across Africa, affecting human and animal health and requiring continental response.",
+            "created_at": "2025-07-24 22:29:17",
+            "file_path": "merge"
+        },
+        {
+            "id": "2",
+            "entity1": "AU-IBAR",
+            "entity2": "Antimicrobial Resistance (AMR)",
+            "description": "AU-IBAR emphasizes the role of antimicrobial resistance affecting agriculture, food safety, and animal health.",
+            "created_at": "2025-07-24 22:29:12",
+            "file_path": "merge"
+        },
+        {
+            "id": "3",
+            "entity1": "African Union Landmark Report",
+            "entity2": "Antimicrobial Resistance (AMR)",
+            "description": "The report establishes that AMR causes higher mortality in Africa than HIV-AIDS, TB, and malaria combined.<SEP>The report highlights prevalence, mortality, and threats associated with AMR in Africa.",
+            "created_at": "2025-07-24 22:29:23",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge"
+        },
+        {
+            "id": "4",
+            "entity1": "Antimicrobial Resistance",
+            "entity2": "Northern Africa",
+            "description": "Northern Africa is a significant geographic area targeted for antimicrobial resistance control and health system strengthening.<SEP>Northern Africa is included in the continental strategy and health initiatives addressing antimicrobial resistance.",
+            "created_at": "2025-07-24 21:46:09",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "5",
+            "entity1": "Antimicrobial Resistance",
+            "entity2": "Southern Africa",
+            "description": "Southern Africa is one of the regions actively involved in antimicrobial resistance surveillance and disease intelligence.\"| \"regional engagement, disease monitoring<SEP>Southern Africa undertakes antimicrobial resistance surveillance and disease intelligence activities as part of continental health strategies.",
+            "created_at": "2025-07-24 21:46:09",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "6",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "High-quality diagnostics, vaccines, and antimicrobials",
+            "description": "Addressing AMR effectively requires increased availability of quality diagnostics, vaccines, and antimicrobials, especially in high-risk African countries.",
+            "created_at": "2025-07-24 22:29:39",
+            "file_path": "merge"
+        },
+        {
+            "id": "7",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Dr Huyam Salih",
+            "description": "Dr Huyam Salih highlights the threat of AMR beyond health to agriculture, food security, and economies.",
+            "created_at": "2025-07-24 22:29:20",
+            "file_path": "merge"
+        },
+        {
+            "id": "8",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Surveillance and Data Systems",
+            "description": "Surveillance and data systems are critical for effectively monitoring and combating AMR in human health and animal sectors in Africa.",
+            "created_at": "2025-07-24 21:45:57",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "9",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Microbiology Labs Capacity",
+            "description": "Limited lab capacity hampers effective detection and surveillance of AMR pathogens across Africa.",
+            "created_at": "2025-07-24 22:29:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "10",
+            "entity1": "Health Security",
+            "entity2": "United Kingdom Government",
+            "description": "The UK’s investments aim to enhance health security by preventing and controlling epidemics, pandemics, and drug-resistant infections.",
+            "created_at": "2025-07-24 21:33:42",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "11",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Misuse and Overuse of Antimicrobials",
+            "description": "The misuse and overuse of antimicrobials in healthcare, agriculture, and food systems accelerate the development of AMR.",
+            "created_at": "2025-07-24 21:45:56",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "12",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Drug-Resistant Infections",
+            "description": "Drug-resistant infections are the direct consequence of AMR, causing higher mortality and treatment failures.",
+            "created_at": "2025-07-24 21:45:56",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "13",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Children and Vulnerable Groups",
+            "description": "AMR disproportionately affects children and other vulnerable populations in Africa.",
+            "created_at": "2025-07-24 21:45:55",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "14",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Dr Tajudeen",
+            "description": "Dr Tajudeen emphasizes the need for comprehensive multi-sectoral efforts to combat AMR in Africa, underlining the complexity and urgency of the issue.",
+            "created_at": "2025-07-24 22:29:33",
+            "file_path": "merge"
+        },
+        {
+            "id": "15",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Tuberculosis (TB)",
+            "description": "AMR leads to greater mortality than tuberculosis in Africa.",
+            "created_at": "2025-07-24 21:45:52",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "16",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Livestock Production Decline due to AMR",
+            "description": "AMR threatens livestock production with projected declines due to drug resistance impacting animal health.",
+            "created_at": "2025-07-24 22:29:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "17",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Livestock Production",
+            "description": "AMR threatens livestock production, expected to decline 2.6% to 7.5% each year, mainly in Africa.",
+            "created_at": "2025-07-24 21:45:57",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "18",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "USD1 trillion Annual Global AMR Healthcare Costs by 2050",
+            "description": "Projected healthcare costs due to AMR globally could exceed USD1 trillion per year by 2050.",
+            "created_at": "2025-07-24 22:29:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "19",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "Healthcare Costs",
+            "description": "AMR is projected to cause global healthcare costs exceeding USD 1 trillion annually by 2050.",
+            "created_at": "2025-07-24 21:45:57",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "20",
+            "entity1": "Antimicrobial Resistance (AMR)",
+            "entity2": "USD2-6 billion Annual Funding Need for AMR",
+            "description": "Represents the estimated annual funding required for an effective AMR response throughout Africa.",
+            "created_at": "2025-07-24 22:29:23",
+            "file_path": "merge"
+        },
+        {
+            "id": "21",
+            "entity1": "African Union-Inter African Bureau for Animal Resources (AU-IBAR)",
+            "entity2": "Antimicrobial Resistance (AMR)",
+            "description": "AU-IBAR emphasizes AMR threats to agriculture, food safety, and animal health, advocating for multisectoral action.",
+            "created_at": "2025-07-24 22:29:21",
+            "file_path": "merge"
+        },
+        {
+            "id": "22",
+            "entity1": "Antimicrobial Resistance",
+            "entity2": "Malaria",
+            "description": "AMR causes higher mortality rates than malaria in Africa, highlighting its critical health threat.",
+            "created_at": "2025-07-24 21:45:45",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "23",
+            "entity1": "AU-IBAR",
+            "entity2": "Antimicrobial Resistance",
+            "description": "AU-IBAR focuses on the impact of AMR on animal health, food safety, and agricultural livelihoods in Africa.",
+            "created_at": "2025-07-24 21:45:44",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "24",
+            "entity1": "African Union Landmark Report",
+            "entity2": "Antimicrobial Resistance",
+            "description": "The report describes antimicrobial resistance as a greater threat than HIV-AIDS, TB, and malaria.",
+            "created_at": "2025-07-24 21:45:41",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "25",
+            "entity1": "Insufficient Response Capacities",
+            "entity2": "Mpox Outbreaks in Africa",
+            "description": "Limited healthcare infrastructure and vaccine access impede Mpox outbreak response.",
+            "created_at": "2025-07-24 22:32:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "26",
+            "entity1": "African Union-Interafrican Bureau for Animal Resources",
+            "entity2": "Antimicrobial Resistance",
+            "description": "AMR is a key category targeted by AU-IBAR in its mission to promote sustainable animal resource development and disease control.",
+            "created_at": "2025-07-24 21:46:06",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "27",
+            "entity1": "Africa",
+            "entity2": "Antibiotic Access",
+            "description": "Millions in Africa lack access to essential antibiotics necessary for treating bacterial infections.",
+            "created_at": "2025-07-24 22:29:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "28",
+            "entity1": "AHRO Global Health Research Center",
+            "entity2": "Small Molecules Research",
+            "description": "AHRO leads research efforts in small molecule drug development to address priority health pathogens.",
+            "created_at": "2025-07-24 22:27:42",
+            "file_path": "merge"
+        },
+        {
+            "id": "29",
+            "entity1": "Mpox Preparedness and Response",
+            "entity2": "Wellcome Trust",
+            "description": "Wellcome Trust funds health research and innovation initiatives contributing to mpox response and epidemic control.",
+            "created_at": "2025-07-24 22:29:54",
+            "file_path": "merge"
+        },
+        {
+            "id": "30",
+            "entity1": "Antimicrobial Resistance",
+            "entity2": "Tuberculosis",
+            "description": "AMR causes a higher death rate than tuberculosis in Africa, underscoring its impact.",
+            "created_at": "2025-07-24 21:45:47",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "31",
+            "entity1": "Antimicrobial Resistance",
+            "entity2": "HIV",
+            "description": "AMR leads to more deaths than HIV in Africa, reflecting a rising threat to public health.",
+            "created_at": "2025-07-24 21:45:47",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "32",
+            "entity1": "Pandemic Preparedness",
+            "entity2": "Saving Lives and Livelihoods Initiative",
+            "description": "The initiative emphasizes pandemic preparedness by strengthening public health institutions, laboratory capacity, and local manufacturing.",
+            "created_at": "2025-07-24 22:26:55",
+            "file_path": "merge"
+        },
+        {
+            "id": "33",
+            "entity1": "economic empowerment",
+            "entity2": "health investment",
+            "description": "Investment in health workforce is linked to positive economic returns, job creation, especially empowering women and youth.",
+            "created_at": "2025-07-24 21:40:41",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "34",
+            "entity1": "Coalition for Epidemic Preparedness Innovations (CEPI)",
+            "entity2": "Sustainable Manufacturing for Routine Vaccinations",
+            "description": "CEPI supports sustainable vaccine manufacturing capabilities to meet ongoing routine vaccination demand and emergency response.",
+            "created_at": "2025-07-24 21:16:27",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "35",
+            "entity1": "Local Manufacturing in Africa",
+            "entity2": "Robust Regulatory Systems",
+            "description": "Robust regulatory systems are essential to ensure quality, safety, and market access for locally manufactured health products in Africa.",
+            "created_at": "2025-07-24 22:25:23",
+            "file_path": "merge"
+        },
+        {
+            "id": "36",
+            "entity1": "Local Manufacturing of Vaccines, Therapeutics, and Diagnostics",
+            "entity2": "Saving Lives and Livelihoods Initiative",
+            "description": "Focus on enhancing local production capabilities for vaccines and diagnostics to improve health system resilience.",
+            "created_at": "2025-07-24 22:26:55",
+            "file_path": "merge"
+        },
+        {
+            "id": "37",
+            "entity1": "Global Procurement Agencies",
+            "entity2": "Local Manufacturing Ecosystem",
+            "description": "Global procurement agencies' commitment to purchasing vaccines produced in Africa is key to the economics and viability of the local manufacturing ecosystem.",
+            "created_at": "2025-07-24 21:11:24",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa"
+        },
+        {
+            "id": "38",
+            "entity1": "Mpox epidemic",
+            "entity2": "One Health Approach",
+            "description": "The 'One Health' approach promotes integrated surveillance and control of mpox recognizing the interconnected human, animal, and environmental health factors involved.",
+            "created_at": "2025-07-24 21:50:51",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "39",
+            "entity1": "Health Systems Strengthening",
+            "entity2": "Immunisation",
+            "description": "Immunisation is a critical component of health systems strengthening, reducing outbreaks and improving child health outcomes.",
+            "created_at": "2025-07-24 21:25:41",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "40",
+            "entity1": "health investment",
+            "entity2": "health security",
+            "description": "Strengthened health workforce investments enhance health security by enabling better disease control and system resilience.",
+            "created_at": "2025-07-24 21:40:48",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "41",
+            "entity1": "Africa CDC",
+            "entity2": "African Union",
+            "description": "Africa CDC is an autonomous, specialized public health agency operating under the framework of the African Union (AU). It serves as the AU’s key technical institution dedicated to strengthening health systems, enhancing health security, boosting public health capacity, and improving disease control across African member states. Africa CDC works closely with the African Union and its member states to support a broad range of health initiatives, including health security and local manufacturing agendas endorsed by African Heads of State. Through its mandate, Africa CDC plays a crucial role in implementing health strengthening initiatives within the AU’s broader policy framework, providing technical guidance and support that contribute to overall continental health governance and security.<SEP>Africa CDC works closely with the African Union and member states to support continental health initiatives and jointly backs the Gavi replenishment event.",
+            "created_at": "2025-07-24 22:49:17",
+            "file_path": "merge;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "42",
+            "entity1": "Africa CDC",
+            "entity2": "Joint Emergency Preparedness and Response Action Plan (JEAP)",
+            "description": "Africa CDC co-launched JEAP to improve emergency preparedness and disease outbreak response in Africa.<SEP>Africa CDC is a principal partner in launching and implementing the JEAP to improve emergency response and health system resilience in Africa.<SEP>JEAP is a strategic plan developed and implemented by Africa CDC alongside WHO to improve emergency preparedness in Africa.\"|>\"program implementation, strategic plan",
+            "created_at": "2025-07-24 22:45:16",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "43",
+            "entity1": "Africa CDC",
+            "entity2": "WHO Regional Office for Africa",
+            "description": "The WHO Regional Office for Africa partners closely with Africa CDC in convening meetings and collaborating on health initiatives in Africa.<SEP>WHO Africa Regional Office collaborates with Africa CDC and other partners to implement disease ending initiatives.",
+            "created_at": "2025-07-24 22:28:20",
+            "file_path": "merge"
+        },
+        {
+            "id": "44",
+            "entity1": "Africa CDC",
+            "entity2": "Lusaka Agenda",
+            "description": "Africa CDC spearheads the Lusaka Agenda to improve coordination and leadership for health program implementation across Africa.",
+            "created_at": "2025-07-24 22:33:21",
+            "file_path": "merge"
+        },
+        {
+            "id": "45",
+            "entity1": "Africa CDC",
+            "entity2": "World Health Organization",
+            "description": "Africa CDC and WHO collaborate closely as leading public health institutions in Africa, jointly launching and implementing the JEAP partnership to improve health emergency preparedness.<SEP>Africa CDC and the World Health Organization have launched the JEAP as a joint five-year strategic collaboration to strengthen emergency preparedness and response systems across Africa.<SEP>WHO collaborates with Africa CDC through frameworks and memoranda to improve health security and epidemic response in Africa.",
+            "created_at": "2025-07-24 22:29:47",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa;merge"
+        },
+        {
+            "id": "46",
+            "entity1": "Africa CDC",
+            "entity2": "Antimicrobial Resistance (AMR)",
+            "description": "Africa CDC leads the continental efforts to monitor, report, and strategize response against antimicrobial resistance.",
+            "created_at": "2025-07-24 22:29:12",
+            "file_path": "merge"
+        },
+        {
+            "id": "47",
+            "entity1": "Africa CDC",
+            "entity2": "Africa Public Health Foundation",
+            "description": "Africa CDC and Africa Public Health Foundation have formed a strategic partnership to support resource mobilization and implementation of health systems strengthening initiatives in Africa.<SEP>The Africa CDC and Africa Public Health Foundation collaborate closely, with APHF supporting Africa CDC's initiatives and resource mobilization for public health across Africa.",
+            "created_at": "2025-07-24 22:25:09",
+            "file_path": "merge"
+        },
+        {
+            "id": "48",
+            "entity1": "Africa CDC",
+            "entity2": "European Union",
+            "description": "Africa CDC and the European Union signed agreements and collaborate through initiatives like TEI MAV+ to enhance local manufacturing and health product access in Africa.\"|>\"international cooperation, health development<SEP>Africa CDC receives co-funding from the European Union for genomic surveillance projects.",
+            "created_at": "2025-07-24 22:25:52",
+            "file_path": "merge"
+        },
+        {
+            "id": "49",
+            "entity1": "Africa CDC",
+            "entity2": "Gavi",
+            "description": "Africa CDC recognizes Gavi as a pivotal partner for health security in Africa and supports the replenishment events and strategies that enhance vaccine access and local manufacturing.<SEP>Africa CDC recognizes Gavi as a pivotal partner providing significant vaccine funding and support for health security across Africa and collaborates closely for the 2024 replenishment event and other initiatives.",
+            "created_at": "2025-07-24 22:49:17",
+            "file_path": "press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris;merge"
+        },
+        {
+            "id": "50",
+            "entity1": "Africa CDC",
+            "entity2": "High-Level Emergency Regional Meeting on Mpox",
+            "description": "Africa CDC was a key technical and organizational partner supporting the regional meeting and coordinating efforts against mpox.",
+            "created_at": "2025-07-24 21:50:14",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "51",
+            "entity1": "Africa CDC",
+            "entity2": "UNICEF",
+            "description": "Africa CDC and UNICEF are key partners collaborating to strengthen health systems, immunisation, supply chains, and local manufacturing across Africa, formalized under a partnership framework agreement (2022-2027).<SEP>Africa CDC and UNICEF have an expanded partnership to strengthen healthcare systems, supply chain, immunization, and emergency response in Africa.<SEP>UNICEF supports the procurement and delivery of cold chain equipment in collaboration with Africa CDC.",
+            "created_at": "2025-07-24 22:26:48",
+            "file_path": "merge"
+        },
+        {
+            "id": "52",
+            "entity1": "Africa CDC",
+            "entity2": "WHO",
+            "description": "Africa CDC and WHO collaborate closely to strengthen emergency preparedness and response across Africa.<SEP>Africa CDC collaborates with WHO on disease classification and emergency preparedness programs.<SEP>Africa CDC collaborates with WHO to jointly facilitate coordination of the Africa Taskforce for Mpox Coordination.",
+            "created_at": "2025-07-24 22:27:47",
+            "file_path": "merge"
+        },
+        {
+            "id": "53",
+            "entity1": "Africa CDC",
+            "entity2": "Eastern Africa",
+            "description": "Africa CDC plays a critical role in coordinating health interventions, outbreak preparedness, and disease surveillance across Eastern Africa. It operates and supports various health initiatives in the region, focusing on coordinated response activities to manage and contain diseases effectively. Eastern Africa is a key region for Africa CDC's efforts in disease surveillance, vaccine research, and manufacturing capacity development. Through its targeted interventions, Africa CDC strengthens health infrastructure and enhances regional preparedness to address public health challenges in Eastern Africa.",
+            "created_at": "2025-07-24 22:25:47",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;enhancing-vaccine-storage-efficiencies-in-africa;merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "54",
+            "entity1": "Africa CDC",
+            "entity2": "Mpox",
+            "description": "Africa CDC declared Mpox a public health emergency of continental security and is leading the coordinated response to the epidemic across Africa.",
+            "created_at": "2025-07-24 22:38:35",
+            "file_path": "mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security"
+        },
+        {
+            "id": "55",
+            "entity1": "Africa CDC",
+            "entity2": "High-Level Emergency Regional Meeting on Mpox (13 April 2024)",
+            "description": "Africa CDC played a leading role in organizing and supporting the emergency meeting, coordinating mpox response efforts across affected countries.",
+            "created_at": "2025-07-24 21:50:33",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "56",
+            "entity1": "Africa",
+            "entity2": "Africa CDC",
+            "description": "Africa CDC is the continental public health agency serving the continent of Africa. It operates at the continental level to support African countries in strengthening health systems, enhancing surveillance, and improving disease control efforts. Africa CDC focuses on addressing public health challenges such as antimicrobial resistance, emergency response, and overall disease control. By providing coordinated support across Africa, Africa CDC plays a critical role in improving public health surveillance, emergency preparedness, and the resilience of health systems throughout the continent.",
+            "created_at": "2025-07-24 22:27:17",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge"
+        },
+        {
+            "id": "57",
+            "entity1": "Africa CDC",
+            "entity2": "Central Africa",
+            "description": "Africa CDC actively operates and supports various health initiatives across the Central Africa region. Its programs in Central Africa include implementing health system strengthening, enhancing disease surveillance, and supporting public health initiatives and outbreak response efforts. Additionally, Africa CDC focuses on improving health security and promoting local manufacturing support within the region. Overall, Africa CDC’s activities in Central Africa are centered on strengthening health systems and emergency response capabilities to improve regional health outcomes.",
+            "created_at": "2025-07-24 22:25:48",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;enhancing-vaccine-storage-efficiencies-in-africa;merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "58",
+            "entity1": "Africa CDC",
+            "entity2": "African Union Commission",
+            "description": "Africa CDC operates as a specialized technical institution under the African Union, collaborating for public health initiatives.<SEP>Africa CDC operates under and in collaboration with the African Union Commission to implement public health strategies across Africa including mpox control and healthcare strengthening.<SEP>Africa CDC operates under the African Union, represented administratively by the African Union Commission.",
+            "created_at": "2025-07-24 22:30:04",
+            "file_path": "merge;joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan"
+        },
+        {
+            "id": "59",
+            "entity1": "Africa CDC",
+            "entity2": "Southern Africa",
+            "description": "Africa CDC governs and coordinates health crisis preparedness and response in Southern Africa. It operates and supports various health initiatives across the region, targeting Southern Africa for programs aimed at strengthening health systems and local manufacturing. Southern Africa benefits from Africa CDC’s strategic initiatives designed to improve health systems, disease intelligence, health system resilience, and vaccine manufacturing. Overall, Africa CDC’s efforts in Southern Africa focus on enhancing regional health development and preparedness.",
+            "created_at": "2025-07-24 22:25:55",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;enhancing-vaccine-storage-efficiencies-in-africa;merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "60",
+            "entity1": "Africa CDC",
+            "entity2": "Western Africa",
+            "description": "Africa CDC actively engages with Western Africa to strengthen health system readiness against outbreaks and enhance health security across the region. As part of its strategic efforts, Africa CDC supports outbreak response, health system strengthening, and pharmaceutical manufacturing initiatives in Western Africa. The organization operates and supports various health programs within Western Africa, which participates in continent-wide health efforts facilitated by Africa CDC aimed at improving research capabilities and emergency preparedness. Through these comprehensive initiatives, Africa CDC plays a crucial role in building health capacity and improving overall health security in Western Africa.",
+            "created_at": "2025-07-24 22:25:55",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;enhancing-vaccine-storage-efficiencies-in-africa;merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "61",
+            "entity1": "Africa CDC",
+            "entity2": "Northern Africa",
+            "description": "Africa CDC plays a vital role in supporting Northern Africa by assisting countries in monitoring and responding to health emergencies. Northern Africa falls within the geographical focus area for Africa CDC’s health security and manufacturing initiatives. The organization operates and supports various health initiatives across the region, aimed at improving clinical trial infrastructures and enhancing outbreak response capabilities. Northern Africa benefits from Africa CDC’s programs focused on disease surveillance, public health initiatives, and overall health preparedness, making it a key regional focus for the CDC’s efforts in strengthening health systems and emergency response.",
+            "created_at": "2025-07-24 22:25:50",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;enhancing-vaccine-storage-efficiencies-in-africa;merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "62",
+            "entity1": "AHRO Global Health Research Center",
+            "entity2": "Africa CDC",
+            "description": "AHRO Global Health Research Center is involved in health research and development activities in Africa, supporting efforts to strengthen health systems and disease response aligned with Africa CDC goals.",
+            "created_at": "2025-07-24 21:28:24",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "63",
+            "entity1": "Africa CDC",
+            "entity2": "COVID-19 Pandemic",
+            "description": "Africa CDC has played a key role in mobilizing resources and coordinating the continent's response to the COVID-19 pandemic.<SEP>Africa CDC’s genomic and molecular surveillance efforts incorporate lessons learned from the COVID-19 pandemic to build more resilient systems.",
+            "created_at": "2025-07-24 22:25:27",
+            "file_path": "merge"
+        },
+        {
+            "id": "64",
+            "entity1": "Africa CDC",
+            "entity2": "Antimicrobial Resistance",
+            "description": "Africa CDC leads continental efforts in antimicrobial resistance surveillance, intelligence, and response coordination.",
+            "created_at": "2025-07-24 21:46:13",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "65",
+            "entity1": "Africa CDC",
+            "entity2": "Mpox Research Consortium",
+            "description": "The Mpox Research Consortium is proposed under the coordination and support of Africa CDC to advance Mpox elimination and epidemic preparedness.",
+            "created_at": "2025-07-24 21:43:13",
+            "file_path": "african-researchers-propose-mpox-research-group"
+        },
+        {
+            "id": "66",
+            "entity1": "Africa CDC",
+            "entity2": "African Vaccine Manufacturing Accelerator (AVMA)",
+            "description": "Africa CDC leads support and advocacy for AVMA as a key initiative for Africa’s self-reliance in health security and manufacturing.",
+            "created_at": "2025-07-24 22:33:15",
+            "file_path": "merge"
+        },
+        {
+            "id": "67",
+            "entity1": "Africa CDC",
+            "entity2": "Africa Taskforce for Mpox Coordination",
+            "description": "Africa CDC is tasked with facilitating technical support and coordinating activities of the Africa Taskforce for Mpox Coordination alongside WHO and the African Union Commission.<SEP>Africa CDC jointly facilitates and supports coordination of the Africa Taskforce for Mpox Coordination to strengthen mpox preparedness and response.<SEP>Africa CDC supports and facilitates the coordination efforts of the Africa Taskforce for Mpox.",
+            "created_at": "2025-07-24 22:29:46",
+            "file_path": "merge;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "68",
+            "entity1": "Africa CDC",
+            "entity2": "Saving Lives and Livelihoods (SLL) Initiative",
+            "description": "Africa CDC is a leading partner and implementer of the Saving Lives and Livelihoods initiative, coordinating activities to strengthen public health systems in Africa.<SEP>Africa CDC partners with Mastercard Foundation on the Saving Lives and Livelihoods initiative to strengthen public health systems and vaccine rollout.",
+            "created_at": "2025-07-24 22:26:39",
+            "file_path": "merge;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "69",
+            "entity1": "Africa CDC",
+            "entity2": "Cameroon",
+            "description": "Africa CDC delivered cold chain equipment to Cameroon to support vaccine storage and immunization programs.<SEP>Africa CDC supports public health initiatives and outbreak response efforts in Cameroon.",
+            "created_at": "2025-07-24 22:30:09",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa;merge"
+        },
+        {
+            "id": "70",
+            "entity1": "Africa CDC",
+            "entity2": "World Health Organization (WHO)",
+            "description": "Africa CDC works in collaboration with WHO to improve disease surveillance and emergency response across Africa.",
+            "created_at": "2025-07-24 22:26:11",
+            "file_path": "merge"
+        },
+        {
+            "id": "71",
+            "entity1": "Africa CDC",
+            "entity2": "African Medicines Agency (AMA)",
+            "description": "AMA collaborates with Africa CDC to strengthen regulatory processes and coordination of health product approvals.<SEP>Africa CDC supports AMA's goal to strengthen medicine regulatory systems in Africa.",
+            "created_at": "2025-07-24 22:26:11",
+            "file_path": "merge;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "72",
+            "entity1": "Africa CDC",
+            "entity2": "JEAP",
+            "description": "The JEAP is a flagship action plan developed by Africa CDC to enhance disease outbreak preparedness and health emergency response across Africa.",
+            "created_at": "2025-07-24 22:32:57",
+            "file_path": "merge"
+        },
+        {
+            "id": "73",
+            "entity1": "Africa CDC",
+            "entity2": "Africa CDC Weekly Brief",
+            "description": "Africa CDC produces the Weekly Brief to communicate updates on health emergencies, strategic partnerships, and public health initiatives across Africa.<SEP>Africa CDC produces weekly briefs to disseminate information and updates related to public health activities.<SEP>Africa CDC publishes the Africa CDC Weekly Briefs, providing updates on health and outbreak situations periodically.",
+            "created_at": "2025-07-24 22:25:39",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;merge"
+        },
+        {
+            "id": "74",
+            "entity1": "Africa CDC",
+            "entity2": "Saving Lives and Livelihoods Initiative",
+            "description": "Africa CDC is a key partner in the Saving Lives and Livelihoods Initiative, which aims to improve healthcare delivery through infrastructure investments.<SEP>Africa CDC leads and implements the Saving Lives and Livelihoods initiative in partnership with the Mastercard Foundation to enhance health systems and pandemic preparedness.",
+            "created_at": "2025-07-24 22:26:46",
+            "file_path": "merge"
+        },
+        {
+            "id": "75",
+            "entity1": "Africa CDC",
+            "entity2": "WHO Africa",
+            "description": "WHO Africa collaborates with Africa CDC and other partners to strengthen immunization and disease control efforts across the continent.",
+            "created_at": "2025-07-24 23:00:58",
+            "file_path": "who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic"
+        },
+        {
+            "id": "76",
+            "entity1": "Africa CDC",
+            "entity2": "Weekly Special Press Briefing on Health Emergencies in Africa",
+            "description": "Africa CDC hosts and organizes the Weekly Special Press Briefings on Health Emergencies in Africa to keep stakeholders informed about the status and management of health emergencies across the continent. These briefings provide regular updates and are a key platform through which Africa CDC communicates important information regarding ongoing health emergency situations throughout Africa.<SEP>Africa CDC organizes weekly press briefings to communicate updates on health emergencies and responses across Africa.<SEP>Africa CDC organizes weekly press briefings to update stakeholders on health emergencies and outbreaks.",
+            "created_at": "2025-07-24 22:26:27",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;enhancing-vaccine-storage-efficiencies-in-africa;merge"
+        },
+        {
+            "id": "77",
+            "entity1": "Africa CDC",
+            "entity2": "Team Europe Initiative on Manufacturing and Access to Vaccines, Medicines, and Health Technologies (TEI MAV+)",
+            "description": "TEI MAV+ partners with African nations including Africa CDC to strengthen local pharmaceutical manufacturing.",
+            "created_at": "2025-07-24 21:19:16",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "78",
+            "entity1": "Africa CDC",
+            "entity2": "Global Health Initiatives",
+            "description": "Global Health Initiatives commit to procurement from Africa to support local manufacturing and Africa CDC’s health sovereignty goals.",
+            "created_at": "2025-07-24 22:31:57",
+            "file_path": "merge"
+        },
+        {
+            "id": "79",
+            "entity1": "Addis Ababa",
+            "entity2": "Africa CDC",
+            "description": "Addis Ababa, Ethiopia, serves as the headquarters and operational base for the Africa Centres for Disease Control and Prevention (Africa CDC). It is a key location where the Africa CDC Secretariat Offices are situated, facilitating its core functions and activities. Addis Ababa regularly hosts meetings and convenings of Africa CDC experts, including technical experts from Africa CDC and the U.S. government, to review and advance joint health plans such as the Joint Action Plan. Additionally, it was the site where the partnership agreement between Africa CDC and UNICEF was signed, highlighting its central role in fostering collaborations and partnerships to support public health initiatives across the continent.",
+            "created_at": "2025-07-24 22:26:27",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge;joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan"
+        },
+        {
+            "id": "80",
+            "entity1": "Africa CDC",
+            "entity2": "African Society for Laboratory Medicine",
+            "description": "Africa CDC collaborates with the African Society for Laboratory Medicine to improve diagnostics and surveillance for AMR in Africa.<SEP>Both ASLM and Africa CDC collaborate with governments and organizations to strengthen Africa’s healthcare systems and laboratory networks.<SEP>The African Society for Laboratory Medicine collaborates with Africa CDC to enhance laboratory capacities critical for AMR surveillance and response across Africa.",
+            "created_at": "2025-07-24 22:29:27",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;merge"
+        },
+        {
+            "id": "81",
+            "entity1": "Africa CDC",
+            "entity2": "Local Manufacturing in Africa",
+            "description": "Africa CDC leads and monitors initiatives and recommendations aimed at advancing local manufacturing capacity of health products across Africa.<SEP>Africa CDC leads and monitors progress towards the local manufacturing agenda in Africa, including policy advocacy, regulatory reforms, and strategic partnerships.",
+            "created_at": "2025-07-24 22:25:15",
+            "file_path": "addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;merge"
+        },
+        {
+            "id": "82",
+            "entity1": "Africa CDC",
+            "entity2": "Government of France",
+            "description": "The Government of France partners with Africa CDC through MoU and provides extensive support including vaccine donations and technical expertise.",
+            "created_at": "2025-07-24 22:26:11",
+            "file_path": "merge"
+        },
+        {
+            "id": "83",
+            "entity1": "Africa CDC",
+            "entity2": "Supply Chain Management",
+            "description": "Supply chain management is a key focus area supported and strengthened by Africa CDC to ensure availability of medical commodities.",
+            "created_at": "2025-07-24 22:27:00",
+            "file_path": "merge"
+        },
+        {
+            "id": "84",
+            "entity1": "Africa CDC",
+            "entity2": "Mastercard Foundation",
+            "description": "Africa CDC partners with the Mastercard Foundation under the Saving Lives and Livelihoods initiative to provide cold chain equipment to member states.",
+            "created_at": "2025-07-24 22:30:06",
+            "file_path": "merge"
+        },
+        {
+            "id": "85",
+            "entity1": "2024 Gavi Replenishment Event",
+            "entity2": "Africa CDC",
+            "description": "Africa CDC and African Union openly support and prepare to fully back the 2024 Gavi replenishment meeting in France, emphasizing Africa’s role as primary beneficiary.",
+            "created_at": "2025-07-24 22:33:38",
+            "file_path": "merge"
+        },
+        {
+            "id": "86",
+            "entity1": "Africa CDC",
+            "entity2": "African Vaccine Manufacturing Accelerator",
+            "description": "Africa CDC is spearheading the AVMA initiative to enhance local vaccine manufacturing in Africa.",
+            "created_at": "2025-07-24 22:52:54",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent"
+        },
+        {
+            "id": "87",
+            "entity1": "Africa CDC",
+            "entity2": "Team Europe Initiatives",
+            "description": "Team Europe Initiatives support Africa CDC’s objectives such as pharmaceutical manufacturing capacity strengthening.",
+            "created_at": "2025-07-24 22:26:36",
+            "file_path": "merge"
+        }
+    ],
+    "text_units": [
+        {
+            "id": 1,
+            "content": "Youtube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa - AHRO Global Health Research Center\nSkip to content\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa\nAHRO Global Health Research Center\n-\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa\n05 Jun\n2023\nBy\nAfhro\nFrom humanitarian crises triggered by conflict to climate-change induced disasters, Africa deals with over 100 disease outbreaks every year. To tackle these challenges, the Africa Centres for Disease Control and Prevention (Africa CDC) and World Health Organization (WHO) are pleased to announce the launch of a Joint Emergency Preparedness and Response Action Plan (JEAP). This pioneering five-year strategic collaboration will boost emergency preparedness and response efforts throughout Africa and thus ensure disease outbreaks during humanitarian crises and otherwise are managed efficiently.\nThe JEAP underlines the shared vision of Africa’s two leading public health institutions – to strengthen emergency preparedness and response and health systems on the continent. The plan builds upon existing frameworks and initiatives while capitalising on the Africa CDC and WHO’s unique capabilities and resources. Aligned with the Africa CDC’s New Public Health Order, WHO AFRO’s Regional Strategy for Health Security and Emergencies (2022-2030), and WHO EMRO’s four-year strategy for the Eastern Mediterranean region to address health emergencies – the JEAP strengthens emergency preparedness and response across six critical areas.\n“The collaboration between the Africa CDC and WHO exemplifies the power of partnership in global health. JEAP will bolster our collective efforts to fight public health emergencies, saving lives and protecting our communities. We are proud to stand with the Africa CDC and work towards a healthier and safer future for all Africans,” said Dr Matshidiso Moeti, WHO Regional Director for Africa.\nPriority areas of action are strengthening surveillance intelligence and genomic sequencing for quicker detection; stockpiling emergency supplies at newly established sub-regional hubs to improve emergency response operations (70% of response activities during emergencies relate to such supply chain measures); and deploying first responders within 24-48 hours of a disease outbreak. Most critically, this ground-breaking collaboration outlines impactful initiatives to be implemented in unison with countries to enhance the continent’s capacity to detect, monitor, and respond swiftly to health emergencies. In a first-of-its kind collaboration, the JEAP serves as a guiding beacon for targeted emergency response interventions and embodies the importance of cross-cutting collaboration, knowledge sharing, and resource mobilisation.\n“Africa CDC is proud to partner for this important continental strategic plan. Joining forces with WHO will significantly improve our ability to safeguard the health of African populations during times of crisis. Together, we will build resilient health systems and ensure a coordinated and effective response to emergencies across the continent,” said Dr Jean Kaseya, Director General of the Africa CDC.\nIn an inspiring take, Dr Ahmed Al-Mandhari, WHO Regional Director for the Eastern Mediterranean reiterated, “This visionary collaboration will breathe new life into the efficiency of current coordination mechanisms, strengthen institutions, and ultimately help us deliver quality healthcare services to our communities.”\nThese efforts are galvanising the commitments from governments, health agencies, and stakeholders to strengthen health emergency preparedness, detection, and response efforts. Through collective action and unwavering commitment, we will build resilient systems, enhance capacities, and safeguard the well-being of our communities. This partnership is a testament to our unwavering dedication to a healthier, safer Africa.\nPopular Tags\nWe are thrilled to announce the success of our recent AHRO webinar\nLatest Posts\n£25 Million Multi Clinical Trials Centers established by AHRO Network\nJanuary 10, 2025\nAHRO Starts identification of small molecules for some priority pathogens\nJanuary 10, 2025\nAHRO Institute to Add Undergraduate Courses to Its Portfolio\nDecember 27, 2024\nAHRO Appoints Five Ambassadors\nDecember 23, 2024\nAHRO Launches “Climate Change and One Health Project”\nDecember 19, 2024\nDr. Aasma Siddiqui Joins AHRO for 6-Month Fellowship\nDecember 19, 2024\nAHRO Courses to Officially Commence in January 2025\nDecember 14, 2024\nAHRO Clinical Research Program Officially Launched\nDecember 14, 2024\nAHRO joins the Global Consortium on Climate and Health Education\nDecember 14, 2024\nAHRO Confer Doctorate Degree to Hajia Hajara Shardow and Barbara Ngomo\nDecember 14, 2024\nAfrica Consultative Summit on Climate Change and One Health Organized by AHRO Center for Academic Research (UK)\nOctober 12, 2024\nPoverty Alleviation in Africa: The Way Forward – A Must-Watch Interview with Princess Nana Yakubu\nSeptember 6, 2024\nAHRO Commences Fellowship program, first cohort in 2025\nJune 13, 2024\nAHRO opens five representative offices in West Africa\nJune 13, 2024\nAHRO-Dubai to lead the product development program\nJune 13, 2024\nAHRO-Canada to oversee commercialization and IP activities\nJune 13, 2024\n“AHRO will become one of the leaders in small drug molecules research”- Prof Yaro\nJune 13, 2024\nAHRO appoints new Scientific Advisory Board\nJune 13, 2024\n“We are ready”- Dr Christine Nyirahab",
+            "file_path": "merge"
+        },
+        {
+            "id": 2,
+            "content": "Coast Ghana, Professor Samuel Nakoune Yandoko will head the team at Pasteur Institute in Bangui, the Central African Republic, co-principal investigators Professor Jean-Jacques Muyembe and Professor Placide Mbala will represent the DRC’s Institute National Research Biomedical, Professor Dimie Ogoina from Niger Delta University Teaching Hospital will represent Nigeria, Cameroon’s Pasteur Institute research team will be led by Professor Richard Njouom and Congo will be led by Professor Francine Ntoumi from the Congolese Foundation for Medical Research. Expansion to other African countries will take place later.\n28 April 2024\nTheme\nEmergency Response and Preparedness\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nDiseases\nMpox\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk\nAntimicrobial Resistance is a Greater Threat than HIV-AIDS, TB and Malaria, Says New Report – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAntimicrobial Resistance is a Greater Threat than HIV-AIDS, TB and Malaria, Says New Report\nADDIS ABABA, Ethiopia, August 15\n– The likelihood of falling ill or dying from diseases that resist treatment has escalated in Africa, with children and other vulnerable groups being most at risk, according to a new report by the Africa Centres for Disease Control and Prevention (Africa CDC).\n“The continent faces the highest mortality rate from antimicrobial resistance (AMR), with 27.3 deaths per 100,000—exceeding the combined death toll from HIV-AIDS, tuberculosis and malaria,” said the ‘African Union Landmark Report’ launched today at Africa CDC headquarters.\nAfrica bears a significant burden of infectious diseases, accounting for approximately 95% of malaria deaths, 70% of people living with HIV, and 25% of TB deaths globally, said the report.\n“We must not ignore this silent threat that disproportionately impacts the most vulnerable among us,” said Africa CDC Deputy Director General, Dr Raji Tajudeen.\nAMR occurs when microorganisms like bacteria, viruses, fungi and parasites develop resistance to antimicrobial drugs, a process hastened by human behaviors such as the misuse and overuse of these drugs in healthcare, agriculture and food systems. This renders antibiotics and other antimicrobials less effective, causing treatment failures, increased disease spread, severe illness, disability and higher mortality rates.\nDespite the estimated USD2-6 billion needed annually for an effective AMR response across Africa, current funding is only a tenth of that allocated to other major diseases. This underfunding makes AMR a significant barrier to sustainable development, hindering progress toward the Sustainable Development Goals (SDGs) and the African Union’s Agenda 2063.\nAn estimated 700,000 people die annually from drug-resistant infections globally. Without timely intervention, this number is projected to reach 10 million by 2050, with Africa accounting for 4.5 million.\n“Fighting disease requires resources and working with member states and our partners we need to do all we can to save lives,” said Dr Tajudeen, speaking at the launch of a report on AMR in Africa. The event also initiated discussions on a roadmap and targets to advance Africa’s battle against AMR. The outcomes are expected to inform the upcoming United Nations General Assembly High-Level Meeting in September—a crucial platform for global action on this escalating crisis.\nDr Huyam Salih, the director of the African Union-Inter African Bureau for Animal Resources (AU-IBAR), emphasized the critical role that the AU must play in combating AMR. “Antimicrobial resistance is not just a health issue—it is a threat to our agrifood systems, food safety, food security, livelihoods, and economies,” she said.\nBy 2050, global healthcare costs could exceed USD1 trillion per year, and livestock production could decline by 2.6% to 7.5% annually due to AMR, according to Dr Salih. “In Africa, the situation is particularly alarming, with 37 countries reporting the prevalence of AMR in animal farms, yet only 16% of African countries are conducting routine AMR surveillance in animals as of 2023,” she said.\nDr Salih also called for urgent action to strengthen leadership, expand surveillance and data systems, promote the responsible use of antimicrobials, improve public and animal health systems, and secure sustainable financing to combat AMR effectively. “Our health, our food, and our future depend on the actions we take now,” she stressed.\nDr Tajudeen said addressing AMR in Africa requires engaging all levels of society in a comprehensive and multi-sectoral approach. “Unless we work together, overcoming antimicrobial resistance will be a difficult and long-drawn process that will cost lives,” he said.\nCurrently, millions in Africa lack access to essential antibiotics, with a study by Africa CDC and the African Society for Laboratory Medicine revealing that only 1.3% of microbiology labs in 14 member states can test for key AMR pathogens",
+            "file_path": "merge"
+        },
+        {
+            "id": 3,
+            "content": "Africa CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa - AHRO Global Health Research Center\nSkip to content\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa\nAHRO Global Health Research Center\n-\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa\n05 Jun\n2023\nBy\nAfhro\nFrom humanitarian crises triggered by conflict to climate-change induced disasters, Africa deals with over 100 disease outbreaks every year. To tackle these challenges, the Africa Centres for Disease Control and Prevention (Africa CDC) and World Health Organization (WHO) are pleased to announce the launch of a Joint Emergency Preparedness and Response Action Plan (JEAP). This pioneering five-year strategic collaboration will boost emergency preparedness and response efforts throughout Africa and thus ensure disease outbreaks during humanitarian crises and otherwise are managed efficiently.\nThe JEAP underlines the shared vision of Africa’s two leading public health institutions – to strengthen emergency preparedness and response and health systems on the continent. The plan builds upon existing frameworks and initiatives while capitalising on the Africa CDC and WHO’s unique capabilities and resources. Aligned with the Africa CDC’s New Public Health Order, WHO AFRO’s Regional Strategy for Health Security and Emergencies (2022-2030), and WHO EMRO’s four-year strategy for the Eastern Mediterranean region to address health emergencies – the JEAP strengthens emergency preparedness and response across six critical areas.\n“The collaboration between the Africa CDC and WHO exemplifies the power of partnership in global health. JEAP will bolster our collective efforts to fight public health emergencies, saving lives and protecting our communities. We are proud to stand with the Africa CDC and work towards a healthier and safer future for all Africans,” said Dr Matshidiso Moeti, WHO Regional Director for Africa.\nPriority areas of action are strengthening surveillance intelligence and genomic sequencing for quicker detection; stockpiling emergency supplies at newly established sub-regional hubs to improve emergency response operations (70% of response activities during emergencies relate to such supply chain measures); and deploying first responders within 24-48 hours of a disease outbreak. Most critically, this ground-breaking collaboration outlines impactful initiatives to be implemented in unison with countries to enhance the continent’s capacity to detect, monitor, and respond swiftly to health emergencies. In a first-of-its kind collaboration, the JEAP serves as a guiding beacon for targeted emergency response interventions and embodies the importance of cross-cutting collaboration, knowledge sharing, and resource mobilisation.\n“Africa CDC is proud to partner for this important continental strategic plan. Joining forces with WHO will significantly improve our ability to safeguard the health of African populations during times of crisis. Together, we will build resilient health systems and ensure a coordinated and effective response to emergencies across the continent,” said Dr Jean Kaseya, Director General of the Africa CDC.\nIn an inspiring take, Dr Ahmed Al-Mandhari, WHO Regional Director for the Eastern Mediterranean reiterated, “This visionary collaboration will breathe new life into the efficiency of current coordination mechanisms, strengthen institutions, and ultimately help us deliver quality healthcare services to our communities.”\nThese efforts are galvanising the commitments from governments, health agencies, and stakeholders to strengthen health emergency preparedness, detection, and response efforts. Through collective action and unwavering commitment, we will build resilient systems, enhance capacities, and safeguard the well-being of our communities. This partnership is a testament to our unwavering dedication to a healthier, safer Africa.\nPopular Tags\nWe are thrilled to announce the success of our recent AHRO webinar\nLatest Posts\n£25 Million Multi Clinical Trials Centers established by AHRO Network\nJanuary 10, 2025\nAHRO Starts identification of small molecules for some priority pathogens\nJanuary 10, 2025\nAHRO Institute to Add Undergraduate Courses to Its Portfolio\nDecember 27, 2024\nAHRO Appoints Five Ambassadors\nDecember 23, 2024\nAHRO Launches “Climate Change and One Health Project”\nDecember 19, 2024\nDr. Aasma Siddiqui Joins AHRO for 6-Month Fellowship\nDecember 19, 2024\nAHRO Courses to Officially Commence in January 2025\nDecember 14, 2024\nAHRO Clinical Research Program Officially Launched\nDecember 14, 2024\nAHRO joins the Global Consortium on Climate and Health Education\nDecember 14, 2024\nAHRO Confer Doctorate Degree to Hajia Hajara Shardow and Barbara Ngomo\nDecember 14, 2024\nAfrica Consultative Summit on Climate Change and One Health Organized by AHRO Center for Academic Research (UK)\nOctober 12, 2024\nPoverty Alleviation in Africa: The Way Forward – A Must-Watch Interview with Princess Nana Yakubu\nSeptember 6, 2024\nAHRO Commences Fellowship program, first cohort in 2025\nJune 13, 2024\nAHRO opens five representative offices in West Africa\nJune 13, 2024\nAHRO-Dubai to lead the product development program\nJune 13, 2024\nAHRO-Canada to oversee commercialization and IP activities\nJune 13, 2024\n“AHRO will become one of the leaders in small drug molecules research”- Prof Yaro\nJune 13, 2024\nAHRO appoints new Scientific Advisory Board\nJune 13, 2024\n“We are ready”- Dr Christine Nyirahabimana\nJuly 25, 2023\nAHRO starts its exploratory research activities\nJuly 25, 2023\nAHRO Starts electing Emeritus Fellows\nJuly 25, 2023",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": 4,
+            "content": "Forging Resilience: WHO AFRO Establishes Independent Expert Body to Bolster Africa's Health Security | WHO | Regional Office for Africa\nSkip to main content\nWHO Africa\nForging Resilience: WHO AFRO Establishes Independent Expert Body to Bolster Africa's Health Security\nForging Resilience: WHO AFRO Establishes Independent Expert Body to Bolster Africa's Health Security\n17 July 2024\nEmergency Preparedness and Response Technical Advisory Group (EPR-TAG)\nBrazzaville -\nIn a major step towards strengthening health security in the African Region, the World Health Organization (WHO) Regional Office for Africa (AFRO) has established an Emergency Preparedness & Response Technical Advisory Group (EPR-TAG). This independent body serves as the principal advisory group to WHO AFRO for strategic guidance on all matters pertaining to public health emergency preparedness and response.\nThe EPR Technical Advisory Group will play a critical role in supporting WHO African Member States to fortify health security in the face of diverse emergencies. Countries in the WHO African Region experience over 100 health emergencies annually which disrupt the economy and prosperity of communities and weaken already fragile health systems. With climate change and conflict aggravating more than half of Africa’s health emergencies, the next pandemic is not just a possibility, it's imminent. It is imperative, now more than ever, to enhance the Emergency Preparedness and Response capabilities within the Region.\nComposed of 16 distinguished experts (details below) from diverse fields like epidemiology, public health, global health, vaccinology, paediatrics, nutrition, internal medicine, infectious diseases, programme management, health-care administration, health economics, health communication, sociology, the EPR-TAG advises the WHO AFRO Regional Director on key issues. These include assessing the regional context of infectious diseases and other public health emergencies; conducting horizon scanning for new and emerging threats; providing strategic guidance on preparedness, response, and recovery strategies; reviewing progress in implementing regional health security initiatives; and strengthening country ownership and decision-making in emergency response.\nThe EPR-TAG is chaired by Dr Deo Nshimirimana, a retired WHO medical doctor renowned for his expertise in immunization in emergency settings. Assisting him is Dr Rebecca Martin, Vice President of Global Health and Director of the Emory Global Health Institute, appointed as the Vice-Chairperson. Dr Martin brings decades of experience in health security, emergency response and immunization. Both leaders bring a wealth of experience in public health and will guide the EPR-TAG for an initial three-year term. \"The opportunity to lead the EPR-TAG is a great honour, and I am thrilled to be part of this transformative team. I am confident that our collective expertise will significantly contribute to enhancing Africa's preparedness and response capabilities, ensuring a more resilient defence against ongoing and future health threats. Together, we can make a substantial impact on the well-being of African nations.\" - Dr Deo Nshimirimana.\nDr Matshidiso Moeti, WHO Regional Director for Africa, commented on the establishment of the EPR-TAG, stating: \"The Emergency Preparedness & Response technical group will play a critical role in strengthening our capacity, working collectively with partners, to support countries to prepare for, respond to, recover from public health emergencies while continuing to provide essential health care, across the African Region. I look forward, with our team, to leveraging its diverse expertise and independent perspective, for the benefit of our Member States.\"\nThe inaugural meeting of this prestigious group is taking place in Saly, Senegal from 16 to 17 July 2024. This gathering marks a historic moment as the EPR-TAG begins its journey to enhance health security across the African region. The establishment of the EPR-TAG underlines WHO AFRO's commitment to building a stronger, more resilient African Region prepared to face any public health challenge. With its expert guidance and collaborative approach, the EPR-TAG will play a vital role in protecting the health and well-being of millions of people across the continent.\nFor more information, please feel free to contact WHO via\neprtag\n[at]\nwho.int\n(eprtag[at]who[dot]int)\nList of the WHO AFRO Emergency Preparedness & Response Technical Advisory Group (EPR-TAG) Members\nName\nNationality\nDesignation\n1\nDeo NSHIMIRIMANA\n(EPR-TAG Chairperson)\nBurundi\nPublic Health Consultant\n2\nRebecca MARTIN\n(EPR-TAG Vice-Chairperson)\nUSA\nVice President, Global Health and Director of the Emory Global Health Institute\n3\nRick BRIGHT\nUSA\nCEO, Bright Global Health\n4\nDeoraj CAUSSY\nMauritius\nEpidemiologist, 360 Epidemiology Solutions\n5\nBernice DAHN\nLiberia\nVice President/Executive Dean, College of Health Sciences, University of Liberia\n6\nWafaa El-SADR\nEgypt\nFounder & Director, ICAP, Columbia University\n7\nNyasha GUZHA-CHANETSA\nZimbabwe\nChief State Veterinarian (Public Health & Trade Facilitation), South African Department of Agriculture, Rural Development & Environment\n8\nBanda KHALIFA\nGhana\nGlobal Health Expert and Managing Director, Johns Hopkins Bloomberg School of Public Health/Center for Advancing Health Systems Innovations (CAdHSI)\n9\nRodrigue KOHOUN\nBenin\nPHC Technical Advisor to the Ministry of Health, Benin\n10\nAgnes MAHOMVA\nZimbabwe\nPublic Health Advisor to the President and Cabinet, Office of the President and Cabinet, Zimbabwe\n11\nBrice Wilfried BICABA\nBurkina Faso\nDirector General, Health & Public Hygiene, Ministry of Health, Burkina Faso\n12\nCheikh Tidiane MBOW\nSenegal\nChief, Health Promotion & Infectious Diseases Prevention Unit, MONUSCO (Goma",
+            "file_path": "forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health"
+        },
+        {
+            "id": 5,
+            "content": "Antimicrobial Resistance is a Greater Threat than HIV-AIDS, TB and Malaria, Says New Report – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAntimicrobial Resistance is a Greater Threat than HIV-AIDS, TB and Malaria, Says New Report\nADDIS ABABA, Ethiopia, August 15\n– The likelihood of falling ill or dying from diseases that resist treatment has escalated in Africa, with children and other vulnerable groups being most at risk, according to a new report by the Africa Centres for Disease Control and Prevention (Africa CDC).\n“The continent faces the highest mortality rate from antimicrobial resistance (AMR), with 27.3 deaths per 100,000—exceeding the combined death toll from HIV-AIDS, tuberculosis and malaria,” said the ‘African Union Landmark Report’ launched today at Africa CDC headquarters.\nAfrica bears a significant burden of infectious diseases, accounting for approximately 95% of malaria deaths, 70% of people living with HIV, and 25% of TB deaths globally, said the report.\n“We must not ignore this silent threat that disproportionately impacts the most vulnerable among us,” said Africa CDC Deputy Director General, Dr Raji Tajudeen.\nAMR occurs when microorganisms like bacteria, viruses, fungi and parasites develop resistance to antimicrobial drugs, a process hastened by human behaviors such as the misuse and overuse of these drugs in healthcare, agriculture and food systems. This renders antibiotics and other antimicrobials less effective, causing treatment failures, increased disease spread, severe illness, disability and higher mortality rates.\nDespite the estimated USD2-6 billion needed annually for an effective AMR response across Africa, current funding is only a tenth of that allocated to other major diseases. This underfunding makes AMR a significant barrier to sustainable development, hindering progress toward the Sustainable Development Goals (SDGs) and the African Union’s Agenda 2063.\nAn estimated 700,000 people die annually from drug-resistant infections globally. Without timely intervention, this number is projected to reach 10 million by 2050, with Africa accounting for 4.5 million.\n“Fighting disease requires resources and working with member states and our partners we need to do all we can to save lives,” said Dr Tajudeen, speaking at the launch of a report on AMR in Africa. The event also initiated discussions on a roadmap and targets to advance Africa’s battle against AMR. The outcomes are expected to inform the upcoming United Nations General Assembly High-Level Meeting in September—a crucial platform for global action on this escalating crisis.\nDr Huyam Salih, the director of the African Union-Inter African Bureau for Animal Resources (AU-IBAR), emphasized the critical role that the AU must play in combating AMR. “Antimicrobial resistance is not just a health issue—it is a threat to our agrifood systems, food safety, food security, livelihoods, and economies,” she said.\nBy 2050, global healthcare costs could exceed USD1 trillion per year, and livestock production could decline by 2.6% to 7.5% annually due to AMR, according to Dr Salih. “In Africa, the situation is particularly alarming, with 37 countries reporting the prevalence of AMR in animal farms, yet only 16% of African countries are conducting routine AMR surveillance in animals as of 2023,” she said.\nDr Salih also called for urgent action to strengthen leadership, expand surveillance and data systems, promote the responsible use of antimicrobials, improve public and animal health systems, and secure sustainable financing to combat AMR effectively. “Our health, our food, and our future depend on the actions we take now,” she stressed.\nDr Tajudeen said addressing AMR in Africa requires engaging all levels of society in a comprehensive and multi-sectoral approach. “Unless we work together, overcoming antimicrobial resistance will be a difficult and long-drawn process that will cost lives,” he said.\nCurrently, millions in Africa lack access to essential antibiotics, with a study by Africa CDC and the African Society for Laboratory Medicine revealing that only 1.3% of microbiology labs in 14 member states can test for key AMR pathogens.\nThe head of the African Society for Laboratory Medicine, Mr. Nqobile Ndlovu, reaffirmed the organization’s commitment to strengthening African laboratory capacities to combat antimicrobial resistance. “Our goal is to ensure the continued efficacy of treatments and promote data-driven solutions to safeguard public health across the continent,” he said.\nDr Tajudeen underscored the importance of prioritizing infection prevention, strengthening health and food systems, developing human resources, ensuring sustainable access to diagnostics and therapeutics, and investing in laboratory infrastructure for effective surveillance and data generation.\nThe report recommends an increase in the availability of high-quality diagnostics, vaccines, and antimicrobials for high-priority pathogens in high-risk African countries.\nFor more information\n:\nMedia inquiries:\nMargaret Edwin,\nDirector of Communication & Public Information Division: Africa CDC | Tel: +251 986 632 878 | Email:\nEdwinM@africacdc.org\nAbout Africa CDC\nThe Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union that supports member states in their efforts to strengthen health systems and improve surveillance, emergency response, and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nPatricia Mweene Lumba,\nSenior Knowledge Management Officer, Tel:+254 740060064 |Email:\npatricia.lumba@au-ibar.org\nAbout AU IBAR\nThe African Union-Interafrican Bureau for Animal Resources (AU-IBAR) is a technical office under the African Union’s Department of Agriculture, Rural Development, Blue Economy, and Sustainable Environment (DARBE",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": 6,
+            "content": "Mpox outbreaks in Africa constitute a public health emergency of continental security – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nArticles\nMpox outbreaks in Africa constitute a public health emergency of continental security\nOn Aug 13, 2024, the Africa Centres for Disease Control and Prevention (Africa CDC) declared mpox a public health emergency of continental security (PHECS) in Africa, acting under its mandate to address significant public health threats. This mandate was established in July, 2022, by the Executive Council of the Africa Union (AU) Assembly through its decision EX.CL/Dec.1169(XLI), empowering Africa CDC to coordinate responses to epidemics by mobilising African leaders, governments, and relevant agencies.\nThe decision was driven by the worsening mpox situation on the continent: since 2022, 40 874 cases and 1512 deaths have been reported across 15 AU member states. In 2024 alone, 17 541 cases and 517 deaths have been reported from 13 AU member states. These figures represent a 160% and 19% increase in the number of cases and deaths, respectively, in 2024 compared with the same period in 2023. A 79% increase in the number of cases was observed in 2023 compared with 2022. The Democratic Republic of the Congo (DRC) accounts for 96% of all cases and 97% of all deaths reported in 2024.\nInvestigations in the DRC suggest that heterosexual transmission, especially among female sex workers (9%), is driving the outbreak,\ncontrasting with the spread mainly among men who have sex with men in Europe in 2022. The high prevalence among women raises concerns about vertical transmission risks and adverse pregnancy outcomes.\nThe high risk of severe infection among people living with HIV, considerations for asymptomatic infections, poor vaccination strategies, limited access to medical countermeasures, and low detection rates were other concerns. The outbreak is further complicated by a high case fatality rate of over 3·9%, particularly among children younger than 15 years, who account for 60% of cases. Cross-border movements, low public awareness, high vulnerability due to factors such as HIV and malnutrition, limited understanding of mpox transmission, and insufficient response capacities, including vaccine shortages, pose significant challenges to containment. The risk of mpox spreading to neighbouring countries and globally is high.\nThe day before the PHECS announcement, 15 of the 20-member Emergency Consultative Group (ECG) met to advise the Africa CDC Director General on whether the mpox outbreak constituted a PHECS. The group redefined PHECS as a significant event posing a risk to other countries, requiring immediate continental-level action to prevent and mitigate disease spread—expanding the original definition in the Africa CDC statute.\nThey also developed specific criteria to assess the situation objectively. These criteria, organised into nine areas, included: disease severity, transmission dynamics, impact on health systems, vaccine and treatment availability, public health risk, economic and social impact, public concern, global health security, and political considerations (\ntable\n). The framework was developed to guide a transparent and consistent decision-making process for declaring a PHECS in Africa.\nRead more –\nMpox outbreaks in Africa constitute a public health emergency of continental security\n21 August 2024\nTheme\nEmergency Response and Preparedness\n,\nPublic Health Emergency of Continental Security (PHECS)\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nDiseases\nMpox\nTags\nMpox\n,\nMpox Vaccine\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security"
+        },
+        {
+            "id": 7,
+            "content": "not only showed strength in programmatic results but also improved the institutional capacity for greater sustainability and institutional resilience.\n“Our Saving Lives and Livelihoods initiative with the Mastercard Foundation has shown the power of respectful and action-oriented partnerships rooted in collaboration, coordination and systems strengthening. The experience and learnings from Phase I will enable us to move with greater speed and scale to deliver with accelerated impact to our member states” said\nDr. Jean Kaseya, Director General of the Africa CDC\n.\nIn its second phase, the partnership will expand its scope and scale, focusing on completing the vaccination of healthcare workers and vulnerable groups, building a robust workforce of community health workers, ensuring pandemic preparedness by bolstering national public health institutions, laboratory capacities, data access and quality, local manufacturing of vaccines, therapeutics and diagnostics, and continuing strengthening of Africa CDC.\n“While the global pandemic may be declared over, the need to continue investing in our health systems, build our workforce and prepare for future pandemics remains urgent. This partnership will ensure that we have strong health institutions and systems. We aim to enable thousands of young people to build their careers in healthcare and contribute to improving lives in Africa,” said\nReeta Roy, President, and CEO of the Mastercard Foundation.\nThe Saving Lives and Livelihoods initiative stands out as a testament to the power of African-led health solutions. As it progresses to its next phase, partnerships will continue to play a crucial role in shaping a New Public Health Order for Africa. Africa CDC and the Mastercard Foundation remain committed to improving the health and well-being of all Africans.\n-ENDS-\nAbout the Africa Centres for Disease Control and Prevention (Africa CDC)\nAfrica CDC is a continental autonomous health agency of the African Union established to support public health initiatives of Member States and strengthen the capacity of their public health institutions to detect, prevent, control, and respond quickly and effectively to disease threats. For more information, please visit:\nhttps://africacdc.org\nAbout the Mastercard Foundation\nThe Mastercard Foundation is a registered Canadian charity and one of the largest foundations in the world. It works with visionary organisations to advance education and financial inclusion, enabling young people in Africa and Indigenous youth in Canada to access dignified and fulfilling work. Established in 2006 through the generosity of Mastercard when it became a public company, the Foundation is an independent organisation separate from the company, with offices in Toronto, Kigali, Accra, Nairobi, Kampala, Lagos, Dakar, and Addis Ababa. Its policies, operations, and program decisions are determined by the Foundation’s Board of Directors and leadership. For more information on the Foundation, please visit\nwww.mastercardfdn.org\n.\nMedia contacts:\nAfrica Centres for Disease Control and Prevention\nMs. Ndahafa Nakwafila\nAg. Head Communication and Public Information\nNakwafilaN@africa-union.org|\nCommunications@africacdc.org\n|\nFacebook\n|\nTwitter\nMastercard Foundation\nWariko Kabuga-Waita\nSenior Director, Corporate Communications\nwwaita@mastercardfdn.org\n28 November 2023\nTheme\nSaving Lives and Livelihoods\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk\nAfrica CDC and UNICEF Expand Partnership to Strengthen Health Systems and Immunization of Children in Africa – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and UNICEF Expand Partnership to Strengthen Health Systems and Immunization of Children in Africa\nAddis Ababa | NewYork, 29 February 2024 –\nToday, the Africa Centres for Disease Control and Prevention (Africa CDC) and UNICEF announced an extended partnership dedicated to strengthening primary healthcare, supply chain management, pooled procurement and local manufacturing, and emergency response. The collaboration builds on the 2022-2024 Partnership Framework Agreement between Africa CDC and UNICEF, which aims to achieve the goals outlined in the African Union Agenda 2063: The Africa We Want. The partnership is expected to have a significant impact on public health in Africa by strengthening procurement and supply chain systems, with a particular focus on immunisation for children across the continent.\nH.E Dr Jean Kaseya, Director General of Africa CDC, and Ted Chaiban, UNICEF Deputy Executive Director for Humanitarian Action and Supply Operations, signed the expanded partnership agreement in Addis Ababa.\nThe COVID-19 pandemic exposed the fragility of many healthcare systems and highlighted deficiencies and challenges in medical supply chains. While countries with strong primary healthcare systems were better able to cope, the disruption caused by the pandemic left others facing shortages of vital medical commodities. Over the next four years, Africa CDC and UNICEF will work together to establish robust institutional backing for supply chain management and enhance pooled procurement mechanisms to fortify Africa’s healthcare infrastructure, ensuring timely and adequate access to essential medical supplies for its population.\nH.E Jean Kaseya expressed his pride in the partnership with UNICEF, stating that their shared commitments will enhance primary healthcare and strengthen Africa’s health security. ‘‘The partnership will optimise supply chain management",
+            "file_path": "merge"
+        },
+        {
+            "id": 8,
+            "content": "caused by the pandemic left others facing shortages of vital medical commodities. Over the next four years, Africa CDC and UNICEF will work together to establish robust institutional backing for supply chain management and enhance pooled procurement mechanisms to fortify Africa’s healthcare infrastructure, ensuring timely and adequate access to essential medical supplies for its population.\nH.E Jean Kaseya expressed his pride in the partnership with UNICEF, stating that their shared commitments will enhance primary healthcare and strengthen Africa’s health security. ‘‘The partnership will optimise supply chain management, operationalise the pool procurement mechanism for Africa CDC, empower community health workers, and advance local manufacturing. Ultimately, these efforts will strengthen immunisation systems and reduce outbreaks and epidemics on the continent’’, he says.\nImmunisation is one of the most effective public health interventions globally. However, millions of children in Africa are still deprived of life-saving vaccinations.\nUNICEF’s The State of the World’s Children\n2023: For Every Child\n, Vaccination report revealed that 12.7 million children were under-vaccinated in 2021, including 8.7 million who did not receive a single dose, also called “zero-dose” children.\n“This partnership is a commitment to the well-being of children and their families, affirming their right to health. By strengthening our partnership with Africa CDC and the Joint Emergency Action Plan for Africa, we can ensure communities get the support they need without delay,” said Ted Chaiban, UNICEF Deputy Executive Director for Humanitarian Action and Supply Operations. “The push forward on paid and protected community health workers, medical supplies made in Africa, for Africans, remains one of our highest priorities.”\nDuring the past two years, UNICEF and Africa CDC have achieved significant milestones in strengthening Africa CDC’s institutional capacity and catalysing community health programmes, immunisation systems, emergency response, and supply chain enhancement. Collaborative efforts secured the procurement of COVID-19 vaccine doses and essential cold chain equipment for routine immunisation. Joint high-level advocacy initiatives focused on immunisation, community health, and response to public health emergencies.\nAfrica imports 99% of its vaccines and 70 to 90% of its medicines and medical devices, which is a significant challenge. Africa CDC aims to achieve sustainable production and supply of essential health commodities through African manufacturers, considered Africa’s second independence by Africa CDC. Africa CDC’s goal is to work with African Union Member States and partners to actively advocate for and support the procurement of vaccines made in Africa and prioritise initiatives that strengthen local manufacturing.\nThrough the Partnership for Vaccine Manufacturing, Africa CDC aims to manufacture 60% of the continent’s vaccine needs by 2040, paving the way toward robust and self-reliant health systems, ensuring that people can obtain and use health commodities when and where required.\nThe expanded partnership between Africa CDC and UNICEF signifies a concerted effort to address Africa’s pressing health challenges. By prioritising immunisation, strengthening health systems, and promoting local production, both organisations are poised to make tangible and sustainable impacts on the health and well-being of children and communities across the continent while safeguarding Africa’s health security.\n#  #\nAbout the Partnership\nThe Africa CDC and UNICEF Partnership Framework Agreement, commenced in 2022 and extended today to 2027, contributes to the goals and objective of Agenda 2063: The Africa We Want. The partnership framework outlines three programmatic areas of collaboration: (i) public health emergency preparedness and response; (ii) immunization systems strengthening; and (iii) procurement and supply chain systems strengthening. Under the partnership extension, this collaboration will expand, particularly in the areas of system strengthening for primary health care (including community health and nutrition systems), in supply chain management, regional and pooled procurement, manufacturing and emergency preparedness and response.\nAbout Africa CDC\nThe Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union that supports member states in their efforts to strengthen health systems and improve surveillance, emergency response, and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nAbout UNICEF\nUNICEF works in some of the world’s toughest places, to reach the world’s most disadvantaged children. Across more than 190 countries and territories, we work for every child, everywhere, to build a better world for everyone. Learn more at www.unicef.org.\nMedia inquiries:\nCommunication and Public Information Directorate| Africa Centres for Disease Control and Prevention| Email:\nCommunications@africacdc.org|\nRicardo Pires| UNICEF New York | Tel: +1 917 631 1226 | Email: rpires@unicef.org\n29 February 2024\nTheme\nNew Public Health Order\n,\nThe New Deal\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa - AHRO Global Health Research Center\nSkip to content\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JE",
+            "file_path": "merge"
+        },
+        {
+            "id": 9,
+            "content": ".\nDr Tajudeen said addressing AMR in Africa requires engaging all levels of society in a comprehensive and multi-sectoral approach. “Unless we work together, overcoming antimicrobial resistance will be a difficult and long-drawn process that will cost lives,” he said.\nCurrently, millions in Africa lack access to essential antibiotics, with a study by Africa CDC and the African Society for Laboratory Medicine revealing that only 1.3% of microbiology labs in 14 member states can test for key AMR pathogens.\nThe head of the African Society for Laboratory Medicine, Mr. Nqobile Ndlovu, reaffirmed the organization’s commitment to strengthening African laboratory capacities to combat antimicrobial resistance. “Our goal is to ensure the continued efficacy of treatments and promote data-driven solutions to safeguard public health across the continent,” he said.\nDr Tajudeen underscored the importance of prioritizing infection prevention, strengthening health and food systems, developing human resources, ensuring sustainable access to diagnostics and therapeutics, and investing in laboratory infrastructure for effective surveillance and data generation.\nThe report recommends an increase in the availability of high-quality diagnostics, vaccines, and antimicrobials for high-priority pathogens in high-risk African countries.\nFor more information\n:\nMedia inquiries:\nMargaret Edwin,\nDirector of Communication & Public Information Division: Africa CDC | Tel: +251 986 632 878 | Email:\nEdwinM@africacdc.org\nAbout Africa CDC\nThe Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union that supports member states in their efforts to strengthen health systems and improve surveillance, emergency response, and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nPatricia Mweene Lumba,\nSenior Knowledge Management Officer, Tel:+254 740060064 |Email:\npatricia.lumba@au-ibar.org\nAbout AU IBAR\nThe African Union-Interafrican Bureau for Animal Resources (AU-IBAR) is a technical office under the African Union’s Department of Agriculture, Rural Development, Blue Economy, and Sustainable Environment (DARBE). Our mission is to support AU member states in harnessing the potential of livestock, fisheries, aquaculture, and wildlife for human well-being and economic growth. We promote the sustainable development and use of these resources to enhance nutrition, food security, and overall prosperity across the African continent. Learn more at:\nwww.au-ibar.org\nNelly Rwenji\n, Senior Brand and Communications Manager, ASLM | Tel: +251 11 557 1022 (ETH) |\n+27 10 880 8592 (SA) | Mobile: +254 726 228 717 | Email:\nnrwenji@aslm.org\nAbout ASLM\nThe African Society for Laboratory Medicine (ASLM) is a pan-African professional body working to advocate for the critical role and needs of laboratory medicine and networks throughout Africa. ASLM aims to strengthen healthcare systems through collaborative efforts with governments, local and international organizations, implementing partners, and the private sector. Learn more at\nwww.aslm.org\n15 August 2024\nTheme\nAntimicrobial Resistance\n,\nSurveillance and Disease Intelligence\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nAMR\n,\nLandmark Report\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk\nCommuniqué: United in the Fight Against Mpox in Africa - High-Level Emergency Regional Meeting – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nCommuniqué: United in the Fight Against Mpox in Africa – High-Level Emergency Regional Meeting\nWe, the Ministers of Health of Angola, Benin, Burundi, Cameroon, Central African Republic, Congo, Democratic Republic of Congo, Gabon, Ghana, Liberia, Nigeria, Uganda and partners, meeting in Kinshasa, Democratic Republic of Congo on 13 April 2024;\nNOTING WITH CONCERN the prolonged and ongoing epidemic of mpox in several Central and West African countries and the potential risk of transmission to neighbouring countries and beyond;\nSERIOUSLY CONCERNED about the changing transmission dynamics, high mortality rate and transmissibility of the monkeypox virus, as well as the morbidity, mortality and social and economic impacts;\nAWARE of the limitations on access to and acquisition of medical countermeasures, including diagnostics, treatments, vaccines and other tools for early detection, verification, care, treatment and prevention;\nRECOGNIZING the common threat posed by the mpox outbreak to the health and economic security of the populations of the Central and West African regions and the urgent need to address this common threat by all member states of the African Union;\nACKNOWLEDGING the existing frameworks, protocols, strategies and agreements for cross-border solidarity, collaboration and coordination on infectious disease issues, including:\n• The Constitutive Act of the African Union (2000);\n• The Protocol Relating to the Establishment of the Peace and Security Council of the African Union (2002",
+            "file_path": "merge"
+        }
+    ]
+}
