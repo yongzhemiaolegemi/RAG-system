@@ -1,16 +1,14 @@
 import json
 import uuid # 确保 uuid 被导入，用于流式处理中的 tool_call id 生成
 
-# --- 可配置参数 ---
-INITIAL_QUESTIONS_COUNT = 10  # 初始生成的问题数量
-MAX_ADDITIONAL_QUESTIONS = 5 # 最多允许额外增加的问题数量
-# --- 可配置参数 ---
 from openai import OpenAIError # 用于更精确地捕获 OpenAI 相关异常
 import requests
 from openai import OpenAI
 from utils import config
 
 MODEL = "gpt-4.1-mini-ca"
+INITIAL_QUESTIONS_COUNT = 5  # 初始生成的问题数量
+MAX_ADDITIONAL_QUESTIONS = 2 # 最多允许额外增加的问题数量
 
 def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools=None):
     try:
@@ -246,6 +244,7 @@ class ResearchAgent:
             formatted_qa = "\n".join([f"Q: {pair['question']}\nA: {pair['answer']}\n" for pair in self.state['completed_qa_pairs']])
             formatted_todo = "\n".join([f"{i+1}. {q}" for i, q in enumerate(self.state['question_list'])])
 
+            remaining_allowed = self.max_additional_questions - self.state['added_questions_count']
             user_prompt = (
                 f"原始研究主题: {self.state['original_topic']}\n\n"
                 f"我们已经完成的研究问答:\n{formatted_qa}\n\n"
@@ -255,6 +254,7 @@ class ResearchAgent:
                 "1. 修改现有问题，使其更深入或更准确。\n"
                 "2. 添加由新信息启发的新问题。\n"
                 "3. 删除已经解答或不再相关的问题。\n"
+                f"注意：你最多还可以添加 {remaining_allowed} 个新问题。\n"
                 "确保最终问题列表逻辑连贯、无重复，并能支撑一份完整的报告。\n"
                 "请严格按照以下格式返回：一个包含更新后问题的JSON数组，不要有其他任何文字或解释。"
                 "例如: [\"修改后的问题1？\", \"新问题？\", ...]"
@@ -313,7 +313,10 @@ class ResearchAgent:
             "1. 报告应包含引言、主体和结论。\n"
             "2. 主体部分应逻辑清晰地组织信息，可以分章节。\n"
             "3. 语言流畅、专业。\n"
-            "4. 直接输出报告正文，无需额外说明。"
+            "4. 直接输出报告正文，无需额外说明。\n"
+            "5. 每个大章节下面建议布置2~4个小节，视信息丰富程度而定。\n"
+            "6. 每个小节的主体是1~2段内容丰富、语言连续的段落，请不要大量分点。\n"
+            "7. 在句子后标注引用来自哪个文件，可以这样写：...with AU and Africa CDC leadership and broad stakeholder engagement ([#2], [#3], [#11])，然后在报告的最后这样写：- #1: Africa CDC and WHO collaborations\n- #2: Africa CDC and EU partnership\n..."
         )
 
         final_report = self._call_llm(system_prompt, user_prompt)
@@ -330,7 +333,7 @@ class ResearchAgent:
 if __name__ == "__main__":
     MODEL = "gpt-4.1-mini-ca" # 或从 config 中获取
     
-    topic = "需要一个标题为：“非洲生物安全态势研判”的报告。分为非洲生物安全态势、非洲生物安全风险点、对我国(中国)应对风险、加强非洲国际合作的建议三大点"
+    topic = "需要一个标题为：“非洲生物安全态势研判”的报告。分为三个章节：1.非洲生物安全态势 2.非洲生物安全风险点 3.对我国(中国)应对风险及加强非洲国际合作的建议"
     # 使用了新的参数来初始化 ResearchAgent
     agent = ResearchAgent(
         topic=topic, 
