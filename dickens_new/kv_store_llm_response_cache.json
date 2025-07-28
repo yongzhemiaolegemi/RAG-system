@@ -1,0 +1,41 @@
+{
+  "hybrid:keywords:3b213b1d4f6b584bc1adf55e8fc290e1": {
+    "return": "{\"high_level_keywords\": [\"\\u4eba\\u7269\\u5173\\u7cfb\\u7f51\\u7edc\", \"\\u89d2\\u8272\\u5206\\u6790\", \"\\u5723\\u8bde\\u9882\\u6b4c\", \"\\u5173\\u952e\\u4eba\\u7269\\u5173\\u7cfb\"], \"low_level_keywords\": [\"Scrooge\", \"\\u5bb6\\u5ead\\u6210\\u5458\", \"\\u5546\\u4e1a\\u4f19\\u4f34\", \"\\u5e7d\\u7075\", \"Marley\", \"Bob Cratchit\", \"Tiny Tim\", \"Christmas Past\", \"Christmas Present\", \"Christmas Yet to Come\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "embedding": null,
+    "embedding_shape": null,
+    "embedding_min": null,
+    "embedding_max": null,
+    "original_prompt": "请分析Scrooge（以圣诞颂歌中的角色为主）的人物关系网络，包括家庭成员、商业伙伴、遇到的幽灵等关键人物及其关系描述",
+    "create_time": 1753288846,
+    "update_time": 1753288846,
+    "_id": "hybrid:keywords:3b213b1d4f6b584bc1adf55e8fc290e1"
+  },
+  "hybrid:keywords:971a9c120cff60925daa7a28c031343d": {
+    "return": "{\"high_level_keywords\": [\"\\u4eba\\u7269\\u5173\\u7cfb\\u5206\\u6790\", \"\\u6587\\u5b66\\u6587\\u672c\\u5206\\u6790\", \"\\u89d2\\u8272\\u5851\\u9020\", \"\\u4e3b\\u9898\\u4f53\\u73b0\"], \"low_level_keywords\": [\"\\u5723\\u8bde\\u9882\\u6b4c\", \"Scrooge\", \"\\u6587\\u672c\\u5177\\u4f53\\u4f53\\u73b0\", \"\\u89d2\\u8272\\u4e92\\u52a8\", \"\\u60c5\\u8282\\u53d1\\u5c55\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "embedding": null,
+    "embedding_shape": null,
+    "embedding_min": null,
+    "embedding_max": null,
+    "original_prompt": "分析《圣诞颂歌》中Scrooge的人物关系及其在文本中的具体体现",
+    "create_time": 1753288905,
+    "update_time": 1753288905,
+    "_id": "hybrid:keywords:971a9c120cff60925daa7a28c031343d"
+  },
+  "hybrid:keywords:6cf5f90f09ae3afc17616faf25ab17e4": {
+    "return": "{\"high_level_keywords\": [\"\\u300a\\u5723\\u8bde\\u9882\\u6b4c\\u300b\", \"\\u4eba\\u7269\\u5173\\u7cfb\", \"\\u89d2\\u8272\\u4e92\\u52a8\", \"\\u6587\\u5b66\\u5206\\u6790\"], \"low_level_keywords\": [\"Ebenezer Scrooge\", \"\\u5bb6\\u5ead\\u6210\\u5458\", \"\\u96c7\\u5458\", \"\\u5e7d\\u7075\\u5f15\\u5bfc\\u8005\", \"\\u5173\\u952e\\u4eba\\u7269\", \"\\u4e92\\u52a8\\u5173\\u7cfb\", \"\\u5723\\u8bde\\u8282\\u7cbe\\u795e\", \"\\u4eba\\u7269\\u53d1\\u5c55\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "embedding": null,
+    "embedding_shape": null,
+    "embedding_min": null,
+    "embedding_max": null,
+    "original_prompt": "请详细说明《圣诞颂歌》中Ebenezer Scrooge的人物关系，包括家庭成员、雇员、幽灵引导者及其他关键人物的互动关系",
+    "create_time": 1753289287,
+    "update_time": 1753289287,
+    "_id": "hybrid:keywords:6cf5f90f09ae3afc17616faf25ab17e4"
+  }
+}

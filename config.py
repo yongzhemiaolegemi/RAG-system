@@ -22,6 +22,7 @@ webscrap_enable_save= True  # whether to save the scraped content
 webscrap_base_dir = 'ooo'
 
 
+
 # Django configuration
 
 django_llm_url = "https://api.chatanywhere.tech/v1"    

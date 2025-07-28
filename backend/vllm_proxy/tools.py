@@ -8,10 +8,12 @@ from typing import Dict, Any, List, Callable
 
 
 from scrap import get_webpage_text
+from scrap import crawl_website_async
 import functools
 import subprocess
 import sys
 import tempfile
+import asyncio
 
 from utils import config
 
@@ -21,6 +23,11 @@ from utils import config
 # 修改流程为：
 # 1. 在 AVAILABLE_TOOLS 中添加新工具的定义
 # 2. 在 开头 def 你的工具函数体
+
+def get_url_conditional_content(url: str, condition: str) -> str:
+    """获取指定URL的网页内容，并根据条件进行过滤"""
+    result = asyncio.run( crawl_website_async(url, condition=condition))
+    return result
 
 def get_url_content(url: str) -> str:
     """获取指定URL的网页内容"""
@@ -124,6 +131,21 @@ def execute_code(code: str) -> str:
 
 # 工具定义
 AVAILABLE_TOOLS = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_url_conditional_content",
+            "description": "获取指定URL的网页内容，并根据条件进行过滤",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "url": {"type": "string", "description": "要获取内容的URL"},
+                    "condition": {"type": "string", "description": "过滤条件，使用精准的自然语言描述"}
+                },
+                "required": ["url", "condition"]
+            }
+        }
+    },
     {
         "type": "function",
         "function": {
