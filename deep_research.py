@@ -6,9 +6,10 @@ import requests
 from openai import OpenAI
 from utils import config
 
-MODEL = "gpt-4.1-mini-ca"
+MODEL = "qwen3-235b-a22b-instruct-2507"
 INITIAL_QUESTIONS_COUNT = 5  # 初始生成的问题数量
 MAX_ADDITIONAL_QUESTIONS = 2 # 最多允许额外增加的问题数量
+QUERY_PROMPT = "给出参考文献时，请忠实给出原文档名，不要翻译成中文，也不要把relation等误当作文档名。"
 
 def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools=None):
     try:
@@ -21,7 +22,7 @@ def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools
         api_params = {
             "model": model,
             "messages": messages,
-            "extra_body": {"enable_thinking": True},
+            # "extra_body": {"enable_thinking": True},
             "stream": stream,
         }
         
@@ -211,6 +212,7 @@ class ResearchAgent:
 
         if not question_list:
             print("警告：未能从LLM获取有效的初始问题列表。研究可能无法继续。")
+            exit()
             question_list = [f"关于{self.state['original_topic']}的关键问题是什么？"]
 
         self.state['question_list'] = question_list
@@ -225,7 +227,7 @@ class ResearchAgent:
             print(f"正在研究问题: {current_question}")
 
             try:
-                rag_answer = send_query_to_RAG_server(current_question)
+                rag_answer = send_query_to_RAG_server(QUERY_PROMPT + current_question)
                 print(f"RAG回答: {rag_answer[:100]}...") # 打印部分回答作为反馈
             except Exception as e:
                 print(f"调用RAG服务时出错: {e}")
@@ -316,7 +318,8 @@ class ResearchAgent:
             "4. 直接输出报告正文，无需额外说明。\n"
             "5. 每个大章节下面建议布置2~4个小节，视信息丰富程度而定。\n"
             "6. 每个小节的主体是1~2段内容丰富、语言连续的段落，请不要大量分点。\n"
-            "7. 在句子后标注引用来自哪个文件，可以这样写：...with AU and Africa CDC leadership and broad stakeholder engagement ([#2], [#3], [#11])，然后在报告的最后这样写：- #1: Africa CDC and WHO collaborations\n- #2: Africa CDC and EU partnership\n..."
+            "7. 尽量多出现一些和时间有关的叙述，用以提升报告的时效性。例如xxxx年xx月这种。\n"
+            "8. 在句子后标注引用来自哪个文档，例如正文可以这样写：...with AU and Africa CDC leadership and broad stakeholder engagement ([#2], [#3], [#11])，然后在报告的附录这样写：- #1: Africa CDC and WHO collaborations...\n- #2: Africa CDC and EU partnership\n...\nrag系统返回的内容的Reference中包含了完整的文档名，你在附录里面也要包含完整的文档名，不可以偷懒简写。"
         )
 
         final_report = self._call_llm(system_prompt, user_prompt)
@@ -331,7 +334,6 @@ class ResearchAgent:
         return final_report
 
 if __name__ == "__main__":
-    MODEL = "gpt-4.1-mini-ca" # 或从 config 中获取
     
     topic = "需要一个标题为：“非洲生物安全态势研判”的报告。分为三个章节：1.非洲生物安全态势 2.非洲生物安全风险点 3.对我国(中国)应对风险及加强非洲国际合作的建议"
     # 使用了新的参数来初始化 ResearchAgent
