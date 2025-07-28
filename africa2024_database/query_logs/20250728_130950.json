@@ -1,0 +1,1149 @@
+{
+    "query": "非洲目前有哪些医疗机构在工作",
+    "entities": [
+        {
+            "id": "1",
+            "entity": "Related Content",
+            "type": "category",
+            "description": "A grouping of informational items including press releases, briefs, and advisories related to health emergency response and preparedness in Africa.",
+            "created_at": "2025-07-28 11:37:53",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "2",
+            "entity": "Local and International Organizations",
+            "type": "organization",
+            "description": "Various regional, continental, and global organizations working in partnership to support pathogen genomics and public health responses in Africa.",
+            "created_at": "2025-07-28 11:58:26",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "3",
+            "entity": "Medical Supplies",
+            "type": "category",
+            "description": "Medical supplies include vaccines, medicines, and cold chain equipment vital for immunisation and healthcare services. Partnership efforts have secured procurement and strengthened supply chains for these supplies in Africa.",
+            "created_at": "2025-07-28 11:50:34",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "4",
+            "entity": "Global Health Initiatives",
+            "type": "organization",
+            "description": "GHIs refer to global partnerships and funding platforms such as Gavi, the Global Fund, and the Global Financing Facility that support health improvements and protection in Africa and worldwide.<SEP>Global Health Initiatives are international programs or coalitions that commit to procurement policies that prioritize buying medical products from Africa for Africa as part of supporting local production and health system strengthening.\"|>\"The announcement of procurement commitments by Global Health Initiatives to buy in Africa for Africa",
+            "created_at": "2025-07-28 12:39:25",
+            "file_path": "african-health-leaders-begin-work-roadmap-reshape-global-health-financing-continent;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "5",
+            "entity": "Unitaid",
+            "type": "organization",
+            "description": "Unitaid is an international organization implementing the SafeBirth Africa program to improve access to innovative sexual and reproductive health commodities in Africa, funded under the EU Team Europe Initiative.",
+            "created_at": "2025-07-28 12:38:47",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "6",
+            "entity": "Northern Africa",
+            "type": "geo",
+            "description": "Northern Africa is a geographic region in Africa recognized as a distinct regional zone within various frameworks and initiatives. It plays a significant role in disaster and crisis management, as it is listed within the emergency response and preparedness framework. The region is a key focus area for public health strengthening under the Saving Lives and Livelihoods initiative and is actively involved in broader public health and continental strategy activities. Northern Africa is particularly important for pathogen genomic activities, which highlights its role in health surveillance and epidemiological research. Additionally, the region is concerned with Mpox preparedness efforts and is affected by mpox, participating in continent-wide coordination for preparedness and response actions. Northern Africa is also relevant to health surveillance and antimicrobial resistance monitoring efforts, underscoring its comprehensive involvement in various public health initiatives and regional health security measures.<SEP>Northern Africa is a region within Africa involved in health response activities coordinated by Africa CDC.<SEP>Northern Africa is among target areas for African Union-European Union health programs addressing pandemic prevention, vaccine production, and health systems resilience.\"|>\"Region: Northern Africa",
+            "created_at": "2025-07-28 12:39:07",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;african-researchers-propose-mpox-research-group;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;enhancing-vaccine-storage-efficiencies-in-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "7",
+            "entity": "Global Financing Facility",
+            "type": "organization",
+            "description": "The Global Financing Facility supports country-led efforts to improve health and nutrition for women, children and adolescents, contributing to health improvements globally including Africa.",
+            "created_at": "2025-07-28 12:04:00",
+            "file_path": "african-health-leaders-begin-work-roadmap-reshape-global-health-financing-continent"
+        },
+        {
+            "id": "8",
+            "entity": "Health Workers Trained and Deployed",
+            "type": "category",
+            "description": "Around 38,000 health workers have been trained, equipped, and deployed across Africa through the Saving Lives and Livelihoods initiative to strengthen frontline public health response.",
+            "created_at": "2025-07-28 11:47:32",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "9",
+            "entity": "Botswana",
+            "type": "geo",
+            "description": "Botswana is a country in Africa recognized as part of the target area for medical and health emergency interventions.<SEP>Botswana is one of the five African Union Member States initially targeted to receive cold chain equipment to enhance vaccine storage and healthcare capacities.",
+            "created_at": "2025-07-28 12:25:35",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "10",
+            "entity": "Africa Continent",
+            "type": "geo",
+            "description": "The African Continent is the geographic focus of the health partnerships and initiatives described, encompassing diverse regions and countries collectively engaged to enhance health sovereignty, pandemic preparedness, and health system resilience.\"|>\"Foundations of our cooperation with the African continent... to build resilient health systems... support global health internationally",
+            "created_at": "2025-07-28 12:38:59",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "11",
+            "entity": "Africa Public Health Foundation (APHF)",
+            "type": "organization",
+            "description": "APHF is an organization established to mobilize resources and investments for critical African public health activities in support of Africa CDC and the African Union’s New Public Health Order, focusing on resource mobilisation, grants management, advocacy, private sector engagement, and public health data analysis.<SEP>APHF is an organization partnering with Africa CDC to mobilize resources and support public health laboratory systems and initiatives in Africa, specifically to advance pathogen genomics and pandemic preparedness.",
+            "created_at": "2025-07-28 11:57:36",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "12",
+            "entity": "Africa",
+            "type": "geo",
+            "description": "Africa is a continent facing a high burden of infectious diseases and antimicrobial resistance, with mortality rates from antimicrobial resistance surpassing those from HIV-AIDS, tuberculosis, and malaria. It experiences numerous humanitarian crises and disease outbreaks annually, making it the primary geographical focus of various public health initiatives such as the JEAP initiative. Africa is also served by WHO AFRO and is central to efforts aimed at enhancing public health emergency preparedness and response, particularly in the context of diverse emergencies that are exacerbated by factors like climate change and conflict. Overall, Africa remains the critical region for partnership efforts focused on improving public health emergency preparedness and addressing ongoing health challenges.<SEP>Africa is the continent targeted by the AVMA and related initiatives aiming to increase local vaccine production, improve health security, and strengthen health systems and manufacturing capacity across regions including Central, Eastern, Northern, Southern, and Western Africa.\"|>\"The African Vaccine Manufacturing Accelerator is a Boon for the Continent... Region: Central Africa, Eastern Africa, Northern Africa, Southern Africa, Western Africa",
+            "created_at": "2025-07-28 13:02:55",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "13",
+            "entity": "Public Health Emergency Preparedness and Response",
+            "type": "category",
+            "description": "The activities and capabilities focused on anticipating, preparing for, and effectively managing public health emergencies in Africa.",
+            "created_at": "2025-07-28 12:33:25",
+            "file_path": "forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health"
+        },
+        {
+            "id": "14",
+            "entity": "Regional Emergency Hubs",
+            "type": "category",
+            "description": "Regional Emergency Hubs comprise three WHO-established centers in Africa (Dakar, Nairobi, Pretoria) created to improve rapid and effective responses to health emergencies, each with specialized functions including supply chain, medical personnel development, research, and genomic surveillance.",
+            "created_at": "2025-07-28 12:59:29",
+            "file_path": "senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises"
+        },
+        {
+            "id": "15",
+            "entity": "Emergency health supplies and equipment",
+            "type": "category",
+            "description": "Critical medical and health emergency supplies prepositioned in the WHO regional hubs to enable rapid response during health crises. These include warehouse storage and management facilities located in Senegal and Kenya.",
+            "created_at": "2025-07-28 12:59:29",
+            "file_path": "senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises"
+        },
+        {
+            "id": "16",
+            "entity": "United Nations Population Fund (UNFPA)",
+            "type": "organization",
+            "description": "UNFPA collaborates with Unitaid in implementing the SafeBirth Africa program aimed at improving access to life-saving sexual and reproductive health commodities in Africa, supported financially by the EU Team Europe Initiative.",
+            "created_at": "2025-07-28 12:38:47",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": "17",
+            "entity": "World Health Organization Regional Office for Africa",
+            "type": "organization",
+            "description": "The World Health Organization Regional Office for Africa (WHO AFRO) is a regional branch of the World Health Organization dedicated to supporting and improving public health across African Member States. WHO AFRO focuses on health and disease control, coordinating health initiatives, emergency preparedness, and response efforts throughout the African region. It leads various programs such as the Precision Public Health Metrics programme, which leverages data analytics for disease eradication and public health improvement. In addition to disease prevention and healthcare capacity-building, WHO AFRO plays a key role in shaping health financing strategies in Africa, exemplified by its convening of meetings to develop roadmaps for reshaping health financing on the continent. Through these efforts, WHO AFRO works to strengthen healthcare systems and promote sustainable health outcomes across Africa.",
+            "created_at": "2025-07-28 13:05:06",
+            "file_path": "african-health-leaders-begin-work-roadmap-reshape-global-health-financing-continent;africa-cdc-who-welcome-uks-support-to-address-health-challenges;forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health;who-africa-bill-and-melinda-gates-foundation-pursue-collaboration-leverage-data-analytics"
+        },
+        {
+            "id": "18",
+            "entity": "AUDA-NEPAD",
+            "type": "organization",
+            "description": "The African Union Development Agency-NEPAD is an AU agency focusing on socio-economic development programs including health, partnering in regulatory strengthening and local manufacturing efforts.",
+            "created_at": "2025-07-28 11:41:19",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "19",
+            "entity": "PATH (Program for Appropriate Technology in Health)",
+            "type": "organization",
+            "description": "Global health organization collaborating with Africa CDC and Clinton Health Access Initiative on vaccine supplier landscape analysis for Africa to inform manufacturing development.",
+            "created_at": "2025-07-28 12:05:58",
+            "file_path": "african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        },
+        {
+            "id": "20",
+            "entity": "Domestic and Partner Funding",
+            "type": "category",
+            "description": "Funding sources including national governments, private sector, civil society, external finance institutions and development partners aimed at financing sustainable investments in the health workforce across African countries as called for by the charter.",
+            "created_at": "2025-07-28 12:08:21",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "21",
+            "entity": "Africa Programme II",
+            "type": "event",
+            "description": "Africa Programme II is a United Kingdom-funded initiative investing £95 million to foster partnerships with African countries and organizations to tackle deadly diseases, epidemics, drug resistance, and climate-related health issues.",
+            "created_at": "2025-07-28 12:01:02",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "22",
+            "entity": "Private Sector",
+            "type": "organization",
+            "description": "Private sector entities collaborating with Africa CDC and partners in public health initiatives including diagnostics and pathogen genomics.",
+            "created_at": "2025-07-28 11:58:27",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "23",
+            "entity": "WHO Regional Office for Africa",
+            "type": "organization",
+            "description": "Dr Moeti leads WHO AFRO and publicly acknowledges UK's commitments supporting health initiatives in Africa.<SEP>The WHO Regional Office for Africa is a branch of the World Health Organization dedicated to healthcare programs and initiatives supporting African countries, including the rollout of malaria vaccines across multiple countries in the African region.<SEP>The WHO Regional Office for Africa is a regional branch of the World Health Organization focused on health issues and initiatives within Africa, including launching health investment charters to address workforce shortages.",
+            "created_at": "2025-07-28 12:54:38",
+            "file_path": "pioneering-charter-drive-investment-africas-health-workforce;africa-cdc-who-welcome-uks-support-to-address-health-challenges;nearly-10-000-children-vaccinated-malaria-vaccine-rollout-africa-expands"
+        },
+        {
+            "id": "24",
+            "entity": "Genomic Testing Laboratories in Africa",
+            "type": "category",
+            "description": "Genomic testing capacity expanded from 7 to 40 laboratories across Africa as a direct result of the Saving Lives and Livelihoods initiative, enhancing disease surveillance and outbreak response.",
+            "created_at": "2025-07-28 11:47:32",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "25",
+            "entity": "COVID-19 Vaccination Centres in Africa",
+            "type": "category",
+            "description": "Over 600 COVID-19 vaccination centres across Africa were integrated into healthcare systems as part of the Saving Lives and Livelihoods initiative to improve vaccine accessibility and distribution.",
+            "created_at": "2025-07-28 11:47:32",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "26",
+            "entity": "Africa Centre for Disease Control and Prevention",
+            "type": "organization",
+            "description": "A continent-wide public health institute focused on disease control and prevention in Africa, led by Dr Jean Kaseya, and engaged in advocating for strategic health investments.",
+            "created_at": "2025-07-28 12:08:16",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "27",
+            "entity": "GDP Expenditure on Health",
+            "type": "category",
+            "description": "An identified necessary increase in Africa's Gross Domestic Product expenditure on health, up to 1.5%, with over half dedicated specifically to health workforce investment.",
+            "created_at": "2025-07-28 12:54:52",
+            "file_path": "pioneering-charter-drive-investment-africas-health-workforce"
+        },
+        {
+            "id": "28",
+            "entity": "African Centres for Disease Control and Prevention",
+            "type": "organization",
+            "description": "Africa CDC is a public health agency of the African Union tasked with supporting public health initiatives and disease prevention on the continent. It partnered in convening the meeting on health financing.",
+            "created_at": "2025-07-28 12:03:39",
+            "file_path": "african-health-leaders-begin-work-roadmap-reshape-global-health-financing-continent"
+        },
+        {
+            "id": "29",
+            "entity": "Medical Supplies and Cold Chain Equipment",
+            "type": "category",
+            "description": "Medical Supplies and Cold Chain Equipment refers to essential materials and infrastructure used to transport and store medical products at controlled temperatures, critical for healthcare delivery in Africa.",
+            "created_at": "2025-07-28 12:26:31",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "30",
+            "entity": "Southern Africa",
+            "type": "geo",
+            "description": "Southern Africa is a geographic region in Africa that plays a significant role in regional health and emergency response initiatives, particularly concerning infectious disease outbreaks such as Mpox. It is actively involved in coordinated epidemic response and surveillance efforts, serving as a key area for disease intelligence and outbreak management. The region is part of various health emergency actions and preparedness efforts, including its inclusion in the implementation of the Saving Lives and Livelihoods initiative. Additionally, Southern Africa is recognized as an important region for pathogen genomic activities, contributing to broader health strategies and outbreak response initiatives across the continent.<SEP>Southern Africa is a geographic region targeted in medical and health emergency initiatives by Africa CDC.<SEP>Southern Africa is included as a geographic focus for AU-EU health initiatives aiming to improve pandemic preparedness and advance health security.\"|>\"Region: Southern Africa",
+            "created_at": "2025-07-28 12:39:08",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;african-researchers-propose-mpox-research-group;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;enhancing-vaccine-storage-efficiencies-in-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "31",
+            "entity": "Wellcome Trust",
+            "type": "organization",
+            "description": "Wellcome Trust is a global charitable foundation supporting health research and technical response efforts related to mpox outbreak in Africa.",
+            "created_at": "2025-07-28 12:20:02",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "32",
+            "entity": "Africa Centres for Disease Control and Prevention",
+            "type": "organization",
+            "description": "The Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency and specialized technical institution of the African Union. It is dedicated to supporting Member States across Africa in strengthening health systems by improving disease surveillance, emergency response, prevention, and control of diseases. Africa CDC focuses on enhancing the continent's capacity to detect, prevent, and respond to health emergencies, including combating deadly diseases such as drug-resistant infections and pandemics. Additionally, the agency plays a key role in communication and information dissemination related to health emergencies and outbreak response. Africa CDC also leads the African Union's public health initiatives, including pandemic prevention, preparedness, and response, aiming to build resilient health systems throughout Africa.<SEP>The Africa Centres for Disease Control and Prevention is a continental public health agency collaborating closely with WHO and the regional emergency hubs to strengthen emergency preparedness and health systems in Africa.",
+            "created_at": "2025-07-28 12:59:29",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;africa-cdc-who-welcome-uks-support-to-address-health-challenges;senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;enhancing-vaccine-storage-efficiencies-in-africa;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "33",
+            "entity": "West Africa",
+            "type": "geo",
+            "description": "A region in Africa supported by France for regional health projects aligned with Africa CDC’s priorities.",
+            "created_at": "2025-07-28 11:44:40",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "34",
+            "entity": "Eastern Africa",
+            "type": "geo",
+            "description": "Eastern Africa is a geographic sub-region within the continent of Africa that plays a critical and multifaceted role in health surveillance, disease intelligence, and emergency response efforts. It is a focal area for public health initiatives, including preparedness and response activities for outbreaks such as mpox. The region is highly affected by visceral leishmaniasis (VL), accounting for 73% of global VL cases in 2022, making it the primary target of the newly launched VL elimination framework. Eastern Africa is also a key operational zone for humanitarian and development programs, notably the Saving Lives and Livelihoods initiative, underscoring its importance in addressing crises and enhancing resilience.\n\nIn addition, Eastern Africa actively participates in advanced scientific efforts like pathogen genomic activities that support the monitoring and understanding of infectious diseases. The region benefits significantly from coordinated health emergency initiatives and medical response strategies, including its involvement in AU-EU health partnerships aimed at pandemic preparedness and health system strengthening. Overall, Eastern Africa is a vital region for emergency management, public health strategy, humanitarian initiatives, and genomic research, making it central to both regional and global health security efforts.",
+            "created_at": "2025-07-28 12:51:11",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;african-researchers-propose-mpox-research-group;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;new-framework-launched-eliminate-visceral-leishmaniasis-eastern-africa;enhancing-vaccine-storage-efficiencies-in-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "35",
+            "entity": "Namibia",
+            "type": "geo",
+            "description": "Namibia is a country in the African region that hosted the inauguration of the African Health Workforce Investment Charter and the Health Workforce Investment Forum, with active participation by its government officials.",
+            "created_at": "2025-07-28 12:08:05",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "36",
+            "entity": "WHO Regional Emergency Hub in Nairobi",
+            "type": "event",
+            "description": "The WHO Regional Emergency Hub launched in Nairobi, Kenya in 2022 is the first emergency hub in Africa, focusing on the development of emergency medical personnel and reducing emergency response delivery times.",
+            "created_at": "2025-07-28 12:59:14",
+            "file_path": "senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises"
+        },
+        {
+            "id": "37",
+            "entity": "Implementing Partners",
+            "type": "organization",
+            "description": "Organizations and entities that function as partners in implementing genomic surveillance projects and outbreak response activities across Africa.",
+            "created_at": "2025-07-28 11:58:27",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "38",
+            "entity": "Team Europe Initiatives",
+            "type": "category",
+            "description": "A collective European Union effort to support various projects in Africa including strengthening pharmaceutical manufacturing capacity, with France as a major contributor.<SEP>Team Europe Initiatives are investment packages and collaborations under the EU Global Gateway strategy aimed at enhancing resilience and cooperation between Europe and Africa in health security, digital health, and public health institutes.\"|>\"Today we launch three major Team Europe Initiatives on health security, digital health and public health institutes...",
+            "created_at": "2025-07-28 12:38:06",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "39",
+            "entity": "Ministers of Health of Angola, Benin, Burundi, Cameroon, Central African Republic, Congo, Democratic Republic of Congo, Gabon, Ghana, Liberia, Nigeria, Uganda",
+            "type": "person",
+            "description": "The Ministers of Health from multiple African countries including Angola, Benin, Burundi, Cameroon, Central African Republic, Congo, Democratic Republic of Congo, Gabon, Ghana, Liberia, Nigeria, and Uganda, who convened in a high-level meeting in Kinshasa, Democratic Republic of Congo, on 13 April 2024 to address the mpox outbreak.",
+            "created_at": "2025-07-28 12:19:42",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "40",
+            "entity": "Africa PGI",
+            "type": "category",
+            "description": "Africa PGI is a tag referring to the Africa Pathogen Genomics Initiative and related genomic surveillance activities in Africa.",
+            "created_at": "2025-07-28 11:58:06",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "41",
+            "entity": "AHRO",
+            "type": "organization",
+            "description": "Africa Health Research Organisation (AHRO) is a research organization focused on small drug molecules, clinical and academic research, and scientific publishing. It engages in behaviour research on obesity, offers various academic courses including nursing and midwifery, and hosts visiting scholars and students programs. AHRO manages governance structures such as the Board of Trustees and Governing Council, and emphasizes innovation in research methodologies.",
+            "created_at": "2025-07-28 11:54:11",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "42",
+            "entity": "Africa CDC",
+            "type": "organization",
+            "description": "Africa CDC (Africa Centres for Disease Control and Prevention) is the specialized, continental autonomous public health agency of the African Union dedicated to strengthening health institutions and capacities across Africa. Its primary mission is to enhance disease surveillance, outbreak response, and emergency preparedness to detect, prevent, control, and manage health threats throughout the continent. As a leading public health institution in Africa, Africa CDC plays a central role in building health security and coordinating regional responses to infectious disease epidemics, including mpox, by collaborating closely with African governments and global partners such as the World Health Organization (WHO), the European Union, and Gavi.\n\nAfrica CDC actively co-leads initiatives like the Joint Emergency Preparedness and Response Action Plan (JEAP) to address disease outbreaks and public health emergencies, while providing technical support, capacity building, and epidemic response coordination. The agency emphasizes genomic surveillance strategies as part of its comprehensive approach to managing public health challenges and strengthening health systems continent-wide.\n\nIn addition to its role in disease control, Africa CDC leads and supports critical vaccine manufacturing initiatives, including the African Vaccine Manufacturing Alliance (AVMA), with the goal of increasing local production to meet 60% of Africa’s demand for vaccines, medicines, and diagnostics by 2040. The agency promotes sustainable vaccine development, regulatory harmonization, decentralization of diagnostics, and localization of health product manufacturing to build resilient and self-sufficient health systems.\n\nOperating under the African Union's Agenda 2063 and guided by a strategic plan for 2023-2027, Africa CDC strives to enhance health sovereignty, improve health outcomes, strengthen emergency response capabilities, and foster knowledge-sharing and institutional strengthening across African countries. Through these efforts, Africa CDC empowers Africa’s health security and advances the continent’s ability to manage current and future public health threats effectively.",
+            "created_at": "2025-07-28 13:07:35",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;joint-statement-on-the-africa-cdc-and-united-states-new-joint-action-plan;african-researchers-propose-mpox-research-group;addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa;who-africa-welcomes-gavis-commitment-africa-vaccine-manufacture-immunization-and-pandemic;africa-cdc-who-welcome-uks-support-to-address-health-challenges;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks;african-health-ministers-commit-to-purchasing-locally-made-vaccines;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;enhancing-vaccine-storage-efficiencies-in-africa;africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "43",
+            "entity": "African Union",
+            "type": "organization",
+            "description": "The African Union (AU) is a continental political and economic union comprising 55 African countries dedicated to fostering regional integration, political and economic collaboration, and inclusive growth across the continent. It provides frameworks, protocols, and agreements to coordinate health security and outbreak response, including cooperation on infectious diseases such as mpox. The AU supports policy coordination and development initiatives in partnership with regional communities and citizens, promoting peace and stability throughout Africa. It operates as a leading political organization under which the Africa Centres for Disease Control and Prevention (Africa CDC) functions as an autonomous health agency, assisting member states in their public health efforts. The African Union actively engages in strategic international partnerships, notably with the European Union, to advance health initiatives focused on pandemic prevention, health security, strengthening health systems, and local vaccine manufacturing. Furthermore, the AU supports global health efforts such as the Gavi 2024 replenishment event in Paris and endorses accountability mechanisms like the Lusaka Agenda, highlighting its commitment to transparent and effective governance across the continent.<SEP>The African Union is a continental organization representing African countries, co-hosting the AVMA launch event and partnering with Africa CDC and Gavi to promote regional vaccine manufacturing and health security in Africa.",
+            "created_at": "2025-07-28 13:02:37",
+            "file_path": "the-african-vaccine-manufacturing-accelerator-is-a-boon-for-the-continent;african-health-leaders-begin-work-roadmap-reshape-global-health-financing-continent;press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "44",
+            "entity": "Uganda",
+            "type": "geo",
+            "description": "Uganda is a country in East Africa included in Africa CDC's regional health initiatives.<SEP>Uganda is an African country that benefited from vaccine purchases facilitated through the AVAT payment facility supported by France and Afreximbank.<SEP>Uganda is one of the African Union Member States initially supplied with cold chain equipment to boost vaccination programs and healthcare system capabilities.",
+            "created_at": "2025-07-28 12:25:35",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa;enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "45",
+            "entity": "Africa Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response",
+            "type": "event",
+            "description": "An Africa CDC-led continental initiative aimed at improving decentralized diagnostic capabilities and speeding up outbreak response mechanisms across Africa.<SEP>This is a continental strategy launch event focused on decentralizing diagnostics and improving response to outbreaks in Africa.<SEP>This is a continental-level initiative aimed at decentralizing diagnostic services and speeding up responses to disease outbreaks across Africa.",
+            "created_at": "2025-07-28 12:27:00",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;enhancing-vaccine-storage-efficiencies-in-africa;africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "46",
+            "entity": "Partnership for Public Health Emergencies Preparedness & Response",
+            "type": "organization",
+            "description": "A collaborative partnership focused on responding to public health emergencies in Africa, seeking 1 billion USD funding to improve preparedness, detection, and response to emergencies triggered by climate change and conflict-related disasters.",
+            "created_at": "2025-07-28 12:52:53",
+            "file_path": "partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "47",
+            "entity": "Governments",
+            "type": "organization",
+            "description": "National and regional governments across African countries engaged in collaborations to support the implementation of pathogen genomic surveillance and outbreak response.",
+            "created_at": "2025-07-28 11:58:18",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "48",
+            "entity": "UNICEF",
+            "type": "organization",
+            "description": "The United Nations Children's Fund is the first partner to join the JEAP partnership, contributing to efforts to transform health security on the African continent.<SEP>UNICEF is a global organization and the United Nations agency dedicated to children's welfare, operating in over 190 countries and territories. It focuses on supporting disadvantaged children worldwide through efforts related to child rights, health, immunization, community health programs, humanitarian action, and supply operations. In addition to its broad mission, UNICEF actively contributes to specific health initiatives such as supporting mpox response efforts in Africa alongside other international partners. The organization also plays a key role as an implementing partner in enhancing vaccine storage by procuring and delivering cold chain equipment in African Union Member States. Through these comprehensive activities, UNICEF strives to build a better world for all children.<SEP>UNICEF is an international organization working as a partner with WHO and others to support the malaria vaccine rollout efforts in African countries through coordination and resource mobilization.",
+            "created_at": "2025-07-28 12:52:53",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa;nearly-10-000-children-vaccinated-malaria-vaccine-rollout-africa-expands;enhancing-vaccine-storage-efficiencies-in-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "49",
+            "entity": "United Kingdom Government",
+            "type": "organization",
+            "description": "The United Kingdom government has committed significant financial resources and partnerships aimed at advancing global health, supporting disease control and vaccine development initiatives, particularly in Africa and low- and middle-income countries.",
+            "created_at": "2025-07-28 12:01:06",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "50",
+            "entity": "Cameroon",
+            "type": "geo",
+            "description": "Cameroon is an African country located in Central Africa that has recently taken significant steps in public health and disease control. Beginning on 22 January 2024, Cameroon started integrating the RTS,S malaria vaccine into its national routine immunization program, covering over 500 health facilities across 42 health districts in 10 regions. The country is actively involved within the scope of Africa CDC health-related strategies and outbreak responses, highlighting its engagement in continental health initiatives. Additionally, Cameroon is one of five African Union Member States initially targeted to receive cold chain equipment aimed at improving vaccine-storage infrastructure and immunization services. Furthermore, Cameroon has been included in the initial focus of Mpox research conducted by the Consortium, underscoring its role in emerging infectious disease studies in Africa.",
+            "created_at": "2025-07-28 12:49:00",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa;nearly-10-000-children-vaccinated-malaria-vaccine-rollout-africa-expands;african-researchers-propose-mpox-research-group"
+        },
+        {
+            "id": "51",
+            "entity": "Saving Lives and Livelihoods initiative",
+            "type": "event",
+            "description": "The Saving Lives and Livelihoods initiative is a USD 1.5 million partnership between the Mastercard Foundation and Africa CDC aimed at ensuring vaccine equity by purchasing and supporting vaccination delivery for millions in Africa.",
+            "created_at": "2025-07-28 12:25:58",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "52",
+            "entity": "World Health Organization (WHO)",
+            "type": "organization",
+            "description": "The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health. It collaborates closely with various partners, including the Africa Centers for Disease Control and Prevention (Africa CDC), the African Union, and European Union partners, to support and strengthen health systems and improve access to medicines in Africa. The WHO provides guidance under the International Health Regulations and actively supports responses to outbreaks such as mpox in Africa. Additionally, through initiatives like the Joint Emergency Action Plan (JEAP), the WHO works to enhance emergency preparedness and response capabilities across the African continent.",
+            "created_at": "2025-07-28 12:53:12",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting;forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health"
+        },
+        {
+            "id": "53",
+            "entity": "African Medicines Agency (AMA)",
+            "type": "organization",
+            "description": "The African Medicines Agency (AMA) is a continent-wide regulatory body requiring the collective support of African member states to provide affordable, quality medicines and strengthen regulatory harmonization.<SEP>The African Medicines Agency is a continental regulatory body aimed at harmonizing and enhancing medicine regulation across Africa to improve access to safe and effective health products.",
+            "created_at": "2025-07-28 12:05:45",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;african-health-ministers-commit-to-purchasing-locally-made-vaccines"
+        }
+    ],
+    "relations": [
+        {
+            "id": "1",
+            "entity1": "AHRO",
+            "entity2": "Africa CDC",
+            "description": "AHRO operates in related public health and research fields within Africa, concurrent with Africa CDC's efforts but no explicit collaboration mentioned.",
+            "reference": "Africa CDC and WHO...AHRO activities in Africa",
+            "created_at": "2025-07-28 11:55:06",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "2",
+            "entity1": "Africa CDC",
+            "entity2": "African Union",
+            "description": "Africa CDC functions as an autonomous health agency operating under the African Union. It supports continent-wide public health initiatives by coordinating responses to infectious diseases, including mpox, within the framework of the African Union's health security statutes and policies. As a technical institution, Africa CDC plays a vital role in advancing health systems and enhancing pandemic preparedness across Africa, working under the broader organizational and strategic framework of the African Union.",
+            "reference": "Africa CDC is a continental autonomous health agency of the African Union...\nAfrica CDC is an autonomous health agency of the African Union which supports Member States...\nAmended Statute of the Africa Centres for Disease Control and Prevention (2022);...\nPartnerships with African Union...Working Arrangement between Africa CDC and European Commission",
+            "created_at": "2025-07-28 12:40:34",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty;africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa;communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "3",
+            "entity1": "Africa CDC",
+            "entity2": "Africa Public Health Foundation (APHF)",
+            "description": "Africa CDC works closely with APHF to support public health laboratory systems and pathogen genomics initiatives.",
+            "reference": "Africa CDC is working with...APHF...to ensure the effective and successful implementation of the two projects",
+            "created_at": "2025-07-28 11:58:42",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "4",
+            "entity1": "Africa CDC",
+            "entity2": "Uganda",
+            "description": "Uganda is included within Africa CDC’s scope of health emergency support.",
+            "reference": "Country Uganda",
+            "created_at": "2025-07-28 12:29:44",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "5",
+            "entity1": "Africa CDC",
+            "entity2": "Africa Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response",
+            "description": "Africa CDC leads this continental strategy aimed to improve diagnostics and outbreak response infrastructure.",
+            "reference": "Africa Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response",
+            "created_at": "2025-07-28 12:29:44",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "6",
+            "entity1": "Africa CDC",
+            "entity2": "Partnership for Public Health Emergencies Preparedness & Response",
+            "description": "Africa CDC is a key institution within the partnership focused on coordinating and leading health emergency preparedness and response efforts across Africa.",
+            "reference": "Africa’s two leading public health institutions are seeking 1 billion USD for their partnership...said Dr. Jean Kaseya, Director General of the Africa CDC",
+            "created_at": "2025-07-28 12:53:12",
+            "file_path": "partnership-for-climate-and-disaster-response-seeks-1-billion-usd-who-and-africa-cdc-strengthen-efforts-to-tackle-health-emergencies-in-africa"
+        },
+        {
+            "id": "7",
+            "entity1": "Africa CDC",
+            "entity2": "Medical Supplies and Cold Chain Equipment",
+            "description": "Africa CDC focuses on improving the availability and management of medical supplies and cold chain equipment as part of its health emergency initiatives.",
+            "reference": "Theme Medical Supplies and Cold Chain Equipment...Africa CDC initiatives",
+            "created_at": "2025-07-28 12:29:22",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "8",
+            "entity1": "Africa CDC",
+            "entity2": "Private Sector",
+            "description": "Africa CDC engages with the private sector to strengthen diagnostics and public health capabilities.",
+            "reference": "collaborative efforts with...private sector",
+            "created_at": "2025-07-28 11:59:11",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "9",
+            "entity1": "Africa CDC",
+            "entity2": "Governments",
+            "description": "Africa CDC collaborates closely with governments across Africa for the implementation of health emergency responses and genomic surveillance.",
+            "reference": "collaborative efforts with governments...implementing partners, and the private sector",
+            "created_at": "2025-07-28 11:59:11",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "10",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "African Union",
+            "description": "Africa CDC operates as an autonomous health agency within the African Union, supporting AU Member States in health systems and disease control.",
+            "reference": "Africa CDC is an autonomous health agency of the African Union",
+            "created_at": "2025-07-28 11:41:40",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "11",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "UNICEF",
+            "description": "Africa CDC and UNICEF have an extended partnership focused on strengthening primary healthcare, immunization, supply chains, local manufacturing, and emergency response in Africa.<SEP>Africa CDC works with UNICEF as an implementing partner to procure and deliver cold chain equipment to African Member States.",
+            "reference": "Africa CDC and UNICEF announced an extended partnership...building on the 2022-2024 Partnership Framework...\nThe equipment was procured and delivered through the support of UNICEF, one of the initiative’s implementing partners.",
+            "created_at": "2025-07-28 12:27:54",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "12",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "United Kingdom Government",
+            "description": "Africa CDC partners with the UK Government through the Africa Programme II initiative to strengthen epidemic detection, combat drug-resistant infections, and address climate-related health challenges across Africa.",
+            "reference": "The allocation of the United Kingdom’s investment of £95 million in tackling deadly diseases in Africa Programme II... foster partnerships with countries and Africa-based organizations - Africa CDC and WHO - to detect and address future epidemics...",
+            "created_at": "2025-07-28 12:01:25",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "13",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Cameroon",
+            "description": "Cameroon is part of the initial group of African Union Member States receiving cold chain equipment from Africa CDC to improve immunization systems.",
+            "reference": "These Member States are...Cameroon...part of the initial delivery...",
+            "created_at": "2025-07-28 12:27:54",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "14",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Saving Lives and Livelihoods initiative",
+            "description": "Africa CDC is a key party in the Saving Lives and Livelihoods initiative aimed at vaccine equity through cold chain equipment provision and vaccine procurement.",
+            "reference": "The Saving Lives and Livelihoods initiative is a USD 1.5 million partnership between the Mastercard Foundation and the Africa Centres for Disease Control and Prevention...",
+            "created_at": "2025-07-28 12:28:13",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "15",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "World Health Organization (WHO)",
+            "description": "WHO partners with Africa CDC and other entities to support health system strengthening and regulatory processes in Africa.",
+            "reference": "...coordination with... WHO...",
+            "created_at": "2025-07-28 11:41:48",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "16",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "African Medicines Agency (AMA)",
+            "description": "Africa CDC coordinates with AMA to strengthen regulatory processes and improve access to medicines across African countries.",
+            "reference": "...in coordination with regional actions involving... the African Medicines Agency (AMA),",
+            "created_at": "2025-07-28 11:41:48",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "17",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Health Security",
+            "description": "Health Security is a thematic focus of Africa CDC’s efforts in protecting populations and supporting local manufacturing partnerships.",
+            "reference": "Theme Health Security, Partnerships for African Vaccine Manufacturing (PAVM)",
+            "created_at": "2025-07-28 11:41:55",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "18",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Zambia",
+            "description": "Zambia received cold chain equipment in a handover ceremony involving the country’s Minister of Health, supported by Africa CDC for vaccine storage enhancement.",
+            "reference": "During the handover ceremony in Zambia, the Honorable Sylvia Masebo...highlighted the support from Africa CDC...",
+            "created_at": "2025-07-28 12:28:11",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "19",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Uganda",
+            "description": "Uganda is among the Member States supplied by Africa CDC with cold chain equipment to expand vaccine storage and improve immunization program coverage.",
+            "reference": "These Member States are...Uganda...initial delivery...",
+            "created_at": "2025-07-28 12:27:54",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "20",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Northern Africa",
+            "description": "Northern Africa is included in Africa CDC’s regional strategy for health emergency responses.",
+            "reference": "Region Northern Africa ... Africa CDC activities",
+            "created_at": "2025-07-28 11:51:24",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "21",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "COVID-19 pandemic",
+            "description": "The COVID-19 pandemic revealed weaknesses in health systems that Africa CDC aims to address through enhanced supply chain and emergency response capabilities.",
+            "reference": "The COVID-19 pandemic exposed the fragility of many healthcare systems...Africa CDC and UNICEF will work together to establish robust institutional backing",
+            "created_at": "2025-07-28 11:51:05",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "22",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Sierra Leone",
+            "description": "Sierra Leone receives cold chain equipment from Africa CDC to strengthen healthcare infrastructure related to immunization.",
+            "reference": "Member States...Sierra Leone...part of initial delivery...",
+            "created_at": "2025-07-28 12:27:54",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "23",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Botswana",
+            "description": "Botswana is among the initial African Union Member States supported by Africa CDC with cold chain equipment to enhance vaccine storage and immunization capacities.",
+            "reference": "These Member States are Botswana...part of the initial delivery targeting...",
+            "created_at": "2025-07-28 12:27:54",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "24",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Emergency Preparedness and Response",
+            "description": "Africa CDC leads efforts in public health emergency preparedness and response as a core programmatic area in the partnership.",
+            "reference": "public health emergency preparedness and response...",
+            "created_at": "2025-07-28 11:51:16",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "25",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "New Public Health Order",
+            "description": "The New Public Health Order theme is likely linked to or promoted by Africa CDC as part of their strategic health initiatives in Africa.",
+            "reference": "Theme New Public Health Order...Africa CDC references",
+            "created_at": "2025-07-28 11:51:24",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "26",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Weekly Special Press Briefing on Health Emergencies in Africa",
+            "description": "Africa CDC organizes or is responsible for the Weekly Special Press Briefing, which provides updates on health emergencies across Africa.",
+            "reference": "Communication and Public Information Directorate| Africa Centres for Disease Control and Prevention...Weekly Special Press Briefing on Health Emergencies in Africa",
+            "created_at": "2025-07-28 11:51:23",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "27",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Africa Public Health Foundation (APHF)",
+            "description": "Africa CDC and APHF have forged a strategic partnership formalized by a signed agreement aimed at strengthening health systems across African Union Member States, including joint resource mobilisation and policy advocacy efforts.<SEP>Africa CDC collaborates with APHF to improve public health laboratory systems and pandemic preparedness through genomic initiatives.",
+            "reference": "Africa CDC and Africa Public Health Foundation Forge Strategic Partnership...agreement to support strengthening health systems in Africa Union Member States...Our strategic partnership has benefited the continent through resource mobilisation...\nAfrica CDC is working with...APHF...to ensure the effective and successful implementation of the two projects",
+            "created_at": "2025-07-28 11:58:51",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa;africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "28",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "France",
+            "description": "Africa CDC and France signed a memorandum of understanding to strengthen cooperation in public health systems across Africa, including vaccine manufacturing, workforce training, and disease surveillance.\"|>\"public health cooperation",
+            "reference": "The Africa Centres for Disease Control and Prevention (Africa CDC) and the government of France signed a memorandum of understanding... to strengthen cooperation in public health.",
+            "created_at": "2025-07-28 11:44:48",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "29",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Emergency Response",
+            "description": "Africa CDC is involved in emergency response to infectious disease outbreaks including COVID-19, Ebola, Marburg, and Cholera.",
+            "reference": "...response to the COVID-19 pandemic, the Ebola, Marburg, and Cholera outbreaks...Africa CDC supports...",
+            "created_at": "2025-07-28 11:35:12",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "30",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "African Union Member States",
+            "description": "Africa CDC provides technical and strategic support to African Union Member States in strengthening health systems, disease surveillance, and emergency response.",
+            "reference": "Africa CDC... supports member states in efforts to strengthen health systems and improve surveillance, emergency response...in Africa Union Member States",
+            "created_at": "2025-07-28 11:35:12",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "31",
+            "entity1": "Africa Centres for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Africa Union Member States",
+            "description": "Africa CDC supports member states of the African Union in strengthening health systems, surveillance, emergency response, and disease control.",
+            "reference": "Africa CDC...supports member states in efforts to strengthen health systems...in Africa Union Member States",
+            "created_at": "2025-07-28 11:35:05",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "32",
+            "entity1": "United Kingdom Government",
+            "entity2": "World Health Organization Regional Office for Africa",
+            "description": "WHO AFRO collaborates with and benefits from UK funding and partnership initiatives aimed at epidemic control, infectious disease management, and health product development in Africa.",
+            "reference": "...foster partnerships with countries and Africa-based organizations - Africa CDC and WHO - to detect and address future epidemics...",
+            "created_at": "2025-07-28 12:01:33",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "33",
+            "entity1": "Central Africa",
+            "entity2": "France",
+            "description": "France supports regional health projects in Central Africa reinforcing Africa CDC objectives in diagnostics, surveillance, and regulation.\"|>\"regional support, health systems",
+            "reference": "France also supports regional health projects in West and Central Africa that reinforce Africa CDC’s diagnostics, surveillance, and regulation objectives.",
+            "created_at": "2025-07-28 11:45:04",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "34",
+            "entity1": "Africa Public Health Foundation (APHF)",
+            "entity2": "Emergency Response",
+            "description": "APHF supports emergency response efforts with resource mobilisation and interventions across Africa.",
+            "reference": "Our strategic partnership has benefited the continent through resource mobilisation to respond to the COVID-19 pandemic, the Ebola, Marburg, and Cholera outbreaks...",
+            "created_at": "2025-07-28 11:35:12",
+            "file_path": "africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems"
+        },
+        {
+            "id": "35",
+            "entity1": "Africa Centers for Disease Control and Prevention (Africa CDC)",
+            "entity2": "Lusaka Agenda",
+            "description": "Africa CDC is the lead agency spearheading the Lusaka agenda aimed at strengthening leadership and coordination for health plan implementation.",
+            "reference": "Africa CDC will spearhead the Lusaka agenda to strengthen national leadership and partner coordination",
+            "created_at": "2025-07-28 12:57:29",
+            "file_path": "press-statement-africa-cdc-committed-to-supporting-the-replenishment-of-gavi-funds-in-paris"
+        },
+        {
+            "id": "36",
+            "entity1": "France",
+            "entity2": "Water, Sanitation and Hygiene (WASH)",
+            "description": "France supports Africa CDC through technical expertise in WASH, critical for health system improvements.\"|>\"technical expertise, public health infrastructure",
+            "reference": "...and Water, Sanitation and Hygiene (WASH).",
+            "created_at": "2025-07-28 11:44:56",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "37",
+            "entity1": "France",
+            "entity2": "West Africa",
+            "description": "France supports regional health projects in West Africa aligned to Africa CDC’s public health priorities.\"|>\"regional support, health systems",
+            "reference": "France also supports regional health projects in West and Central Africa that reinforce Africa CDC’s diagnostics, surveillance, and regulation objectives.",
+            "created_at": "2025-07-28 11:45:04",
+            "file_path": "africa-cdc-and-france-sign-memorandum-of-understanding-to-strengthen-public-health-systems-in-africa"
+        },
+        {
+            "id": "38",
+            "entity1": "Africa Programme II",
+            "entity2": "United Kingdom",
+            "description": "The UK allocated £95 million to Africa Programme II to support partnerships aiming to tackle deadly diseases and build health systems in Africa.",
+            "reference": "The allocation of the United Kingdom’s investment of £95 million in tackling deadly diseases in Africa Programme II...",
+            "created_at": "2025-07-28 12:01:25",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "39",
+            "entity1": "Africa Centre for Disease Control and Prevention",
+            "entity2": "Dr Jean Kaseya",
+            "description": "Dr Kaseya is the Director-General of the Africa CDC, highlighting the economic benefits of investing in the health sector.",
+            "reference": "said Dr Jean Kaseya, Director-General of the Africa Centre for Disease Control and Prevention...",
+            "created_at": "2025-07-28 12:08:39",
+            "file_path": "african-regions-first-ever-health-workforce-investment-charter-launched"
+        },
+        {
+            "id": "40",
+            "entity1": "ASLM",
+            "entity2": "African continent regions (Central Africa, Eastern Africa, Northern Africa, Southern Africa, Western Africa)",
+            "description": "ASLM operates across Africa advocating for laboratory medicine and healthcare strengthening throughout these regions.",
+            "reference": "ASLM is a pan-African professional body working to advocate...Region Central Africa, Eastern Africa...",
+            "created_at": "2025-07-28 12:16:17",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "41",
+            "entity1": "Africa CDC",
+            "entity2": "Ministers of Health of Angola, Benin, Burundi, Cameroon, Central African Republic, Congo, Democratic Republic of Congo, Gabon, Ghana, Liberia, Nigeria, Uganda",
+            "description": "Africa CDC supports and collaborates with the Ministers of Health from multiple African countries in regional efforts to respond to the mpox epidemic.",
+            "reference": "Africa CDC...support to the mpox response...cross-border collaboration",
+            "created_at": "2025-07-28 12:21:45",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "42",
+            "entity1": "Africa CDC",
+            "entity2": "Eastern Africa",
+            "description": "Eastern Africa is a regional scope of Africa CDC's health emergency response activities.<SEP>Eastern Africa is within Africa CDC’s emergency response and preparedness regions.",
+            "reference": "Region Eastern Africa,...Africa CDC Weekly Briefs\nRegion Eastern Africa...Africa CDC Weekly Brief",
+            "created_at": "2025-07-28 12:29:24",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "43",
+            "entity1": "Africa CDC",
+            "entity2": "Northern Africa",
+            "description": "Africa CDC targets Northern Africa for health emergency strategies.<SEP>Northern Africa is covered by Africa CDC’s emergency response and preparedness efforts.",
+            "reference": "Region Northern Africa\nRegion Northern Africa,...Africa CDC Weekly Briefs",
+            "created_at": "2025-07-28 12:29:24",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "44",
+            "entity1": "Africa CDC",
+            "entity2": "Southern Africa",
+            "description": "Southern Africa is included in Africa CDC’s geographic intervention area.<SEP>Southern Africa is one of the regional areas involved in Africa CDC’s health emergency operations.",
+            "reference": "Region Southern Africa\nRegion Southern Africa,...Africa CDC Weekly Briefs",
+            "created_at": "2025-07-28 12:29:24",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "45",
+            "entity1": "Africa CDC",
+            "entity2": "Botswana",
+            "description": "Botswana is among the countries benefiting from Africa CDC's health-related programs.",
+            "reference": "Country Botswana",
+            "created_at": "2025-07-28 12:29:24",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "46",
+            "entity1": "Africa CDC",
+            "entity2": "Related Content",
+            "description": "Africa CDC is the source or focal point for related content including press releases, weekly briefs, and advisory communications concerning outbreak response.",
+            "reference": "Related Content...Africa CDC Weekly Briefs",
+            "created_at": "2025-07-28 11:38:21",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "47",
+            "entity1": "Africa CDC",
+            "entity2": "Local and International Organizations",
+            "description": "Africa CDC works with various local and international health organizations to coordinate disease surveillance and response efforts.",
+            "reference": "collaborative efforts with...local and international organizations",
+            "created_at": "2025-07-28 11:59:11",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "48",
+            "entity1": "Africa CDC",
+            "entity2": "Wellcome Trust",
+            "description": "Wellcome Trust provides financial and technical support to Africa CDC for the mpox response.",
+            "reference": "Africa CDC...Wellcome Trust...support mpox response",
+            "created_at": "2025-07-28 12:22:04",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": "49",
+            "entity1": "Africa CDC",
+            "entity2": "Implementing Partners",
+            "description": "The Africa CDC partners with implementing organizations to realize its health programs and pathogen genomics initiatives.",
+            "reference": "collaborative efforts with...implementing partners",
+            "created_at": "2025-07-28 11:59:11",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "50",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Team Europe Initiative on Manufacturing and Access to Vaccines, Medicines, and Health Technologies (TEI MAV+)",
+            "description": "Africa CDC is a key partner collaborating under the TEI MAV+ initiative to strengthen local pharmaceutical manufacturing capacity and improve access to medicines in Africa.<SEP>Africa CDC participates in the TEI MAV+ initiative aimed at strengthening local pharmaceutical manufacturing in Africa to improve access to quality health products.",
+            "reference": "The MAV+ initiative of Team Europe partners with African nations to strengthen local pharmaceutical manufacturing...\nThe MAV+ initiative of Team Europe partners with African nations...",
+            "created_at": "2025-07-28 11:41:38",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "51",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "European Union Commission",
+            "description": "Africa CDC and the European Union Commission jointly signed an agreement to support equitable access to health products and to boost local pharmaceutical manufacturing in Africa as part of the Team Europe Initiative.",
+            "reference": "The Africa Centres for Disease Control and Prevention (Africa CDC) and the European Union Commission signed an agreement to support access to health products and local manufacturing in Africa",
+            "created_at": "2025-07-28 11:41:33",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "52",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Dr Jean Kaseya",
+            "description": "Dr Jean Kaseya is the Director General and official representative of Africa CDC who expressed appreciation for UK support during this announcement.",
+            "reference": "H.E. Dr Jean Kaseya Director General Africa CDC",
+            "created_at": "2025-07-28 12:01:45",
+            "file_path": "africa-cdc-who-welcome-uks-support-to-address-health-challenges"
+        },
+        {
+            "id": "53",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Regional Emergency Hubs",
+            "description": "The Africa CDC collaborates closely with WHO and the emergency hubs to strengthen health emergency preparedness and response systems across Africa.<SEP>The Regional Emergency Hubs work in close cooperation with the Africa Centres for Disease Control and Prevention to strengthen emergency preparedness and response on the continent.",
+            "reference": "The Regional Emergency Hubs will work...with the broader United Nations ecosystem...WHO is also collaborating closely with the Africa Centres for Disease Control and Prevention...\nWHO is also collaborating closely with the Africa Centres for Disease Control and Prevention to strengthen emergency preparedness and response and health systems.",
+            "created_at": "2025-07-28 12:59:46",
+            "file_path": "senegal-who-launch-regional-emergency-hub-bolster-africas-response-health-crises"
+        },
+        {
+            "id": "54",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Eastern Africa",
+            "description": "Eastern Africa is a region involved in Africa CDC’s health emergency and outbreak response strategies.",
+            "reference": "Region Eastern Africa ... Africa CDC activities",
+            "created_at": "2025-07-28 11:51:24",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "55",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Mastercard Foundation",
+            "description": "Africa CDC collaborates with the Mastercard Foundation under the Saving Lives and Livelihoods initiative to provide funding and logistical support for cold chain equipment delivery.",
+            "reference": "The Africa Centres for Disease Control and Prevention (Africa CDC), in collaboration with the Mastercard Foundation under the Saving Lives and Livelihoods initiative...",
+            "created_at": "2025-07-28 12:27:54",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "56",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Central Africa",
+            "description": "Africa CDC’s strategies and health initiatives cover Central Africa as part of their regional focus.",
+            "reference": "Region Central Africa ... Africa CDC activities",
+            "created_at": "2025-07-28 11:51:24",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "57",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Antimicrobial Resistance (AMR)",
+            "description": "Africa CDC focuses on addressing the threat of antimicrobial resistance through research, reporting, and coordination with member states.",
+            "reference": "...according to a new report by the Africa Centres for Disease Control and Prevention (Africa CDC)...",
+            "created_at": "2025-07-28 12:15:41",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "58",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Southern Africa",
+            "description": "Southern Africa region is a target area for Africa CDC’s health diagnostics decentralization and outbreak response initiatives.",
+            "reference": "Region Southern Africa ... Africa CDC activities",
+            "created_at": "2025-07-28 11:51:33",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "59",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Western Africa",
+            "description": "Western Africa is one of the regions served by Africa CDC’s continental health strategies.",
+            "reference": "Region Western Africa ... Africa CDC activities",
+            "created_at": "2025-07-28 11:51:34",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "60",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Malawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan",
+            "description": "Africa CDC is related to Malawi's launch through coordination or involvement in pathogen genomic surveillance initiatives in Africa.",
+            "reference": "Africa CDC Weekly Brief | 30 June-6 July 2025...Malawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan",
+            "created_at": "2025-07-28 11:51:24",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "61",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "African Society for Laboratory Medicine",
+            "description": "Africa CDC collaborates with the African Society for Laboratory Medicine to improve testing and surveillance capacities for AMR pathogens.",
+            "reference": "study by Africa CDC and the African Society for Laboratory Medicine revealing microbiology labs' capacity",
+            "created_at": "2025-07-28 12:15:39",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "62",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "European Medicines Agency (EMA)",
+            "description": "EMA works in coordination with Africa CDC to enhance regulatory processes at the country level in Africa.",
+            "reference": "...strengthening regulatory processes... coordination with... EMA...",
+            "created_at": "2025-07-28 11:41:48",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "63",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "African Union-European Union Innovation Agenda",
+            "description": "The Innovation Agenda complements Africa CDC initiatives in health innovation and local manufacturing.",
+            "reference": "complementing existing initiatives such as... the Africa CDC-PAVM Initiative",
+            "created_at": "2025-07-28 11:41:40",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "64",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Dr Raji Tajudeen",
+            "description": "Dr Tajudeen is Deputy Director General of Africa CDC and leads activities addressing antimicrobial resistance in Africa.<SEP>Dr Tajudeen speaks in events and initiatives led by Africa CDC to combat AMR.",
+            "reference": "said Africa CDC Deputy Director General, Dr Raji Tajudeen...addressing AMR in Africa requires engaging all levels...\nsaid Dr Tajudeen, speaking at the launch of a report on AMR in Africa",
+            "created_at": "2025-07-28 12:15:32",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "65",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Immunisation",
+            "description": "Africa CDC prioritizes immunisation system strengthening to reduce outbreaks and improve child health across Africa.",
+            "reference": "Ultimately, these efforts will strengthen immunisation systems and reduce outbreaks and epidemics",
+            "created_at": "2025-07-28 11:51:05",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "66",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Africa Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response",
+            "description": "Africa CDC leads or is involved in the continental strategy to decentralize diagnostics and accelerate outbreak response across Africa.",
+            "reference": "Africa CDC Weekly Brief | 14 – 20 July 2025...Africa Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response",
+            "created_at": "2025-07-28 11:51:24",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "67",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "African Union Landmark Report",
+            "description": "Africa CDC authored and launched the African Union Landmark Report on antimicrobial resistance and its health impacts in Africa.",
+            "reference": "report by the Africa Centres for Disease Control and Prevention (Africa CDC)...‘African Union Landmark Report’ launched today at Africa CDC headquarters",
+            "created_at": "2025-07-28 12:15:28",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "68",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "United Nations General Assembly High-Level Meeting",
+            "description": "Outcomes from Africa CDC’s AMR report are expected to inform the upcoming UN General Assembly High-Level Meeting on global AMR action.",
+            "reference": "The outcomes are expected to inform the upcoming United Nations General Assembly High-Level Meeting in September-a crucial platform for global action",
+            "created_at": "2025-07-28 12:15:53",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": "69",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "H.E Dr. Jean Kaseya",
+            "description": "Dr. Jean Kaseya is the Director General of Africa CDC, leading efforts to improve vaccine storage and distribution to reduce wastage and strengthen health security.<SEP>Dr. Jean Kaseya serves as the Director-General of Africa CDC and is the key signatory representing the agency in the agreement with the European Union Commission.",
+            "reference": "H.E Dr. Jean Kaseya, the Africa CDC Director General, emphasizes the significant benefits of this equipment in minimizing vaccine wastage...\nThe agreement was signed by H.E Dr. Jean Kaseya, Director-General of Africa CDC",
+            "created_at": "2025-07-28 12:28:13",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa;enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "70",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Global Gateway Forum",
+            "description": "The signing of the agreement between Africa CDC and the EU Commission took place during the Global Gateway Forum in Brussels, highlighting the forum’s role in facilitating global health agreements.",
+            "reference": "The agreement was signed...during the Global Gateway Forum in Brussels on October 25-26",
+            "created_at": "2025-07-28 11:41:40",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "71",
+            "entity1": "AUDA-NEPAD",
+            "entity2": "Africa Centres for Disease Control and Prevention",
+            "description": "AUDA-NEPAD coordinates with Africa CDC on regulatory processes and health development initiatives.",
+            "reference": "...coordination with... AUDA-NEPAD...",
+            "created_at": "2025-07-28 11:41:48",
+            "file_path": "africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "72",
+            "entity1": "Addis Ababa",
+            "entity2": "Africa Centres for Disease Control and Prevention",
+            "description": "Addis Ababa is the location where Africa CDC signed the expanded partnership with UNICEF.<SEP>Addis Ababa, Ethiopia is the location of Africa CDC headquarters and offices of senior communication officers involved in health diplomacy and outreach.",
+            "reference": "Addis Ababa| Ethiopia|... Dorothy Njagi | Senior Communication Officer... | Africa Centres for Disease Control and Prevention... Ndahafa Nakwafila | Senior Communication Officer...\nsigned the expanded partnership agreement in Addis Ababa",
+            "created_at": "2025-07-28 11:51:05",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa;africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa"
+        },
+        {
+            "id": "73",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "African Union Agenda 2063",
+            "description": "Africa CDC’s partnership and activities align with and aim to achieve the goals outlined in the African Union Agenda 2063 framework.",
+            "reference": "aims to achieve goals outlined in the African Union Agenda 2063",
+            "created_at": "2025-07-28 11:50:54",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "74",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "Partnership Framework Agreement 2022-2027",
+            "description": "Africa CDC co-established the Partnership Framework Agreement with UNICEF to formalize collaboration on health emergency preparedness, immunization, and supply chains.",
+            "reference": "The Africa CDC and UNICEF Partnership Framework Agreement... commenced in 2022 and extended to 2027",
+            "created_at": "2025-07-28 11:50:54",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        }
+    ],
+    "text_units": [
+        {
+            "id": 1,
+            "content": "Emergency Response and Preparedness\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nCEPI\n,\nOutbreak Reponse\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": 2,
+            "content": "collaborative efforts with governments, local and international organizations, implementing partners, and the private sector. Learn more at\nwww.aslm.org\n24 April 2024\nTheme\nAfrica CDC Institute for Pathogen Genomics\n,\nAfrica Pathogen Genomics Initiative\n,\nLaboratory Systems and Networks\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nAfrica PGI\n,\nPathogen Genomic\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": 3,
+            "content": "Africa CDC and UNICEF Expand Partnership to Strengthen Health Systems and Immunization of Children in Africa – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and UNICEF Expand Partnership to Strengthen Health Systems and Immunization of Children in Africa\nAddis Ababa | NewYork, 29 February 2024 –\nToday, the Africa Centres for Disease Control and Prevention (Africa CDC) and UNICEF announced an extended partnership dedicated to strengthening primary healthcare, supply chain management, pooled procurement and local manufacturing, and emergency response. The collaboration builds on the 2022-2024 Partnership Framework Agreement between Africa CDC and UNICEF, which aims to achieve the goals outlined in the African Union Agenda 2063: The Africa We Want. The partnership is expected to have a significant impact on public health in Africa by strengthening procurement and supply chain systems, with a particular focus on immunisation for children across the continent.\nH.E Dr Jean Kaseya, Director General of Africa CDC, and Ted Chaiban, UNICEF Deputy Executive Director for Humanitarian Action and Supply Operations, signed the expanded partnership agreement in Addis Ababa.\nThe COVID-19 pandemic exposed the fragility of many healthcare systems and highlighted deficiencies and challenges in medical supply chains. While countries with strong primary healthcare systems were better able to cope, the disruption caused by the pandemic left others facing shortages of vital medical commodities. Over the next four years, Africa CDC and UNICEF will work together to establish robust institutional backing for supply chain management and enhance pooled procurement mechanisms to fortify Africa’s healthcare infrastructure, ensuring timely and adequate access to essential medical supplies for its population.\nH.E Jean Kaseya expressed his pride in the partnership with UNICEF, stating that their shared commitments will enhance primary healthcare and strengthen Africa’s health security. ‘‘The partnership will optimise supply chain management, operationalise the pool procurement mechanism for Africa CDC, empower community health workers, and advance local manufacturing. Ultimately, these efforts will strengthen immunisation systems and reduce outbreaks and epidemics on the continent’’, he says.\nImmunisation is one of the most effective public health interventions globally. However, millions of children in Africa are still deprived of life-saving vaccinations.\nUNICEF’s The State of the World’s Children\n2023: For Every Child\n, Vaccination report revealed that 12.7 million children were under-vaccinated in 2021, including 8.7 million who did not receive a single dose, also called “zero-dose” children.\n“This partnership is a commitment to the well-being of children and their families, affirming their right to health. By strengthening our partnership with Africa CDC and the Joint Emergency Action Plan for Africa, we can ensure communities get the support they need without delay,” said Ted Chaiban, UNICEF Deputy Executive Director for Humanitarian Action and Supply Operations. “The push forward on paid and protected community health workers, medical supplies made in Africa, for Africans, remains one of our highest priorities.”\nDuring the past two years, UNICEF and Africa CDC have achieved significant milestones in strengthening Africa CDC’s institutional capacity and catalysing community health programmes, immunisation systems, emergency response, and supply chain enhancement. Collaborative efforts secured the procurement of COVID-19 vaccine doses and essential cold chain equipment for routine immunisation. Joint high-level advocacy initiatives focused on immunisation, community health, and response to public health emergencies.\nAfrica imports 99% of its vaccines and 70 to 90% of its medicines and medical devices, which is a significant challenge. Africa CDC aims to achieve sustainable production and supply of essential health commodities through African manufacturers, considered Africa’s second independence by Africa CDC. Africa CDC’s goal is to work with African Union Member States and partners to actively advocate for and support the procurement of vaccines made in Africa and prioritise initiatives that strengthen local manufacturing.\nThrough the Partnership for Vaccine Manufacturing, Africa CDC aims to manufacture 60% of the continent’s vaccine needs by 2040, paving the way toward robust and self-reliant health systems, ensuring that people can obtain and use health commodities when and where required.\nThe expanded partnership between Africa CDC and UNICEF signifies a concerted effort to address Africa’s pressing health challenges. By prioritising immunisation, strengthening health systems, and promoting local production, both organisations are poised to make tangible and sustainable impacts on the health and well-being of children and communities across the continent while safeguarding Africa’s health security.\n#  #\nAbout the Partnership\nThe Africa CDC and UNICEF Partnership Framework Agreement, commenced in 2022 and extended today to 2027, contributes to the goals and objective of Agenda 2063: The Africa We Want. The partnership framework outlines three programmatic areas of collaboration: (i) public health emergency preparedness and response; (ii) immunization systems strengthening; and (iii) procurement and supply chain systems strengthening. Under the partnership extension, this collaboration will expand, particularly in the areas of system strengthening for primary health care (including community health and nutrition systems), in supply chain management, regional and pooled procurement, manufacturing and emergency preparedness and response.\nAbout Africa CDC\nThe Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous public health agency of the African Union that supports member states in their efforts to strengthen health systems and improve surveillance, emergency response, and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nAbout UNICEF\nUNICEF works in some of the world’s toughest places, to reach the world’s most disadvantaged children. Across more than 190 countries and territories, we work for every child, everywhere, to build a better world for everyone. Learn more at www.unicef.org.\nMedia inquiries:\nCommunication and Public Information Directorate| Africa Centres for Disease Control and Prevention| Email:\nCommunications@africacdc.org|\nRicardo Pires| UNICEF New York | Tel: +1 917 631 1226 | Email",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": 4,
+            "content": "African health leaders begin work on roadmap to reshape global health financing on the continent | WHO | Regional Office for Africa\nSkip to main content\nWHO Africa\nAfrican health leaders begin work on roadmap to reshape global health financing on the continent\nAfrican health leaders begin work on roadmap to reshape global health financing on the continent\n13 June 2024\nAddis Ababa –\nMore than 80  ministry of health experts, regional and global partners and civil society representatives have set in motion the development of a roadmap to catalyse action to reshape the health financing ecosystem in Africa, and make it fit-for-purpose towards 2030 and beyond.\nThe meeting was convened by the World Health Organization’s (WHO) Regional Office for Africa, in partnership with the African Centres for Disease Control and Prevention (Africa CDC) and the African Constituency Bureau of the Global Fund.\nThe development of the roadmap marks an important step in the ongoing process of identifying ways to ensure that global health initiatives (GHIs) and other external funding partners are more effective, efficient and equitable in complementing domestic financing, to strengthen health system capacities, accelerate progress towards universal health coverage (UHC), and deliver health impact.\nOver the past two decades, GHIs such as Gavi, the Global Fund and the Global Financing Facility have contributed to enormous progress in protecting health and improving lives of people in Africa and across the world. However, important changes in health needs, financing and governance necessitate a renewed vision for how they support countries to deliver sustainable impact.\n“With the growing need for strong and resilient health systems that can adapt to emerging threats, while continuing to meet existing health needs, the imperative of optimizing the impact of available resources is becoming increasingly urgent to advance Africa towards universal health coverage,” said Dr Matshidiso Moeti, WHO’s Regional Director for Africa.\nFocusing on GHIs as an entry point and catalyst for change in the broader health financing ecosystem, the\nLusaka Agenda\n, published on UHC Day on 12 December 2023, represented the culmination of a 14-month, multi-stakeholder process that captured consensus around five strategic shifts for the long-term evolution of GHIs. The roadmap for the implementation of the Lusaka Agenda implementation in Africa will set out priority actions to realize these shifts.\n“At the 37th African Union (summit in February, African leaders endorsed the establishment of an accountability mechanism within the AU architecture to ensure effective implementation of the Lusaka Agenda on the continent. Our discussions over the past two days began to give shape to what this might look like,” said Dr Jean Kaseya, Director-General of Africa CDC.\nThe draft roadmap will be refined over the coming months, before it is presented for consideration by  ministers of health at the WHO Regional Committee for Africa, to be held in Brazzaville, Congo, in August this year.\n“The Lusaka Agenda will ensure long-term sustainability and will propel countries towards achieving UHC,” said Dr Patrick Kuma-Aboagye, Director-General of the Ghana Health Service, and co-chair of the Lusaka Agenda Working Group.\nTo deliver more sustainable impact in the face of emerging threats such as climate change and conflicts, the key shifts highlighted in the Lusaka Agenda include a  focus on strengthening primary health care by bolstering health systems, catalysing action on domestic financing,  improving joint approaches to achieving health equity, and strategic and operational coherence among  GHIs. The Lusaka Agenda  also calls for  improved  coordination of approaches to products, reseach and development (R&D) and regional manufacturing, to address market and policy failures in global health.\n“The Lusaka Agenda is now moving from talk to action, led by countries, and GHIs are listening,” added Linda Mafu, the Global Fund’s head of Civil Society and Political Advocacy.\nClick image to enlarge\nFor Additional Information or to Request Interviews, Please contact:\nCollins Boakye-Agyemang\nCommunications and marketing officer\nTel: + 242 06 520 65 65 (WhatsApp)\nEmail:\nboakyeagyemangc\n[at]\nwho.int\n(boakyeagyemangc[at]who[dot]int)",
+            "file_path": "african-health-leaders-begin-work-roadmap-reshape-global-health-financing-continent"
+        },
+        {
+            "id": 5,
+            "content": ",\nH.E. Stella KYRIAKIDES\n“\nAn ever-closer partnership between the African Union and the European Union is indispensable for public health. We want to work more closely with our African partners on pandemic prevention, preparedness and response, One Health and anti-microbial resistance, as well as the health effects of climate change. These are core objectives for our EU Global Health Strategy and the foundations of our cooperation with the African continent. We are now at a critical stage of the negotiations on the pandemic agreement and the international health regulations, with which we would provide new multilateral solutions to common challenges. The EU is committed to conclude the negotiations by May, a responsibility equally shared by all nations. I am pleased that the African Union and EU are joining voices and taking concrete steps to support global health internationally.\n”\nAfrica CDC Director General,\nH.E Dr Jean Kaseya\n“As we navigate the complexities of global health, Africa is on the path towards self-sufficiency through equitable access to medical products. Africa’s target of producing 60% of vaccines by 2040 through the Africa CDC underscores our commitment to health sovereignty. Through strategic partnerships like the EU-AU collaboration, we accelerate our capabilities, leveraging expertise and resources to build resilient health systems and strengthen Pandemic preparedness.”\nSpecific outcomes of the high-level conference include the following concrete engagements:\nWorking Arrangement between Africa CDC and the European Commission to best implement the expanded strategic AU-EU Health partnership;\nThe European Commission and the Belgian Presidency announced additional TEI MAV+ funding for the advancement of the African Medicines Agency;\nThe announcement of procurement commitments by Global Health Initiatives to buy in Africa for Africa;\nThree additional Team Europe Initiatives on health were launched: Health Security using a One Health approach, Digital Health, and Public Health Institutes;\nThe Team Europe Initiative (TEI) on Social Protection was launched;\nWork product leads for Team Europe and Team Africa were confirmed;\nA new programme ‘SafeBirth Africa’ to support improved access to innovative life-saving commodities for sexual and reproductive health in Africa. The programme will be implemented by Unitaid and the United Nations Population Fund (UNFPA), supported by a financial contribution of €20 million from the EU budget under the Team Europe Initiative on Sexual and Reproductive Health and Rights that was launched in Kigali in December 2022;\nAn expanded AU-EU High Level Steering Meeting (HLSM) at DG-level will jointly oversee regional heath TEIs.\n-END-\nMedia inquiry:\nCommunication and Public Information Directorate| Africa CDC | Email:\nCommunications@africacdc.org\n20 March 2024\nTheme\nNew Public Health Order\n,\nRespectful Partnership\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty"
+        },
+        {
+            "id": 6,
+            "content": "and prevention and control of diseases. Learn more at:\nhttps://africacdc.org\nPatricia Mweene Lumba,\nSenior Knowledge Management Officer, Tel:+254 740060064 |Email:\npatricia.lumba@au-ibar.org\nAbout AU IBAR\nThe African Union-Interafrican Bureau for Animal Resources (AU-IBAR) is a technical office under the African Union’s Department of Agriculture, Rural Development, Blue Economy, and Sustainable Environment (DARBE). Our mission is to support AU member states in harnessing the potential of livestock, fisheries, aquaculture, and wildlife for human well-being and economic growth. We promote the sustainable development and use of these resources to enhance nutrition, food security, and overall prosperity across the African continent. Learn more at:\nwww.au-ibar.org\nNelly Rwenji\n, Senior Brand and Communications Manager, ASLM | Tel: +251 11 557 1022 (ETH) |\n+27 10 880 8592 (SA) | Mobile: +254 726 228 717 | Email:\nnrwenji@aslm.org\nAbout ASLM\nThe African Society for Laboratory Medicine (ASLM) is a pan-African professional body working to advocate for the critical role and needs of laboratory medicine and networks throughout Africa. ASLM aims to strengthen healthcare systems through collaborative efforts with governments, local and international organizations, implementing partners, and the private sector. Learn more at\nwww.aslm.org\n15 August 2024\nTheme\nAntimicrobial Resistance\n,\nSurveillance and Disease Intelligence\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nAMR\n,\nLandmark Report\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report"
+        },
+        {
+            "id": 7,
+            "content": "Livelihoods initiative, please visit:\nhttps://africacdc.org/saving-lives-and-livelihoods/\n8 February 2024\nTheme\nMedical Supplies and Cold Chain Equipment\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nCountry\nBotswana\n,\nCameroon\n,\nSierra Leone\n,\nUganda\n,\nZambia\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": 8,
+            "content": "Africa CDC and Mastercard Foundation launch phase 2 of the Saving Lives and Livelihoods (SLL) initiative to strengthen Africa’s public health systems – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and Mastercard Foundation launch phase 2 of the Saving Lives and Livelihoods (SLL) initiative to strengthen Africa’s public health systems\nNovember 28, 2023,\nLusaka\n– The Africa CDC and the Mastercard Foundation have entered a new phase of their partnership on the Saving Lives and Livelihoods initiative in the aftermath of WHO’s declaration of the end of COVID-19 pandemic as a public health emergency of international concern. The Saving Lives and Livelihoods initiative, a bold and unprecedented $1.5 billion partnership, was launched in June 2021. This innovative and ground-breaking partnership aimed to purchase COVID-19 vaccines, roll out vaccinations, build the vaccine manufacturing workforce for the continent, and strengthen the Africa CDC to ensure long-term health security for Africa.\nUnprecedented in scale, speed and inclusion of African organisations, the partnership has\ncontributed to the continent’s current vaccination rate of 53 per cent of\nthe target population, up from just 3 per cent at the start of the initiative. The partnership has also trained, equipped, and deployed 38,000 health workers, creating a robust frontline in safeguarding public health locally. It has provided job opportunities for 23,000 individuals and integrated over 600 COVID-19 vaccination centres into healthcare systems. Additionally, this initiative led to the expansion of genomic testing capabilities from seven to 40 laboratories across the continent.\nThe review of Phase 1 of this initiative, among fifteen implementing partners across 29 countries, conducted by Deloitte, indicates that the vast majority of funds disbursed were used effectively and as intended. Likewise, ongoing monitoring by KPMG has confirmed that partners not only showed strength in programmatic results but also improved the institutional capacity for greater sustainability and institutional resilience.\n“Our Saving Lives and Livelihoods initiative with the Mastercard Foundation has shown the power of respectful and action-oriented partnerships rooted in collaboration, coordination and systems strengthening. The experience and learnings from Phase I will enable us to move with greater speed and scale to deliver with accelerated impact to our member states” said\nDr. Jean Kaseya, Director General of the Africa CDC\n.\nIn its second phase, the partnership will expand its scope and scale, focusing on completing the vaccination of healthcare workers and vulnerable groups, building a robust workforce of community health workers, ensuring pandemic preparedness by bolstering national public health institutions, laboratory capacities, data access and quality, local manufacturing of vaccines, therapeutics and diagnostics, and continuing strengthening of Africa CDC.\n“While the global pandemic may be declared over, the need to continue investing in our health systems, build our workforce and prepare for future pandemics remains urgent. This partnership will ensure that we have strong health institutions and systems. We aim to enable thousands of young people to build their careers in healthcare and contribute to improving lives in Africa,” said\nReeta Roy, President, and CEO of the Mastercard Foundation.\nThe Saving Lives and Livelihoods initiative stands out as a testament to the power of African-led health solutions. As it progresses to its next phase, partnerships will continue to play a crucial role in shaping a New Public Health Order for Africa. Africa CDC and the Mastercard Foundation remain committed to improving the health and well-being of all Africans.\n-ENDS-\nAbout the Africa Centres for Disease Control and Prevention (Africa CDC)\nAfrica CDC is a continental autonomous health agency of the African Union established to support public health initiatives of Member States and strengthen the capacity of their public health institutions to detect, prevent, control, and respond quickly and effectively to disease threats. For more information, please visit:\nhttps://africacdc.org\nAbout the Mastercard Foundation\nThe Mastercard Foundation is a registered Canadian charity and one of the largest foundations in the world. It works with visionary organisations to advance education and financial inclusion, enabling young people in Africa and Indigenous youth in Canada to access dignified and fulfilling work. Established in 2006 through the generosity of Mastercard when it became a public company, the Foundation is an independent organisation separate from the company, with offices in Toronto, Kigali, Accra, Nairobi, Kampala, Lagos, Dakar, and Addis Ababa. Its policies, operations, and program decisions are determined by the Foundation’s Board of Directors and leadership. For more information on the Foundation, please visit\nwww.mastercardfdn.org\n.\nMedia contacts:\nAfrica Centres for Disease Control and Prevention\nMs. Ndahafa Nakwafila\nAg. Head Communication and Public Information\nNakwafilaN@africa-union.org|\nCommunications@africacdc.org\n|\nFacebook\n|\nTwitter\nMastercard Foundation\nWariko Kabuga-Waita\nSenior Director, Corporate Communications\nwwaita@mastercardfdn.org\n28 November 2023\nTheme\nSaving Lives and Livelihoods\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": 9,
+            "content": "populations;\ne. Sharing of information on potential threats to health security arising in areas affected by mpox outbreaks;\nf. Monitoring the movement of people, animals and goods across national borders in accordance with the International Health Regulations (2005);\ng. Capacity building of human resources, including joint training, learning exchanges and benchmarking visits, as well as simulation exercises;\nh. Development of legal and regulatory processes and logistical planning for rapid cross-border deployment of public health experts and medical personnel for the mpox response.\n3. FACILITATE technical support through Africa CDC and WHO mechanisms at various levels, including headquarters offices (Africa CDC and WHO), regional collaborating centres, regional offices and country offices.\n4. EXCHANGE information rapidly on preparedness and response matters of common interest in line with the IHR (2005), in order to maintain the peace, security and prosperity of affected Member States and the Continent as a whole;\n5. DECIDE to establish the Africa Taskforce for Mpox Coordination among Member States affected and at-risk of mpox to:\na. Facilitate the strengthening of preparedness and response capacities to mitigate the impact of mpox in Africa and beyond;\nb. Strengthen rapid epidemic response, effective surveillance, capacity building of national laboratories and engagement with affected communities\nc. Develop a common regional and national roadmap outlining mpox prevention, detection and control;\nd. Prioritize scientific research and evidence synthesis for a better understanding of the disease, and support evidence-based decision-making for disease prevention and control.\n6. REQUEST the African Union Commission, Africa CDC and WHO to jointly facilitate coordination of the Africa Taskforce for Mpox Coordination;\n7. CALL UPON ALL partners to harmonize support to Member States in the fight against mpox by interacting with the African Taskforce for Mpox Coordination to ensure that each fulfills the mandates given to them at this meeting.\nKinshasa, 13 April 2024\nDemocratic Republic of Congo\nHIGH-LEVEL-EMERGENCY-REGIONAL-MEETING-ON-MPOX-IN-AFRICA-_COMMUNIQUE_ENG\nDownload\nHIGH-LEVEL-EMERGENCY-REGIONAL-MEETING-ON-MPOX-IN-AFRICA-_COMMUNIQUE_FRE\nDownload\n13 April 2024\nTheme\nEmergency Response and Preparedness\n,\nSurveillance and Disease Intelligence\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nDiseases\nMpox\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting"
+        },
+        {
+            "id": 10,
+            "content": "of the world’s toughest places, to reach the world’s most disadvantaged children. Across more than 190 countries and territories, we work for every child, everywhere, to build a better world for everyone. Learn more at www.unicef.org.\nMedia inquiries:\nCommunication and Public Information Directorate| Africa Centres for Disease Control and Prevention| Email:\nCommunications@africacdc.org|\nRicardo Pires| UNICEF New York | Tel: +1 917 631 1226 | Email: rpires@unicef.org\n29 February 2024\nTheme\nNew Public Health Order\n,\nThe New Deal\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        }
+    ]
+}

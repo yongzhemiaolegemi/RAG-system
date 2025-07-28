@@ -1,0 +1,288 @@
+{
+    "query": "briefly describe the relationships among the main characters",
+    "entities": [
+        {
+            "id": "1",
+            "entity": "AHRO Courses – Principles of Ethics in Social Care",
+            "type": "event",
+            "description": "A course offered by AHRO focusing on ethics in social care, covering equality, diversity, privacy, and dignity principles.",
+            "created_at": "2025-07-28 11:54:19",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "2",
+            "entity": "The New Deal",
+            "type": "category",
+            "description": "The New Deal references a theme or framework associated with strategic or policy initiatives, potentially linked to public health or development goals.",
+            "created_at": "2025-07-28 11:50:34",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "3",
+            "entity": "Related Content",
+            "type": "category",
+            "description": "A grouping of informational items including press releases, briefs, and advisories related to health emergency response and preparedness in Africa.",
+            "created_at": "2025-07-28 11:37:53",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "4",
+            "entity": "MedDRA",
+            "type": "category",
+            "description": "MedDRA (Medical Dictionary for Regulatory Activities) is a standardized medical terminology used in regulatory activities and is involved in a partnership with WHO and AHRO to improve disease classification.",
+            "created_at": "2025-07-28 11:54:19",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "5",
+            "entity": "AHRO Institute",
+            "type": "organization",
+            "description": "One of the academic or research institutions under AHRO, likely responsible for course offerings or research facilitation.",
+            "created_at": "2025-07-28 11:54:28",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "6",
+            "entity": "AHRO Small Molecules Research",
+            "type": "category",
+            "description": "Research activities led by AHRO focusing on identifying small molecules for priority pathogens contributing to therapeutic development.",
+            "created_at": "2025-07-28 11:54:06",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "7",
+            "entity": "Implementing Partners",
+            "type": "organization",
+            "description": "Organizations and entities that function as partners in implementing genomic surveillance projects and outbreak response activities across Africa.",
+            "created_at": "2025-07-28 11:58:27",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "8",
+            "entity": "Outbreak Response",
+            "type": "category",
+            "description": "A category referring to actions, strategies, and efforts aimed at detecting, managing, and controlling outbreaks of diseases.<SEP>A general category of public health efforts aimed at identifying, managing, and containing disease outbreaks.",
+            "created_at": "2025-07-28 11:47:43",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "9",
+            "entity": "AHRO",
+            "type": "organization",
+            "description": "Africa Health Research Organisation (AHRO) is a research organization focused on small drug molecules, clinical and academic research, and scientific publishing. It engages in behaviour research on obesity, offers various academic courses including nursing and midwifery, and hosts visiting scholars and students programs. AHRO manages governance structures such as the Board of Trustees and Governing Council, and emphasizes innovation in research methodologies.",
+            "created_at": "2025-07-28 11:54:11",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "10",
+            "entity": "WHO International Classification of Diseases",
+            "type": "organization",
+            "description": "The WHO International Classification of Diseases is an international health organization engaged in partnerships with AHRO and MedDRA to enhance disease classification and research methodologies.",
+            "created_at": "2025-07-28 11:54:19",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "11",
+            "entity": "Dr Christine Nyirahabimana",
+            "type": "person",
+            "description": "Dr Christine Nyirahabimana is a person affiliated with AHRO expressing readiness and engagement, possibly a leader or key figure within AHRO.<SEP>Dr Christine Nyirahabimana is a professional affiliated with AHRO who expressed readiness for AHRO's initiatives and development.",
+            "created_at": "2025-07-28 11:54:11",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "12",
+            "entity": "Mastercard Foundation",
+            "type": "organization",
+            "description": "The Mastercard Foundation is a partner with Africa CDC under the Saving Lives and Livelihoods initiative, providing funding and support to ensure vaccine equity in Africa by purchasing vaccines and supporting vaccination delivery.<SEP>The Mastercard Foundation is a registered Canadian charity, one of the largest foundations globally, promoting education and financial inclusion, especially enabling young people in Africa and Indigenous youth in Canada to access dignified work. It partners with visionary organizations and operates independently with offices in multiple African cities and Toronto.",
+            "created_at": "2025-07-28 12:25:35",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems;enhancing-vaccine-storage-efficiencies-in-africa"
+        },
+        {
+            "id": "13",
+            "entity": "Mastercard Foundation Communications",
+            "type": "organization",
+            "description": "The corporate communications office of the Mastercard Foundation, led by Senior Director Wariko Kabuga-Waita, manages media and public relations.",
+            "created_at": "2025-07-28 11:47:23",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        }
+    ],
+    "relations": [
+        {
+            "id": "1",
+            "entity1": "AHRO",
+            "entity2": "WHO International Classification of Diseases",
+            "description": "AHRO collaborates in partnerships related to disease classification and research methodologies, as indicated in the launch between WHO's classification system and MedDRA.",
+            "reference": "Launch of a New Partnership between WHO International Classification of Diseases and MedDRA",
+            "created_at": "2025-07-28 11:54:59",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "2",
+            "entity1": "AHRO",
+            "entity2": "Dr Christine Nyirahabimana",
+            "description": "Dr Christine Nyirahabimana is affiliated with AHRO, expressing readiness for AHRO's activities.",
+            "reference": "“We are ready”- Dr Christine Nyirahabimana",
+            "created_at": "2025-07-28 11:54:59",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "3",
+            "entity1": "AHRO",
+            "entity2": "AHRO Courses – Principles of Ethics in Social Care",
+            "description": "AHRO offers academic courses including ethics in social care focusing on equality, diversity, privacy, and dignity.",
+            "reference": "AHRO Courses – Principles of Ethics in Social Care: Equality, Diversity, Privacy, and Dignity",
+            "created_at": "2025-07-28 11:55:08",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "4",
+            "entity1": "Mastercard Foundation",
+            "entity2": "Mastercard Foundation Communications",
+            "description": "The Communications Office led by Wariko Kabuga-Waita manages public relations and communications for the Mastercard Foundation.",
+            "reference": "Mastercard Foundation Wariko Kabuga-Waita Senior Director, Corporate Communications...",
+            "created_at": "2025-07-28 11:48:13",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "5",
+            "entity1": "MedDRA",
+            "entity2": "WHO International Classification of Diseases",
+            "description": "WHO International Classification of Diseases partnered with MedDRA to enhance medical terminology and disease classification.",
+            "reference": "Launch of a New Partnership between WHO International Classification of Diseases and MedDRA",
+            "created_at": "2025-07-28 11:55:18",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "6",
+            "entity1": "Africa CDC",
+            "entity2": "Outbreak Response",
+            "description": "Africa CDC is dedicated to outbreak response activities, including reporting and surveillance strategies.",
+            "reference": "Outbreak Response...Africa CDC Weekly Brief",
+            "created_at": "2025-07-28 11:48:19",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "7",
+            "entity1": "Africa CDC",
+            "entity2": "Related Content",
+            "description": "Africa CDC is the source or focal point for related content including press releases, weekly briefs, and advisory communications concerning outbreak response.",
+            "reference": "Related Content...Africa CDC Weekly Briefs",
+            "created_at": "2025-07-28 11:38:21",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "8",
+            "entity1": "Africa CDC",
+            "entity2": "Implementing Partners",
+            "description": "The Africa CDC partners with implementing organizations to realize its health programs and pathogen genomics initiatives.",
+            "reference": "collaborative efforts with...implementing partners",
+            "created_at": "2025-07-28 11:59:11",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": "9",
+            "entity1": "Africa Centres for Disease Control and Prevention",
+            "entity2": "The New Deal",
+            "description": "The New Deal theme relates to strategic health or public health reforms associated with Africa CDC efforts.",
+            "reference": "Theme ... The New Deal...Africa CDC references",
+            "created_at": "2025-07-28 11:51:24",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": "10",
+            "entity1": "AHRO",
+            "entity2": "MedDRA",
+            "description": "AHRO is involved in a new partnership involving MedDRA to advance medical terminology and research classification.",
+            "reference": "Launch of a New Partnership between WHO International Classification of Diseases and MedDRA",
+            "created_at": "2025-07-28 11:54:59",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "11",
+            "entity1": "AHRO",
+            "entity2": "AHRO Institute",
+            "description": "AHRO Institute is part of AHRO’s academic and research infrastructure delivering postgraduate and vocational courses.",
+            "reference": "AHRO INSTITUTE...Postgraduate Courses...Vocational Courses",
+            "created_at": "2025-07-28 11:55:18",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "12",
+            "entity1": "AHRO Global Health Research Center",
+            "entity2": "AHRO Small Molecules Research",
+            "description": "AHRO initiates research to identify small molecules targeting priority pathogens for drug development.",
+            "reference": "AHRO Starts identification of small molecules for some priority pathogens",
+            "created_at": "2025-07-28 11:54:48",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": "13",
+            "entity1": "CEPI",
+            "entity2": "Outbreak Response",
+            "description": "CEPI is linked to outbreak response efforts as indicated by tagging within the related content and emergency response themes.",
+            "reference": "Tags CEPI, Outbreak Response",
+            "created_at": "2025-07-28 11:38:07",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": "14",
+            "entity1": "Outbreak Response",
+            "entity2": "Pathogen Genomic Surveillance Strategy and Implementation Plan",
+            "description": "The pathogen genomic surveillance strategy is an integral part of outbreak response efforts aimed at monitoring infectious diseases.",
+            "reference": "Outbreak Response...Malawi Launches Second Edition of Pathogen Genomic Surveillance Strategy",
+            "created_at": "2025-07-28 11:48:19",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": "15",
+            "entity1": "Outbreak Response",
+            "entity2": "Weekly Briefs",
+            "description": "Weekly briefs provide updates and information related to outbreak response activities across Africa.",
+            "reference": "Outbreak Response...Weekly Briefs",
+            "created_at": "2025-07-28 11:48:22",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        }
+    ],
+    "text_units": [
+        {
+            "id": 1,
+            "content": "2024\n“AHRO will become one of the leaders in small drug molecules research”- Prof Yaro\nJune 13, 2024\nAHRO appoints new Scientific Advisory Board\nJune 13, 2024\n“We are ready”- Dr Christine Nyirahabimana\nJuly 25, 2023\nAHRO starts its exploratory research activities\nJuly 25, 2023\nAHRO Starts electing Emeritus Fellows\nJuly 25, 2023\nAHRO Initiates a behaviour research on Obesity in Glasgow, Scotland\nJuly 14, 2023\nAHRO Courses – Principles of Ethics in Social Care: Equality, Diversity, Privacy, and Dignity\nJuly 12, 2023\nEmbracing Innovation: Exploring the Design of Umbrella and Basket Trials\nJune 29, 2023\nAHRO Visiting Scholars and Visiting Students Program: Apply Now\nJune 28, 2023\nLaunch of a New Partnership between WHO International Classification of Diseases and MedDRA\nJune 27, 2023\nAfrica Health Research Organisation (AHRO) Announces Resumption of Scientific Publishing, Unveiling Three Exciting Journals\nJune 13, 2023\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa\nJune 5, 2023\nAHRO University Introduces Nursing and Midwifery Courses to Address Global Healthcare Needs\nMay 16, 2023\nMoving Beyond the Initial Stage of the COVID-19 Pandemic in Africa\nMay 11, 2023\nX\n×\nYou must be logged in before using WishList. To login click\nhere\nABOUT US\nABOUT AHRO\nBOARD OF TRUSTEES\nOFFICE OF THE DIRECTOR GENERAL\nAHRO AMBASSADORS\nPOLICIES\nOUR TEAM\nAHRO TEAM\nGOVERNING COUNCIL/COMMITTEES(2022-2028)\nTEACHING STAFFS\nWHAT WE DO\nACADEMIC RESEARCH\nCLINICAL RESEARCH FACILITY\nAHRO PUBLICATIONS\nAHRO INSTITUTE\nAHRO Short Courses\nPostgraduate Courses\nVocational Courses\nEnglish Language\nAHRO CAREER\nWORKING WITH US\nEMPLOYEE EXPERIENCE AT AHRO\nOUR VALUES AND CULTURE\nOUR STRATEGY\nACADEMIC ACCREDITATION",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": 2,
+            "content": "of the world’s toughest places, to reach the world’s most disadvantaged children. Across more than 190 countries and territories, we work for every child, everywhere, to build a better world for everyone. Learn more at www.unicef.org.\nMedia inquiries:\nCommunication and Public Information Directorate| Africa Centres for Disease Control and Prevention| Email:\nCommunications@africacdc.org|\nRicardo Pires| UNICEF New York | Tel: +1 917 631 1226 | Email: rpires@unicef.org\n29 February 2024\nTheme\nNew Public Health Order\n,\nThe New Deal\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa"
+        },
+        {
+            "id": 3,
+            "content": "Emergency Response and Preparedness\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nCEPI\n,\nOutbreak Reponse\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks"
+        },
+        {
+            "id": 4,
+            "content": "Africa CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa - AHRO Global Health Research Center\nSkip to content\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa\nAHRO Global Health Research Center\n-\nAfrica CDC and WHO Launch Joint Emergency Preparedness and Response Action Plan (JEAP) to Strengthen Health Systems and Combat Disease Outbreaks in Africa\n05 Jun\n2023\nBy\nAfhro\nFrom humanitarian crises triggered by conflict to climate-change induced disasters, Africa deals with over 100 disease outbreaks every year. To tackle these challenges, the Africa Centres for Disease Control and Prevention (Africa CDC) and World Health Organization (WHO) are pleased to announce the launch of a Joint Emergency Preparedness and Response Action Plan (JEAP). This pioneering five-year strategic collaboration will boost emergency preparedness and response efforts throughout Africa and thus ensure disease outbreaks during humanitarian crises and otherwise are managed efficiently.\nThe JEAP underlines the shared vision of Africa’s two leading public health institutions – to strengthen emergency preparedness and response and health systems on the continent. The plan builds upon existing frameworks and initiatives while capitalising on the Africa CDC and WHO’s unique capabilities and resources. Aligned with the Africa CDC’s New Public Health Order, WHO AFRO’s Regional Strategy for Health Security and Emergencies (2022-2030), and WHO EMRO’s four-year strategy for the Eastern Mediterranean region to address health emergencies – the JEAP strengthens emergency preparedness and response across six critical areas.\n“The collaboration between the Africa CDC and WHO exemplifies the power of partnership in global health. JEAP will bolster our collective efforts to fight public health emergencies, saving lives and protecting our communities. We are proud to stand with the Africa CDC and work towards a healthier and safer future for all Africans,” said Dr Matshidiso Moeti, WHO Regional Director for Africa.\nPriority areas of action are strengthening surveillance intelligence and genomic sequencing for quicker detection; stockpiling emergency supplies at newly established sub-regional hubs to improve emergency response operations (70% of response activities during emergencies relate to such supply chain measures); and deploying first responders within 24-48 hours of a disease outbreak. Most critically, this ground-breaking collaboration outlines impactful initiatives to be implemented in unison with countries to enhance the continent’s capacity to detect, monitor, and respond swiftly to health emergencies. In a first-of-its kind collaboration, the JEAP serves as a guiding beacon for targeted emergency response interventions and embodies the importance of cross-cutting collaboration, knowledge sharing, and resource mobilisation.\n“Africa CDC is proud to partner for this important continental strategic plan. Joining forces with WHO will significantly improve our ability to safeguard the health of African populations during times of crisis. Together, we will build resilient health systems and ensure a coordinated and effective response to emergencies across the continent,” said Dr Jean Kaseya, Director General of the Africa CDC.\nIn an inspiring take, Dr Ahmed Al-Mandhari, WHO Regional Director for the Eastern Mediterranean reiterated, “This visionary collaboration will breathe new life into the efficiency of current coordination mechanisms, strengthen institutions, and ultimately help us deliver quality healthcare services to our communities.”\nThese efforts are galvanising the commitments from governments, health agencies, and stakeholders to strengthen health emergency preparedness, detection, and response efforts. Through collective action and unwavering commitment, we will build resilient systems, enhance capacities, and safeguard the well-being of our communities. This partnership is a testament to our unwavering dedication to a healthier, safer Africa.\nPopular Tags\nWe are thrilled to announce the success of our recent AHRO webinar\nLatest Posts\n£25 Million Multi Clinical Trials Centers established by AHRO Network\nJanuary 10, 2025\nAHRO Starts identification of small molecules for some priority pathogens\nJanuary 10, 2025\nAHRO Institute to Add Undergraduate Courses to Its Portfolio\nDecember 27, 2024\nAHRO Appoints Five Ambassadors\nDecember 23, 2024\nAHRO Launches “Climate Change and One Health Project”\nDecember 19, 2024\nDr. Aasma Siddiqui Joins AHRO for 6-Month Fellowship\nDecember 19, 2024\nAHRO Courses to Officially Commence in January 2025\nDecember 14, 2024\nAHRO Clinical Research Program Officially Launched\nDecember 14, 2024\nAHRO joins the Global Consortium on Climate and Health Education\nDecember 14, 2024\nAHRO Confer Doctorate Degree to Hajia Hajara Shardow and Barbara Ngomo\nDecember 14, 2024\nAfrica Consultative Summit on Climate Change and One Health Organized by AHRO Center for Academic Research (UK)\nOctober 12, 2024\nPoverty Alleviation in Africa: The Way Forward – A Must-Watch Interview with Princess Nana Yakubu\nSeptember 6, 2024\nAHRO Commences Fellowship program, first cohort in 2025\nJune 13, 2024\nAHRO opens five representative offices in West Africa\nJune 13, 2024\nAHRO-Dubai to lead the product development program\nJune 13, 2024\nAHRO-Canada to oversee commercialization and IP activities\nJune 13, 2024\n“AHRO will become one of the leaders in small drug molecules research”- Prof Yaro\nJune 13, 2024\nAHRO appoints new Scientific Advisory Board\nJune 13, 2024\n“We are ready”- Dr Christine Nyirahabimana\nJuly 25, 2023\nAHRO starts its exploratory research activities\nJuly 25, 2023\nAHRO Starts electing Emeritus Fellows\nJuly 25, 2023",
+            "file_path": "africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa"
+        },
+        {
+            "id": 5,
+            "content": "collaborative efforts with governments, local and international organizations, implementing partners, and the private sector. Learn more at\nwww.aslm.org\n24 April 2024\nTheme\nAfrica CDC Institute for Pathogen Genomics\n,\nAfrica Pathogen Genomics Initiative\n,\nLaboratory Systems and Networks\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nTags\nAfrica PGI\n,\nPathogen Genomic\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa"
+        },
+        {
+            "id": 6,
+            "content": "Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.\nOk",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": 7,
+            "content": "Africa CDC and Mastercard Foundation launch phase 2 of the Saving Lives and Livelihoods (SLL) initiative to strengthen Africa’s public health systems – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nAfrica CDC and Mastercard Foundation launch phase 2 of the Saving Lives and Livelihoods (SLL) initiative to strengthen Africa’s public health systems\nNovember 28, 2023,\nLusaka\n– The Africa CDC and the Mastercard Foundation have entered a new phase of their partnership on the Saving Lives and Livelihoods initiative in the aftermath of WHO’s declaration of the end of COVID-19 pandemic as a public health emergency of international concern. The Saving Lives and Livelihoods initiative, a bold and unprecedented $1.5 billion partnership, was launched in June 2021. This innovative and ground-breaking partnership aimed to purchase COVID-19 vaccines, roll out vaccinations, build the vaccine manufacturing workforce for the continent, and strengthen the Africa CDC to ensure long-term health security for Africa.\nUnprecedented in scale, speed and inclusion of African organisations, the partnership has\ncontributed to the continent’s current vaccination rate of 53 per cent of\nthe target population, up from just 3 per cent at the start of the initiative. The partnership has also trained, equipped, and deployed 38,000 health workers, creating a robust frontline in safeguarding public health locally. It has provided job opportunities for 23,000 individuals and integrated over 600 COVID-19 vaccination centres into healthcare systems. Additionally, this initiative led to the expansion of genomic testing capabilities from seven to 40 laboratories across the continent.\nThe review of Phase 1 of this initiative, among fifteen implementing partners across 29 countries, conducted by Deloitte, indicates that the vast majority of funds disbursed were used effectively and as intended. Likewise, ongoing monitoring by KPMG has confirmed that partners not only showed strength in programmatic results but also improved the institutional capacity for greater sustainability and institutional resilience.\n“Our Saving Lives and Livelihoods initiative with the Mastercard Foundation has shown the power of respectful and action-oriented partnerships rooted in collaboration, coordination and systems strengthening. The experience and learnings from Phase I will enable us to move with greater speed and scale to deliver with accelerated impact to our member states” said\nDr. Jean Kaseya, Director General of the Africa CDC\n.\nIn its second phase, the partnership will expand its scope and scale, focusing on completing the vaccination of healthcare workers and vulnerable groups, building a robust workforce of community health workers, ensuring pandemic preparedness by bolstering national public health institutions, laboratory capacities, data access and quality, local manufacturing of vaccines, therapeutics and diagnostics, and continuing strengthening of Africa CDC.\n“While the global pandemic may be declared over, the need to continue investing in our health systems, build our workforce and prepare for future pandemics remains urgent. This partnership will ensure that we have strong health institutions and systems. We aim to enable thousands of young people to build their careers in healthcare and contribute to improving lives in Africa,” said\nReeta Roy, President, and CEO of the Mastercard Foundation.\nThe Saving Lives and Livelihoods initiative stands out as a testament to the power of African-led health solutions. As it progresses to its next phase, partnerships will continue to play a crucial role in shaping a New Public Health Order for Africa. Africa CDC and the Mastercard Foundation remain committed to improving the health and well-being of all Africans.\n-ENDS-\nAbout the Africa Centres for Disease Control and Prevention (Africa CDC)\nAfrica CDC is a continental autonomous health agency of the African Union established to support public health initiatives of Member States and strengthen the capacity of their public health institutions to detect, prevent, control, and respond quickly and effectively to disease threats. For more information, please visit:\nhttps://africacdc.org\nAbout the Mastercard Foundation\nThe Mastercard Foundation is a registered Canadian charity and one of the largest foundations in the world. It works with visionary organisations to advance education and financial inclusion, enabling young people in Africa and Indigenous youth in Canada to access dignified and fulfilling work. Established in 2006 through the generosity of Mastercard when it became a public company, the Foundation is an independent organisation separate from the company, with offices in Toronto, Kigali, Accra, Nairobi, Kampala, Lagos, Dakar, and Addis Ababa. Its policies, operations, and program decisions are determined by the Foundation’s Board of Directors and leadership. For more information on the Foundation, please visit\nwww.mastercardfdn.org\n.\nMedia contacts:\nAfrica Centres for Disease Control and Prevention\nMs. Ndahafa Nakwafila\nAg. Head Communication and Public Information\nNakwafilaN@africa-union.org|\nCommunications@africacdc.org\n|\nFacebook\n|\nTwitter\nMastercard Foundation\nWariko Kabuga-Waita\nSenior Director, Corporate Communications\nwwaita@mastercardfdn.org\n28 November 2023\nTheme\nSaving Lives and Livelihoods\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in Africa\nWeekly Briefs\nAfrica CDC Weekly Brief | 14 – 20 July 2025\nPress Releases\nAfrica Launches Continental Strategy to Decentralize Diagnostics and Accelerate Outbreak Response\nWeekly Briefs\nAfrica CDC Weekly Brief | 7 – 13 July 2025\nPress Releases\nMalawi Launches Second Edition of Pathogen Genomic Surveillance Strategy and Implementation Plan\nWeekly Briefs\nAfrica CDC Weekly Brief | 30 June-6 July 2025\nFollow Us\nTwitter\nLinkedin\nFacebook-f\nYoutube\nFlickr\nInstagram\nWe use cookies to ensure that we give you the best experience on our website. If you",
+            "file_path": "africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems"
+        },
+        {
+            "id": 8,
+            "content": "Enhancing Vaccine Storage Efficiencies in Africa – Africa CDC\nSkip to content\nEmail:\ncommunications@africacdc.org\nSearch\nSearch\nNews\n/\nPress Releases\nEnhancing Vaccine Storage Efficiencies in Africa\n8 February 2024,\nThe Africa Centres for Disease Control and Prevention (Africa CDC), in collaboration with the Mastercard Foundation under the Saving Lives and Livelihoods initiative, has provided state-of-the-art cold chain equipment to five (5) African Union Member States.  These Member States are Botswana, Cameroon, Sierra Leone, Uganda and Zambia, are part of the initial delivery targeting a total of 32 Member States in the phase one investment for the procurement of Cold Chain Equipment (CCE). The equipment was procured and delivered through the support of UNICEF, one of the initiative’s implementing partners. The support aligns with the Africa CDC goal of strengthening healthcare systems and enhancing the response to vaccine-preventable diseases.\nThe cumulative equipment across the five (5) Member States, which consists of 465 refrigerators and freezers, 1,150 temperature monitors, 5,253 vaccine carriers and cold boxes, and 2 cold rooms, all valued up to USD 3.3 million, will significantly enhance the healthcare infrastructure and capabilities. The equipment is designed to efficiently manage vaccines and vital medical supplies, supporting the expansion of COVID-19 vaccination and other programs, including routine Immunization, which aims to ensure safe and effective vaccines reach every child. By expanding the cold chain storage capacity, the Ministries of Health will be able to offer a more comprehensive vaccination program and improve vaccine coverage rates.\nH.E Dr. Jean Kaseya, the Africa CDC Director General, emphasizes the significant benefits of this equipment in minimizing vaccine wastage due to temperature fluctuations. “This optimization allows the Ministries of Health to allocate healthcare budgets more effectively and allocate resources to other critical areas of healthcare. The availability of CCE facilitates extensive immunization activities, reaching remote and underserved communities. This, in turn, leads to improved vaccine coverage rates, reducing the prevalence of vaccine-preventable diseases, including COVID-19, and strengthening health security in Africa towards attaining global health security,” Dr Kaseya said.\nThe provision of Cold Chain Equipment is crucial in preserving vaccines and maintaining the efficacy of temperature-sensitive medical supplies. The addition of freezers and refrigerators enables member states to store a wider range of vaccines, including those requiring ultra-low temperatures like COVID-19. This expansion of cold chain storage is essential to pandemic preparedness and will enable member states to offer more comprehensive vaccination programs.\nThe cold boxes and vaccine carriers provide reliable transportation while maintaining the recommended vaccine temperature, ensuring vaccine efficacy and safety. This feature increases geographic coverage and contributes to improved immunization service delivery and health security in Africa by enhancing the capacity of Ministries of Health to manage vaccines and strengthen their cold chain systems.\nDuring the handover ceremony in Zambia, the Honorable Sylvia Masebo, the Minister of Health of the Republic of Zambia, highlighted that the support from Afric a CDC aligns with Zambia’s goals to have readily available life-saving vaccines and strengthened cold chain capacity, and the Ministry will seek more equipment to build on the gains made, while implementing the integration of COVID-19 vaccines into primary healthcare services.\nThe Africa CDC, Mastercard Foundation, and UNICEF anticipate the successful installation and efficient use of these CCEs in healthcare facilities, positively catalyzing and strengthening the healthcare landscape in the Member States. With this support, the Ministries of Health are better positioned to respond effectively to public health emergencies, ensuring equitable access to vaccines and treatments. The support provided by the Africa CDC and the Mastercard Foundation demonstrates their commitment to strengthening healthcare systems in Africa. It underscores the importance of collective collaboration in addressing global health challenges and ensuring vaccine equity for Africa.\nFor more information:\nDr Merawi Aragaw| Head of Division for Surveillance and Disease Intelligence | Africa Centres for Disease Control and Prevention| African Union| email: merawia@africa-union.org| M: +251912611294 Website: www.africacdc.org| Addis Ababa| Ethiopia|\nFacebook\n|\nTwitter\nFor media inquiry:\nFor media enquiries please contact:\nDorothy Njagi\n| Senior Communication Officer- Communication & Public Information directorate | Africa Centres for Disease Control and Prevention| African Union| email: email:\nnjagid@africacdc.org\n| Website: www.africacdc.org| Addis Ababa| Ethiopia|\nFacebook\n|\nTwitter\nAbout Africa CDC\nThe Africa Centres for Disease Control and Prevention (Africa CDC) is a continental autonomous Public Health agency of the African Union which supports Member States in their efforts to strengthen health systems and improve surveillance, emergency response, prevention and control of diseases. For more information, visit\nhttps://africacdc.org/\nAbout the Saving Lives and Livelihoods initiative\nThe Saving Lives and Livelihoods initiative is a USD 1.5 million partnership between the Mastercard Foundation and the Africa Centers for Disease Control and Prevention (Africa CDC) that aims to ensure vaccine equity for Africa by purchasing vaccines for more than 65 million people, supporting in the delivery of vaccinations to millions more, and integrating the covid-19 vaccine into routine immunization in Africa. The initiative supports and contributes to the Foundation’s Young Africa Works strategy, which seeks to enable 30 million young people, particularly young women, to access dignified and fulfilling work by 2030. For more information on the Saving Lives and Livelihoods initiative, please visit:\nhttps://africacdc.org/saving-lives-and-livelihoods/\n8 February 2024\nTheme\nMedical Supplies and Cold Chain Equipment\nRegion\nCentral Africa\n,\nEastern Africa\n,\nNorthern Africa\n,\nSouthern Africa\n,\nWestern Africa\nCountry\nBotswana\n,\nCameroon\n,\nSierra Leone\n,\nUganda\n,\nZambia\nRelated Content\nMedia Advisory\nWeekly Special Press Briefing on Health Emergencies in",
+            "file_path": "enhancing-vaccine-storage-efficiencies-in-africa"
+        }
+    ]
+}
