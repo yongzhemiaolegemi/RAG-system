@@ -1,0 +1,88 @@
+研究主题：需要一个标题为：“非洲生物安全态势研判”的报告。分为三个章节：1.非洲生物安全态势 2.非洲生物安全风险点 3.对我国(中国)应对风险及加强非洲国际合作的建议
+
+# 非洲生物安全态势研判
+
+## 引言
+
+近年来，全球生物安全形势日益复杂，非洲作为传染病高发与公共卫生体系相对薄弱的地区，其生物安全态势对中国乃至全球构成持续性输入风险。2024年8月13日，非洲疾病控制预防中心（Africa CDC）正式宣布猴痘疫情为“公共卫生大陆安全紧急事件”（Public Health Emergency of Continental Security, PHECS），标志着非洲面临前所未有的生物安全挑战（[mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security]）。与此同时，抗微生物药物耐药性（AMR）在非洲的死亡负担已超过HIV/AIDS、结核病和疟疾的总和，成为隐性但更具长期威胁的公共卫生危机（[antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report]）。在此背景下，系统研判非洲生物安全态势，识别关键风险点，并提出中国应对策略，不仅关乎我国本土防疫安全，也体现中国在全球卫生治理中的责任与担当。本报告基于最新疫情动态与国际合作进展，围绕非洲生物安全整体态势、核心风险点及中国应对建议展开分析。
+
+---
+
+## 1. 非洲生物安全态势
+
+### 1.1 主要生物安全威胁的演变与现状
+
+非洲当前面临多重交织的生物安全威胁，其中以猴痘疫情的暴发和抗微生物药物耐药性（AMR）的加剧最为突出。自2022年起，非洲猴痘病例数显著上升，尤其在刚果民主共和国（DRC）呈现持续高发态势，且传播模式出现变化，包括通过异性途径在女性性工作者中扩散，增加了母婴垂直传播和重症风险（[mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security]）。2024年8月，Africa CDC正式将猴痘疫情升级为“大陆安全紧急事件”，凸显其跨区域传播潜力和对公共卫生系统的严峻考验。与此同时，AMR已成为非洲最致命的健康威胁之一，据报告，非洲因耐药感染导致的死亡率居全球首位，严重削弱了基本医疗干预的有效性，并对农业和食品安全构成连锁冲击（[antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report]）。这些威胁并非孤立存在，而是与营养不良、HIV流行和医疗资源匮乏等社会健康决定因素深度耦合，加剧了疫情控制的复杂性。
+
+### 1.2 防控能力的进展与区域协同机制建设
+
+尽管挑战严峻，非洲近年来在构建区域级生物安全防控体系方面取得重要进展。非洲疾病控制预防中心（Africa CDC）作为非洲联盟（AU）下属的核心公共卫生机构，自2017年成立以来，逐步建立起覆盖全非的疾病监测与应急响应网络。特别是在2023年至2024年间，Africa CDC通过“Saving Lives and Livelihoods”倡议，培训并部署了超过5万名公共卫生专业人员，显著增强了基层疫情应对能力（[africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems]）。同时，Africa CDC与世界卫生组织（WHO）于2023年联合发布《紧急准备与应对行动计划》（JEAP），旨在整合资源、优化应急指挥流程，提升多国协同响应效率（[africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa]）。此外，Africa CDC还与欧盟、联合国儿童基金会（UNICEF）、流行病防范创新联盟（CEPI）等国际伙伴深化合作，推动疫苗本地化生产、诊断技术转移和冷链体系建设，逐步减少对外部援助的依赖。
+
+### 1.3 区域差异与资源分布不均的现实制约
+
+非洲内部在生物安全能力建设方面存在显著区域差异。东非地区在病原体基因组监测方面处于领先地位，已建立多个区域性实验室中心，并积极参与全球病原体数据共享网络（[africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa]）。北非国家则在监管体系建设和抗微生物药物耐药性监测方面表现活跃，部分国家已初步实现与欧洲药品管理局（EMA）的技术对接（[high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty]）。相比之下，中非和西非地区仍面临严重资源短缺，尤其是在实验室检测能力方面，截至2023年，仅有约1.3%的微生物学实验室具备关键AMR病原体的检测能力，严重制约了疫情的早期发现与精准干预（[antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report]）。这种区域不平衡不仅影响各国自身的防控效果，也增加了跨境疫情扩散的风险，凸显了加强区域协调与资源再分配的紧迫性。
+
+---
+
+## 2. 非洲生物安全风险点
+
+### 2.1 自然疫源性疾病与复杂传播模式的叠加风险
+
+猴痘作为非洲长期存在的自然疫源性疾病，其风险已从局部流行演变为区域性公共卫生危机。该病毒在中非和西非地区呈地方性流行，主要通过接触受感染动物或人际传播扩散。然而，自2022年以来，疫情传播模式发生显著变化，出现了更高强度的人际传播，特别是在城市环境中通过密切接触和性行为传播，且在HIV感染者、儿童和营养不良人群中致死率更高（[mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security]）。此外，由于公众认知不足、疫苗供应严重短缺以及基层医疗系统薄弱，疫情在多个非洲国家持续蔓延，并通过跨境流动扩散至邻国，形成“多点暴发、持续传播”的态势。这一趋势表明，猴痘已不再仅仅是动物源性疾病问题，而是涉及社会行为、医疗可及性和公共卫生教育的系统性挑战。
+
+### 2.2 抗微生物药物耐药性（AMR）的隐性危机
+
+AMR在非洲的发展速度远超全球平均水平，已成为“无声的大流行”。由于抗生素在人类医疗、畜牧业和农业中的广泛滥用，耐药菌株在社区和医疗机构中快速传播，导致常见感染难以治疗，住院时间延长，死亡风险上升（[antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report]）。2023年的评估显示，非洲每10万人口中因AMR导致的死亡人数高达24人，居全球首位。更令人担忧的是，AMR的监测体系极为薄弱，大多数国家缺乏系统的耐药性数据收集机制，仅有极少数实验室具备开展标准化药敏试验的能力。这种“数据黑洞”使得政策制定者难以评估真实负担，也无法有效指导抗菌药物管理政策的实施，进一步加剧了耐药性的蔓延。
+
+### 2.3 实验室检测与数字卫生系统的结构性短板
+
+有效的生物安全防控依赖于强大的实验室网络和实时的数据驱动决策系统，但非洲在此方面仍存在明显短板。尽管Africa CDC自2021年起推动“非洲病原体基因组计划”（Africa PGI 2.0），将基因组测序实验室从7家扩展至2023年的40家，覆盖东非、西非和南部非洲，但整体检测能力仍远远不足（[africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa]）。特别是在AMR和猴痘等关键病原体的快速检测方面，基层医疗机构普遍缺乏必要的设备和技术人员。与此同时，数字卫生系统的应用尚处于初级阶段，许多国家尚未建立统一的电子健康记录系统或疫情信息平台，导致数据上报延迟、信息孤岛现象严重。这不仅影响了疫情的早期预警能力，也削弱了跨部门、跨区域的协同响应效率。
+
+### 2.4 跨境流动与监管碎片化带来的扩散风险
+
+非洲国家间频繁的人员与货物流动为传染病的跨境传播提供了便利条件。尤其是在边境地区，缺乏统一的卫生检疫标准和快速响应机制，使得猴痘等高传染性疾病极易通过陆路、航空和水路进入邻国。尽管《国际卫生条例（2005）》为跨国疫情通报提供了法律框架，但在实际操作中，各国信息共享仍存在滞后和不透明问题（[communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting]）。此外，非洲各国在药品和疫苗监管方面标准不一，审批流程冗长，导致应急医疗产品难以快速部署。非洲药品管理局（AMA）虽已于2023年启动运作，但其监管权威和技术能力仍在建设中，尚未实现全大陆范围内的产品审批互认，严重制约了本地化医药制造成果的推广应用。
+
+---
+
+## 3. 对我国应对风险及加强非洲国际合作的建议
+
+### 3.1 构建系统性输入风险防范机制
+
+面对非洲日益严峻的生物安全形势，中国需强化对输入性疫情的监测与预警能力。建议在主要国际口岸，特别是与非洲通航频繁的机场和港口，加强对猴痘、耐药菌等高风险病原体的入境筛查，并建立与非洲国家的病例信息直报通道。2024年猴痘被列为PHECS后，应立即升级国内相关应急预案，将非洲入境人员纳入重点健康监测范围，并在疾控系统内部设立专项风险评估小组，定期研判非洲疫情动态（[mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security]）。同时，应推动国家疾控中心与Africa CDC建立双边信息共享机制，实现病毒基因组数据、流行病学调查结果和防控措施的实时交换，提升早期发现和快速响应能力。
+
+### 3.2 深化多边合作框架下的能力建设支持
+
+中国应积极参与并支持Africa CDC主导的区域公共卫生治理架构，通过技术援助和联合项目提升非洲本地防控能力。具体而言，可在2024—2026年期间，依托“中非公共卫生合作计划”，向非洲国家提供分子诊断设备、基因测序仪和自动化检测平台，重点支持东非和西非地区的区域实验室建设（[africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa]）。同时，应组织中方专家团队，开展针对非洲技术人员的系统培训，涵盖猴痘病毒检测、AMR药敏试验和生物信息学分析等内容，帮助非洲建立可持续的技术人才队伍。此外，可推动建立“中非数字卫生合作平台”，支持非洲国家建设集成化的疫情监测信息系统，实现数据自动化采集、智能分析与可视化展示，提升公共卫生决策的科学性与时效性。
+
+### 3.3 推动本地化医药制造与监管协同
+
+为减少非洲对进口疫苗和药品的依赖，中国应加强与非洲在生物医药产业链上的合作。可借鉴2023年非洲疫苗制造加速器（PAVM）的经验，支持中国企业与非洲本地制药企业共建疫苗和诊断试剂生产线，特别是在mRNA疫苗、快速抗原检测和耐药菌靶向药物等领域开展联合研发与技术转移（[africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks]）。同时，应推动中国国家药品监督管理局（NMPA）与非洲药品管理局（AMA）建立监管对话机制，探索在GMP认证、产品注册和质量检验标准方面的互认路径，缩短中国生产的医疗产品在非洲市场的准入周期。通过此类合作，不仅有助于提升非洲的卫生主权，也将为中国医药企业开拓非洲市场创造有利条件。
+
+### 3.4 完善跨境联防联控与应急响应协同机制
+
+中国应主动参与非洲区域级应急响应体系建设，提升跨国协作水平。建议在中非合作论坛框架下，设立“中非公共卫生应急联合演练”机制，每年组织一次模拟疫情跨境传播的桌面推演或实战演练，检验信息通报、物资调配和人员派遣的协同效率（[africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa]）。同时，可支持Africa CDC建立“非洲公共卫生应急物资储备库”，由中国提供部分资金和技术支持，用于储备猴痘疫苗、抗病毒药物和防护装备，确保在紧急情况下能够快速调拨。此外，应鼓励中国疾控专家加入Africa CDC的应急响应专家组，参与非洲大陆级疫情评估与防控策略制定，增强中国在全球卫生治理中的话语权与影响力。
+
+---
+
+## 结论
+
+非洲当前正处于生物安全风险高发期，猴痘疫情升级为大陆安全紧急事件、抗微生物药物耐药性持续恶化、实验室检测能力不足以及跨境传播风险上升，共同构成了复杂的公共卫生挑战。Africa CDC虽已建立起初步的区域协调机制，但资源不均、监管碎片化和技术短板仍严重制约其应对能力。对中国而言，非洲的生物安全局势不仅是外部风险源，更是深化南南合作、参与全球卫生治理的重要契机。通过构建系统性输入防范机制、加强技术与能力建设合作、推动本地化医药制造和监管协同、完善跨境联防联控体系，中国可在保障自身安全的同时，助力非洲提升卫生韧性，共同构建人类卫生健康共同体。
+
+---
+
+## 附录：参考文献
+
+- #1: [communique-united-in-the-fight-against-mpox-in-africa-high-level-emergency-regional-meeting]  
+- #2: [mpox-outbreaks-in-africa-constitute-a-public-health-emergency-of-continental-security]  
+- #3: [africa-cdc-and-cepi-deepen-partnership-to-fortify-african-preparedness-against-disease-outbreaks]  
+- #4: [antimicrobial-resistance-is-a-greater-threat-than-hiv-aids-tb-and-malaria-says-new-report]  
+- #5: [africa-cdc-launches-initiatives-to-advance-molecular-diagnostics-and-genomic-surveillance-in-africa]  
+- #6: [africa-cdc-and-eu-join-efforts-to-improve-equitable-access-to-health-products-and-local-manufacturing-for-africa]  
+- #7: [africa-cdc-and-unicef-expand-partnership-to-strengthen-health-systems-and-immunization-of-children-in-africa]  
+- #8: [africa-cdc-and-mastercard-foundation-launch-phase-2-of-the-saving-lives-and-livelihoods-sll-initiative-to-strengthen-africas-public-health-systems]  
+- #9: [africa-cdc-and-who-launch-joint-emergency-preparedness-and-response-action-plan-jeap-to-strengthen-health-systems-and-combat-disease-outbreaks-in-africa]  
+- #10: [africa-cdc-and-africa-public-health-foundation-forge-strategic-partnership-to-strengthen-health-systems]  
+- #11: [high-level-event-kicks-off-expansion-of-strategic-eu-au-partnership-pledging-joint-commitments-to-strengthen-global-health-and-african-health-sovereignty]  
+- #12: [addressing-regulatory-challenges-to-advance-local-manufacturing-in-africa]  
+- #13: [forging-resilience-who-afro-establishes-independent-expert-body-bolster-africas-health]  
+- #14: [african-health-ministers-commit-to-purchasing-locally-made-vaccines]
