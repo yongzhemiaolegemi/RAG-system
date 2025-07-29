@@ -12,7 +12,7 @@ lightrag_service_url = f"http://127.0.0.1:{lightrag_service_port}/receive_string
 
 # lightrag_working_dir 为生成的rag实例的存储Entities, Relationships, Document Chunks数据的目录
 # 如果要创建新的rag实例，请确保 lightrag_working_dir 目录为空，否则程序会在已有的rag实例的基础上创建。
-lightrag_working_dir = 'africa2024_database' # 这一项的值要和 LightRAG/.env 中的 WORKING_DIR 一致！
+lightrag_working_dir = 'africa2024_database'
 
 # lightrag_knowledge_base_dir 为创建新的rag实例时，读取的知识库文件所在的目录
 lightrag_knowledge_base_dir = 'africa2024_raw_files'
