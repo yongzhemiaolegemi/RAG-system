@@ -131,10 +131,11 @@ def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config
     # }
     data = {
         "message": query,
-        "mode": mode
+        "mode": mode,
+        "deep_research": True  # 标明这个query请求是在进行deep research的过程中发出的，这样的话rag系统在生成内容时，将不会在结尾处完整列出参考文献
     }
     response = requests.post(url, json=data)
-    return response.json()["result"]
+    return response.json()["result"], response.json()["log_file_path"]
 
 
 class ResearchAgent:
@@ -227,7 +228,7 @@ class ResearchAgent:
             print(f"正在研究问题: {current_question}")
 
             try:
-                rag_answer = send_query_to_RAG_server(QUERY_PROMPT + current_question)
+                rag_answer, log_file_path = send_query_to_RAG_server(QUERY_PROMPT + current_question)
                 print(f"RAG回答: {rag_answer[:100]}...") # 打印部分回答作为反馈
             except Exception as e:
                 print(f"调用RAG服务时出错: {e}")

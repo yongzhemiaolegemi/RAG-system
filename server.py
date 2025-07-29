@@ -28,16 +28,23 @@ def receive_string():
     
     received_string = data['message']
     request_mode = data['mode']
+    deep_research = data['deep_research'] if 'deep_research' in data else False
     print(f"Received mode: {request_mode}")
+    print(f"Is deep_research: {deep_research}")
     print(f"Received message: {received_string}")
 
-    final_result = loop.run_until_complete(rag.aquery(
-        received_string, param=QueryParam(mode=request_mode)
+    final_result, log_file_path = loop.run_until_complete(rag.aquery(
+        received_string, param=QueryParam(mode=request_mode, deep_research=deep_research)
     ))
     print(f"Final result: {final_result}")
     
     # 返回响应
-    return jsonify({"message": f"Received string: {received_string}", "mode": request_mode, "result": final_result})
+    return jsonify({
+        "message": f"Received string: {received_string}", 
+        "mode": request_mode, 
+        "result": final_result,
+        "log_file_path": log_file_path
+        })
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=lightrag_service_port, debug=True)
