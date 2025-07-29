@@ -62,7 +62,8 @@ def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config
     # }
     data = {
         "message": query,
-        "mode": mode
+        "mode": mode,
+        "deep_research": False
     }
     response = requests.post(url, json=data)
     return response.json()["result"], response.json()["log_file_path"]

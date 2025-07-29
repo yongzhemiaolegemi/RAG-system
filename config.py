@@ -3,7 +3,7 @@ project_dir = os.getcwd()
 
 # LightRAG configuration
 lightrag_llm_model = 'gpt-4.1-mini-ca'
-lightrag_llm_url = ''
+lightrag_llm_url = 'https://api.chatanywhere.tech/v1'
 lightrag_llm_key = ""
 
 # The model selection for LightRAG is hardcoded in the code as gpt-4o-mini, may be changed later.
@@ -26,9 +26,9 @@ webscrap_base_dir = 'ooo'
 
 # Django configuration
 
-django_llm_url = ""    
+django_llm_url = "https://api.chatanywhere.tech/v1"    
 django_llm_key = ""
 django_vllm_url = "http://localhost:30000/v1/completions"
-django_model =""
+django_model ="gpt-4.1-mini-ca"
 django_service_port = '8006'
 django_service_url = f"http://127.0.0.1:{django_service_port}/api/v1/chat/completions"
