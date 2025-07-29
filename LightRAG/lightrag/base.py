@@ -124,6 +124,10 @@ class QueryParam:
     Default is True to enable reranking when rerank model is available.
     """
 
+    deep_research: bool = False
+    """If True, 表明这个query请求是在进行deep research的过程中发出的，
+    这样的话rag系统在生成内容时，将不会在结尾处完整列出参考文献"""
+
 
 @dataclass
 class StorageNameSpace(ABC):
