@@ -65,7 +65,7 @@ def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config
         "mode": mode
     }
     response = requests.post(url, json=data)
-    return response.json()["result"]
+    return response.json()["result"], response.json()["log_file_path"]
 
 
 def calculator(code: str) -> str:
@@ -188,7 +188,7 @@ AVAILABLE_TOOLS = [
         "type": "function",
         "function": {
             "name": "send_query_to_RAG_server",
-            "description": "向RAG服务器发送查询，返回查询结果。发送查询的语言和返回查询结果的语言都是自然语言，以问答的形式进行。",
+            "description": "向RAG服务器发送查询，返回2个内容:1. 查询结果; 2. 查询生成的日志的存放目录。发送查询的语言和返回查询结果的语言都是自然语言，以问答的形式进行。",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -272,12 +272,6 @@ def log_function_call(func: Callable) -> Callable:
         return func(*args, **kwargs)
     return wrapper
 
-# # 工具执行映射
-# TOOL_FUNCTIONS: Dict[str, Callable] = {
-#     "get_current_time": get_current_time,
-#     "get_server_location": get_server_location,
-#     "send_query_to_RAG_server": send_query_to_RAG_server,
-# }
 
 # 从AVAILABLE_TOOLS动态构建工具函数映射，并应用装饰器
 TOOL_FUNCTIONS: Dict[str, Callable] = {}

@@ -93,7 +93,7 @@ def create_query_log( query, entities_str, relations_str, text_units_str):
             json.dump(content, f, ensure_ascii=False, indent=4)
         
         print(f"日志文件已创建: {file_path}")
-        return True
+        return file_path
         
     except Exception as e:
         print(f"创建日志文件时出错: {e}")
@@ -1628,7 +1628,7 @@ async def kg_query(
     hashing_kv: BaseKVStorage | None = None,
     system_prompt: str | None = None,
     chunks_vdb: BaseVectorStorage = None,
-) -> str | AsyncIterator[str]:
+):
     if query_param.model_func:
         use_model_func = query_param.model_func
     else:
@@ -1642,7 +1642,7 @@ async def kg_query(
         hashing_kv, args_hash, query, query_param.mode, cache_type="query"
     )
     if cached_response is not None:
-        return cached_response
+        return cached_response, "[cached]"
 
     hl_keywords, ll_keywords = await get_keywords_from_query(
         query, query_param, global_config, hashing_kv
@@ -1654,7 +1654,7 @@ async def kg_query(
     # Handle empty keywords
     if hl_keywords == [] and ll_keywords == []:
         logger.warning("low_level_keywords and high_level_keywords is empty")
-        return PROMPTS["fail_response"]
+        return PROMPTS["fail_response"], "[invalid]"
     if ll_keywords == [] and query_param.mode in ["local", "hybrid"]:
         logger.warning(
             "low_level_keywords is empty, switching from %s mode to global mode",
@@ -1672,7 +1672,7 @@ async def kg_query(
     hl_keywords_str = ", ".join(hl_keywords) if hl_keywords else ""
 
     # Build context
-    context = await _build_query_context(
+    context, log_file_path = await _build_query_context(
         query,
         ll_keywords_str,
         hl_keywords_str,
@@ -1685,9 +1685,9 @@ async def kg_query(
     )
 
     if query_param.only_need_context:
-        return context if context is not None else PROMPTS["fail_response"]
+        return context, log_file_path if context is not None else PROMPTS["fail_response"]
     if context is None:
-        return PROMPTS["fail_response"]
+        return PROMPTS["fail_response"], log_file_path
 
     # Process conversation history
     history_context = ""
@@ -1702,7 +1702,7 @@ async def kg_query(
         if query_param.user_prompt
         else PROMPTS["DEFAULT_USER_PROMPT"]
     )
-    sys_prompt_temp = system_prompt if system_prompt else PROMPTS["rag_response"]
+    sys_prompt_temp = system_prompt if system_prompt else PROMPTS["rag_response_deep_research" if query_param.deep_research else "rag_response"]
     sys_prompt = sys_prompt_temp.format(
         context_data=context,
         response_type=query_param.response_type,
@@ -1711,7 +1711,7 @@ async def kg_query(
     )
 
     if query_param.only_need_prompt:
-        return sys_prompt
+        return sys_prompt, log_file_path
 
     tokenizer: Tokenizer = global_config["tokenizer"]
     len_of_prompts = len(tokenizer.encode(query + sys_prompt))
@@ -1751,7 +1751,7 @@ async def kg_query(
             ),
         )
 
-    return response
+    return response, log_file_path
 
 
 async def get_keywords_from_query(
@@ -2220,7 +2220,7 @@ async def _build_query_context(
 
         # Get the system prompt template from PROMPTS
         sys_prompt_template = text_chunks_db.global_config.get(
-            "system_prompt_template", PROMPTS["rag_response"]
+            "system_prompt_template", PROMPTS["rag_response_deep_research" if query_param.deep_research else "rag_response"]
         )
 
         # Create a sample system prompt with placeholders filled (excluding context_data)
@@ -2291,7 +2291,7 @@ async def _build_query_context(
     text_units_str = json.dumps(text_units_context, ensure_ascii=False)
 
 
-    create_query_log(query, entities_str, relations_str, text_units_str)
+    log_file_path = create_query_log(query, entities_str, relations_str, text_units_str)
 
 
 
@@ -2314,10 +2314,10 @@ async def _build_query_context(
 ```
 
 """
-    print('============= Query context =====================')
-    print(f" {result}")
-    print('=================================================')
-    return result
+    # print('============= Query context =====================')
+    # print(f" {result}")
+    # print('=================================================')
+    return result, log_file_path
 
 
 async def _get_node_data(
@@ -3028,7 +3028,7 @@ async def kg_query_with_keywords(
     ll_keywords_str = ", ".join(ll_keywords) if ll_keywords else ""
     hl_keywords_str = ", ".join(hl_keywords) if hl_keywords else ""
 
-    context = await _build_query_context(
+    context, log_file_path = await _build_query_context(
         query,
         ll_keywords_str,
         hl_keywords_str,
@@ -3052,7 +3052,7 @@ async def kg_query_with_keywords(
             query_param.conversation_history, query_param.history_turns
         )
 
-    sys_prompt_temp = PROMPTS["rag_response"]
+    sys_prompt_temp = PROMPTS["rag_response_deep_research" if query_param.deep_research else "rag_response"]
     sys_prompt = sys_prompt_temp.format(
         context_data=context,
         response_type=query_param.response_type,
