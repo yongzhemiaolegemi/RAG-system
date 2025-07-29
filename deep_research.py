@@ -1,4 +1,5 @@
 import json
+from typing import Tuple
 import uuid # 确保 uuid 被导入，用于流式处理中的 tool_call id 生成
 
 from openai import OpenAIError # 用于更精确地捕获 OpenAI 相关异常
@@ -122,7 +123,7 @@ def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools
         # 非流式响应，直接返回字典
         return completion.model_dump()
 
-def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config().lightrag_service_url) -> str:
+def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config().lightrag_service_url) -> Tuple[str, str] :
     """向RAG服务器发送查询"""
     # POST to url
     # {

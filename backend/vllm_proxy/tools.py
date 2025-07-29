@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 import json
 import datetime
 import requests
-from typing import Dict, Any, List, Callable
+from typing import Dict, Any, List, Callable, Tuple
 
 
 from scrap import get_webpage_text
@@ -53,7 +53,7 @@ def get_server_location() -> str:
     """获取当前服务器的地理位置"""
     return "中国上海"
 
-def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config().lightrag_service_url) -> str:
+def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config().lightrag_service_url) -> Tuple[str, str] :
     """向RAG服务器发送查询"""
     # POST to url
     # {
