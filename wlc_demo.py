@@ -125,7 +125,7 @@ async def initialize_rag():
 
 
 @timeit_decorator
-async def main(input_str,mode='hybrid'):
+async def main(input_str,mode='hybrid',deep_research=False):
     WORKING_DIR = config().lightrag_working_dir
     KNOWLEDGE_BASE_DIR = config().lightrag_knowledge_base_dir
     # Check if OPENAI_API_KEY environment variable exists
@@ -147,6 +147,7 @@ async def main(input_str,mode='hybrid'):
             # "vdb_chunks.json",
             # "vdb_entities.json",
             # "vdb_relationships.json",
+            'kv_store_llm_response_cache.json'
         ]
 
         for file in files_to_delete:
@@ -182,7 +183,7 @@ async def main(input_str,mode='hybrid'):
         print("Query mode: ", mode)  # for m in ['naive', 'local', 'global', 'hybrid']: 
 
         str = await rag.aquery(
-            input_str, param=QueryParam(mode=mode)
+            input_str, param=QueryParam(mode=mode,deep_research=deep_research)
         )
         result_list.append(str)
         print(str)
@@ -206,6 +207,6 @@ def run_demo(str,mode='hybrid'):
 if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main("briefly describe the relationships among the main characters"))
+    res = asyncio.run(main("Describe Scrooge's relationships",deep_research=True))
     print("\nDone! ")
 

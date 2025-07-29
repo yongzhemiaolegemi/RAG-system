@@ -1,5 +1,5 @@
-__pycache__/
-/kv_store_llm_response_cache.json
+__pycache__/ 
 lightrag_demo.log
 config_wlc.py
 */query_logs/*
+*/kv_store_llm_response_cache.json
