@@ -182,7 +182,7 @@ async def main(input_str,mode='hybrid',deep_research=False):
         
         print("Query mode: ", mode)  # for m in ['naive', 'local', 'global', 'hybrid']: 
 
-        str = await rag.aquery(
+        str, log_file_path = await rag.aquery(
             input_str, param=QueryParam(mode=mode,deep_research=deep_research)
         )
         result_list.append(str)
