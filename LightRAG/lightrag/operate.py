@@ -2,7 +2,6 @@ from __future__ import annotations
 from functools import partial
 
 from datetime import datetime
-from config import project_dir,lightrag_working_dir
 import json
 import asyncio
 import json
@@ -57,6 +56,8 @@ load_dotenv(dotenv_path=".env", override=False)
 
 
 def create_query_log( query, entities_str, relations_str, text_units_str):
+    from config import project_dir,lightrag_working_dir
+
     try:
         # 拼接路径 
         working_dir = os.path.join(project_dir, lightrag_working_dir,'query_logs')
