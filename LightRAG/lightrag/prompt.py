@@ -234,7 +234,7 @@ When handling relationships with timestamps:
 - Use markdown formatting with appropriate section headings
 - Please respond in the same language as the user's question.
 - Ensure the response maintains continuity with the conversation history.
-- Mark the reference content when your generated content use it. Clearly indicating whether each source is from Entities (E), Relationships (R) or Document Chunks (DC), and include the id if available, in the following format: file_path [DC #id1, #id2, ...; E #id1, #id2 ...; R #id1, id2 ...]. For each citation, only write the most relevant content, with no more than 1 Document chunk, 2 entities, and 2 relations.
+- Mark the reference content when your generated content use it. Clearly indicating whether each source is from Entities (E), Relationships (R) or Document Chunks (DC), and include the id if available, in the following format: file_path [DC #id1; E #id1, ...; R #id1, ...]. For each citation, only write the most relevant content, with no more than 1 Document chunk, 2 entities, and 2 relations.
 - List all reference sources you use at the end under "References" section. 
 - If you don't know the answer, just say so.
 - Do not make anything up. Do not include information not provided by the Knowledge Base.
