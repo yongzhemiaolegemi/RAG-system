@@ -17,6 +17,9 @@ lightrag_working_dir = 'africa2024_database'
 # lightrag_knowledge_base_dir 为创建新的rag实例时，读取的知识库文件所在的目录
 lightrag_knowledge_base_dir = 'africa2024_raw_files'
 
+# 在使用LightRAG-webui时需要用到
+embedding_dim = 1536
+
 # Web scraping configuration
 
 webscrap_enable_save= True  # whether to save the scraped content
