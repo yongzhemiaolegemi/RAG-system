@@ -379,6 +379,41 @@ When handling content with timestamps:
 
 Response:"""
 
+
+PROMPTS["naive_rag_response_deep_research"] = """---Role---
+
+You are a helpful assistant responding to user query about Document Chunks provided provided in JSON format below.
+
+---Goal---
+
+Generate a concise response based on Document Chunks and follow Response Rules, considering both the conversation history and the current query. Summarize all information in the provided Document Chunks, and incorporating general knowledge relevant to the Document Chunks. Do not include information not provided by Document Chunks.
+
+When handling content with timestamps:
+1. Each piece of content has a "created_at" timestamp indicating when we acquired this knowledge
+2. When encountering conflicting information, consider both the content and the timestamp
+3. Don't automatically prefer the most recent content - use judgment based on the context
+4. For time-specific queries, prioritize temporal information in the content before considering creation timestamps
+
+---Conversation History---
+{history}
+
+---Document Chunks(DC)---
+{content_data}
+
+---Response Rules---
+
+- Target format and length: {response_type}
+- Use markdown formatting with appropriate section headings
+- Please respond in the same language as the user's question.
+- Mark the reference content when your generated content use it. Clearly indicating each source from Document Chunks (DC), and include the id in the following format: [DC #id1, #id2 ...]. For each citation, only write the most relevant content, with no more than 2 Document chunks.
+- Do not list references at the end.
+- If you don't know the answer, just say so.
+- Do not include information not provided by the Document Chunks.
+- Addtional user prompt: {user_prompt}
+
+Response:"""
+
+
 # TODO: deprecated
 PROMPTS[
     "similarity_check"

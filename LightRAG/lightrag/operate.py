@@ -100,6 +100,48 @@ def create_query_log( query, entities_str, relations_str, text_units_str):
         print(f"创建日志文件时出错: {e}")
         return False
 
+def create_query_log_naive( query,  text_units_str):
+    from config import project_dir,lightrag_working_dir
+
+    try:
+        # 拼接路径 
+        working_dir = os.path.join(project_dir, lightrag_working_dir,'query_logs')
+        
+        # 确保目录存在
+        os.makedirs(working_dir, exist_ok=True)
+        
+        # 获取当前时间并格式化
+        current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # 创建文件名
+        filename = f"{current_time}.json"
+        file_path = os.path.join(working_dir, filename)
+        
+        # 解析各JSON字符串为Python对象
+        try: 
+            text_units = json.loads(text_units_str)
+        except json.JSONDecodeError as e:
+            print(f"JSON字符串解析错误: {e}")
+            return False
+        
+        # 构建要写入的内容
+        content = {
+            "query": query, 
+            "text_units": text_units,
+        }
+        
+        # 写入文件
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(content, f, ensure_ascii=False, indent=4)
+        
+        print(f"日志文件已创建: {file_path}")
+        return file_path
+        
+    except Exception as e:
+        print(f"创建日志文件时出错: {e}")
+        return False
+
+
 def chunking_by_token_size(
     tokenizer: Tokenizer,
     content: str,
@@ -1686,7 +1728,7 @@ async def kg_query(
     )
 
     if query_param.only_need_context:
-        return context, log_file_path if context is not None else PROMPTS["fail_response"]
+        return context, log_file_path if context is not None else PROMPTS["fail_response"], '[invalid]'
     if context is None:
         return PROMPTS["fail_response"], log_file_path
 
@@ -2806,7 +2848,7 @@ async def naive_query(
     global_config: dict[str, str],
     hashing_kv: BaseKVStorage | None = None,
     system_prompt: str | None = None,
-) -> str | AsyncIterator[str]:
+):
     if query_param.model_func:
         use_model_func = query_param.model_func
     else:
@@ -2820,14 +2862,14 @@ async def naive_query(
         hashing_kv, args_hash, query, query_param.mode, cache_type="query"
     )
     if cached_response is not None:
-        return cached_response
+        return cached_response, '[cached]'
 
     tokenizer: Tokenizer = global_config["tokenizer"]
 
     chunks = await _get_vector_context(query, chunks_vdb, query_param)
 
     if chunks is None or len(chunks) == 0:
-        return PROMPTS["fail_response"]
+        return PROMPTS["fail_response"], '[invalid]'
 
     # Calculate dynamic token limit for chunks
     # Get token limits from query_param (with fallback to global_config)
@@ -2855,7 +2897,7 @@ async def naive_query(
 
     # Use the provided system prompt or default
     sys_prompt_template = (
-        system_prompt if system_prompt else PROMPTS["naive_rag_response"]
+        system_prompt if system_prompt else PROMPTS["naive_rag_response_deep_research" if query_param.deep_research else "naive_rag_response"]
     )
 
     # Create a sample system prompt with empty content_data to calculate overhead
@@ -2905,6 +2947,10 @@ async def naive_query(
         )
 
     text_units_str = json.dumps(text_units_context, ensure_ascii=False)
+
+    log_file_path = create_query_log_naive(query, text_units_str)
+
+
     if query_param.only_need_context:
         return f"""
 ---Document Chunks---
@@ -2913,7 +2959,7 @@ async def naive_query(
 {text_units_str}
 ```
 
-"""
+""", log_file_path
     # Process conversation history
     history_context = ""
     if query_param.conversation_history:
@@ -2927,7 +2973,7 @@ async def naive_query(
         if query_param.user_prompt
         else PROMPTS["DEFAULT_USER_PROMPT"]
     )
-    sys_prompt_temp = system_prompt if system_prompt else PROMPTS["naive_rag_response"]
+    sys_prompt_temp = system_prompt if system_prompt else PROMPTS["naive_rag_response_deep_research" if query_param.deep_research else "naive_rag_response"]
     sys_prompt = sys_prompt_temp.format(
         content_data=text_units_str,
         response_type=query_param.response_type,
@@ -2936,7 +2982,7 @@ async def naive_query(
     )
 
     if query_param.only_need_prompt:
-        return sys_prompt
+        return sys_prompt, log_file_path
 
     len_of_prompts = len(tokenizer.encode(query + sys_prompt))
     logger.debug(
@@ -2977,7 +3023,7 @@ async def naive_query(
             ),
         )
 
-    return response
+    return response, log_file_path
 
 
 # TODO: Deprecated, use user_prompt in QueryParam instead
