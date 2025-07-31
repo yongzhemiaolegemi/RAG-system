@@ -1,6 +1,7 @@
 import json
 from typing import Tuple
 import uuid # 确保 uuid 被导入，用于流式处理中的 tool_call id 生成
+import os
 
 from openai import OpenAIError # 用于更精确地捕获 OpenAI 相关异常
 import requests
@@ -11,11 +12,43 @@ import json
 from collections import defaultdict
 import time
 
-MODEL = "gpt-4.1-mini-ca"
-INITIAL_QUESTIONS_COUNT = 2 # 初始生成的问题数量
+MODEL = "gpt-4.1-ca"
+INITIAL_QUESTIONS_COUNT = 4 # 初始生成的问题数量
 MAX_ADDITIONAL_QUESTIONS = 1 # 最多允许额外增加的问题数量
+PERFORM_VERIFICATION = False # 是否执行验证报告的生成
+SOURCE_DOCUMENTS_DIR = "./africa2024_raw_files/" # 源文档所在的目录
 QUERY_PROMPT = "给出参考文献时，请忠实给出原文档名，不要翻译成中文，也不要把relation等误当作文档名。"
-TOPIC = "需要一个标题为：“非洲生物安全态势研判”的简要报告, 几百字即可"
+# TOPIC = "需要一个标题为：“非洲生物安全态势研判”的报告。字数大约在2000~3000字。分为三个章节：1.非洲生物安全态势 2.非洲生物安全风险点 3.对我国(中国)应对风险及加强非洲国际合作的建议"
+# TOPIC = "需要一个标题为：“非洲生物安全态势研判”的报告。几百字即可"
+TOPIC = '''
+请撰写一篇智库研究报告，标题为《非洲生物安全态势研判》，适用于政策研究机构内部参考。字数在3000字左右，内容要求如下：
+________________________________________
+📌 报告结构与内容要求(要求分为以下四个章节，不要多也不要少)：
+1. 非洲生物安全整体态势（概况）
+•	介绍非洲当前生物安全形势，包括：重大传染病的流行趋势、生物防控基础能力、Africa CDC 等机构的主导作用、国际协作机制现状等；
+•	引用机构2023年9月至今的数据或报告（可包含项目启动时间、死亡率、响应时间、能力指标等）；
+2. 当前面临的主要生物安全风险（问题列举）
+•	梳理5类以上主要风险类型，每类配合实际例证，包括时间、地点、数字支持；
+o	例如：2023年刚果（金）爆发的埃博拉疫情、耐药性上升趋势、公共卫生系统覆盖不足等；
+•	每项风险应有明确定性描述+数据支持，并尽量标注出处和时间；
+3. 关键风险分析（结构性问题解析）
+•	深度分析造成上述风险的根源问题，如治理体系缺陷、跨境协同不足、实验室能力薄弱、法规缺位；
+•	可举典型国家（如尼日利亚、乍得、乌干达）说明问题结构；
+•	强调问题的系统性与持续性，突出“哪些问题短期内难以缓解”。
+4. 中国应对策略与中非合作建议
+•	结合国家安全、全球卫生治理及“一带一路”倡议，提出中国应如何介入或合作
+________________________________________
+📌 写作风格与技术要求：
+•	采用政策分析型语言，逻辑清晰、条理严谨；
+•	每部分均须体现数字支撑与政策文件、机制名称与时间；
+•	引用具体国家、项目、组织及文件，增强可信度；
+•	若使用缩略词（如AMR、JEAP、PGI），请在首次出现时给出全称。
+________________________________________
+✅ 输出目标：
+生成一篇逻辑清晰、数据充分、政策导向明确、语言专业的智库研究报告，适合向研究院领导汇报，或提交政府相关部门参考。
+
+'''
+
 
 def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools=None):
     try:
@@ -146,7 +179,7 @@ def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config
 
 class ResearchAgent:
 
-    def __init__(self, topic, model_name="gpt-4.1-mini-ca", initial_questions=INITIAL_QUESTIONS_COUNT, max_extra_questions=MAX_ADDITIONAL_QUESTIONS):
+    def __init__(self, topic, model_name="gpt-4.1-ca", initial_questions=INITIAL_QUESTIONS_COUNT, max_extra_questions=MAX_ADDITIONAL_QUESTIONS):
 
         self.state = {
             "original_topic": topic,
@@ -327,21 +360,21 @@ class ResearchAgent:
             "5. 每个大章节下面建议布置2~4个小节，视信息丰富程度而定。\n"
             "6. 每个小节的主体是1~2段内容丰富、语言连续的段落，请不要大量分点。\n"
             "7. 尽量多出现一些和时间有关的叙述，用以提升报告的时效性。例如xxxx年xx月这种。\n"
-            "8. 在句子后标注引用来自哪个问题的回复。如，如果是来自问题1的回复中的[E #16]，那么就在句子后面标注[Q #1, E #16]。如果有多个来源，可以写成[Q #1, E #14-16, DC #15 #17]这种。如果一个句子涉及到两个及以上的问题的回复，例如同时涉及到了第一个问题的回复和第二个问题的回复，那么可以写成[Q #1, R #3; Q #2, R #3 #5]这种。"
+            "8. 在句子后标注引用来自哪个问题的回复。如，如果是来自问题1的回复中的[E #16]，那么就在句子后面标注[Q #1, E #16]。如果有多个来源，可以写成[Q #1, E #14-16, DC #15 #17]这种。如果一个句子涉及到两个及以上的问题的回复，例如同时涉及到了第一个问题的回复和第二个问题的回复，那么可以写成[Q #1, R #3; Q #2, R #3 #5]这种。Q的后面必须带有E或R或DC，禁止出现[Q #x] [Q #8; DC #3 #7 #10]这种只有问题编号却无实际内容或者只有内容没有问题编号的标注。"
         )
 
         final_report = self._call_llm(system_prompt, user_prompt)
         print("\n--- 阶段三完成：报告已生成。---")
         return final_report
 
-    def _post_process_report_and_add_references(self, raw_report):
+    def _post_process_report_and_add_references(self, raw_report, references_map):
         """
         后处理报告：将引用标记转换为数字序号，并生成参考文献列表
         """
         print("\n--- 开始后处理报告：转换引用格式和生成参考文献 ---")
         
         # 初始化
-        references_map = {}  # 文档名 -> 引用序号
+        # references_map = {}  # 文档名 -> 引用序号
         citation_counter = 1
         question_log_data = {}  # 问题序号 -> 日志JSON数据
         
@@ -450,7 +483,7 @@ class ResearchAgent:
                     if str(entity.get('id', '')) in ids:
                         file_path = entity.get('file_path')
                         if file_path:
-                            file_paths.add(file_path)
+                            file_paths.update(path.strip() for path in file_path.split(';') if path.strip())
             
             elif part.startswith('R #'):
                 # 处理关系引用，如 "R #15" 或 "R #15 #17"  
@@ -460,7 +493,7 @@ class ResearchAgent:
                     if str(relation.get('id', '')) in ids:
                         file_path = relation.get('file_path')
                         if file_path:
-                            file_paths.add(file_path)
+                            file_paths.update(path.strip() for path in file_path.split(';') if path.strip())
             
             elif part.startswith('DC #'):
                 # 处理文本单元引用
@@ -470,7 +503,7 @@ class ResearchAgent:
                     if str(text_unit.get('id', '')) in ids:
                         file_path = text_unit.get('file_path')
                         if file_path:
-                            file_paths.add(file_path)
+                            file_paths.update(path.strip() for path in file_path.split(';') if path.strip())
         
         except Exception as e:
             print(f"警告：解析引用部分 {part} 时出错: {e}")
@@ -496,13 +529,190 @@ class ResearchAgent:
         cleaned = id_str.replace('#', '')
         return set(cleaned.split())
 
+    def verify_report(self, report_text):
+        """
+        验证报告中的引用是否与原文相符。
+
+        Args:
+            report_text (str): 完整的报告文本。
+
+        Returns:
+            str: 验证结果报告。
+        """
+        print("\n--- 阶段四：验证报告内容 ---")
+
+        # 1. 解析报告，提取正文和引用
+        # 假设报告结构是：主题、正文、参考文献
+        try:
+            # 移除主题和参考文献，只保留正文
+            body_text = report_text.split("\n\n## 参考文献\n\n")[0]
+            if self.state['original_topic'] in body_text:
+                body_text = body_text.replace(f"研究主题：{self.state['original_topic']}\n\n", "")
+
+            # 提取所有引用标记及其所在段落
+            # 使用正则表达式查找所有带引用的段落
+            # 一个段落被定义为被换行符包围的文本块
+            paragraphs = [p.strip() for p in body_text.split('\n\n') if p.strip()]
+            citations = defaultdict(list)
+            citation_pattern = r'\[(\d+(?:,\s*\d+)*)\]'
+
+            for para in paragraphs:
+                matches = re.findall(citation_pattern, para)
+                if matches:
+                    # 清理段落，移除引用标记，以便发送给LLM
+                    cleaned_para = re.sub(citation_pattern, '', para).strip()
+                    for match in matches:
+                        # 一个引用标记可能包含多个数字，例如 [1, 2]
+                        ref_numbers = [int(n.strip()) for n in match.split(',')]
+                        for ref_num in ref_numbers:
+                            citations[ref_num].append(cleaned_para)
+
+        except Exception as e:
+            return f"解析报告时出错: {e}"
+
+        # 2. 构建验证任务并调用LLM
+        verification_results = []
+        # 反转 references_map 以便通过引用序号查找文档名
+        ref_map = {v: k for k, v in self.references_map.items()}
+
+        for ref_num, paras in citations.items():
+            doc_name = ref_map.get(ref_num)
+            if not doc_name:
+                verification_results.append({
+                    "document": f"文档序号 {ref_num}",
+                    "status": "无法找到源文档",
+                    "details": "",
+                    "paragraphs": paras
+                })
+                continue
+
+            # 从指定目录读取源文档内容
+            source_content = f"无法加载源文档 '{doc_name}' 的内容。"
+            try:
+                # 确保文件名安全，防止目录遍历攻击
+                safe_doc_name = os.path.basename(doc_name)
+                doc_path = os.path.join(SOURCE_DOCUMENTS_DIR, safe_doc_name + '.txt')
+                
+                if os.path.exists(doc_path):
+                    with open(doc_path, 'r', encoding='utf-8') as f:
+                        source_content = f.read()
+                else:
+                    print(f"警告: 源文件未找到: {doc_path}")
+                    verification_results.append({
+                        "document": doc_name,
+                        "status": "源文件未找到",
+                        "path": doc_path,
+                        "details": f"尝试定位的源文档未找到: {doc_path}",
+                        "paragraphs": paras
+                    })
+                    continue
+
+            except Exception as e:
+                print(f"读取源文件 {doc_name} 时出错: {e}")
+
+
+            system_prompt = (
+                "你是一位严谨的事实核查员。你的任务是判断所提供的段落内容是否与源文档内容一致。"
+                "请仔细阅读源文档和段落，然后给出你的判断。"
+                "判断结果必须是以下三种之一：True（符合事实）、False（违反事实）、Irrelevant（不相关）。"
+                "不要返回任何其他多余的文字或解释。"
+            )
+            joined_paras = '\n\n'.join(paras)
+            user_prompt = (
+                f"源文档内容:\n--- --- --- --- ---\n{source_content}\n--- --- --- --- ---\n\n"
+                f"待验证段落:\n--- --- --- --- ---\n{joined_paras}\n--- --- --- --- ---"
+            )
+
+            retry_count = 0
+            while retry_count < 3:
+                response = self._call_llm(system_prompt, user_prompt)
+                if response in ["True", "False", "Irrelevant"]:
+                    status = response
+                    details = ""
+                    if status in ["False", "Irrelevant"]:
+                        # 追问原因
+                        reason_prompt_system = "你是一位深入的分析师。请解释为什么前面的段落被判断为违反事实或不相关。请提供具体理由。"
+                        reason_prompt_user = (
+                            f"源文档内容:\n{source_content}\n\n"
+                            f"段落:\n{joined_paras}\n\n"
+                            f"判断结果: {status}"
+                        )
+                        details = self._call_llm(reason_prompt_system, reason_prompt_user)
+                    
+                    verification_results.append({
+                        "document": doc_name,
+                        "status": status,
+                        "paragraphs": paras,
+                        "details": details
+                    })
+                    break
+                else:
+                    retry_count += 1
+            
+            if retry_count == 3:
+                verification_results.append({
+                    "document": doc_name,
+                    "status": "模型无法判断",
+                    "paragraphs": paras,
+                    "details": f"模型在3次尝试后仍未返回有效结果。最后一次返回值为: {response}"
+                })
+
+        # 3. 生成并保存验证报告
+        report = "# 研究报告内容验证结果\n\n"
+        issues = [res for res in verification_results if res['status'] != 'True']
+
+        if not issues:
+            report += "所有内容均已通过验证，未发现问题。\n"
+        else:
+            report += f"共发现 {len(issues)} 个问题。\n\n"
+            for issue in issues:
+                if issue['status'] in ["源文件未找到", "无法找到源文档"]:
+                    report += f"## 未找到源文档: {issue['document']}\n"
+                    if issue.get('path'):
+                        report += f"- **尝试定位路径**: {issue['path']}\n"
+                    if issue.get('details'):
+                        report += f"- **详情**: {issue['details']}\n"
+                    report += "- **相关段落**:\n"
+                    for para in issue['paragraphs']:
+                        report += f"  - {para}\n"
+                    report += "\n"
+                else:
+                    report += f"## 文档: {issue['document']}\n"
+                    report += f"- **状态**: {issue['status']}\n"
+                    if issue['details']:
+                        report += f"- **详情**: {issue['details']}\n"
+                    report += "- **相关段落**:\n"
+                    for para in issue['paragraphs']:
+                        report += f"  - {para}\n"
+                    report += "\n"
+        
+        return report
+
     def run(self):
         print(f"开始针对 '{self.state['original_topic']}' 进行研究...")
         self.plan_research()
         self.execute_and_reflect()
         raw_report = self.synthesize_report()
-        final_report = self._post_process_report_and_add_references(raw_report)
-        return raw_report, final_report
+        
+        # 在生成原始报告后，进行后处理以添加引用
+        self.references_map = {} # 初始化引用映射
+        processed_report = self._post_process_report_and_add_references(raw_report, self.references_map)
+        
+        if PERFORM_VERIFICATION:
+            # 验证报告内容
+            verification_report = self.verify_report(processed_report)
+            
+            # 将验证报告保存到文件
+            try:
+                timestamp = time.time()
+                verification_filename = f"verification_report_{timestamp}.md"
+                with open(verification_filename, 'w', encoding='utf-8') as f:
+                    f.write(verification_report)
+                print(f"\n--- 验证报告已成功保存至文件: {verification_filename} ---")
+            except IOError as e:
+                print(f"错误：无法将验证报告写入文件 {verification_filename}。错误信息: {e}")
+
+        return raw_report, processed_report
 
 if __name__ == "__main__":
     

@@ -1,4 +1,6 @@
 __pycache__/ 
+report/
+africa2024_database
 lightrag_demo.log
 config_wlc.py
 */query_logs/*
