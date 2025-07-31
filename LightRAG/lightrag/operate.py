@@ -2582,7 +2582,7 @@ async def _find_most_related_edges_from_entities(
 
     all_edges_data = sorted(
         all_edges_data, key=lambda x: (x["rank"], x["weight"]), reverse=True
-    )
+    )[:query_param.relation_top_k]
 
     return all_edges_data
 

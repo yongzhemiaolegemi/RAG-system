@@ -17,6 +17,7 @@ from .types import KnowledgeGraph
 from .constants import (
     GRAPH_FIELD_SEP,
     DEFAULT_TOP_K,
+    DEFAULT_RELATION_TOP_K,
     DEFAULT_CHUNK_TOP_K,
     DEFAULT_MAX_ENTITY_TOKENS,
     DEFAULT_MAX_RELATION_TOKENS,
@@ -67,6 +68,9 @@ class QueryParam:
     """If True, enables streaming output for real-time responses."""
 
     top_k: int = int(os.getenv("TOP_K", str(DEFAULT_TOP_K)))
+    """Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode."""
+
+    relation_top_k: int = int(os.getenv("RELATION_TOP_K", str(DEFAULT_RELATION_TOP_K)))
     """Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode."""
 
     chunk_top_k: int = int(os.getenv("CHUNK_TOP_K", str(DEFAULT_CHUNK_TOP_K)))

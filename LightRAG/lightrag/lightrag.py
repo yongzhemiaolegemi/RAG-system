@@ -25,6 +25,7 @@ from lightrag.constants import (
     DEFAULT_MAX_GLEANING,
     DEFAULT_FORCE_LLM_SUMMARY_ON_MERGE,
     DEFAULT_TOP_K,
+    DEFAULT_RELATION_TOP_K,
     DEFAULT_CHUNK_TOP_K,
     DEFAULT_MAX_ENTITY_TOKENS,
     DEFAULT_MAX_RELATION_TOKENS,
@@ -136,7 +137,10 @@ class LightRAG:
     # ---
 
     top_k: int = field(default=get_env_value("TOP_K", DEFAULT_TOP_K, int))
-    """Number of entities/relations to retrieve for each query."""
+    """Number of entities to retrieve for each query."""
+
+    relation_top_k: int = field(default=get_env_value("RELATION_TOP_K", DEFAULT_RELATION_TOP_K, int))
+    """Number of relations to retrieve for each query."""
 
     chunk_top_k: int = field(
         default=get_env_value("CHUNK_TOP_K", DEFAULT_CHUNK_TOP_K, int)
