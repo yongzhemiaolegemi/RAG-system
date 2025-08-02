@@ -9,7 +9,7 @@ from lightrag.utils import logger, set_verbose_debug
 from functools import wraps
 import time
 from utils import config
-
+from functools import partial
 
 
 # grok-3
@@ -123,6 +123,22 @@ async def initialize_rag():
 
     return rag
 
+async def process_directory(directory, rag):
+    """递归处理目录中的所有文件和子目录"""
+    # 遍历当前目录中的所有项目
+    for item in os.listdir(directory):
+        item_path = os.path.join(directory, item)
+        
+        # 如果是目录，则递归处理
+        if os.path.isdir(item_path):
+            await process_directory(item_path, rag)
+        
+        # 如果是txt文件，则进行处理
+        elif os.path.isfile(item_path) and item.endswith(".txt"):
+            title = os.path.splitext(item)[0]
+            print(f"Inserting knowledge base file: {item_path}")
+            with open(item_path, "r", encoding="utf-8") as f:
+                await rag.ainsert(f.read(), file_paths=title)
 
 @timeit_decorator
 async def main(input_str,mode='hybrid',deep_research=False):
@@ -161,6 +177,8 @@ async def main(input_str,mode='hybrid',deep_research=False):
 
         # Test embedding function
         test_text = ["This is a test string for embedding."]
+
+
         embedding = await rag.embedding_func(test_text)
         embedding_dim = embedding.shape[1]
         print("\n=======================")
@@ -170,13 +188,8 @@ async def main(input_str,mode='hybrid',deep_research=False):
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
         # Insert knowledge base files
-        for filename in os.listdir(KNOWLEDGE_BASE_DIR):
-            if filename.endswith(".txt"):
-                file_path = os.path.join(KNOWLEDGE_BASE_DIR, filename)
-                title = os.path.splitext(filename)[0]
-                print(f"Inserting knowledge base file: {file_path}")
-                with open(file_path, "r", encoding="utf-8") as f:
-                    await rag.ainsert(f.read(), file_paths=title)
+        await process_directory(KNOWLEDGE_BASE_DIR, rag)
+ 
 
         result_list = []
         
@@ -207,6 +220,6 @@ def run_demo(str,mode='hybrid'):
 if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main("Describe Scrooge's relationships",deep_research=True))
+    res = asyncio.run(main("Briefly Describe Africa’s health challenges.",deep_research=True,mode='naive'))
     print("\nDone! ")
 

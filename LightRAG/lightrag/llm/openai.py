@@ -1,3 +1,4 @@
+from  config import lightrag_embedding_model
 from ..utils import verbose_debug, VERBOSE_DEBUG
 import sys
 import os
@@ -431,8 +432,8 @@ async def nvidia_openai_complete(
         return locate_json_string_body_from_string(result)
     return result
 
-
-@wrap_embedding_func_with_attrs(embedding_dim=1536, max_token_size=8192)
+from config import embedding_dim
+@wrap_embedding_func_with_attrs(embedding_dim=embedding_dim, max_token_size=8192)
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=1, min=4, max=60),
@@ -444,7 +445,7 @@ async def nvidia_openai_complete(
 )
 async def openai_embed(
     texts: list[str],
-    model: str = "text-embedding-3-small",
+    model: str = lightrag_embedding_model,
     base_url: str = None,
     api_key: str = None,
     client_configs: dict[str, Any] = None,
