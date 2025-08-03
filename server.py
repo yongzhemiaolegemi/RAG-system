@@ -28,13 +28,14 @@ def receive_string():
     
     received_string = data['message']
     request_mode = data['mode']
+    user_prompt = data['user_prompt'] or ''
     deep_research = data['deep_research'] if 'deep_research' in data else False
     print(f"Received mode: {request_mode}")
     print(f"Is deep_research: {deep_research}")
     print(f"Received message: {received_string}")
 
     final_result, log_file_path = loop.run_until_complete(rag.aquery(
-        received_string, param=QueryParam(mode=request_mode, deep_research=deep_research)
+        received_string, param=QueryParam(mode=request_mode, deep_research=deep_research,user_prompt=user_prompt)
     ))
     print(f"Final result: {final_result}")
     

@@ -164,7 +164,7 @@ def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools
         # 非流式响应，直接返回字典
         return completion.model_dump()
 
-def send_query_to_RAG_server(query: str, mode: str = "naive", url: str = config().lightrag_service_url) -> Tuple[str, str] :
+def send_query_to_RAG_server(query: str, mode: str = "hybrid", url: str = config().lightrag_service_url,user_prompt='') -> Tuple[str, str] :
     """向RAG服务器发送查询"""
     # POST to url
     # {
@@ -174,6 +174,7 @@ def send_query_to_RAG_server(query: str, mode: str = "naive", url: str = config(
     data = {
         "message": query,
         "mode": mode,
+        'user_prompt':user_prompt,
         "deep_research": True  # 标明这个query请求是在进行deep research的过程中发出的，这样的话rag系统在生成内容时，将不会在结尾处完整列出参考文献
     }
     response = requests.post(url, json=data)
@@ -270,7 +271,7 @@ class ResearchAgent:
             print(f"正在研究问题: {current_question}")
 
             try:
-                rag_answer, log_file_path = send_query_to_RAG_server(QUERY_PROMPT + current_question, mode="naive")
+                rag_answer, log_file_path = send_query_to_RAG_server(current_question, user_prompt=QUERY_PROMPT, mode = "naive")
                 print(f"RAG回答: {rag_answer[:100]}...") # 打印部分回答作为反馈
             except Exception as e:
                 print(f"调用RAG服务时出错: {e}")
