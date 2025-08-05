@@ -81,7 +81,7 @@ rerank_api_key="" # 自行填充
 ### run a simple rerank request
 ```bash
 # run server
-python server.py
+python server.py # 如果是调用api，则无需执行。如果是加载本地rerank模型，则需要执行。
 
 # run a simple rerank request
 python get.py rerank
@@ -125,5 +125,6 @@ python multiturn_client.py
 
 > **WARNING**  
 > Before running **multiturn_client.py**, please make sure you have modified **config.py** and that both the **LightRAG server CLI** and the **Django server** are already running.
+
 
 
