@@ -3326,7 +3326,7 @@ async def process_chunks_unified(
 
     # 2. Apply reranking if enabled and query is provided
     if query_param.enable_rerank and query and unique_chunks:
-        rerank_top_k = query_param.chunk_top_k or len(unique_chunks)
+        rerank_top_k = query_param.rerank_top_k or len(unique_chunks)
         unique_chunks = await apply_rerank_if_enabled(
             query=query,
             retrieved_docs=unique_chunks,
@@ -3337,11 +3337,11 @@ async def process_chunks_unified(
         logger.debug(f"Rerank: {len(unique_chunks)} chunks (source: {source_type})")
 
     # 3. Apply chunk_top_k limiting if specified
-    if query_param.chunk_top_k is not None and query_param.chunk_top_k > 0:
-        if len(unique_chunks) > query_param.chunk_top_k:
-            unique_chunks = unique_chunks[: query_param.chunk_top_k]
+    if query_param.rerank_top_k is not None and query_param.rerank_top_k > 0:
+        if len(unique_chunks) > query_param.rerank_top_k:
+            unique_chunks = unique_chunks[: query_param.rerank_top_k]
             logger.debug(
-                f"Chunk top-k limiting: kept {len(unique_chunks)} chunks (chunk_top_k={query_param.chunk_top_k})"
+                f"Chunk top-k limiting: kept {len(unique_chunks)} chunks (rerank_top_k={query_param.rerank_top_k})"
             )
 
     # 4. Token-based final truncation

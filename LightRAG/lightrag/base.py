@@ -17,7 +17,8 @@ from .types import KnowledgeGraph
 from .constants import (
     GRAPH_FIELD_SEP,
     DEFAULT_TOP_K,
-    DEFAULT_RELATION_TOP_K,
+    DEFAULT_RELATION_TOP_K, 
+    DEFAULT_RERANK_TOP_K, 
     DEFAULT_CHUNK_TOP_K,
     DEFAULT_MAX_ENTITY_TOKENS,
     DEFAULT_MAX_RELATION_TOKENS,
@@ -74,9 +75,10 @@ class QueryParam:
     """Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode."""
 
     chunk_top_k: int = int(os.getenv("CHUNK_TOP_K", str(DEFAULT_CHUNK_TOP_K)))
-    """Number of text chunks to retrieve initially from vector search and keep after reranking.
-    If None, defaults to top_k value.
-    """
+    """Number of text chunks to retrieve initially from vector search. If None, defaults to top_k value."""
+
+    rerank_top_k: int = int(os.getenv("RELATION_TOP_K", str(DEFAULT_RERANK_TOP_K)))
+    """Number of top items to keep after reranking. Should be less than or equal to chunk_top_k."""
 
     max_entity_tokens: int = int(
         os.getenv("MAX_ENTITY_TOKENS", str(DEFAULT_MAX_ENTITY_TOKENS))
