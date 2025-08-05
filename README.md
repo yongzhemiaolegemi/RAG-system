@@ -26,11 +26,28 @@ python wlc_demo.py
 # run server
 python server.py
 
-# run request
-python get.py
+# run a simple lightrag request
+python get.py lightrag
+```
+## 配置rerank模型
+没有rerank也可以跑通。此部分用于rag查询效果的优化。
+```python
+# pip install modelscope
+from modelscope.hub.snapshot_download import snapshot_download
+snapshot_download(model_id="BAAI/bge-reranker-v2-m3") # 会下载到$MODELSCOPE_CACHE/models
 ```
 
-### Start a LightRAG GUI demo
+### run a simple rerank request
+```bash
+# run server
+python server.py
+
+# run a simple rerank request
+python get.py rerank
+```
+
+
+## Start a LightRAG GUI demo
 
 首先确保已经跑过上面的**Start a demo**部分，这样确保在工作目录（对demo来说，就是`dickens/`）下已经有保存好的rag文件。然后执行：
 
@@ -67,3 +84,4 @@ python multiturn_client.py
 
 > **WARNING**  
 > Before running **multiturn_client.py**, please make sure you have modified **config.py** and that both the **LightRAG server CLI** and the **Django server** are already running.
+
