@@ -78,7 +78,7 @@ class QueryParam:
     """Number of text chunks to retrieve initially from vector search. If None, defaults to top_k value."""
 
     rerank_top_k: int = int(os.getenv("RELATION_TOP_K", str(DEFAULT_RERANK_TOP_K)))
-    """Number of top items to keep after reranking. Should be less than or equal to chunk_top_k."""
+    """Number of top items to keep after reranking."""
 
     max_entity_tokens: int = int(
         os.getenv("MAX_ENTITY_TOKENS", str(DEFAULT_MAX_ENTITY_TOKENS))

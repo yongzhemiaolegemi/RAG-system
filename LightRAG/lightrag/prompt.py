@@ -226,7 +226,7 @@ When handling relationships with timestamps:
 {history}
 
 ---Knowledge Graph and Document Chunks---
-{context_data}
+{content_data}
 
 ---Response Rules---
 
@@ -261,7 +261,7 @@ When handling relationships with timestamps:
 {history}
 
 ---Knowledge Graph and Document Chunks---
-{context_data}
+{content_data}
 
 ---Response Rules---
 

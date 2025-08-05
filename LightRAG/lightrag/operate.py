@@ -55,7 +55,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=".env", override=False)
 
 
-def create_query_log( query, entities_str, relations_str, text_units_str):
+def create_query_log(content):
     from config import project_dir,lightrag_working_dir
 
     try:
@@ -72,22 +72,6 @@ def create_query_log( query, entities_str, relations_str, text_units_str):
         filename = f"{current_time}.json"
         file_path = os.path.join(working_dir, filename)
         
-        # 解析各JSON字符串为Python对象
-        try:
-            entities = json.loads(entities_str)
-            relations = json.loads(relations_str)
-            text_units = json.loads(text_units_str)
-        except json.JSONDecodeError as e:
-            print(f"JSON字符串解析错误: {e}")
-            return False
-        
-        # 构建要写入的内容
-        content = {
-            "query": query,
-            "entities": entities,
-            "relations": relations,
-            "text_units": text_units,
-        }
         
         # 写入文件
         with open(file_path, 'w', encoding='utf-8') as f:
@@ -100,46 +84,6 @@ def create_query_log( query, entities_str, relations_str, text_units_str):
         print(f"创建日志文件时出错: {e}")
         return False
 
-def create_query_log_naive( query,  text_units_str):
-    from config import project_dir,lightrag_working_dir
-
-    try:
-        # 拼接路径 
-        working_dir = os.path.join(project_dir, lightrag_working_dir,'query_logs')
-        
-        # 确保目录存在
-        os.makedirs(working_dir, exist_ok=True)
-        
-        # 获取当前时间并格式化
-        current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-        
-        # 创建文件名
-        filename = f"{current_time}.json"
-        file_path = os.path.join(working_dir, filename)
-        
-        # 解析各JSON字符串为Python对象
-        try: 
-            text_units = json.loads(text_units_str)
-        except json.JSONDecodeError as e:
-            print(f"JSON字符串解析错误: {e}")
-            return False
-        
-        # 构建要写入的内容
-        content = {
-            "query": query, 
-            "text_units": text_units,
-        }
-        
-        # 写入文件
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(content, f, ensure_ascii=False, indent=4)
-        
-        print(f"日志文件已创建: {file_path}")
-        return file_path
-        
-    except Exception as e:
-        print(f"创建日志文件时出错: {e}")
-        return False
 
 
 def chunking_by_token_size(
@@ -1659,6 +1603,17 @@ async def extract_entities(
     # Return the chunk_results for later processing in merge_nodes_and_edges
     return chunk_results
 
+def get_only_dc_and_prompt_type(query_param):
+    only_dc = query_param.mode in ('hybrid_dc', 'mix_dc', 'naive') 
+
+    prompt_type = "rag_response"
+    if only_dc:
+        prompt_type = 'naive_' + prompt_type
+    if query_param.deep_research:
+        prompt_type = prompt_type + '_deep_research'
+
+    return only_dc, prompt_type
+
 
 async def kg_query(
     query: str,
@@ -1745,9 +1700,10 @@ async def kg_query(
         if query_param.user_prompt
         else PROMPTS["DEFAULT_USER_PROMPT"]
     )
-    sys_prompt_temp = system_prompt if system_prompt else PROMPTS["rag_response_deep_research" if query_param.deep_research else "rag_response"]
+    only_dc, prompt_type = get_only_dc_and_prompt_type(query_param)
+    sys_prompt_temp = system_prompt if system_prompt else PROMPTS[prompt_type]
     sys_prompt = sys_prompt_temp.format(
-        context_data=context,
+        content_data=context,
         response_type=query_param.response_type,
         history=history_context,
         user_prompt=user_prompt,
@@ -2212,13 +2168,23 @@ async def _build_query_context(
 
     # Apply token processing to chunks if tokenizer is available
     text_units_context = []
+    only_dc = query_param.mode in ('hybrid_dc', 'mix_dc', 'naive') 
     if tokenizer and all_chunks:
         # Calculate dynamic token limit for text chunks
         entities_str = json.dumps(entities_context, ensure_ascii=False)
         relations_str = json.dumps(relations_context, ensure_ascii=False)
 
         # Calculate base context tokens (entities + relations + template)
-        kg_context_template = """-----Entities (E)-----
+        
+        kg_context_template = """-----Document Chunks (DC)-----
+
+```json
+[]
+```
+
+"""
+        if not only_dc:
+            kg_context_template = """-----Entities (E)-----
 
 ```json
 {entities_str}
@@ -2236,7 +2202,9 @@ async def _build_query_context(
 []
 ```
 
-"""
+""" + kg_context_template
+
+
         kg_context = kg_context_template.format(
             entities_str=entities_str, relations_str=relations_str
         )
@@ -2253,7 +2221,7 @@ async def _build_query_context(
             len(tokenizer.encode(history_context)) if history_context else 0
         )
 
-        # 2. Calculate system prompt template tokens (excluding context_data)
+        # 2. Calculate system prompt template tokens (excluding content_data)
         user_prompt = query_param.user_prompt if query_param.user_prompt else ""
         response_type = (
             query_param.response_type
@@ -2262,14 +2230,16 @@ async def _build_query_context(
         )
 
         # Get the system prompt template from PROMPTS
+        only_dc, prompt_type = get_only_dc_and_prompt_type(query_param)
+
         sys_prompt_template = text_chunks_db.global_config.get(
-            "system_prompt_template", PROMPTS["rag_response_deep_research" if query_param.deep_research else "rag_response"]
+            "system_prompt_template", PROMPTS[prompt_type]
         )
 
-        # Create a sample system prompt with placeholders filled (excluding context_data)
+        # Create a sample system prompt with placeholders filled (excluding content_data)
         sample_sys_prompt = sys_prompt_template.format(
             history=history_context,
-            context_data="",  # Empty for overhead calculation
+            content_data="",  # Empty for overhead calculation
             response_type=response_type,
             user_prompt=user_prompt,
         )
@@ -2321,24 +2291,43 @@ async def _build_query_context(
                 f"Re-truncated chunks for dynamic token limit: {len(temp_chunks)} -> {len(text_units_context)} (chunk available tokens: {available_chunk_tokens})"
             )
 
-    logger.info(
-        f"Final context: {len(entities_context)} entities, {len(relations_context)} relations, {len(text_units_context)} chunks"
-    )
+
 
     # not necessary to use LLM to generate a response
     if not entities_context and not relations_context:
         return None
-
-    entities_str = json.dumps(entities_context, ensure_ascii=False)
-    relations_str = json.dumps(relations_context, ensure_ascii=False)
+ 
     text_units_str = json.dumps(text_units_context, ensure_ascii=False)
 
+    if only_dc:
+        log_file_path = create_query_log({
+            "query": query,
+            "text_units": text_units_context,
+        })
+        logger.info(
+            f"Final context: {len(text_units_context)} chunks"
+        )
+    else:
+        log_file_path = create_query_log({
+            "query": query,
+            "entities": entities_context,
+            "relations": relations_context,
+            "text_units": text_units_context,
+        })
+        logger.info(
+            f"Final context: {len(entities_context)} entities, {len(relations_context)} relations, {len(text_units_context)} chunks"
+        )
 
-    log_file_path = create_query_log(query, entities_str, relations_str, text_units_str)
 
+    result = f"""-----Document Chunks (DC)-----
 
+```json
+{text_units_str}
+```
 
-    result = f"""-----Entities (E)-----
+"""
+    if not only_dc:
+        result = f"""-----Entities (E)-----
 
 ```json
 {entities_str}
@@ -2350,13 +2339,9 @@ async def _build_query_context(
 {relations_str}
 ```
 
------Document Chunks (DC)-----
+""" + result
 
-```json
-{text_units_str}
-```
 
-"""
     # print('============= Query context =====================')
     # print(f" {result}")
     # print('=================================================')
@@ -2947,8 +2932,11 @@ async def naive_query(
         )
 
     text_units_str = json.dumps(text_units_context, ensure_ascii=False)
-
-    log_file_path = create_query_log_naive(query, text_units_str)
+ 
+    log_file_path = create_query_log({
+        "query": query, 
+        "text_units": text_units_str,
+    })
 
 
     if query_param.only_need_context:
@@ -3099,9 +3087,11 @@ async def kg_query_with_keywords(
             query_param.conversation_history, query_param.history_turns
         )
 
-    sys_prompt_temp = PROMPTS["rag_response_deep_research" if query_param.deep_research else "rag_response"]
+
+    only_dc,prompt_type = get_only_dc_and_prompt_type(query_param)
+    sys_prompt_temp = PROMPTS[prompt_type]
     sys_prompt = sys_prompt_temp.format(
-        context_data=context,
+        content_data=context,
         response_type=query_param.response_type,
         history=history_context,
     )
