@@ -35,3 +35,14 @@ django_vllm_url = "http://localhost:30000/v1/completions"
 django_model ="deepseek-chat"
 django_service_port = '8006'
 django_service_url = f"http://127.0.0.1:{django_service_port}/api/v1/chat/completions"
+
+# rerank configuration 二选一即可：调用api / 用本地的rerank模型
+# 用本地的rerank模型
+# rerank_model = "BAAI/bge-reranker-v2-m3"
+# rerank_service_port = 5002
+# rerank_service_url = f"http://127.0.0.1:{rerank_service_port}/rerank"
+
+# 调用api
+rerank_model="jina-reranker-v2-base-multilingual"
+rerank_service_url="https://api.jina.ai/v1/rerank"
+rerank_api_key="" # Jina API key, replace with your own key

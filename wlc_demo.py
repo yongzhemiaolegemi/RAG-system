@@ -5,12 +5,13 @@ import logging.config
 from lightrag import LightRAG, QueryParam
 from lightrag.llm.openai import openai_complete, openai_embed
 from lightrag.kg.shared_storage import initialize_pipeline_status
+from lightrag.rerank import custom_rerank
 from lightrag.utils import logger, set_verbose_debug
 from functools import wraps
 import time
 from utils import config
 from functools import partial
-
+from types import SimpleNamespace
 
 # grok-3
 os.environ["OPENAI_API_KEY"] = config().lightrag_llm_key
@@ -104,7 +105,17 @@ def configure_logging():
     set_verbose_debug(os.getenv("VERBOSE_DEBUG", "false").lower() == "true")
 
 
-
+async def my_rerank_func(query: str, documents: list, top_k: int = None, **kwargs):
+    """Custom rerank function with all settings included"""
+    return await custom_rerank(
+        query=query,
+        documents=documents,
+        model=config().rerank_model,
+        base_url=config().rerank_service_url,
+        api_key=getattr(config(),'rerank_api_key','invalid'),
+        # top_k=top_k or 10,  # Default top_k if not provided
+        **kwargs,
+    )
 
 
 async def initialize_rag():
@@ -116,6 +127,7 @@ async def initialize_rag():
         embedding_func=openai_embed,
         llm_model_func=openai_complete,
         llm_model_name=config().lightrag_llm_model,
+        rerank_model_func=my_rerank_func,
     )
 
     await rag.initialize_storages()
@@ -220,6 +232,6 @@ def run_demo(str,mode='hybrid'):
 if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main("Briefly Describe Africa’s health challenges.",deep_research=True,mode='naive'))
+    res = asyncio.run(main("主要人物关系",deep_research=True,mode='naive'))
     print("\nDone! ")
 
