@@ -50,3 +50,5 @@ dr_model = "qwen3-235b-a22b-instruct-2507"
 rerank_model="jina-reranker-v2-base-multilingual"
 rerank_service_url="https://api.jina.ai/v1/rerank"
 rerank_api_key="" # Jina API key, replace with your own key
+
+# 和查询相关的配置请在 LightRAG/lightrag/constants.py 中修改
