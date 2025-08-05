@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from config import lightrag_service_port, rerank_service_port  # 从配置导入两个端口
+from config import lightrag_service_port, rerank_service_port 
 import asyncio
 from lightrag import QueryParam
 from utils import config
@@ -8,7 +8,7 @@ import torch
 from modelscope import AutoModelForSequenceClassification, AutoTokenizer
 import threading
 
-# 初始化第一个Flask应用（原服务）
+
 lightrag_app = Flask(__name__)
 
 # 获取事件循环
@@ -20,7 +20,7 @@ except RuntimeError:
 
 rag = loop.run_until_complete(initialize_rag())
 
-# 原有的receive_string路由
+
 @lightrag_app.route('/receive_string', methods=['POST'])
 def receive_string():
     data = request.get_json()
@@ -56,7 +56,7 @@ def receive_string():
         "log_file_path": log_file_path
     })
 
-# 创建第二个Flask应用（rerank服务）
+
 rerank_app = Flask(__name__)
 
 # 预加载rerank模型和tokenizer，避免每次请求都加载
@@ -72,7 +72,7 @@ except Exception as e:
     rerank_tokenizer = None
     rerank_model = None
 
-# 新的rerank路由
+
 @rerank_app.route('/rerank', methods=['POST'])
 def rerank():
     if not rerank_tokenizer or not rerank_model:
@@ -120,8 +120,7 @@ def rerank():
         })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-# 在不同线程中运行两个应用
+ 
 def run_rag_server():
     lightrag_app.run(host='0.0.0.0', port=lightrag_service_port, debug=True, use_reloader=False)
 
@@ -129,7 +128,7 @@ def run_rerank_server():
     rerank_app.run(host='0.0.0.0', port=rerank_service_port, debug=True, use_reloader=False)
 
 if __name__ == '__main__':
-    # 启动两个服务线程
+    
     rag_thread = threading.Thread(target=run_rag_server)
     rerank_thread = threading.Thread(target=run_rerank_server)
     
