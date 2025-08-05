@@ -14,11 +14,11 @@ DEFAULT_TIMEOUT = 150
 
 # Query and retrieval configuration defaults
 # 控制每次查询时用到的entity个数
-DEFAULT_TOP_K = 10
+DEFAULT_TOP_K = 0
 # 控制每次查询时用到的ralation个数
-DEFAULT_RELATION_TOP_K = 10
+DEFAULT_RELATION_TOP_K = 0
 # 控制每次查询时用到的document chunk个数
-DEFAULT_CHUNK_TOP_K = 5
+DEFAULT_CHUNK_TOP_K = 200
 
 DEFAULT_MAX_ENTITY_TOKENS = 5000
 DEFAULT_MAX_RELATION_TOKENS = 5000
