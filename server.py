@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-from config import lightrag_service_port, rerank_service_port 
 import asyncio
 from lightrag import QueryParam
 from utils import config
@@ -7,7 +6,7 @@ from wlc_demo import initialize_rag
 import torch
 from modelscope import AutoModelForSequenceClassification, AutoTokenizer
 import threading
-
+import argparse
 
 lightrag_app = Flask(__name__)
 
@@ -122,18 +121,24 @@ def rerank():
         return jsonify({"error": str(e)}), 500
  
 def run_rag_server():
+    from config import lightrag_service_port
     lightrag_app.run(host='0.0.0.0', port=lightrag_service_port, debug=True, use_reloader=False)
 
 def run_rerank_server():
+    from config import rerank_service_port 
     rerank_app.run(host='0.0.0.0', port=rerank_service_port, debug=True, use_reloader=False)
 
 if __name__ == '__main__':
-    
+    threads = []
+
     rag_thread = threading.Thread(target=run_rag_server)
-    rerank_thread = threading.Thread(target=run_rerank_server)
-    
+    threads.append(rag_thread)
     rag_thread.start()
-    rerank_thread.start()
-    
-    rag_thread.join()
-    rerank_thread.join()
+
+    if hasattr(config, 'rerank_service_port'): # 说明配置了本地rerank模型，要启用rerank服务
+        rerank_thread = threading.Thread(target=run_rerank_server)
+        threads.append(rerank_thread)
+        rerank_thread.start()
+
+    for thread in threads:
+        thread.join()
