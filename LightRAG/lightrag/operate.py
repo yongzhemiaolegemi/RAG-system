@@ -1653,18 +1653,18 @@ async def kg_query(
     if hl_keywords == [] and ll_keywords == []:
         logger.warning("low_level_keywords and high_level_keywords is empty")
         return PROMPTS["fail_response"], "[invalid]"
-    if ll_keywords == [] and query_param.mode in ["local", "hybrid"]:
-        logger.warning(
-            "low_level_keywords is empty, switching from %s mode to global mode",
-            query_param.mode,
-        )
-        query_param.mode = "global"
-    if hl_keywords == [] and query_param.mode in ["global", "hybrid"]:
-        logger.warning(
-            "high_level_keywords is empty, switching from %s mode to local mode",
-            query_param.mode,
-        )
-        query_param.mode = "local"
+    # if ll_keywords == [] and query_param.mode in ["local", "hybrid"]:
+    #     logger.warning(
+    #         "low_level_keywords is empty, switching from %s mode to global mode",
+    #         query_param.mode,
+    #     )
+    #     query_param.mode = "global"
+    # if hl_keywords == [] and query_param.mode in ["global", "hybrid"]:
+    #     logger.warning(
+    #         "high_level_keywords is empty, switching from %s mode to local mode",
+    #         query_param.mode,
+    #     )
+    #     query_param.mode = "local"
 
     ll_keywords_str = ", ".join(ll_keywords) if ll_keywords else ""
     hl_keywords_str = ", ".join(hl_keywords) if hl_keywords else ""
@@ -1972,7 +1972,7 @@ async def _build_query_context(
         ) = await _get_node_data(
             ll_keywords,
             knowledge_graph_inst,
-            entities_vdb,
+            entities_vdb,relationships_vdb,
             query_param,
         )
         original_node_datas = node_datas
@@ -1987,7 +1987,7 @@ async def _build_query_context(
         ) = await _get_edge_data(
             hl_keywords,
             knowledge_graph_inst,
-            relationships_vdb,
+            relationships_vdb,entities_vdb,
             query_param,
         )
         original_edge_datas = edge_datas
@@ -1997,13 +1997,13 @@ async def _build_query_context(
         ll_data = await _get_node_data(
             ll_keywords,
             knowledge_graph_inst,
-            entities_vdb,
+            entities_vdb,relationships_vdb,
             query_param,
         )
         hl_data = await _get_edge_data(
             hl_keywords,
             knowledge_graph_inst,
-            relationships_vdb,
+            relationships_vdb,entities_vdb,
             query_param,
         )
 
@@ -2136,6 +2136,22 @@ async def _build_query_context(
             if pair in final_relation_pairs and pair not in seen_edges:
                 final_edge_datas.append(edge)
                 seen_edges.add(pair)
+
+    if query_param.enable_rerank:
+        entities_context = await rerank_nodes(
+            query=query,
+            nodes=entities_context,
+            query_param=query_param,
+            global_config=entities_vdb.global_config, 
+        )
+        relations_context = await rerank_edges(
+            query=query,
+            edges=relations_context,
+            query_param=query_param,
+            global_config=relationships_vdb.global_config,
+        )
+
+
 
     # Get text chunks based on final filtered data
     text_chunk_tasks = []
@@ -2352,6 +2368,7 @@ async def _get_node_data(
     query: str,
     knowledge_graph_inst: BaseGraphStorage,
     entities_vdb: BaseVectorStorage,
+    relationships_vdb: BaseVectorStorage,
     query_param: QueryParam,
 ):
     # get similar entities
@@ -2362,6 +2379,15 @@ async def _get_node_data(
     results = await entities_vdb.query(
         query, top_k=query_param.entity_top_k, ids=query_param.ids
     )
+    if query_param.enable_rerank:
+        results = await rerank_nodes(
+            query=query,
+            nodes=results,
+            query_param=query_param,
+            global_config=entities_vdb.global_config,
+            # source_type="vector",
+            # chunk_token_limit=available_chunk_tokens,  # Pass dynamic limit
+        )
 
     if not len(results):
         return "", "", [], []
@@ -2398,6 +2424,16 @@ async def _get_node_data(
         query_param,
         knowledge_graph_inst,
     )
+
+    if query_param.enable_rerank:
+        use_relations = await rerank_edges(
+            query=query,
+            edges=use_relations,
+            query_param=query_param,
+            global_config=relationships_vdb.global_config,
+            # source_type="vector",
+            # chunk_token_limit=available_chunk_tokens,  # Pass dynamic limit
+        )
 
     logger.info(
         f"Local query: {len(node_datas)} entites, {len(use_relations)} relations"
@@ -2618,6 +2654,7 @@ async def _get_edge_data(
     keywords,
     knowledge_graph_inst: BaseGraphStorage,
     relationships_vdb: BaseVectorStorage,
+    entities_vdb: BaseVectorStorage,
     query_param: QueryParam,
 ):
     logger.info(
@@ -2627,6 +2664,15 @@ async def _get_edge_data(
     results = await relationships_vdb.query(
         keywords, top_k=query_param.relation_top_k, ids=query_param.ids
     )
+    if query_param.enable_rerank:
+        results = await rerank_edges(
+            query=keywords,
+            edges=results,
+            query_param=query_param,
+            global_config=relationships_vdb.global_config,
+            # source_type="vector",
+            # chunk_token_limit=available_chunk_tokens,  # Pass dynamic limit
+        )
 
     if not len(results):
         return "", "", [], []
@@ -2674,6 +2720,16 @@ async def _get_edge_data(
         query_param,
         knowledge_graph_inst,
     )
+
+    if query_param.enable_rerank:
+        use_entities = await rerank_nodes(
+            query=keywords,
+            nodes=use_entities,
+            query_param=query_param,
+            global_config=entities_vdb.global_config,
+            # source_type="vector",
+            # chunk_token_limit=available_chunk_tokens,  # Pass dynamic limit
+        )
 
     logger.info(
         f"Global query: {len(use_entities)} entites, {len(edge_datas)} relations"
@@ -3278,6 +3334,61 @@ async def apply_rerank_if_enabled(
         return retrieved_docs
 
 
+async def rerank_nodes(
+    query: str,
+    nodes: list[dict],
+    query_param: QueryParam,
+    global_config: dict,
+    source_type: str = "mixed",
+    chunk_token_limit: int = None,  # Add parameter for dynamic token limit
+) -> list[dict]:
+    
+    def rename_key(chunks, old_key, new_key): 
+        return [{
+            new_key if k == old_key else k: v
+            for k, v in c.items()
+        } for c in chunks]
+
+    nodes = rename_key(nodes, "description", "content")
+    entity_rerank_top_k = query_param.entity_rerank_top_k or len(nodes)
+    nodes = await apply_rerank_if_enabled(
+        query=query,
+        retrieved_docs=nodes,
+        global_config=global_config,
+        enable_rerank=query_param.enable_rerank,
+        top_k=entity_rerank_top_k,
+    )
+    nodes = rename_key(nodes, "content", "description")
+    return nodes
+
+async def rerank_edges(
+    query: str,
+    edges: list[dict],
+    query_param: QueryParam,
+    global_config: dict,
+    source_type: str = "mixed",
+    chunk_token_limit: int = None,  # Add parameter for dynamic token limit
+) -> list[dict]:
+    """如果rerank_enable: 执行rerank，只保留relation_rerank_top_k个关系。
+    """
+    def rename_key(chunks, old_key, new_key): 
+        return [{
+            new_key if k == old_key else k: v
+            for k, v in c.items()
+        } for c in chunks]
+
+    edges = rename_key(edges, "description", "content")
+    relation_rerank_top_k = query_param.relation_rerank_top_k or len(edges)
+    edges = await apply_rerank_if_enabled(
+        query=query,
+        retrieved_docs=edges,
+        global_config=global_config,
+        enable_rerank=query_param.enable_rerank,
+        top_k=relation_rerank_top_k,
+    )
+    edges = rename_key(edges, "content", "description")
+    return edges
+
 async def process_chunks_unified(
     query: str,
     chunks: list[dict],
@@ -3318,23 +3429,23 @@ async def process_chunks_unified(
 
     # 2. Apply reranking if enabled and query is provided
     if query_param.enable_rerank and query and unique_chunks:
-        rerank_top_k = query_param.rerank_top_k or len(unique_chunks)
+        chunk_rerank_top_k = query_param.chunk_rerank_top_k or len(unique_chunks)
         unique_chunks = await apply_rerank_if_enabled(
             query=query,
             retrieved_docs=unique_chunks,
             global_config=global_config,
             enable_rerank=query_param.enable_rerank,
-            top_k=rerank_top_k,
+            top_k=chunk_rerank_top_k,
         )
         logger.debug(f"Rerank: {len(unique_chunks)} chunks (source: {source_type})")
 
-    # 3. Apply chunk_top_k limiting if specified
-    if query_param.rerank_top_k is not None and query_param.rerank_top_k > 0:
-        if len(unique_chunks) > query_param.rerank_top_k:
-            unique_chunks = unique_chunks[: query_param.rerank_top_k]
-            logger.debug(
-                f"Chunk top-k limiting: kept {len(unique_chunks)} chunks (rerank_top_k={query_param.rerank_top_k})"
-            )
+    # # 3. Apply chunk_top_k limiting if specified
+    # if query_param.chunk_rerank_top_k is not None and query_param.chunk_rerank_top_k > 0:
+    #     if len(unique_chunks) > query_param.chunk_rerank_top_k:
+    #         unique_chunks = unique_chunks[: query_param.chunk_rerank_top_k]
+    #         logger.debug(
+    #             f"Chunk top-k limiting: kept {len(unique_chunks)} chunks (chunk_rerank_top_k={query_param.chunk_rerank_top_k})"
+    #         )
 
     # 4. Token-based final truncation
     tokenizer = global_config.get("tokenizer")

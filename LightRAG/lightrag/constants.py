@@ -15,19 +15,22 @@ DEFAULT_TIMEOUT = 150
 # Query and retrieval configuration defaults
 
 # 默认查询时的top_k值
-DEFAULT_TOP_K = 10
+DEFAULT_TOP_K = 20
 
 # 每次查询时用到的entity个数
-DEFAULT_ENTITY_TOP_K = 10
+DEFAULT_ENTITY_TOP_K = 20
+# 经过rerank后，最终保留的entity个数 
+DEFAULT_ENTITY_RERANK_TOP_K = 5
 
 # 每次查询时用到的ralation个数
-DEFAULT_RELATION_TOP_K = 10
+DEFAULT_RELATION_TOP_K = 20
+# 经过rerank后，最终保留的relation个数 
+DEFAULT_RELATION_RERANK_TOP_K = 5
 
 # 每次naive模式查询时最初返回的document chunk个数
-DEFAULT_CHUNK_TOP_K = 2
-
+DEFAULT_CHUNK_TOP_K = 20
 # 经过rerank后，最终保留的document chunk个数 
-DEFAULT_RERANK_TOP_K = 10
+DEFAULT_CHUNK_RERANK_TOP_K = 5
 '''
 在mix模式下，dc 有两个来源:
 1. 通过naive模式（传统的rag），查询出来的dc

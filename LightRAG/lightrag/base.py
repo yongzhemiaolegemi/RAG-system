@@ -18,9 +18,11 @@ from .constants import (
     GRAPH_FIELD_SEP,
     DEFAULT_TOP_K,
     DEFAULT_RELATION_TOP_K, 
+    DEFAULT_RELATION_RERANK_TOP_K, 
     DEFAULT_ENTITY_TOP_K, 
-    DEFAULT_RERANK_TOP_K, 
+    DEFAULT_ENTITY_RERANK_TOP_K, 
     DEFAULT_CHUNK_TOP_K,
+    DEFAULT_CHUNK_RERANK_TOP_K, 
     DEFAULT_MAX_ENTITY_TOKENS,
     DEFAULT_MAX_RELATION_TOKENS,
     DEFAULT_MAX_TOTAL_TOKENS,
@@ -73,12 +75,16 @@ class QueryParam:
 
     relation_top_k: int = int(os.getenv("RELATION_TOP_K", str(DEFAULT_RELATION_TOP_K)))
 
+    relation_rerank_top_k: int = int(os.getenv("RELATION_RERANK_TOP_K", str(DEFAULT_RELATION_RERANK_TOP_K)))
+
     entity_top_k: int = int(os.getenv("ENTITY_TOP_K", str(DEFAULT_ENTITY_TOP_K)))
+
+    entity_rerank_top_k: int = int(os.getenv("ENTITY_RERANK_TOP_K", str(DEFAULT_ENTITY_RERANK_TOP_K)))
 
     chunk_top_k: int = int(os.getenv("CHUNK_TOP_K", str(DEFAULT_CHUNK_TOP_K)))
     """Number of text chunks to retrieve initially from vector search. If None, defaults to top_k value."""
 
-    rerank_top_k: int = int(os.getenv("RERANK_TOP_K", str(DEFAULT_RERANK_TOP_K)))
+    chunk_rerank_top_k: int = int(os.getenv("CHUNK_RERANK_TOP_K", str(DEFAULT_CHUNK_RERANK_TOP_K)))
     """Number of top items to keep after reranking."""
 
     max_entity_tokens: int = int(
