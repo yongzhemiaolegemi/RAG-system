@@ -14,8 +14,11 @@ DEFAULT_TIMEOUT = 150
 
 # Query and retrieval configuration defaults
 
-# 每次查询时用到的entity个数
+# 默认查询时的top_k值
 DEFAULT_TOP_K = 10
+
+# 每次查询时用到的entity个数
+DEFAULT_ENTITY_TOP_K = 10
 
 # 每次查询时用到的ralation个数
 DEFAULT_RELATION_TOP_K = 10

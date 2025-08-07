@@ -18,6 +18,7 @@ from .constants import (
     GRAPH_FIELD_SEP,
     DEFAULT_TOP_K,
     DEFAULT_RELATION_TOP_K, 
+    DEFAULT_ENTITY_TOP_K, 
     DEFAULT_RERANK_TOP_K, 
     DEFAULT_CHUNK_TOP_K,
     DEFAULT_MAX_ENTITY_TOKENS,
@@ -69,15 +70,15 @@ class QueryParam:
     """If True, enables streaming output for real-time responses."""
 
     top_k: int = int(os.getenv("TOP_K", str(DEFAULT_TOP_K)))
-    """Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode."""
 
     relation_top_k: int = int(os.getenv("RELATION_TOP_K", str(DEFAULT_RELATION_TOP_K)))
-    """Number of top items to retrieve. Represents entities in 'local' mode and relationships in 'global' mode."""
+
+    entity_top_k: int = int(os.getenv("ENTITY_TOP_K", str(DEFAULT_ENTITY_TOP_K)))
 
     chunk_top_k: int = int(os.getenv("CHUNK_TOP_K", str(DEFAULT_CHUNK_TOP_K)))
     """Number of text chunks to retrieve initially from vector search. If None, defaults to top_k value."""
 
-    rerank_top_k: int = int(os.getenv("RELATION_TOP_K", str(DEFAULT_RERANK_TOP_K)))
+    rerank_top_k: int = int(os.getenv("RERANK_TOP_K", str(DEFAULT_RERANK_TOP_K)))
     """Number of top items to keep after reranking."""
 
     max_entity_tokens: int = int(

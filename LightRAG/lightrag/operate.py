@@ -2356,11 +2356,11 @@ async def _get_node_data(
 ):
     # get similar entities
     logger.info(
-        f"Query nodes: {query}, top_k: {query_param.top_k}, cosine: {entities_vdb.cosine_better_than_threshold}"
+        f"Query nodes: {query}, top_k: {query_param.entity_top_k}, cosine: {entities_vdb.cosine_better_than_threshold}"
     )
 
     results = await entities_vdb.query(
-        query, top_k=query_param.top_k, ids=query_param.ids
+        query, top_k=query_param.entity_top_k, ids=query_param.ids
     )
 
     if not len(results):
@@ -2621,11 +2621,11 @@ async def _get_edge_data(
     query_param: QueryParam,
 ):
     logger.info(
-        f"Query edges: {keywords}, top_k: {query_param.top_k}, cosine: {relationships_vdb.cosine_better_than_threshold}"
+        f"Query edges: {keywords}, top_k: {query_param.relation_top_k}, cosine: {relationships_vdb.cosine_better_than_threshold}"
     )
 
     results = await relationships_vdb.query(
-        keywords, top_k=query_param.top_k, ids=query_param.ids
+        keywords, top_k=query_param.relation_top_k, ids=query_param.ids
     )
 
     if not len(results):
@@ -2759,7 +2759,9 @@ async def _find_most_related_entities_from_relationships(
         # Combine the node data with the entity name and computed degree (as rank)
         combined = {**node, "entity_name": entity_name, "rank": degree}
         node_datas.append(combined)
-
+    node_datas = sorted(
+        node_datas, key=lambda x: x["rank"], reverse=True
+    )[:query_param.entity_top_k]
     return node_datas
 
 
