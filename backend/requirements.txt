@@ -4,3 +4,4 @@ sqlparse==0.5.3
 openai
 requests
 bs4
+flask
