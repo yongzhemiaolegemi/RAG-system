@@ -25,9 +25,12 @@ from lightrag.constants import (
     DEFAULT_MAX_GLEANING,
     DEFAULT_FORCE_LLM_SUMMARY_ON_MERGE,
     DEFAULT_TOP_K,
-    DEFAULT_RELATION_TOP_K,
-    DEFAULT_RERANK_TOP_K,
+    DEFAULT_RELATION_TOP_K, 
+    DEFAULT_RELATION_RERANK_TOP_K, 
+    DEFAULT_ENTITY_TOP_K, 
+    DEFAULT_ENTITY_RERANK_TOP_K, 
     DEFAULT_CHUNK_TOP_K,
+    DEFAULT_CHUNK_RERANK_TOP_K, 
     DEFAULT_MAX_ENTITY_TOKENS,
     DEFAULT_MAX_RELATION_TOKENS,
     DEFAULT_MAX_TOTAL_TOKENS,
@@ -138,17 +141,21 @@ class LightRAG:
     # ---
 
     top_k: int = field(default=get_env_value("TOP_K", DEFAULT_TOP_K, int))
-    """Number of entities to retrieve for each query."""
+   
+    entity_top_k: int = field(default=get_env_value("ENTITY_TOP_K", DEFAULT_ENTITY_TOP_K, int))
 
+    entity_rerank_top_k: int = field(default=get_env_value("ENTITY_RERANK_TOP_K", DEFAULT_ENTITY_RERANK_TOP_K, int))
+    
     relation_top_k: int = field(default=get_env_value("RELATION_TOP_K", DEFAULT_RELATION_TOP_K, int))
-    """Number of relations to retrieve for each query."""
+
+    relation_rerank_top_k: int = field(default=get_env_value("RELATION_RERANK_TOP_K", DEFAULT_RELATION_RERANK_TOP_K, int))
 
     chunk_top_k: int = field(
         default=get_env_value("CHUNK_TOP_K", DEFAULT_CHUNK_TOP_K, int)
     )
     """Maximum number of chunks in context."""
 
-    rerank_top_k: int = field(default=get_env_value("RERANK_TOP_K", DEFAULT_RERANK_TOP_K, int))
+    chunk_rerank_top_k: int = field(default=get_env_value("CHUNK_RERANK_TOP_K", DEFAULT_CHUNK_RERANK_TOP_K, int))
     """Number of top items to keep after reranking. Should be less than or equal to chunk_top_k."""
 
     max_entity_tokens: int = field(
