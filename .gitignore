@@ -6,6 +6,9 @@ africa2024_2_raw_files
 africa2024_raw_files
 british_database
 british_raw_files_clean
+british_pdf_2024
+british_pdf_2024_txt
+british_pdf_2024_txt_clean
 lightrag_demo.log
 config_wlc.py
 */query_logs/*

@@ -2,7 +2,8 @@ import os
 project_dir = os.getcwd()
 
 # LightRAG configuration
-lightrag_llm_model = 'doubao-1-5-lite-32k-250115'
+lightrag_llm_model = 'doubao-seed-1-6-250615'
+# lightrag_llm_model = 'doubao-1-5-lite-32k-250115'
 lightrag_embedding_model = 'doubao-embedding-text-240715'
 
 lightrag_llm_url = 'https://ark.cn-beijing.volces.com/api/v3/'
@@ -29,7 +30,7 @@ webscrap_base_dir = 'ooo'
 
 # Django configuration
 
-django_llm_url = "https://dashscope.aliyuncs.com/compatible-mode/v1/"    
+django_llm_url = "https://api.chatanywhere.tech/v1/"    
 django_llm_key = ""
 django_vllm_url = "http://localhost:30000/v1/completions"
 django_model ="deepseek-chat"
@@ -37,7 +38,16 @@ django_service_port = '8006'
 django_service_url = f"http://127.0.0.1:{django_service_port}/api/v1/chat/completions"
 
 # DeepResearch config
-dr_model = "qwen3-235b-a22b-instruct-2507"
+dr_query_model = "qwen3-235b-a22b-instruct-2507"
+dr_query_model_url = "https://dashscope.aliyuncs.com/compatible-mode/v1/"
+dr_query_model_key = "sk-"
+dr_conclusion_model = "gemini-2.5-pro"
+dr_conclusion_model_url = "https://api.chatanywhere.tech/v1/"
+dr_conclusion_model_key = "sk-"
+dr_polish_model = "qwen3-235b-a22b-instruct-2507"
+dr_polish_model_url = "https://api.chatanywhere.tech/v1/"
+dr_polish_model_key = "sk-"
+
 # dr_llm_url&key is django's
 
 # rerank configuration 二选一即可：调用api / 用本地的rerank模型

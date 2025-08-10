@@ -11,31 +11,37 @@ import re
 import json
 from collections import defaultdict
 import time
+import math
+from time import sleep
+from requests.exceptions import ConnectionError as RequestsConnectionError
+import logging
+logging.basicConfig(level=logging.INFO)
+logging.getLogger("httpx").setLevel(logging.DEBUG)
+logging.getLogger("openai").setLevel(logging.DEBUG)
 
-MODEL = "qwen3-235b-a22b-instruct-2507"
-INITIAL_QUESTIONS_COUNT = 8 # 初始生成的问题数量
-MAX_ADDITIONAL_QUESTIONS = 2 # 最多允许额外增加的问题数量
-PERFORM_VERIFICATION = False # 是否执行验证报告的生成
+INITIAL_QUESTIONS_COUNT = 15 # 初始生成的问题数量
+MAX_ADDITIONAL_QUESTIONS = 5 # 最多允许额外增加的问题数量
 SOURCE_DOCUMENTS_DIR = "./africa2024_raw_files/" # 源文档所在的目录
+POLISH = False
+CONNECTION_TEST_BEFORE_STAGE_CONCLUSION = True # 总结阶段之前进行一次连通性测试
 QUERY_PROMPT = "给出参考文献时，请忠实给出原文档名，不要翻译成中文，也不要把relation等误当作文档名。"
 # TOPIC = "需要一个标题为：“非洲生物安全态势研判”的报告。字数大约在2000~3000字。分为三个章节：1.非洲生物安全态势 2.非洲生物安全风险点 3.对我国(中国)应对风险及加强非洲国际合作的建议"
 # TOPIC = "需要一个标题为：“非洲生物安全态势研判”的报告。几百字即可"
 TOPIC = '''
 撰写一篇智库研究报告，标题为：
 《英国生物安全态势研判》
-本报告面向政策研究机构内部参考，供政府部门领导研判决策使用。全文建议控制在 3000 字左右，内容要求如下：
+本报告面向政策研究机构内部参考，供政府部门领导研判决策使用。全文建议控制在 6000 字左右，内容要求如下：
 ________________________________________
 报告结构与内容指引
-1. 英国生物安全整体态势
+1. 英国生物安全总体态势
 •	概述英国当前生物安全形势；
-•	可包括传染病流行趋势、生物防控基础能力、关键机构作用、国际合作机制等方面；
 •	引用 2024年 9 月以来的最新数据或正式报告支撑分析。
 2. 当前面临的主要生物安全风险与深度分析
 •	梳理主要风险类型，并提供实际案例或数据支持；
 •	强调风险的系统性与持续性，指出短期内难以缓解的问题；
-•	分析风险背后的结构性根源，可结合具体国家进行说明。
+•	重要的小概率事件
 3. 中国应对策略与中英合作建议
-•	建议应紧扣前述风险与问题，围绕战略定位、机制建设、能力提升、多边协同等方面提出；
+•	建议应紧扣前述风险与问题提出；
 •	所有建议应具备一定可行性与针对性；
 •	可结合中国相关政策立场提出合作方向建议，避免泛泛而谈。
 ________________________________________
@@ -48,15 +54,33 @@ ________________________________________
 输出目标：
 生成一篇逻辑清晰、数据充分、问题导向明确、建议具有可操作性的智库研究报告，可供政府部门领导研判使用。
 内容上请勿重复冗余。
+请在合适的地方插入至少一个表格，用于总结时间线、横向对比、纵向对比等用途。
 
 '''
 
+def quick_connectivity_test(url, key, model):
+    """
+    快速发一个非常短的请求来测试连通性与认证（诊断用）。
+    """
+    try:
+        tmp_client = OpenAI(api_key=key, base_url=url)
+        messages = [
+            {"role": "system", "content": "You are a diagnostic bot."},
+            {"role": "user", "content": "Say OK in one word."}
+        ]
+        resp = tmp_client.chat.completions.create(model=model, messages=messages, timeout=30)
+        print("短请求成功，resp type:", type(resp), "，长度:", len(str(resp)))
+    except Exception as e:
+        import traceback
+        print("短请求失败：", repr(e))
+        traceback.print_exc()
 
-def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools=None):
+
+def post_to_openai_api(messages, model, url, key, stream=False, collect_stream=True, tools=None):
     try:
         client = OpenAI(
-            api_key=config().django_llm_key,
-            base_url=config().django_llm_url
+            api_key=key,
+            base_url=url
         )
         
         # 构建API调用参数
@@ -65,6 +89,7 @@ def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools
             "messages": messages,
             # "extra_body": {"enable_thinking": True},
             "stream": stream,
+            "timeout": 600
         }
         
         # 如果提供了工具，添加到API调用中
@@ -72,17 +97,50 @@ def post_to_openai_api(messages, model, stream=False, collect_stream=True, tools
             api_params["tools"] = tools
             api_params["tool_choice"] = "auto"
 
-        print(f"调用API: {config().django_llm_url}")
+        print(f"调用API: {url}")
         print(f"模型: {model}")
         print(f"消息数量: {len(messages)}")
         
-        completion = client.chat.completions.create(**api_params)
+        # 计算消息体大小（字符数）
+        total_chars = sum(len(m.get("content") or "") for m in messages)
+        total_tokens_est = math.ceil(total_chars / 4)  # 粗略估算：1 token ≈4 chars
+        print(f"消息体字符数: {total_chars}, 估算 token: {total_tokens_est}")
+        max_retries = 3
+        retry_delay = 1
+        for attempt in range(1, max_retries + 1):
+            try:
+                completion = client.chat.completions.create(**api_params)
+                break
+            except Exception as api_error:
+                # 如果是连接相关错误，尝试重试（指数退避）
+                is_conn_err = isinstance(api_error, RequestsConnectionError) or "Connection" in str(api_error)
+                print(f"API 调用第 {attempt} 次失败: {api_error}")
+                if attempt == max_retries or not is_conn_err:
+                    # 最后一次或非连接类错误，抛出
+                    raise api_error
+                else:
+                    sleep_time = retry_delay * (2 ** (attempt - 1))
+                    print(f"检测到连接错误，{sleep_time}s 后重试...")
+                    sleep(sleep_time)
         
     except Exception as api_error:
-        print(f"API调用错误详情: {str(api_error)}")
-        print(f"API URL: {config().django_llm_url}")
-        print(f"API Key: {config().django_llm_key[:20]}...")
-        raise api_error
+        import traceback, sys
+        print("API 调用发生异常，类型:", type(api_error).__name__)
+        print("异常 repr:", repr(api_error))
+        print("完整 traceback:")
+        traceback.print_exc()
+        print(f"API URL: {url}")
+        print(f"API Key 前 20 字符: {key[:20]}...")
+        # 简单的 URL 可达性测试（仅做诊断，不作为最终请求）
+        try:
+            import requests as _requests
+            r = _requests.get(url, timeout=5, verify=True)
+            print("URL GET 返回状态:", r.status_code)
+            print("返回内容（前200字）:", r.text[:200])
+        except Exception as e:
+            print("URL 可达性测试失败:", repr(e))
+        # 重新抛出原始异常以便上层看到
+        raise
     
     if stream:
         if collect_stream:
@@ -195,14 +253,14 @@ class ResearchAgent:
         self.initial_questions_count = initial_questions
         self.max_additional_questions = max_extra_questions
 
-    def _call_llm(self, system_prompt, user_prompt, tools=None):
+    def _call_llm(self, system_prompt, user_prompt, tools=None, model_name=None, url=None, key=None, stream=False):
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ]
         
         try:
-            response = post_to_openai_api(messages, self.model, stream=False, tools=tools)
+            response = post_to_openai_api(messages, model_name or self.model, url, key, stream=stream, tools=tools)
             
             content = response['choices'][0]['message'].get('content')
             if content:
@@ -212,7 +270,8 @@ class ResearchAgent:
                 return ""
         except (OpenAIError, KeyError, IndexError) as e:
             print(f"调用LLM时出错: {e}")
-            return "" # 或者返回一个表示失败的特殊字符串
+            return ""
+
 
     def _parse_json_from_llm_response(self, response_text):
         if not response_text:
@@ -246,11 +305,11 @@ class ResearchAgent:
             f"研究主题是：{self.state['original_topic']}\n\n"
             f"请设计一个全面的研究大纲，并将其分解为 {self.initial_questions_count} 个核心问题。"
             "问题应覆盖主题的各个方面，逻辑清晰，表述明确。"
-            "请严格按照以下格式返回：一个包含问题的JSON数组，不要有其他任何文字或解释。"
+            "请严格按照以下格式返回：一个包含问题的字符串list，不要有其他任何文字或解释。"
             "例如: [\"问题1？\", \"问题2？\", ...]"
         )
 
-        response_text = self._call_llm(system_prompt, user_prompt)
+        response_text = self._call_llm(system_prompt, user_prompt, model_name=config().dr_query_model, url=config().dr_query_model_url, key=config().dr_query_model_key)
         question_list = self._parse_json_from_llm_response(response_text)
 
         if not question_list:
@@ -267,6 +326,8 @@ class ResearchAgent:
         while self.state['question_list']:
             print(f"\n--- 迭代 {iteration} ---")
             current_question = self.state['question_list'].pop(0) # 取出第一个问题
+            if not isinstance(current_question, str):
+                current_question = json.dumps(current_question)
             print(f"正在研究问题: {current_question}")
 
             try:
@@ -306,7 +367,7 @@ class ResearchAgent:
                 "例如: [\"修改后的问题1？\", \"新问题？\", ...]"
             )
 
-            response_text = self._call_llm(system_prompt, user_prompt)
+            response_text = self._call_llm(system_prompt, user_prompt, model_name=config().dr_query_model, url=config().dr_query_model_url, key=config().dr_query_model_key)
             updated_question_list = self._parse_json_from_llm_response(response_text)
 
             if updated_question_list is not None: # 即使是空列表也是有效的更新
@@ -361,14 +422,32 @@ class ResearchAgent:
             "3. 语言流畅、专业。\n"
             "4. 直接输出报告正文，无需额外说明。\n"
             "5. 每个大章节下面建议布置2~4个小节，视信息丰富程度而定。\n"
-            "6. 每个小节的主体是1~2段内容丰富、语言连续的段落，请不要大量分点。\n"
+            "6. 每个小节的主体是1~2段内容丰富、语言连续的段落，请不要大量分点。每个小节请不要只写一句话就草草了事。请至少写三句话。请记住，你是在写一个内容丰富的报告，而不是在机械地列重点。\n"
             "7. 尽量多出现一些和时间有关的叙述，用以提升报告的时效性。例如xxxx年xx月这种。\n"
-            "8. 在句子后标注引用来自哪个问题的回复。如，如果是来自问题1的回复中的[DC #16]，那么就在句子后面标注[Q #1, DC #16]。如果有多个来源，可以写成[Q #1, DC #4-6 #15 #17]这种。如果一个句子涉及到两个及以上的问题的回复，例如同时涉及到了第一个问题的回复和第二个问题的回复，那么可以写成[Q #1, DC #3; Q #2, DC #3 #5]这种。Q的后面必须带有DC，禁止出现[Q #x] [Q #8; DC #3 #7 #10]这种只有问题编号却无实际内容或者只有内容没有问题编号的标注。"
+            "8. 在句子后标注引用来自哪个问题的回复，这些标注将会被程序识别然后进行后处理。如，如果是来自问题1的回复中的[DC #16]，那么就在句子后面标注[Q #1, DC #16]。如果有多个来源，可以写成[Q #1, DC #4-6 #15 #17]这种。如果一个句子涉及到两个及以上的问题的回复，例如同时涉及到了第一个问题的回复和第二个问题的回复，那么可以写成[Q #1, DC #3; Q #2, DC #3 #5]这种。Q的后面必须带有DC，禁止出现[Q #x]、[Q #5, DC 无]这种只有问题编号却无实际内容的标注。禁止出现[DC # 4]、[Q #8; DC #3 #7 #10]这种只有DC却无问题编号的标注。禁止出现[Q #7, DC 多][Q #5, DC 无]这种无法被解析的标注。不要在数字编号之间添加逗号，例如[Q #1, DC #1, #6]这种就是错误的，应该写成[Q #1, DC #1 #6]。\n"
+            "9. 遇到RAG系统无法回答的问题时，请避开相关议题，避免引入错误信息。因为RAG系统所包含的知识并非十全十美，不能因为RAG系统没有查询到就下一些例如**缺乏透明度**之类的论断，这是不科学的。直接避开就好。但是与此同时你也不要在正文里承认RAG系统的不足，这会影响报告的质量。"
         )
 
-        final_report = self._call_llm(system_prompt, user_prompt)
+        final_report = self._call_llm(system_prompt, user_prompt, model_name=config().dr_conclusion_model, url=config().dr_conclusion_model_url, key=config().dr_conclusion_model_key, stream=False)
         print("\n--- 阶段三完成：报告已生成。---")
         return final_report
+
+    def polish_report(self, raw_report: str) -> str:
+        system_prompt = (
+            "你是中文政策报告的高级润色专家。"
+            "在不改变事实、不改动引用标注、不移动标注位置的前提下，优化行文逻辑、术语一致性与可读性，修正轻微语病，消除冗余。"
+        )
+        user_prompt = (
+            "润色要求：\n"
+            "1) 严格保留并原样输出所有形如 [Q #... , ...] 的方括号引用标注，禁止改动其中任何字符、空格或顺序，禁止移动其在句中的位置；"
+            "禁止新增、删除、合并或拆分任一引用标注。\n"
+            "2) 不改变段落与换行结构；不引入新的引用标注或编号。\n"
+            "3) 仅润色正文语言，不增删事实信息；输出仅为润色后的全文，不要添加任何解释或额外内容。\n\n"
+            "待润色文本：\n"
+            f"{raw_report}"
+        )
+        return self._call_llm(system_prompt, user_prompt, model_name=config().dr_polish_model, url=config().dr_polish_model_url, key=config().dr_polish_model_key)
+
 
     def _post_process_report_and_add_references(self, raw_report, references_map):
         """
@@ -532,190 +611,28 @@ class ResearchAgent:
         cleaned = id_str.replace('#', '')
         return set(cleaned.split())
 
-    def verify_report(self, report_text):
-        """
-        验证报告中的引用是否与原文相符。
-
-        Args:
-            report_text (str): 完整的报告文本。
-
-        Returns:
-            str: 验证结果报告。
-        """
-        print("\n--- 阶段四：验证报告内容 ---")
-
-        # 1. 解析报告，提取正文和引用
-        # 假设报告结构是：主题、正文、参考文献
-        try:
-            # 移除主题和参考文献，只保留正文
-            body_text = report_text.split("\n\n## 参考文献\n\n")[0]
-            if self.state['original_topic'] in body_text:
-                body_text = body_text.replace(f"研究主题：{self.state['original_topic']}\n\n", "")
-
-            # 提取所有引用标记及其所在段落
-            # 使用正则表达式查找所有带引用的段落
-            # 一个段落被定义为被换行符包围的文本块
-            paragraphs = [p.strip() for p in body_text.split('\n\n') if p.strip()]
-            citations = defaultdict(list)
-            citation_pattern = r'\[(\d+(?:,\s*\d+)*)\]'
-
-            for para in paragraphs:
-                matches = re.findall(citation_pattern, para)
-                if matches:
-                    # 清理段落，移除引用标记，以便发送给LLM
-                    cleaned_para = re.sub(citation_pattern, '', para).strip()
-                    for match in matches:
-                        # 一个引用标记可能包含多个数字，例如 [1, 2]
-                        ref_numbers = [int(n.strip()) for n in match.split(',')]
-                        for ref_num in ref_numbers:
-                            citations[ref_num].append(cleaned_para)
-
-        except Exception as e:
-            return f"解析报告时出错: {e}"
-
-        # 2. 构建验证任务并调用LLM
-        verification_results = []
-        # 反转 references_map 以便通过引用序号查找文档名
-        ref_map = {v: k for k, v in self.references_map.items()}
-
-        for ref_num, paras in citations.items():
-            doc_name = ref_map.get(ref_num)
-            if not doc_name:
-                verification_results.append({
-                    "document": f"文档序号 {ref_num}",
-                    "status": "无法找到源文档",
-                    "details": "",
-                    "paragraphs": paras
-                })
-                continue
-
-            # 从指定目录读取源文档内容
-            source_content = f"无法加载源文档 '{doc_name}' 的内容。"
-            try:
-                # 确保文件名安全，防止目录遍历攻击
-                safe_doc_name = os.path.basename(doc_name)
-                doc_path = os.path.join(SOURCE_DOCUMENTS_DIR, safe_doc_name + '.txt')
-                
-                if os.path.exists(doc_path):
-                    with open(doc_path, 'r', encoding='utf-8') as f:
-                        source_content = f.read()
-                else:
-                    print(f"警告: 源文件未找到: {doc_path}")
-                    verification_results.append({
-                        "document": doc_name,
-                        "status": "源文件未找到",
-                        "path": doc_path,
-                        "details": f"尝试定位的源文档未找到: {doc_path}",
-                        "paragraphs": paras
-                    })
-                    continue
-
-            except Exception as e:
-                print(f"读取源文件 {doc_name} 时出错: {e}")
-
-
-            system_prompt = (
-                "你是一位严谨的事实核查员。你的任务是判断所提供的段落内容是否与源文档内容一致。"
-                "请仔细阅读源文档和段落，然后给出你的判断。"
-                "判断结果必须是以下三种之一：True（符合事实）、False（违反事实）、Irrelevant（不相关）。"
-                "不要返回任何其他多余的文字或解释。"
-            )
-            joined_paras = '\n\n'.join(paras)
-            user_prompt = (
-                f"源文档内容:\n--- --- --- --- ---\n{source_content}\n--- --- --- --- ---\n\n"
-                f"待验证段落:\n--- --- --- --- ---\n{joined_paras}\n--- --- --- --- ---"
-            )
-
-            retry_count = 0
-            while retry_count < 3:
-                response = self._call_llm(system_prompt, user_prompt)
-                if response in ["True", "False", "Irrelevant"]:
-                    status = response
-                    details = ""
-                    if status in ["False", "Irrelevant"]:
-                        # 追问原因
-                        reason_prompt_system = "你是一位深入的分析师。请解释为什么前面的段落被判断为违反事实或不相关。请提供具体理由。"
-                        reason_prompt_user = (
-                            f"源文档内容:\n{source_content}\n\n"
-                            f"段落:\n{joined_paras}\n\n"
-                            f"判断结果: {status}"
-                        )
-                        details = self._call_llm(reason_prompt_system, reason_prompt_user)
-                    
-                    verification_results.append({
-                        "document": doc_name,
-                        "status": status,
-                        "paragraphs": paras,
-                        "details": details
-                    })
-                    break
-                else:
-                    retry_count += 1
-            
-            if retry_count == 3:
-                verification_results.append({
-                    "document": doc_name,
-                    "status": "模型无法判断",
-                    "paragraphs": paras,
-                    "details": f"模型在3次尝试后仍未返回有效结果。最后一次返回值为: {response}"
-                })
-
-        # 3. 生成并保存验证报告
-        report = "# 研究报告内容验证结果\n\n"
-        issues = [res for res in verification_results if res['status'] != 'True']
-
-        if not issues:
-            report += "所有内容均已通过验证，未发现问题。\n"
-        else:
-            report += f"共发现 {len(issues)} 个问题。\n\n"
-            for issue in issues:
-                if issue['status'] in ["源文件未找到", "无法找到源文档"]:
-                    report += f"## 未找到源文档: {issue['document']}\n"
-                    if issue.get('path'):
-                        report += f"- **尝试定位路径**: {issue['path']}\n"
-                    if issue.get('details'):
-                        report += f"- **详情**: {issue['details']}\n"
-                    report += "- **相关段落**:\n"
-                    for para in issue['paragraphs']:
-                        report += f"  - {para}\n"
-                    report += "\n"
-                else:
-                    report += f"## 文档: {issue['document']}\n"
-                    report += f"- **状态**: {issue['status']}\n"
-                    if issue['details']:
-                        report += f"- **详情**: {issue['details']}\n"
-                    report += "- **相关段落**:\n"
-                    for para in issue['paragraphs']:
-                        report += f"  - {para}\n"
-                    report += "\n"
-        
-        return report
-
     def run(self):
         print(f"开始针对 '{self.state['original_topic']}' 进行研究...")
         self.plan_research()
         self.execute_and_reflect()
-        raw_report = self.synthesize_report()
-        
-        # 在生成原始报告后，进行后处理以添加引用
-        self.references_map = {} # 初始化引用映射
-        processed_report = self._post_process_report_and_add_references(raw_report, self.references_map)
-        
-        if PERFORM_VERIFICATION:
-            # 验证报告内容
-            verification_report = self.verify_report(processed_report)
-            
-            # 将验证报告保存到文件
-            try:
-                timestamp = time.time()
-                verification_filename = f"verification_report_{timestamp}.md"
-                with open(verification_filename, 'w', encoding='utf-8') as f:
-                    f.write(verification_report)
-                print(f"\n--- 验证报告已成功保存至文件: {verification_filename} ---")
-            except IOError as e:
-                print(f"错误：无法将验证报告写入文件 {verification_filename}。错误信息: {e}")
 
-        return raw_report, processed_report
+        if CONNECTION_TEST_BEFORE_STAGE_CONCLUSION:
+            quick_connectivity_test(config().dr_conclusion_model_url, config().dr_conclusion_model_key, config().dr_conclusion_model)
+
+        raw_report = self.synthesize_report()
+
+        # 新增：对原始报告进行润色（严格保留引用标注及其位置）
+        if POLISH:
+            raw_polish_report = self.polish_report(raw_report)
+        else:
+            raw_polish_report = raw_report
+
+        # 在生成原始报告后，进行后处理以添加引用
+        self.references_map = {}  # 初始化引用映射
+        processed_report = self._post_process_report_and_add_references(raw_polish_report, self.references_map)
+
+        return raw_report, processed_report, raw_polish_report
+
 
 if __name__ == "__main__":
     
@@ -723,13 +640,13 @@ if __name__ == "__main__":
     # 使用了新的参数来初始化 ResearchAgent
     agent = ResearchAgent(
         topic=topic, 
-        model_name=MODEL,
+        model_name=config().dr_query_model,
         initial_questions=INITIAL_QUESTIONS_COUNT,
         max_extra_questions=MAX_ADDITIONAL_QUESTIONS
     )
     
     try:
-        raw_report, report = agent.run()
+        raw_report, report, raw_polish_report = agent.run()
         print("\n\n========== 最终研究报告 ==========\n")
         print(report)
 
@@ -738,6 +655,8 @@ if __name__ == "__main__":
         timestamp_str = str(timestamp)
         report_filename = f"research_report_{timestamp_str}.txt"
         raw_report_filename = f"raw_research_report_{timestamp_str}.txt"
+        raw_polish_report_filename = f"raw_polish_research_report_{timestamp_str}.txt"
+
         try:
             with open(report_filename, 'w', encoding='utf-8') as f:
                 f.write(f"研究主题：{topic}\n\n")
@@ -745,6 +664,7 @@ if __name__ == "__main__":
             print(f"\n--- 报告已成功保存至文件: {report_filename} ---")
         except IOError as e:
             print(f"错误：无法将报告写入文件 {report_filename}。错误信息: {e}")
+
         try:
             with open(raw_report_filename, 'w', encoding='utf-8') as f:
                 f.write(f"研究主题：{topic}\n\n")
@@ -753,6 +673,14 @@ if __name__ == "__main__":
         except IOError as e:
             print(f"错误：无法将报告写入文件 {raw_report_filename}。错误信息: {e}")
 
+        # 新增：保存润色后的原始报告（保留引用标注及其位置）
+        if POLISH:
+            try:
+                with open(raw_polish_report_filename, 'w', encoding='utf-8') as f:
+                    f.write(f"研究主题：{topic}\n\n")
+                    f.write(raw_polish_report)
+                print(f"\n--- 润色后的原始报告已成功保存至文件: {raw_polish_report_filename} ---")
+            except IOError as e:
+                print(f"错误：无法将润色后的原始报告写入文件 {raw_polish_report_filename}。错误信息: {e}")
     except Exception as e:
         print(f"研究流程执行出错: {e}")
-
