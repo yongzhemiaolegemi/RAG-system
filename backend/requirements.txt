@@ -5,3 +5,6 @@ openai
 requests
 bs4
 flask
+modelscope
+transformers
+diffusers

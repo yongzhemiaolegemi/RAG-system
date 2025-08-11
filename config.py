@@ -1,13 +1,16 @@
 import os
 project_dir = os.getcwd()
+DASH_SCOPE_KEY = 'sk-'
+CA_KEY = 'sk-'
+ARK_KEY = ''
 
 # LightRAG configuration
-lightrag_llm_model = 'doubao-seed-1-6-250615'
-# lightrag_llm_model = 'doubao-1-5-lite-32k-250115'
+# lightrag_llm_model = 'doubao-seed-1-6-250615'
+lightrag_llm_model = 'doubao-1-5-lite-32k-250115'
 lightrag_embedding_model = 'doubao-embedding-text-240715'
 
 lightrag_llm_url = 'https://ark.cn-beijing.volces.com/api/v3/'
-lightrag_llm_key = ''
+lightrag_llm_key = ARK_KEY
 
 # The model selection for LightRAG is hardcoded in the code as gpt-4o-mini, may be changed later.
 lightrag_service_port = 5001
@@ -31,7 +34,7 @@ webscrap_base_dir = 'ooo'
 # Django configuration
 
 django_llm_url = "https://api.chatanywhere.tech/v1/"    
-django_llm_key = ""
+django_llm_key = CA_KEY
 django_vllm_url = "http://localhost:30000/v1/completions"
 django_model ="deepseek-chat"
 django_service_port = '8006'
@@ -40,13 +43,13 @@ django_service_url = f"http://127.0.0.1:{django_service_port}/api/v1/chat/comple
 # DeepResearch config
 dr_query_model = "qwen3-235b-a22b-instruct-2507"
 dr_query_model_url = "https://dashscope.aliyuncs.com/compatible-mode/v1/"
-dr_query_model_key = "sk-"
+dr_query_model_key = DASH_SCOPE_KEY
 dr_conclusion_model = "gemini-2.5-pro"
 dr_conclusion_model_url = "https://api.chatanywhere.tech/v1/"
-dr_conclusion_model_key = "sk-"
+dr_conclusion_model_key = CA_KEY
 dr_polish_model = "qwen3-235b-a22b-instruct-2507"
 dr_polish_model_url = "https://api.chatanywhere.tech/v1/"
-dr_polish_model_key = "sk-"
+dr_polish_model_key = CA_KEY
 
 # dr_llm_url&key is django's
 
