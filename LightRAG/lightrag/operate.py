@@ -2038,6 +2038,9 @@ async def _build_query_context(
     logger.info(
         f"Initial context: {len(entities_context)} entities, {len(relations_context)} relations, {len(all_chunks)} chunks"
     )
+    if len(entities_context) + len(relations_context) + len(all_chunks) == 0:
+        logger.warning("No entities, relations, or chunks found for the query.")
+        return 'No entities, relations, or doc chunks.', '[empty]'
 
     # Unified token control system - Apply precise token limits to entities and relations
     tokenizer = text_chunks_db.global_config.get("tokenizer")
@@ -2311,9 +2314,24 @@ async def _build_query_context(
 
     # not necessary to use LLM to generate a response
     if not entities_context and not relations_context:
-        return None
+        logger.warning("No entities, relations, or chunks found for the query.")
+        return 'No entities, relations, or doc chunks.', '[empty]'
  
     text_units_str = json.dumps(text_units_context, ensure_ascii=False)
+
+    def get_top_k(context, top_k):
+        """Get top_k items from context based on id"""
+        if not context or top_k >= len(context):
+            return context
+        if context[0].get("description") is not None:
+            # 按照description长度排序，选择较长的top_k。因为直觉上，越长的描述越有可能包含更多信息
+            return sorted(context, key=lambda x: len(x["description"]),reverse=True)[:top_k]
+        return sorted(context, key=lambda x: len(x["content"]),reverse=True)[:top_k]
+    if not query_param.enable_rerank:
+        entities_context = get_top_k(entities_context, query_param.entity_top_k)
+        relations_context = get_top_k(relations_context, query_param.relation_top_k)
+        text_units_context = get_top_k(text_units_context, query_param.chunk_top_k)
+
 
     if only_dc:
         log_file_path = create_query_log({
@@ -2375,7 +2393,8 @@ async def _get_node_data(
     logger.info(
         f"Query nodes: {query}, top_k: {query_param.entity_top_k}, cosine: {entities_vdb.cosine_better_than_threshold}"
     )
-
+    if not len(query):
+        return "", "", [], []
     results = await entities_vdb.query(
         query, top_k=query_param.entity_top_k, ids=query_param.ids
     )
@@ -2660,7 +2679,8 @@ async def _get_edge_data(
     logger.info(
         f"Query edges: {keywords}, top_k: {query_param.relation_top_k}, cosine: {relationships_vdb.cosine_better_than_threshold}"
     )
-
+    if not len(keywords):
+        return "", "", [], []
     results = await relationships_vdb.query(
         keywords, top_k=query_param.relation_top_k, ids=query_param.ids
     )
@@ -3439,12 +3459,12 @@ async def process_chunks_unified(
         )
         logger.debug(f"Rerank: {len(unique_chunks)} chunks (source: {source_type})")
 
-    # # 3. Apply chunk_top_k limiting if specified
-    # if query_param.chunk_rerank_top_k is not None and query_param.chunk_rerank_top_k > 0:
-    #     if len(unique_chunks) > query_param.chunk_rerank_top_k:
-    #         unique_chunks = unique_chunks[: query_param.chunk_rerank_top_k]
+    # 3. Apply chunk_top_k limiting if specified
+    # if query_param.chunk_top_k is not None and query_param.chunk_top_k > 0:
+    #     if len(unique_chunks) > query_param.chunk_top_k:
+    #         unique_chunks = unique_chunks[: query_param.chunk_top_k]
     #         logger.debug(
-    #             f"Chunk top-k limiting: kept {len(unique_chunks)} chunks (chunk_rerank_top_k={query_param.chunk_rerank_top_k})"
+    #             f"Chunk top-k limiting: kept {len(unique_chunks)} chunks (chunk_rerank_top_k={query_param.chunk_top_k})"
     #         )
 
     # 4. Token-based final truncation
