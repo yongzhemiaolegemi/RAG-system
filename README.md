@@ -76,12 +76,12 @@ python multiturn_client.py
 | 模式        | 说明                                                         | query_context包含的数据 | 对查询结果有影响的超参数                                     |
 | ----------- | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------ |
 | `naive`     | 用传统的方法从RAG中检索出DC                                  | DC                      | `chunk_(rerank_)top_k`                                       |
-| `local`     | 用low level关键词对RAG进行检索，得到一些E；<br />再通过这些E找到一些相关的R；<br />再通过E,R得到一些相关的DC | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
-| `global`    | 用high level关键词对RAG进行检索，得到一些R；<br />再通过这些R找到一些相关的E；<br />再通过E,R得到一些相关的DC | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
-| `hybrid`    | 用`local`和`global`模式得到结果，再把结果合并到一起。<br />(如果启用了rerank，则再取top_k；否则不再过滤，此时检索得到的结果数量上限为`2*{entity/relation/chunk}_top_k`) | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
-| `mix`       | 用`hybrid`和`naive`模式得到结果，再把结果合并到一起。<br />(如果启用了rerank，则再取top_k；否则不再过滤，此时检索得到的结果数量上限为`3*{entity/relation/chunk}_top_k`) | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
+| `local`     | 用low level关键词对RAG进行检索，得到一些E；<br />再通过这些E找到一些相关的R；<br />再通过E,R得到一些相关的DC。 | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
+| `global`    | 用high level关键词对RAG进行检索，得到一些R；<br />再通过这些R找到一些相关的E；<br />再通过E,R得到一些相关的DC。 | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
+| `hybrid`    | 用`local`和`global`模式得到结果，再把结果合并到一起。<br />再取(rerank_)top_k。 | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
+| `mix`       | 用`hybrid`和`naive`模式得到结果，再把结果合并到一起。<br />再取(rerank_)top_k。 | E, R, DC                | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
 | `hybrid_dc` | `hybrid`模式的结果去掉E,R。只保留DC。                        | DC                      | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
-| `mix_dc`    | `mix`模式的结果去掉E,R。只保留DC                             | DC                      | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
+| `mix_dc`    | `mix`模式的结果去掉E,R。只保留DC。                             | DC                      | `entity_(rerank_)top_k`, `relation_(rerank_)top_k, ` `chunk_(rerank_)_top_k` |
 
 
 

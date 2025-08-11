@@ -232,6 +232,6 @@ def run_demo(str,mode='hybrid'):
 if __name__ == "__main__":
     configure_logging()
     print("\n============ Initializing RAG storage ============")
-    res = asyncio.run(main("主要人物关系",deep_research=True,mode='naive'))
+    res = asyncio.run(main("英国公共卫生应急响应体系在疫情监测、早期预警与快速干预方面存在哪些系统性短板？紧急警报系统的公众响应率、医院 surge capacity、抗病毒药物与医疗物资储备水平是否经过压力测试？其在应对大规模生物事件时的中央-地方指挥衔接机制是否明确？",deep_research=True,mode='hybrid_dc'))
     print("\nDone! ")
 

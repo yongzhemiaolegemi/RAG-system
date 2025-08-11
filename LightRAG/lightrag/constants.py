@@ -17,20 +17,18 @@ DEFAULT_TIMEOUT = 150
 # 默认查询时的top_k值
 DEFAULT_TOP_K = 10
 
-# 每次查询时用到的entity个数
-DEFAULT_ENTITY_TOP_K = 40
-# 经过rerank后，最终保留的entity个数 
-DEFAULT_ENTITY_RERANK_TOP_K = 5
+# 每次查询时最初返回的E,R,DC个数
+DEFAULT_ENTITY_TOP_K = 17 
+DEFAULT_RELATION_TOP_K = 17 
+DEFAULT_CHUNK_TOP_K = 17
 
-# 每次查询时用到的ralation个数
-DEFAULT_RELATION_TOP_K = 40
-# 经过rerank后，最终保留的relation个数 
-DEFAULT_RELATION_RERANK_TOP_K = 5
-
-# 每次naive模式查询时最初返回的document chunk个数
-DEFAULT_CHUNK_TOP_K = 40
-# 经过rerank后，最终保留的document chunk个数 
+# 是否启用rerank
+DEFAULT_ENABLE_RERANK = False
+# （下面3个参数在启用rerank时才有用）经过rerank后，最终保留的E,R,DC个数 
+DEFAULT_ENTITY_RERANK_TOP_K = 5 
+DEFAULT_RELATION_RERANK_TOP_K = 5 
 DEFAULT_CHUNK_RERANK_TOP_K = 5
+
 '''
 在mix模式下，dc 有两个来源:
 1. 通过naive模式（传统的rag），查询出来的dc
@@ -42,7 +40,6 @@ DEFAULT_MAX_ENTITY_TOKENS = 5000
 DEFAULT_MAX_RELATION_TOKENS = 5000
 DEFAULT_MAX_TOTAL_TOKENS = 15000
 DEFAULT_HISTORY_TURNS = 0
-DEFAULT_ENABLE_RERANK = False
 DEFAULT_COSINE_THRESHOLD = 0.2
 DEFAULT_RELATED_CHUNK_NUMBER = 10
 
