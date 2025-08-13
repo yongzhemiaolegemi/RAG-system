@@ -114,9 +114,9 @@ rerank_service_url = f"http://127.0.0.1:{rerank_service_port}/rerank"
 
 ### 2. 调用api
 
-- rerank模型不属于常见的生成式llm，所以大部分LLM服务商没有提供这类模型的api。
 - 有一家叫做[jina.ai](https://jina.ai/)的公司有提供这类api，是可以用的。不过它貌似只提供了一部分免费的token，如果长期使用需要用国外的visa卡充值。
 - jina的api只提供它们自己家的模型。可以用`jina-reranker-v2-base-multilingual`。
+- 阿里云百炼也有提供rerank模型api，不过接口不太一样，如果要配的话需要自己修改代码。
 
 然后在`config.py`中进行配置：
 
@@ -168,6 +168,7 @@ python get.py rerank
 - `{entity/relation/chunk}_rerank_top_k`参数完全不会用到。
 
 > 此外，还有一个参数`top_k`：一个原LightRAG库提供的默认top_k值。如果查询运行时，发现某一个top_k的值异常（比如为0或者未设定），就有可能会用top_k来代替。只是记录一下，在本项目里算是deprecated。
+
 
 
 
